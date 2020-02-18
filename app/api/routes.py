@@ -391,6 +391,18 @@ def get_product(product_id):
     return jsonify(status='success', message="Product Found", data=product_schema)
 
 
+@bp.route('/product/<product_id>', methods=['DELETE'])
+def delete_product(product_id):
+    product_model = Product.query.get(product_id)
+    if not product_model:
+        return jsonify(status='failed', message="Product Not Found")
+
+    db.session.delete(product_model)
+    db.session.commit()
+
+    return jsonify(status='success', message="Product Deleted", )
+
+
 @bp.route('/product', methods=['POST'])
 def create_product():
     data = request.get_json()
@@ -445,17 +457,6 @@ def create_product():
 
     return jsonify(status='success', message='Product Created', data=product_schema)
 
-
-@bp.route('/product/<product_id>', methods=['DELETE'])
-def delete_product(product_id):
-    product_model = Product.query.get(product_id)
-    if not product_model:
-        return jsonify(status='failed', message="Product Not Found")
-
-    db.session.delete(product_model)
-    db.session.commit()
-
-    return jsonify(status='success', message="Product Deleted")
 
 
 @bp.route('/product/<product_id>', methods=['PUT'])
@@ -730,6 +731,29 @@ def get_client(client_id):
     return jsonify(status='success', message='Client Found', data=client_schema)
 
 
+@bp.route('/client/<int:client_id>/avatar', methods=['PUT'])
+def upload_client_avatar(client_id):
+    data = request.get_json()
+    if not data:
+        return jsonify(status="failed", message="No Data Sent!")
+    if not data.get('type'):
+        return jsonify(status="failed", message="Image type required!")
+    if not data.get('img'):
+        return jsonify(status="failed", message="Image data not sent!")
+    if data.get('type').lower() not in ALLOWED_EXTENSIONS:
+        return jsonify(status="failed", message="Extension not supported!")
+    client_model = Client.query.get(client_id)
+    if not client_model:
+        return jsonify(status='failed', message='Client Not Found')
+
+    unique_filename = str(uuid.uuid4()) + '.' + data['type'].lower()
+    client_model.save_image(unique_filename, data['img'])
+    db.session.commit()
+    client_schema = ClientSchema().dump(client_model)
+
+    return jsonify(status='success', message='Avatar uploaded', data=client_schema)
+
+
 @bp.route('/logout')
 def logout_user():
     resp = make_response(jsonify(status="success", message="Logout Successful!"))
@@ -860,6 +884,7 @@ def add_to_cart():
         return jsonify(status="failed", message="Product not found")
 
     cart_model = Cart.query.get(data.get('cart'))
+
     if not cart_model:
         client_model = Client.query.get(data.get('client'))
         if not client_model:
@@ -887,9 +912,13 @@ def add_to_cart():
 
     db.session.commit()
 
+    if cart_item_model.quantity <= 0:
+        db.session.delete(cart_item_model)
+        db.session.commit()
+
     cart_schema = CartSchema().dump(cart_model)
 
-    return jsonify(status="success", message="Product added to cart", data=cart_schema)
+    return jsonify(status="success", message="Cart Updated", data=cart_schema)
 
 
 @bp.route('/cart/products/<int:cart_id>')
@@ -908,3 +937,71 @@ def cart_remove_item(cart_item_id):
     db.session.commit()
 
     return jsonify(status="success", message="Cart Items Removed!")
+
+
+# Product Images Endpoint
+@bp.route('/banner', methods=['POST'])
+def upload_banner():
+    data = request.get_json()
+    if not data:
+        return jsonify(status="failed", message="No Data Sent!")
+    if not data.get('type'):
+        return jsonify(status="failed", message="Image type required!")
+
+    if not data.get('img'):
+        return jsonify(status="failed", message="Image data not sent!")
+
+    if data.get('type').lower() not in ALLOWED_EXTENSIONS:
+        return jsonify(status="failed", message="Extension not supported!")
+
+    unique_filename = str(uuid.uuid4()) + '.' + data['type'].lower()
+    banner_image_model = BannerImage()
+    banner_image_model.save_image(unique_filename, data['img'])
+
+    db.session.add(banner_image_model)
+    db.session.commit()
+
+    return jsonify(status='success', message='Banner uploaded')
+
+
+@bp.route('/banner')
+def get_banners():
+    banner_image_model = BannerImage.query.all()
+    banner_image_schema = BannerImageSchema(many=True).dump(banner_image_model)
+
+    return jsonify(status="success", message="Banner Found!", data=banner_image_schema)
+
+
+@bp.route('/active_banners')
+def get_active_banners():
+    banner_image_model = BannerImage.query.filter_by(active=True).all()
+    banner_image_schema = BannerImageSchema(many=True).dump(banner_image_model)
+
+    return jsonify(status="success", message="Banner Found!", data=banner_image_schema)
+
+
+@bp.route('/banner/<banner_image_id>', methods=['DELETE'])
+def delete_banner(banner_image_id):
+    banner_image_model = BannerImage.query.get(banner_image_id)
+    if not banner_image_model:
+        return jsonify(status='failed', message='Banner Image not found')
+
+    db.session.delete(banner_image_model)
+    db.session.commit()
+    return jsonify(status='failed', message='Banner Image Deleted')
+
+
+@bp.route('/banner/<banner_image_id>', methods=['PUT'])
+def toggle_banner(banner_image_id):
+    banner_image_model = BannerImage.query.get(banner_image_id)
+    if not banner_image_model:
+        return jsonify(status='success', message='Product Image not found!')
+
+    banner_image_model.active = not banner_image_model.active
+
+    db.session.commit()
+
+    return jsonify(status='success', message='Product Visibility Update')
+
+
+

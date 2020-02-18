@@ -17,6 +17,7 @@ class ClientSchema(ma.TableSchema):
     user_id = fields.Int()
     favourites = fields.Nested('ClientFavouriteSchema', many=True)
     views = fields.Nested('ProductViewSchema', many=True)
+    avatar_url = fields.String()
 
 
 class ClientFavouriteSchema(ma.TableSchema):
@@ -31,6 +32,7 @@ class AdminSchema(ma.TableSchema):
     user_id = fields.Int()
     role_id = fields.Int()
     role = fields.Nested('RoleSchema', only=["title", "description"])
+    avatar_url = fields.String()
 
 
 class RoleSchema(ma.TableSchema):
@@ -56,6 +58,7 @@ class ProductSchema(ma.TableSchema):
     filters = fields.Nested('FilterValueSchema', many=True, only=["id", "value", 'filter'])
     reviews_score = fields.Number()
     reviews_length = fields.Number()
+    weighted_score = fields.Number()
 
 
 class ProductReviewSchema(ma.TableSchema):
@@ -117,3 +120,10 @@ class AddressSchema(ma.TableSchema):
 class CountrySchema(ma.TableSchema):
     class Meta:
         table = Country.__table__
+
+
+class BannerImageSchema(ma.TableSchema):
+    class Meta:
+        table = BannerImage.__table__
+    image_url = fields.String()
+    thumb_url = fields.String()

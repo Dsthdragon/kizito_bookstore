@@ -20,6 +20,8 @@ from app import db
 
 from config import Config
 
+import enum
+
 product_filters = db.Table('product_filters',
                            db.Column('value_id', db.Integer, db.ForeignKey('filter_value.id'), primary_key=True),
                            db.Column('product_id', db.Integer, db.ForeignKey('product.id'), primary_key=True),
@@ -72,13 +74,53 @@ class Client(db.Model):
     avatar = db.Column(EncryptedType(db.String, Config.SECRET_KEY, AesEngine, 'pkcs5'))
     created = db.Column(db.DateTime, default=datetime.utcnow)
     updated = db.Column(db.DateTime, onupdate=datetime.utcnow)
-    user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id", ondelete='CASCADE'))
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
+
+    @hybrid_property
+    def avatar_url(self):
+        return "/static/upload/images/avatars/client/" + str(self.avatar)
+
+    @staticmethod
+    def crop_image(img, path):
+        crop_height, crop_width = Config.AVATAR_CROP_SIZE
+        width, height = img.size
+
+        height_ratio = height / crop_height
+        width_ratio = width / crop_width
+
+        optimal_ratio = width_ratio
+        if height_ratio < width_ratio:
+            optimal_ratio = height_ratio
+
+        optimal_size = (int(width / optimal_ratio), int(height / optimal_ratio))
+        img = img.resize(optimal_size)
+
+        width, height = img.size
+
+        left = (width - crop_width) / 2
+        top = (height - crop_height) / 2
+        right = (width + crop_width) / 2
+        bottom = (height + crop_height) / 2
+
+        img = img.crop((left, top, right, bottom))
+        img.save(path)
+
+    def save_image(self, filename, image64):
+        crop_path = os.path.join(Config.AVATAR_CLIENT_UPLOAD_FOLDER, filename)
+        img = Image.open(BytesIO(base64.b64decode(image64)))
+
+        self.crop_image(img, crop_path)
+        if self.avatar:
+            old = os.path.join(Config.AVATAR_CLIENT_UPLOAD_FOLDER, self.avatar)
+            if os.path.exists(old):
+                os.remove(old)
+        self.avatar = filename
 
 
 class Admin(db.Model):
@@ -90,7 +132,7 @@ class Admin(db.Model):
     avatar = db.Column(EncryptedType(db.String, Config.SECRET_KEY, AesEngine, 'pkcs5'))
     created = db.Column(db.DateTime, default=datetime.utcnow)
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-    user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id", ondelete='CASCADE'))
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
@@ -98,16 +140,57 @@ class Admin(db.Model):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
+    @hybrid_property
+    def avatar_url(self):
+        print(self.avatar)
+        return "/static/upload/images/avatars/admin/" #+ self.avatar
+
+    @staticmethod
+    def crop_image(img, path):
+        crop_height, crop_width = Config.AVATAR_CROP_SIZE
+        width, height = img.size
+
+        height_ratio = height / crop_height
+        width_ratio = width / crop_width
+
+        optimal_ratio = width_ratio
+        if height_ratio < width_ratio:
+            optimal_ratio = height_ratio
+
+        optimal_size = (int(width / optimal_ratio), int(height / optimal_ratio))
+        img = img.resize(optimal_size)
+
+        width, height = img.size
+
+        left = (width - crop_width) / 2
+        top = (height - crop_height) / 2
+        right = (width + crop_width) / 2
+        bottom = (height + crop_height) / 2
+
+        img = img.crop((left, top, right, bottom))
+        img.save(path)
+
+    def save_image(self, filename, image64):
+        crop_path = os.path.join(Config.AVATAR_ADMIN_UPLOAD_FOLDER, filename)
+        img = Image.open(BytesIO(base64.b64decode(image64)))
+
+        self.crop_image(img, crop_path)
+        if self.avatar:
+            old = os.path.join(Config.AVATAR_ADMIN_UPLOAD_FOLDER, self.avatar)
+            if os.path.exists(old):
+                os.remove(old)
+        self.avatar = filename
+
 
 class ClientFavourite(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)
-    client_id = db.Column(db.Integer, db.ForeignKey('client.id'), nullable=False)
+    product_id = db.Column(db.Integer, db.ForeignKey('product.id', ondelete='CASCADE'), nullable=False)
+    client_id = db.Column(db.Integer, db.ForeignKey('client.id', ondelete='CASCADE'), nullable=False)
     created = db.Column(db.DateTime, default=datetime.utcnow)
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
-    client = db.relationship("Client", backref=db.backref("favourites", lazy=True))
-    product = db.relationship("Product", backref=db.backref("favourites", lazy=True))
+    client = db.relationship("Client", backref=db.backref("favourites", lazy=True, cascade="all,delete"))
+    product = db.relationship("Product", backref=db.backref("favourites", lazy=True, cascade="all,delete"))
 
 
 class Role(db.Model):
@@ -125,7 +208,7 @@ class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(255), nullable=False)
     link = db.Column(db.String(255), nullable=False)
-    parent_id = db.Column(db.Integer, db.ForeignKey("category.id"))
+    parent_id = db.Column(db.Integer, db.ForeignKey("category.id", ondelete='CASCADE'))
     created = db.Column(db.DateTime, default=datetime.utcnow)
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
@@ -146,8 +229,8 @@ class Category(db.Model):
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(500), nullable=False)
-    creator_id = db.Column(db.Integer, db.ForeignKey("creator.id"), nullable=False)
-    category_id = db.Column(db.Integer, db.ForeignKey("category.id"), nullable=False)
+    creator_id = db.Column(db.Integer, db.ForeignKey("creator.id", ondelete='CASCADE'), nullable=False)
+    category_id = db.Column(db.Integer, db.ForeignKey("category.id", ondelete='CASCADE'), nullable=False)
     default_image_id = db.Column(db.Integer, db.ForeignKey('product_image.id', ondelete='SET NULL'), nullable=True)
     summary = db.Column(db.String(1000))
     description = db.Column(db.Text)
@@ -188,6 +271,22 @@ class Product(db.Model):
             else 0
         )
 
+    @hybrid_property
+    def weighted_score(self):
+        total_reviews = ProductReview.query.all()
+        v = self.reviews_length
+        r = self.reviews_score
+        m = len(total_reviews) / Config.PERCENTAGE_OF_TOTAL_REVIEWS
+        c = (
+            sum(
+                review.score
+                for review in total_reviews
+            ) / len(total_reviews)
+            if total_reviews
+            else 0
+        )
+        return (r * v + c * m) / (v + m)
+
 
 class Creator(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -203,7 +302,7 @@ class Filter(db.Model):
 
 class FilterValue(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    filter_id = db.Column(db.Integer, db.ForeignKey('filter.id'), nullable=False)
+    filter_id = db.Column(db.Integer, db.ForeignKey('filter.id', ondelete='CASCADE'), nullable=False)
     value = db.Column(db.String(1000), nullable=False)
     created = db.Column(db.DateTime, default=datetime.utcnow())
 
@@ -214,19 +313,19 @@ class FilterValue(db.Model):
 
 class ProductView(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)
-    client_id = db.Column(db.Integer, db.ForeignKey('client.id'), nullable=True)
+    product_id = db.Column(db.Integer, db.ForeignKey('product.id', ondelete='CASCADE'), nullable=False)
+    client_id = db.Column(db.Integer, db.ForeignKey('client.id', ondelete='CASCADE'), nullable=True)
     client_ip = db.Column(db.String, nullable=False)
     created = db.Column(db.DateTime, default=datetime.utcnow)
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
-    product = db.relationship("Product", backref=db.backref("views", lazy=True))
-    client = db.relationship("Client", backref=db.backref("views", lazy=True))
+    product = db.relationship("Product", backref=db.backref("views", lazy=True, cascade="all,delete"))
+    client = db.relationship("Client", backref=db.backref("views", lazy=True, cascade="all,delete"))
 
 
 class ProductImage(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)
+    product_id = db.Column(db.Integer, db.ForeignKey('product.id', ondelete='CASCADE'), nullable=False)
     image = db.Column(db.String(500), nullable=False)
     created = db.Column(db.DateTime, default=datetime.utcnow())
 
@@ -264,8 +363,8 @@ class ProductImage(db.Model):
         img.save(path)
 
     @staticmethod
-    def resize_image(img, path):
-        new_height, new_width = Config.IMAGE_SIZE
+    def resize_image(img, path, size):
+        new_height, new_width = size
         width, height = img.size
 
         height_ratio = height / new_height
@@ -284,23 +383,23 @@ class ProductImage(db.Model):
         crop_path = os.path.join(Config.PRODUCT_THUMB_UPLOAD_FOLDER, filename)
         img = Image.open(BytesIO(base64.b64decode(image64)))
 
-        self.resize_image(img, path)
-        self.crop_image(img, crop_path)
+        self.resize_image(img, path, Config.IMAGE_SIZE)
+        self.resize_image(img, crop_path, Config.CROP_SIZE)
 
         self.image = filename
 
 
 class ProductReview(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    client_id = db.Column(db.Integer, db.ForeignKey('client.id'), nullable=False)
-    product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)
+    client_id = db.Column(db.Integer, db.ForeignKey('client.id', ondelete='CASCADE'), nullable=False)
+    product_id = db.Column(db.Integer, db.ForeignKey('product.id', ondelete='CASCADE'), nullable=False)
     score = db.Column(db.Integer, nullable=False)
     review = db.Column(db.Text, nullable=False)
     created = db.Column(db.DateTime, default=datetime.utcnow())
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
-    product = db.relationship("Product", backref=db.backref("reviews", lazy=True))
-    client = db.relationship("Client", backref=db.backref("reviews", lazy=True))
+    product = db.relationship("Product", backref=db.backref("reviews", lazy=True, cascade="all,delete"))
+    client = db.relationship("Client", backref=db.backref("reviews", lazy=True, cascade="all,delete"))
 
 
 class Cart(db.Model):
@@ -315,7 +414,7 @@ class Cart(db.Model):
 
 class CartItem(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    cart_id = db.Column(db.Integer, db.ForeignKey('cart.id'), nullable=False)
+    cart_id = db.Column(db.Integer, db.ForeignKey('cart.id', ondelete='CASCADE'), nullable=False)
     product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)
     price = db.Column(db.Float, nullable=False)
     unit_price = db.Column(db.Float, nullable=False)
@@ -323,15 +422,15 @@ class CartItem(db.Model):
     created = db.Column(db.DateTime, default=datetime.utcnow())
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
-    product = db.relationship("Product", backref=db.backref("cart_items", lazy=True))
-    cart = db.relationship("Cart", backref=db.backref("cart_items", lazy=True))
+    product = db.relationship("Product", backref=db.backref("cart_items", lazy=True, cascade="all,delete"))
+    cart = db.relationship("Cart", backref=db.backref("cart_items", lazy=True, cascade="all,delete"))
 
 
 class Order(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    cart_id = db.Column(db.Integer, db.ForeignKey('cart.id'), nullable=False)
-    client_id = db.Column(db.Integer, db.ForeignKey('client.id'), nullable=False)
-    address_id = db.Column(db.Integer, db.ForeignKey('address.id'))
+    cart_id = db.Column(db.Integer, db.ForeignKey('cart.id', ondelete='CASCADE'), nullable=False)
+    client_id = db.Column(db.Integer, db.ForeignKey('client.id', ondelete='CASCADE'), nullable=False)
+    address_id = db.Column(db.Integer, db.ForeignKey('address.id', ondelete='CASCADE'))
     price = db.Column(db.Float, nullable=False)
     reference = db.Column(db.String(1000))
     payment_type = db.Column(db.String(30))
@@ -340,14 +439,14 @@ class Order(db.Model):
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     address = db.relationship("Address", backref=db.backref("orders", lazy=True))
-    client = db.relationship("Client", backref=db.backref("orders", lazy=True))
+    client = db.relationship("Client", backref=db.backref("orders", lazy=True, cascade="all,delete"))
     cart = db.relationship("Cart", backref=db.backref("orders", lazy=True))
 
 
 class Address(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    client_id = db.Column(db.Integer, db.ForeignKey('client.id'), nullable=False)
-    country_id = db.Column(db.Integer, db.ForeignKey('country.id'), nullable=False)
+    client_id = db.Column(db.Integer, db.ForeignKey('client.id', ondelete='CASCADE'), nullable=False)
+    country_id = db.Column(db.Integer, db.ForeignKey('country.id', ondelete='CASCADE'), nullable=False)
     state = db.Column(db.String(255), nullable=False)
     city = db.Column(db.String(255), nullable=False)
     address = db.Column(db.String(500), nullable=False)
@@ -355,7 +454,7 @@ class Address(db.Model):
     created = db.Column(db.DateTime, default=datetime.utcnow())
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
-    client = db.relationship("Client", backref=db.backref("addresses", lazy=True))
+    client = db.relationship("Client", backref=db.backref("addresses", lazy=True, cascade="all,delete"))
 
 
 class Country(db.Model):
@@ -366,11 +465,82 @@ class Country(db.Model):
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 
+class StoreAddress(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    address = db.Column(db.String(255), nullable=False)
+    phone = db.Column(db.String(100), nullable=False)
+    iframe = db.Column(db.Text, nullable=False)
+    opened = db.Column(db.Text, nullable=False)
+    created = db.Column(db.DateTime, default=datetime.utcnow())
+    updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+
+class HomeCarousel(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    type = db.Column(db.String(100), nullable=False)
+    category_id = db.Column(db.Integer, db.ForeignKey("category.id"), nullable=False)
+    created = db.Column(db.DateTime, default=datetime.utcnow())
+
+
+class BannerImage(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    image = db.Column(db.String(300), nullable=False)
+    caption = db.Column(db.String(300))
+    active = db.Column(db.Boolean, default=False)
+    created = db.Column(db.DateTime, default=datetime.utcnow())
+    updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    @hybrid_property
+    def image_url(self):
+        return "/static/upload/images/banners/" + self.image
+
+    @hybrid_property
+    def thumb_url(self):
+        return "/static/upload/images/banners/thumbs/" + self.image
+
+    @staticmethod
+    def resize_image(img, path, size):
+        new_height, new_width = size
+        width, height = img.size
+
+        height_ratio = height / new_height
+        width_ratio = width / new_width
+
+        optimal_ratio = width_ratio
+        if height_ratio < width_ratio:
+            optimal_ratio = height_ratio
+
+        optimal_size = (int(width / optimal_ratio), int(height / optimal_ratio))
+        img = img.resize(optimal_size)
+        print(path)
+        img.save(path)
+
+    def save_image(self, filename, image64):
+        path = os.path.join(Config.BANNER_UPLOAD_FOLDER, filename)
+        crop_path = os.path.join(Config.BANNER_THUMB_UPLOAD_FOLDER, filename)
+        img = Image.open(BytesIO(base64.b64decode(image64)))
+
+        self.resize_image(img, path, Config.BANNER_SIZE)
+        self.resize_image(img, crop_path, Config.CROP_SIZE)
+
+        self.image = filename
+
+
 @event.listens_for(ProductImage, 'after_delete')
 def delete_image(mapper, connection, target):
     old = os.path.join(Config.PRODUCT_UPLOAD_FOLDER, target.image)
     if os.path.exists(old):
         os.remove(old)
     old = os.path.join(Config.PRODUCT_THUMB_UPLOAD_FOLDER, target.image)
+    if os.path.exists(old):
+        os.remove(old)
+
+
+@event.listens_for(BannerImage, 'after_delete')
+def delete_banner_image(mapper, connection, target):
+    old = os.path.join(Config.BANNER_UPLOAD_FOLDER, target.image)
+    if os.path.exists(old):
+        os.remove(old)
+    old = os.path.join(Config.BANNER_THUMB_UPLOAD_FOLDER, target.image)
     if os.path.exists(old):
         os.remove(old)
