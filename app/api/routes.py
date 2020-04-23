@@ -12,6 +12,7 @@ from app import db
 
 import uuid
 import random
+import requests
 
 ALLOWED_EXTENSIONS = ['png', 'jpeg', 'jpg', 'gif']
 
@@ -353,7 +354,6 @@ def find_products():
 
     product_model = Product.query
     if title:
-        print(title)
         product_model = product_model.filter(
             or_(
                 Product.name.ilike(f"%{title}%"),
@@ -1004,4 +1004,206 @@ def toggle_banner(banner_image_id):
     return jsonify(status='success', message='Product Visibility Update')
 
 
+@bp.route('/home_carousel')
+def get_home_carousels():
+
+    home_carousel_model = HomeCarousel.query.all()
+    home_carousel_schema = HomeCarouselSchema(many=True).dump(home_carousel_model)
+
+    return jsonify(status='success', message='Home Carousels found', data=home_carousel_schema)
+
+
+# Country
+@bp.route("/country")
+def get_countries():
+    country_model = Country.query.all()
+    country_schema = CountrySchema(many=True).dump(country_model)
+
+    return jsonify(status="success", message="Country Found!", data=country_schema)
+
+
+# add addresss
+@bp.route("/address")
+def get_address():
+    address_model = Address.query.all()
+    address_schema = AddressSchema(many=True).dump(address_model)
+
+    return jsonify(status="success", message="Address Found!", data=address_schema)
+
+
+@bp.route("/address/<int:client_id>")
+def get_client_address(client_id):
+    address_model = Address.query.filter_by(client_id=client_id).all()
+    address_schema = AddressSchema(many=True).dump(address_model)
+
+    return jsonify(status="success", message="Address Found!", data=address_schema)
+
+
+@bp.route("/address", methods=['POST'])
+def create_client_address():
+    data = request.get_json()
+    if not data:
+        return jsonify(status="failed", message="No Data Sent!")
+    if not data.get('client_id'):
+        return jsonify(status="failed", message="Client Id required!")
+    if not data.get('country_id'):
+        return jsonify(status="failed", message="Country Id required!")
+    if not data.get('state'):
+        return jsonify(status="failed", message="State required!")
+    if not data.get('city'):
+        return jsonify(status="failed", message="City required!")
+    if not data.get('address'):
+        return jsonify(status="failed", message="Address required!")
+
+    address = Address()
+    address.client_id = data.get('client_id')
+    address.country_id = data.get('country_id')
+    address.state = data.get('state')
+    address.city = data.get('city')
+    address.address = data.get('address')
+    address.postal_code = data.get('postal_code')
+
+    db.session.add(address)
+    db.session.commit()
+
+    return jsonify(status="success", message="Address Added")
+
+
+@bp.route("/checkout", methods=["POST"])
+def checkout():
+    data = request.get_json()
+    if not data:
+        return jsonify(status="failed", message="No Data Sent!")
+    cart_model = Cart.query.get(data.get('cart_id'))
+    if not cart_model:
+        return jsonify(status="failed", message="Cart Id Required!")
+    elif cart_model.complete == 1:
+        return jsonify(status="failed", message="Cart Already Checkout!")
+    client_model = Client.query.get(data.get('client_id'))
+    if not client_model:
+        return jsonify(status="failed", message="Client Id Required!")
+
+    if not data.get('payment_type'):
+        return jsonify(status="failed", message="Payment Type Required!")
+
+    if data.get('shipping'):
+        address = Address.query.get(data.get('address_id'))
+        if not address:
+            return jsonify(status="failed", message="Address Required for shipping option!")
+    else:
+        store_address = StoreAddress.query.get(data.get('store_address_id'))
+        if not store_address:
+            return jsonify(status="failed", message="Pick store required!")
+
+    order_model = Order()
+    order_model.cart_id = cart_model.id
+    order_model.client_id = client_model.id
+    order_model.price = cart_model.cart_total()
+    order_model.payment_type = data.get('payment_type')
+
+    order_model.shipping = data.get('shipping')
+    if data.get('shipping'):
+        order_model.address_id = data.get('address_id')
+    else:
+        order_model.store_address_id = data.get('store_address_id')
+    order_model.payment_type = data.get('payment_type')
+    order_model.status = 0
+    cart_model.complete = 1
+    
+    db.session.add(order_model)
+    db.session.commit()
+    
+    order_schema = OrderSchema().dump(order_model)
+    
+    return jsonify(status="success", message="Order Created!", data=order_schema)
+
+
+@bp.route("/store_address", methods=['POST'])
+def create_store_address():
+    data = request.get_json()
+    if not data:
+        return jsonify(status="failed", message="No Data Sent!")
+
+    if not data.get('name'):
+        return jsonify(status="failed", message="Name Required!")
+
+    if not data.get('address'):
+        return jsonify(status="failed", message="Address Required!")
+
+    if not data.get('phone'):
+        return jsonify(status="failed", message="Phone Required!")
+
+    if not data.get('iframe'):
+        return jsonify(status="failed", message="Iframe Required!")
+
+    if not data.get('opened'):
+        return jsonify(status="failed", message="Opened Required!")
+
+    store_address = StoreAddress()
+    store_address.name = data.get('name')
+    store_address.opened = data.get('opened')
+    store_address.address = data.get('address')
+    store_address.phone = data.get('phone')
+    store_address.iframe = data.get('iframe')
+
+    db.session.add(store_address)
+    db.session.commit()
+
+    return jsonify(status="success", message="Store Address Created!")
+
+
+@bp.route("/order/<order_id>")
+def get_order(order_id):
+    order = Order.query.get(order_id)
+    if not order:
+        return jsonify(status="failed", message="Order Not found!")
+    return jsonify(status="success", message="Order found!", data=OrderSchema().dump(order))
+
+
+@bp.route('/order/verify_payment', methods=['POST'])
+def verify_payment():
+    data = request.get_json()
+    if not data.get('ref'):
+        return jsonify(status="failed", message="Payment reference required!")
+    order = Order.query.get(data.get('order_id'))
+    if not order:
+        return jsonify(status="failed", message="Order Not found!")
+    url = "https://api.paystack.co/transaction/verify/" + data['ref']
+    response = requests.get(url, headers={'Authorization': 'Bearer {}'.format(Config.PAYSTACK_SECRET_KEY)})
+
+    response = response.json()
+
+    if response and response.get('data'):
+        if response['data']['status'] == 'success':
+            if float(response['data']['amount']) <= order.price * 100:
+                order.reference = data['ref']
+                order.paid = 1
+                db.session.commit()
+                return jsonify(status="success", message="Order found!", data=OrderSchema().dump(order))
+            return jsonify(status="failed", message="Wrong amount paid", )
+        return jsonify(status="failed", message=response['data']['message'], )
+
+    return jsonify(status="failed", message="Something Went Wrong")
+
+
+@bp.route("/client/order/<client_id>")
+def get_client_orders(client_id):
+    orders = Order.query.filter_by(client_id=client_id).all()
+
+    return jsonify(
+        status="success",
+        message="Client Orders Found!",
+        data=OrderSchema(many=True).dump(orders)
+    )
+
+
+@bp.route("/store_address")
+def get_store_address():
+    store_address = StoreAddress.query.all()
+
+    return jsonify(
+        status="success",
+        message="Store Addresses Found!",
+        data=StoreAddressSchema(many=True).dump(store_address)
+    )
 

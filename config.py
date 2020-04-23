@@ -5,6 +5,7 @@ class Config(object):
 
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'mysql://root:''@localhost/kizito_bookstore'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    PAYSTACK_SECRET_KEY = os.environ.get('PAYSTACK_SECRET_KEY') or 'sk_test_ea5f84af6fdf29d466ca49c8920216ad9567d9e1';
     POSTS_PER_PAGE = 10
     SECRET_KEY = os.environ.get('SECRET_KEY') or "kizito_secret_key"
     AVATAR_ADMIN_UPLOAD_FOLDER = os.path.abspath(

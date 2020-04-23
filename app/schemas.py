@@ -110,11 +110,19 @@ class CartItemSchema(ma.TableSchema):
 class OrderSchema(ma.TableSchema):
     class Meta:
         table = Order.__table__
+    payment_type_string = fields.String()
+    shipping_string = fields.String()
+    status_string = fields.String()
+
+    address = fields.Nested('AddressSchema')
+    store_address = fields.Nested('StoreAddressSchema')
+    cart = fields.Nested('CartSchema')
 
 
 class AddressSchema(ma.TableSchema):
     class Meta:
         table = Address.__table__
+    country = fields.Nested('CountrySchema', only=["id", "name", "short"])
 
 
 class CountrySchema(ma.TableSchema):
@@ -127,3 +135,13 @@ class BannerImageSchema(ma.TableSchema):
         table = BannerImage.__table__
     image_url = fields.String()
     thumb_url = fields.String()
+
+
+class HomeCarouselSchema(ma.TableSchema):
+    class Meta:
+        table = HomeCarousel.__table__
+
+
+class StoreAddressSchema(ma.TableSchema):
+    class Meta:
+        table = StoreAddress.__table__

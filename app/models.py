@@ -142,8 +142,7 @@ class Admin(db.Model):
 
     @hybrid_property
     def avatar_url(self):
-        print(self.avatar)
-        return "/static/upload/images/avatars/admin/" #+ self.avatar
+        return "/static/upload/images/avatars/admin/" + str(self.avatar)
 
     @staticmethod
     def crop_image(img, path):
@@ -411,6 +410,16 @@ class Cart(db.Model):
 
     client = db.relationship("Client", backref=db.backref("carts", lazy=True))
 
+    def cart_total(self):
+        return (
+            sum(
+                cart_item.price
+                for cart_item in self.cart_items
+            )
+            if self.cart_items
+            else 0
+        )
+
 
 class CartItem(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -431,16 +440,33 @@ class Order(db.Model):
     cart_id = db.Column(db.Integer, db.ForeignKey('cart.id', ondelete='CASCADE'), nullable=False)
     client_id = db.Column(db.Integer, db.ForeignKey('client.id', ondelete='CASCADE'), nullable=False)
     address_id = db.Column(db.Integer, db.ForeignKey('address.id', ondelete='CASCADE'))
+    store_address_id = db.Column(db.Integer, db.ForeignKey('store_address.id', ondelete='CASCADE'))
     price = db.Column(db.Float, nullable=False)
     reference = db.Column(db.String(1000))
     payment_type = db.Column(db.String(30))
-    status = db.Column(db.Integer, default=0)
+    paid = db.Column(db.Boolean, default=False)
+    shipping = db.Column(db.Boolean, default=True)
+    status = db.Column(db.Integer,  default=0)
     created = db.Column(db.DateTime, default=datetime.utcnow())
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     address = db.relationship("Address", backref=db.backref("orders", lazy=True))
+    store_address = db.relationship("StoreAddress", backref=db.backref("orders", lazy=True))
     client = db.relationship("Client", backref=db.backref("orders", lazy=True, cascade="all,delete"))
     cart = db.relationship("Cart", backref=db.backref("orders", lazy=True))
+
+    @hybrid_property
+    def payment_type_string(self):
+        return 'Online by card' if self.payment_type == 'online' else 'Payment upon receipt'
+
+    @hybrid_property
+    def shipping_string(self):
+        return 'Delivery ' if self.shipping else 'Pick up from Store'
+
+    @hybrid_property
+    def status_string(self):
+        statuses = ['PROCESSING', 'READY', 'COMPLETED', 'CANCELLED']
+        return statuses[self.status]
 
 
 class Address(db.Model):
@@ -455,6 +481,7 @@ class Address(db.Model):
     updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     client = db.relationship("Client", backref=db.backref("addresses", lazy=True, cascade="all,delete"))
+    country = db.relationship("Country", backref=db.backref("addresses", lazy=True, cascade="all,delete"))
 
 
 class Country(db.Model):
@@ -467,6 +494,7 @@ class Country(db.Model):
 
 class StoreAddress(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
     address = db.Column(db.String(255), nullable=False)
     phone = db.Column(db.String(100), nullable=False)
     iframe = db.Column(db.Text, nullable=False)
@@ -512,7 +540,6 @@ class BannerImage(db.Model):
 
         optimal_size = (int(width / optimal_ratio), int(height / optimal_ratio))
         img = img.resize(optimal_size)
-        print(path)
         img.save(path)
 
     def save_image(self, filename, image64):

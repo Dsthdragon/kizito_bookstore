@@ -71,7 +71,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ul class=\"uk-nav-default uk-nav-parent-icon\" data-uk-nav>\n    <li class=\"uk-nav-header\">MAIN SECTIONS</li>\n    <li><a routerLink=\"/admin\">Dashboard</a></li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Parent</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a href=\"#\">Sub item</a></li>\n            <li><a href=\"#\">Sub item</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">PRODUCT</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Product Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/products\">Products</a></li>\n            <li><a routerLink=\"/admin/filters\">Filters</a></li>\n            <li><a routerLink=\"/admin/categories\">Categories</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">SETTINGS</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Admin Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/staffs\">Staff</a></li>\n            <li><a routerLink=\"/admin/banners\">Banners</a></li>\n            <li><a routerLink=\"/admin/roles\">Roles</a></li>\n        </ul>\n    </li>\n</ul>";
+    __webpack_exports__["default"] = "<ul class=\"uk-nav-default uk-nav-parent-icon\" data-uk-nav>\n    <li class=\"uk-nav-header\">MAIN SECTIONS</li>\n    <li><a routerLink=\"/admin\">Dashboard</a></li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Parent</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a href=\"#\">Sub item</a></li>\n            <li><a href=\"#\">Sub item</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">PRODUCT</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Product Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/products\">Products</a></li>\n            <li><a routerLink=\"/admin/filters\">Filters</a></li>\n            <li><a routerLink=\"/admin/categories\">Categories</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">SETTINGS</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Admin Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/staffs\">Staff</a></li>\n            <li><a routerLink=\"/admin/banners\">Banners</a></li>\n            <li><a routerLink=\"/admin/roles\">Roles</a></li>\n            <li><a routerLink=\"/admin/store-address\">Store Address</a></li>\n        </ul>\n    </li>\n</ul>";
     /***/
   },
 
@@ -152,6 +152,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     __webpack_exports__["default"] = "<ul class=\"uk-breadcrumb uk-flex-center uk-margin-remove\">\n    <li><a routerLink=\"/\">Home</a></li>\n    <li>\n        <a routerLink=\"/catalog\"> Catalog </a>\n    </li>\n    <li *ngFor='let crumb of breadcrumb'>\n        <a [routerLink]=\"['/category', crumb.link]\" *ngIf='crumb.position !== 0 || product else DEFAULT'> \n            {{ crumb.title }} \n        </a>\n        <ng-template #DEFAULT>\n            <span> {{ crumb.title }} </span>\n        </ng-template>\n    </li>\n    <li *ngIf='product'>\n        <span> {{ data.name }} </span>\n    </li>\n</ul>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/checkout-item/checkout-item.component.html":
+  /*!*************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/checkout-item/checkout-item.component.html ***!
+    \*************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsCheckoutItemCheckoutItemComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"uk-grid-small uk-grid\" uk-grid=\"\" *ngIf=\"cartItem\">\n    <div class=\"uk-width-expand uk-first-column\">\n        <div class=\"uk-text-small\">{{ cartItem.product.name }}</div>\n        <div class=\"uk-text-meta\">\n            {{ cartItem.quantity }} x \n            <span [innerHTML]='\"&#8358;\"'></span>\n            {{ cartItem.unit_price | number }}\n        </div>\n    </div>\n    <div class=\"uk-text-right\">\n        <div>\n            <span [innerHTML]='\"&#8358;\"'></span>\n            {{ cartItem.price | number }}\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -271,7 +291,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium\" uk-grid>\n            <div class=\"uk-width-1-4@m tm-aside-column\" *ngIf='client'>\n                <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                    uk-sticky=\"offset: 90; bottom: true; media: @m;\">\n                    <div class=\"uk-card-header\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                            <section class=\"\">\n                                <div\n                                    class=\"uk-width-1-3 uk-width-1-4@s uk-width-1-2@m uk-margin-auto uk-visible-toggle uk-position-relative uk-border-circle uk-overflow-hidden uk-light\">\n                                    <img class=\"uk-width-1-1\" src=\"{{ client.avatar ? client.avatar_url : '' }}\" appImgFallback=\"avatar\"\n                                        alt=\"{{ client.first_name }}\">\n                                    <a *ngIf=\"!isUploading; else uploading\" (click)='uploadImage.click()' class=\"uk-link-reset uk-overlay-primary uk-position-cover uk-hidden-hover\">\n                                        <div class=\"uk-position-center\">\n                                            <span uk-icon=\"icon: camera; ratio: 1.25;\" class=\"uk-icon\">\n                                            </span>\n                                        </div>\n                                    </a>\n                                    <ng-template #uploading>\n                                        <span class=\"uk-overlay-primary uk-position-cover\">\n                                            <div class=\"uk-position-center\">\n                                                <span class=\"uk-spinner uk-icon\" uk-spinner=\"ratio: 1\"></span>\n                                            </div>\n                                        </span>\n                                    </ng-template>\n                                </div>\n                                <input type=\"file\" id=\"uploadImage\" style='display:none' #uploadImage (change)=\"uploadImageInput($event)\" />\n                            </section>\n                            <div class=\"uk-text-center uk-grid-margin \">\n                                <div class=\"uk-h4 uk-margin-remove\"> {{ client.first_name }} {{ client.last_name }}\n                                </div>\n                                <div class=\"uk-text-meta\">Joined {{ client.created  | date: 'MMMM d, yyyy' }}</div>\n                            </div>\n                            <div class=\"uk-grid-margin \">\n                                <div class=\"uk-grid-small uk-flex-center uk-grid\" uk-grid=\"\">\n                                    <div class=\"\">\n                                        <a class=\"uk-button uk-button-default uk-button-small\"\n                                            routerLink='/account/settings'>\n                                            <span class=\"uk-margin-xsmall-right uk-icon\"\n                                                uk-icon=\"icon: cog; ratio: .75;\"></span>\n                                            <span>Settings</span>\n                                        </a>\n                                    </div>\n                                    <div>\n                                        <button class=\"uk-button uk-button-default uk-button-small\" (click)='logout()'\n                                            title=\"Log out\">\n                                            <span uk-icon=\"icon: sign-out; ratio: .75;\" class=\"uk-icon\"></span>\n                                        </button>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div>\n                        <nav>\n                            <ul class=\"uk-nav uk-nav-default tm-nav\">\n                                <li routerLinkActive='uk-active'>\n                                    <a routerLink='/account/orders'>\n                                        Orders\n                                        <!-- <span>(2)</span> -->\n                                    </a>\n                                </li>\n                                <li routerLinkActive='uk-active'>\n                                    <a routerLink='/account/favourites'>\n                                        Favorites\n                                        <!-- <span>(3)</span> -->\n                                    </a>\n                                </li>\n                                <li routerLinkActive='uk-active'>\n                                    <a routerLink='/account/personal'>\n                                        Personal Info\n                                    </a>\n                                </li>\n                            </ul>\n                        </nav>\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-width-expand@m\">\n                <router-outlet></router-outlet>\n            </div>\n        </div>\n    </div>\n</section>";
+    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium\" uk-grid>\n            <div class=\"uk-width-1-4@m tm-aside-column\" *ngIf='client'>\n                <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                    uk-sticky=\"offset: 90; bottom: true; media: @m;\">\n                    <div class=\"uk-card-header\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                            <section class=\"\">\n                                <div\n                                    class=\"uk-width-1-3 uk-width-1-4@s uk-width-1-2@m uk-margin-auto uk-visible-toggle uk-position-relative uk-border-circle uk-overflow-hidden uk-light\">\n                                    <img class=\"uk-width-1-1\" src=\"{{ client.avatar ? client.avatar_url : '' }}\" appImgFallback=\"avatar\"\n                                        alt=\"{{ client.first_name }}\">\n                                    <a *ngIf=\"!isUploading; else uploading\" (click)='uploadImage.click()' class=\"uk-link-reset uk-overlay-primary uk-position-cover uk-hidden-hover\">\n                                        <div class=\"uk-position-center\">\n                                            <span uk-icon=\"icon: camera; ratio: 1.25;\" class=\"uk-icon\">\n                                            </span>\n                                        </div>\n                                    </a>\n                                    <ng-template #uploading>\n                                        <span class=\"uk-overlay-primary uk-position-cover\">\n                                            <div class=\"uk-position-center\">\n                                                <span class=\"uk-spinner uk-icon\" uk-spinner=\"ratio: 1\"></span>\n                                            </div>\n                                        </span>\n                                    </ng-template>\n                                </div>\n                                <input type=\"file\" id=\"uploadImage\" style='display:none' #uploadImage (change)=\"uploadImageInput($event)\" />\n                            </section>\n                            <div class=\"uk-text-center uk-grid-margin \">\n                                <div class=\"uk-h4 uk-margin-remove\"> {{ client.first_name }} {{ client.last_name }}\n                                </div>\n                                <div class=\"uk-text-meta\">Joined {{ client.created  | date: 'MMMM d, yyyy' }}</div>\n                            </div>\n                            <div class=\"uk-grid-margin \">\n                                <div class=\"uk-grid-small uk-flex-center uk-grid\" uk-grid=\"\">\n                                    <div class=\"\">\n                                        <a class=\"uk-button uk-button-default uk-button-small\"\n                                            routerLink='/account/settings'>\n                                            <span class=\"uk-margin-xsmall-right uk-icon\"\n                                                uk-icon=\"icon: cog; ratio: .75;\"></span>\n                                            <span>Settings</span>\n                                        </a>\n                                    </div>\n                                    <div>\n                                        <button class=\"uk-button uk-button-default uk-button-small\" (click)='logout()'\n                                            title=\"Log out\">\n                                            <span uk-icon=\"icon: sign-out; ratio: .75;\" class=\"uk-icon\"></span>\n                                        </button>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div>\n                        <nav>\n                            <ul class=\"uk-nav uk-nav-default tm-nav\">\n                                <li routerLinkActive='uk-active'>\n                                    <a routerLink='/account/orders'>\n                                        Orders\n                                        <!-- <span>(2)</span> -->\n                                    </a>\n                                </li>\n                                <li routerLinkActive='uk-active'>\n                                    <a routerLink='/account/address'>\n                                        Address\n                                        <!-- <span>(3)</span> -->\n                                    </a>\n                                </li>\n                                <li routerLinkActive='uk-active'>\n                                    <a routerLink='/account/favourites'>\n                                        Favorites\n                                        <!-- <span>(3)</span> -->\n                                    </a>\n                                </li>\n                                <li routerLinkActive='uk-active'>\n                                    <a routerLink='/account/personal'>\n                                        Personal Info\n                                    </a>\n                                </li>\n                            </ul>\n                        </nav>\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-width-expand@m\">\n                <router-outlet></router-outlet>\n            </div>\n        </div>\n    </div>\n</section>";
     /***/
   },
 
@@ -291,7 +311,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"uk-offcanvas-content\">\n    <header>\n        <div class=\"uk-navbar-container uk-light uk-visible@m tm-toolbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <nav>\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a href=\"#\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: receiver; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">0802 464 8237</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a href=\"contacts.html\" onclick=\"return false\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: location; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">Store in Murg Shopping Mall</span>\n                                    <span uk-icon=\"icon: triangle-down; ratio: .75;\" class=\"uk-icon\"></span>\n                                </a>\n                                <div class=\"uk-margin-remove uk-drop\" uk-drop=\"mode: click; pos: bottom-center;\">\n                                    <div\n                                        class=\"uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom\">\n                                        <iframe\n                                            src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31521.168896374664!2d7.457733600614864!3d9.0504340343759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b9cb59fb45d%3A0xa6d73b0eb006e31e!2sKizito%20Bookshops%20Limited!5e0!3m2!1sen!2sng!4v1582035608762!5m2!1sen!2sng\"\n                                            width=\"300\" height=\"150\" frameborder=\"0\" style=\"border:0;\"\n                                            allowfullscreen=\"\"></iframe>\n                                        <div class=\"uk-card-body\">\n                                            <div class=\"uk-text-small\">\n                                                <div>Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area\n                                                    10, Garki, Abuja</div>\n                                                <div>Daily 09:00–19:00</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-navbar-item\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: clock; ratio: .75;\"></span>\n                                    Daily 09:00–19:00\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-navbar-container tm-navbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <button class=\"uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon\"\n                        uk-toggle=\"target: #nav-offcanvas\" uk-navbar-toggle-icon=\"\"></button>\n                    <a class=\"uk-navbar-item uk-logo\" routerLink='/'>\n                        <img src=\"static/img/logo.svg\" width=\"90\" height=\"32\" alt=\"Logo\"></a>\n                    <nav class=\"uk-visible@m\">\n                        <ul class=\"uk-navbar-nav\" *ngIf='categories && categories.data'>\n                            <li *ngFor='let category of categories.data'>\n                                <a class=\"uk-link-reset\" [routerLink]=\"['/category', category.link]\">\n                                    {{ category.title }}\n                                    <span *ngIf='category.children' class=\"uk-margin-xsmall-left uk-icon\"\n                                        uk-icon=\"icon: chevron-down; ratio: .75;\"></span>\n                                </a>\n\n                                <div *ngIf='category.children' class=\"uk-navbar-dropdown\" uk-dropdown=\"offset: 0\">\n                                    <div class=\"\">\n                                        <ul class=\"uk-nav uk-nav-default\">\n                                            <li *ngFor='let child of category.children'>\n                                                <a [routerLink]=\"['/category', child.link]\">\n                                                    {{ child.title }} </a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n                <div class=\"uk-navbar-right\">\n                    <a class=\"uk-navbar-toggle tm-navbar-button uk-search-icon uk-icon\" href=\"#\" uk-search-icon=\"\"></a>\n                    <div class=\"uk-navbar-dropdown uk-padding-small uk-margin-remove\"\n                        uk-drop=\"mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x\">\n                        <div class=\"uk-container\">\n                            <div class=\"uk-grid-small uk-flex-middle uk-grid uk-grid-stack\" uk-grid=\"\">\n                                <div class=\"uk-width-expand\">\n                                    <form class=\"uk-search uk-search-navbar uk-width-1-1\" (ngSubmit)='search()'>\n                                        <input class=\"uk-search-input\" type=\"search\" placeholder=\"Search…\" autofocus=\"\"\n                                            name=\"searchValue\" [(ngModel)]='searchValue' />\n                                    </form>\n                                </div>\n                                <div class=\"uk-width-auto\">\n                                    <a class=\"uk-navbar-dropdown-close uk-close uk-icon\" href=\"#\" uk-close=\"\"></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button uk-icon\" routerLink='/account/orders'\n                        uk-icon=\"user\">\n                    </a>\n                    <div class=\"uk-padding-small uk-margin-remove uk-dropdown\"\n                        uk-dropdown=\"pos: bottom-right; offset: -10; delay-hide: 200;\" style=\"min-width: 150px;\">\n                        <ul class=\"uk-nav uk-dropdown-nav\">\n                            <li>\n                                <a routerLink='/account/orders'>\n                                    Orders\n                                    <!-- <span>(2)</span> -->\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/favourites'>\n                                    Favorites\n                                    <!-- <span>(3)</span> -->\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/personal'>\n                                    Personal\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/settings'>\n                                    Settings\n                                </a>\n                            </li>\n                            <li class=\"uk-nav-divider\"></li>\n                            <li><a (click)=\"logout()\">Log out</a>\n                            </li>\n                        </ul>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button\" uk-toggle=\"target: #cart-offcanvas\">\n                        <span uk-icon=\"cart\" class=\"uk-icon\"></span>\n                        <span class=\"uk-badge\" *ngIf=\"cartItems > 0\">{{ cartItems }}</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </header>\n    <main>\n        <div class=\"uk-padding uk-text-center\" *ngIf=\"loading\">\n            <span uk-spinner=\"ratio: 4.5\"></span>\n        </div>\n        <div *ngIf=\"!loading\">\n            <router-outlet></router-outlet>\n        </div>\n        <section class=\"uk-section uk-section-default uk-section-small\">\n            <div class=\"uk-container\">\n                <div uk-slider=\"\" class=\"uk-slider uk-slider-container\">\n                    <ul class=\"uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-5@m uk-grid\"\n                        style=\"transform: translateX(0px);\">\n                        <li class=\"uk-active\">\n                            <div class=\"uk-grid-small uk-flex-center uk-flex-left@s uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-first-column\">\n                                    <span uk-icon=\"icon: star; ratio: 2.5;\" class=\"uk-icon\">\n                                    </span>\n                                </div>\n                                <div class=\"uk-text-center uk-text-left@s uk-width-expand@s\">\n                                    <div>Mauris placerat</div>\n                                    <div class=\"uk-text-meta\">Donec mollis nibh dolor, sit amet auctor</div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"uk-active\">\n                            <div class=\"uk-grid-small uk-flex-center uk-flex-left@s uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-first-column\">\n                                    <span uk-icon=\"icon: receiver; ratio: 2.5;\" class=\"uk-icon\">\n                                    </span>\n                                </div>\n                                <div class=\"uk-text-center uk-text-left@s uk-width-expand@s\">\n                                    <div>Lorem ipsum</div>\n                                    <div class=\"uk-text-meta\">Sit amet, consectetur adipiscing elit</div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"uk-active\">\n                            <div class=\"uk-grid-small uk-flex-center uk-flex-left@s uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-first-column\">\n                                    <span uk-icon=\"icon: location; ratio: 2.5;\" class=\"uk-icon\"></span>\n                                </div>\n                                <div class=\"uk-text-center uk-text-left@s uk-width-expand@s\">\n                                    <div>Proin pharetra</div>\n                                    <div class=\"uk-text-meta\">Nec quam a fermentum ut viverra</div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"uk-active\">\n                            <div class=\"uk-grid-small uk-flex-center uk-flex-left@s uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-first-column\">\n                                    <span uk-icon=\"icon: comments; ratio: 2.5;\" class=\"uk-icon\">\n                                    </span>\n                                </div>\n                                <div class=\"uk-text-center uk-text-left@s uk-width-expand@s\">\n                                    <div>Praesent ultrices</div>\n                                    <div class=\"uk-text-meta\">Praesent ultrices, orci nec finibus</div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"uk-active\">\n                            <div class=\"uk-grid-small uk-flex-center uk-flex-left@s uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-first-column\">\n                                    <span uk-icon=\"icon: happy; ratio: 2.5;\" class=\"uk-icon\"></span>\n                                </div>\n                                <div class=\"uk-text-center uk-text-left@s uk-width-expand@s\">\n                                    <div>Duis condimentum</div>\n                                    <div class=\"uk-text-meta\">Pellentesque eget varius arcu</div>\n                                </div>\n                            </div>\n                        </li>\n                    </ul>\n                    <ul class=\"uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium-top uk-hidden\">\n                        <li uk-slider-item=\"0\" class=\"uk-hidden uk-active\">\n                            <a href=\"#\"></a>\n                        </li>\n                        <li uk-slider-item=\"1\" class=\"uk-hidden\">\n                            <a href=\"#\"></a>\n                        </li>\n                        <li uk-slider-item=\"2\" class=\"uk-hidden\">\n                            <a href=\"#\"></a>\n                        </li>\n                        <li uk-slider-item=\"3\" class=\"uk-hidden\">\n                            <a href=\"#\"></a>\n                        </li>\n                        <li uk-slider-item=\"4\" class=\"uk-hidden\">\n                            <a href=\"#\"></a>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </section>\n    </main>\n    <footer>\n        <section class=\"uk-section uk-section-secondary uk-section-small uk-light\">\n            <div class=\"uk-container\">\n                <div class=\"uk-grid-medium uk-child-width-1-1 uk-child-width-1-4@m uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-first-column\">\n                        <a class=\"uk-logo\" href=\"index.html\">\n                            <img src=\"/static/logo-inverse.svg\" width=\"90\" height=\"32\" alt=\"Logo\">\n                        </a>\n                        <p class=\"uk-text-small\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut\n                            mauris eros. Nulla quis ante sed tortor efficitur facilisis.</p>\n                        <ul class=\"uk-iconnav\">\n                            <li><a href=\"#\" title=\"Facebook\" uk-icon=\"facebook\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Twitter\" uk-icon=\"twitter\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"YouTube\" uk-icon=\"youtube\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Instagram\" uk-icon=\"instagram\" class=\"uk-icon\"></a></li>\n                        </ul>\n                    </div>\n                    <div>\n                        <nav class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-first-column\">\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a href=\"catalog.html\">Catalog</a></li>\n                                    <li><a href=\"brands.html\">Brands</a></li>\n                                    <li><a href=\"delivery.html\">Delivery</a></li>\n                                    <li><a href=\"faq.html\">FAQ</a></li>\n                                    <li><a href=\"#\">Payment</a></li>\n                                </ul>\n                            </div>\n                            <div>\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a href=\"about.html\">About</a></li>\n                                    <li><a href=\"contacts.html\">Contacts</a></li>\n                                    <li><a href=\"blog.html\">Blog</a></li>\n                                    <li><a href=\"news.html\">News</a></li>\n                                </ul>\n                            </div>\n                        </nav>\n                    </div>\n                    <div>\n                        <ul class=\"uk-list uk-text-small\">\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"receiver\"></span>\n                                    <span class=\"tm-pseudo\">8 800 799 99 99</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"mail\"></span>\n                                    <span class=\"tm-pseudo\">example@example.com</span>\n                                </a>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"location\"></span>\n                                    <span>St.&nbsp;Petersburg, Nevsky&nbsp;Prospect&nbsp;28</span>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"clock\"></span>\n                                    <span>Daily 10:00–22:00</span>\n                                </div>\n                            </li>\n                        </ul>\n                    </div>\n                    <div>\n                        <form class=\"uk-form-stacked\">\n                            <label>\n                                <div class=\"uk-form-label uk-text-muted\">Subscribe for updates</div>\n                                <div class=\"uk-inline uk-width-1-1\">\n                                    <a class=\"uk-form-icon uk-form-icon-flip uk-icon\" href=\"#\" uk-icon=\"mail\"></a>\n                                    <input class=\"uk-input\" type=\"email\" placeholder=\"Your email\" required=\"\">\n                                </div>\n                            </label>\n                        </form>\n                        <div class=\"uk-margin uk-text-small uk-text-muted\">Shopping Categories icons by Jaro Sigrist\n                            from Noun Project</div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </footer>\n</div>\n\n\n<div id=\"nav-offcanvas\" uk-offcanvas=\"overlay: true\" class=\"uk-offcanvas uk-offcanvas-overlay\" style=\"z-index: 1010;\">\n    <div class=\"uk-offcanvas-bar uk-padding-remove\">\n        <div class=\"uk-card uk-card-default uk-card-small tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div>\n                    <a class=\"uk-link-muted uk-text-bold\" href=\"#\">\n                        0802 464 8237\n                    </a>\n                    <div class=\"uk-text-xsmall uk-text-muted\" style=\"margin-top: -2px;\">\n                        <div>\n                            Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area 10, Garki, Abuja\n                        </div>\n                        <div>Daily 09:00–19:00</div>\n                    </div>\n                </div>\n            </header>\n            <nav class=\"uk-card-small uk-card-body\" *ngIf='categories'>\n                <ul class=\"uk-nav-default uk-nav-parent-icon uk-list-divider uk-nav\" uk-nav *ngIf=\"categories.data\">\n                    <li *ngFor='let category of categories.data' class=\"uk-parent\">\n                        <a [routerLink]=\"['/category', category.link]\" >\n                            {{ category.title }}\n                        </a>\n                        <ul class=\"uk-nav-sub uk-list-divider\" *ngIf='category.children'>\n                            <li *ngFor='let child of category.children'>\n                                <a [routerLink]=\"['/category', child.link]\" (click)=\"hideOffCanvas('#nav-offcanvas')\">\n                                    {{ child.title }} </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    </div>\n</div>\n\n<div id=\"cart-offcanvas\" uk-offcanvas=\"overlay: true; flip: true\" class=\"uk-offcanvas uk-offcanvas-overlay\"\n    style=\"z-index: 1010;\">\n    <aside class=\"uk-offcanvas-bar uk-padding-remove uk-offcanvas-bar-animation uk-offcanvas-slide\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-height-1-1 uk-flex uk-flex-column tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div class=\"uk-grid-small uk-flex-1 uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-first-column\">\n                        <div class=\"uk-h3\">Cart</div>\n                    </div><button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" uk-close=\"\"></button>\n                </div>\n            </header>\n            <div class=\"uk-card-body uk-overflow-auto\">\n                <ul class=\"uk-list uk-list-divider\" *ngIf=\"cartProducts && cartProducts.data\">\n                    <li *ngFor=\"let cartItem of cartProducts.data\">\n                        <article>\n                            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-width-1-4 uk-first-column\">\n                                    <div class=\"tm-ratio tm-ratio-4-3\">\n                                        <a class=\"tm-media-box\" (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                                            [routerLink]=\"['/product', cartItem.product.id]\">\n                                            <figure class=\"tm-media-box-wrap\">\n                                                <img class=\"\"\n                                                    src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                    appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\">\n                                            </figure>\n                                        </a>\n                                    </div>\n                                </div>\n                                <div class=\"uk-width-expand\">\n                                    <div class=\"uk-text-meta uk-text-xsmall\">\n                                        {{ cartItem.product.category.title }}\n                                    </div>\n                                    <a class=\"uk-link-heading uk-text-small\"\n                                        [routerLink]=\"['/product', cartItem.product.id]\"\n                                        (click)=\"hideOffCanvas('#cart-offcanvas')\">\n                                        {{ cartItem.product.name }}\n                                    </a>\n                                    <div class=\"uk-margin-xsmall uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                        <div class=\"uk-text-bolder uk-text-small uk-first-column\">\n                                            ${{ cartItem.price }}\n                                        </div>\n                                        <div class=\"uk-text-meta uk-text-xsmall\">\n                                            {{ cartItem.quantity }} × ${{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                </div>\n                                <div>\n                                    <span (click)=\"removeProductFromCart(cartItem)\" href=\"#\"\n                                        class=\"uk-icon-link uk-text-danger uk-invisible-hover uk-icon\" href=\"#\"\n                                        uk-icon=\"icon: close; ratio: .75\" uk-tooltip=\"Remove\" title=\"\"\n                                        aria-expanded=\"false\"></span>\n                                </div>\n                            </div>\n                        </article>\n                    </li>\n                </ul>\n            </div>\n            <footer class=\"uk-card-footer\">\n                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-text-muted uk-h4 uk-first-column\">Subtotal</div>\n                    <div class=\"uk-h4 uk-text-bolder\">${{ cartTotal }}</div>\n                </div>\n                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-margin-small uk-grid\" uk-grid=\"\">\n                    <div>\n                        <a (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                            class=\"uk-button uk-button-default uk-margin-small uk-width-1-1\" routerLink=\"/cart\">view\n                            cart</a>\n                    </div>\n                    <div><a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                            href=\"checkout.html\">checkout</a></div>\n                </div>\n            </footer>\n        </div>\n    </aside>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"uk-offcanvas-content\">\n    <header>\n        <div class=\"uk-navbar-container uk-light uk-visible@m tm-toolbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <nav>\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a href=\"#\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: receiver; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">0802 464 8237</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a href=\"contacts.html\" onclick=\"return false\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: location; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">Store in Murg Shopping Mall</span>\n                                    <span uk-icon=\"icon: triangle-down; ratio: .75;\" class=\"uk-icon\"></span>\n                                </a>\n                                <div class=\"uk-margin-remove uk-drop\" uk-drop=\"mode: click; pos: bottom-center;\">\n                                    <div\n                                        class=\"uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom\">\n                                        <iframe\n                                            src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31521.168896374664!2d7.457733600614864!3d9.0504340343759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b9cb59fb45d%3A0xa6d73b0eb006e31e!2sKizito%20Bookshops%20Limited!5e0!3m2!1sen!2sng!4v1582035608762!5m2!1sen!2sng\"\n                                            width=\"300\" height=\"150\" frameborder=\"0\" style=\"border:0;\"\n                                            allowfullscreen=\"\"></iframe>\n                                        <div class=\"uk-card-body\">\n                                            <div class=\"uk-text-small\">\n                                                <div>Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area\n                                                    10, Garki, Abuja</div>\n                                                <div>Daily 09:00–19:00</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-navbar-item\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: clock; ratio: .75;\"></span>\n                                    Daily 09:00–19:00\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-navbar-container tm-navbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <button class=\"uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon\"\n                        uk-toggle=\"target: #nav-offcanvas\" uk-navbar-toggle-icon=\"\"></button>\n                    <a class=\"uk-navbar-item uk-logo\" routerLink='/'>\n                        <img src=\"static/img/logo.svg\" width=\"90\" height=\"32\" alt=\"Logo\"></a>\n                    <nav class=\"uk-visible@m\">\n                        <ul class=\"uk-navbar-nav\" *ngIf='categories && categories.data'>\n                            <li *ngFor='let category of categories.data'>\n                                <a class=\"uk-link-reset\" [routerLink]=\"['/category', category.link]\">\n                                    {{ category.title }}\n                                    <span *ngIf='category.children' class=\"uk-margin-xsmall-left uk-icon\"\n                                        uk-icon=\"icon: chevron-down; ratio: .75;\"></span>\n                                </a>\n\n                                <div *ngIf='category.children' class=\"uk-navbar-dropdown\" uk-dropdown=\"offset: 0\">\n                                    <div class=\"\">\n                                        <ul class=\"uk-nav uk-nav-default\">\n                                            <li *ngFor='let child of category.children'>\n                                                <a [routerLink]=\"['/category', child.link]\">\n                                                    {{ child.title }} </a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n                <div class=\"uk-navbar-right\">\n                    <a class=\"uk-navbar-toggle tm-navbar-button uk-search-icon uk-icon\" href=\"#\" uk-search-icon=\"\"></a>\n                    <div class=\"uk-navbar-dropdown uk-padding-small uk-margin-remove\"\n                        uk-drop=\"mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x\">\n                        <div class=\"uk-container\">\n                            <div class=\"uk-grid-small uk-flex-middle uk-grid uk-grid-stack\" uk-grid=\"\">\n                                <div class=\"uk-width-expand\">\n                                    <form class=\"uk-search uk-search-navbar uk-width-1-1\" (ngSubmit)='search()'>\n                                        <input class=\"uk-search-input\" type=\"search\" placeholder=\"Search…\" autofocus=\"\"\n                                            name=\"searchValue\" [(ngModel)]='searchValue' />\n                                    </form>\n                                </div>\n                                <div class=\"uk-width-auto\">\n                                    <a class=\"uk-navbar-dropdown-close uk-close uk-icon\" href=\"#\" uk-close=\"\"></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button uk-icon\" routerLink='/account/orders'\n                        uk-icon=\"user\">\n                    </a>\n                    <div class=\"uk-padding-small uk-margin-remove uk-dropdown\"\n                        uk-dropdown=\"pos: bottom-right; offset: -10; delay-hide: 200;\" style=\"min-width: 150px;\">\n                        <ul class=\"uk-nav uk-dropdown-nav\">\n                            <li>\n                                <a routerLink='/account/orders'>\n                                    Orders\n                                    <!-- <span>(2)</span> -->\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/favourites'>\n                                    Favorites\n                                    <!-- <span>(3)</span> -->\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/personal'>\n                                    Personal\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/settings'>\n                                    Settings\n                                </a>\n                            </li>\n                            <li class=\"uk-nav-divider\"></li>\n                            <li><a (click)=\"logout()\">Log out</a>\n                            </li>\n                        </ul>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button\" uk-toggle=\"target: #cart-offcanvas\">\n                        <span uk-icon=\"cart\" class=\"uk-icon\"></span>\n                        <span class=\"uk-badge\" *ngIf=\"cartItems > 0\">{{ cartItems }}</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </header>\n    <main>\n        <div class=\"uk-padding uk-text-center\" *ngIf=\"loading\">\n            <span uk-spinner=\"ratio: 4.5\"></span>\n        </div>\n        <div *ngIf=\"!loading\">\n            <router-outlet></router-outlet>\n        </div>\n    </main>\n    <footer>\n        <section class=\"uk-section uk-section-secondary uk-section-small uk-light\">\n            <div class=\"uk-container\">\n                <div class=\"uk-grid-medium uk-child-width-1-1 uk-child-width-1-4@m uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-first-column\">\n                        <a class=\"uk-logo\" href=\"index.html\">\n                            <img src=\"/static/logo-inverse.svg\" width=\"90\" height=\"32\" alt=\"Logo\" />\n                        </a>\n                        <p class=\"uk-text-small\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut\n                            mauris eros. Nulla quis ante sed tortor efficitur facilisis.</p>\n                        <ul class=\"uk-iconnav\">\n                            <li><a href=\"#\" title=\"Facebook\" uk-icon=\"facebook\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Twitter\" uk-icon=\"twitter\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"YouTube\" uk-icon=\"youtube\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Instagram\" uk-icon=\"instagram\" class=\"uk-icon\"></a></li>\n                        </ul>\n                    </div>\n                    <div>\n                        <nav class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-first-column\">\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a href=\"catalog.html\">Catalog</a></li>\n                                    <li><a href=\"brands.html\">Brands</a></li>\n                                    <li><a href=\"delivery.html\">Delivery</a></li>\n                                    <li><a href=\"faq.html\">FAQ</a></li>\n                                    <li><a href=\"#\">Payment</a></li>\n                                </ul>\n                            </div>\n                            <div>\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a href=\"about.html\">About</a></li>\n                                    <li><a href=\"contacts.html\">Contacts</a></li>\n                                    <li><a href=\"blog.html\">Blog</a></li>\n                                    <li><a href=\"news.html\">News</a></li>\n                                </ul>\n                            </div>\n                        </nav>\n                    </div>\n                    <div>\n                        <ul class=\"uk-list uk-text-small\">\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"receiver\"></span>\n                                    <span class=\"tm-pseudo\">8 800 799 99 99</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"mail\"></span>\n                                    <span class=\"tm-pseudo\">example@example.com</span>\n                                </a>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"location\"></span>\n                                    <span>St.&nbsp;Petersburg, Nevsky&nbsp;Prospect&nbsp;28</span>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"clock\"></span>\n                                    <span>Daily 10:00–22:00</span>\n                                </div>\n                            </li>\n                        </ul>\n                    </div>\n                    <div>\n                        <form class=\"uk-form-stacked\">\n                            <label>\n                                <div class=\"uk-form-label uk-text-muted\">Subscribe for updates</div>\n                                <div class=\"uk-inline uk-width-1-1\">\n                                    <a class=\"uk-form-icon uk-form-icon-flip uk-icon\" href=\"#\" uk-icon=\"mail\"></a>\n                                    <input class=\"uk-input\" type=\"email\" placeholder=\"Your email\" required=\"\">\n                                </div>\n                            </label>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </footer>\n</div>\n\n\n<div id=\"nav-offcanvas\" uk-offcanvas=\"overlay: true\" class=\"uk-offcanvas uk-offcanvas-overlay\" style=\"z-index: 1010;\">\n    <div class=\"uk-offcanvas-bar uk-padding-remove\">\n        <div class=\"uk-card uk-card-default uk-card-small tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div>\n                    <a class=\"uk-link-muted uk-text-bold\" href=\"#\">\n                        0802 464 8237\n                    </a>\n                    <div class=\"uk-text-xsmall uk-text-muted\" style=\"margin-top: -2px;\">\n                        <div>\n                            Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area 10, Garki, Abuja\n                        </div>\n                        <div>Daily 09:00–19:00</div>\n                    </div>\n                </div>\n            </header>\n            <nav class=\"uk-card-small uk-card-body\" *ngIf='categories'>\n                <ul class=\"uk-nav-default uk-nav-parent-icon uk-list-divider uk-nav\" uk-nav *ngIf=\"categories.data\">\n                    <li *ngFor='let category of categories.data' class=\"uk-parent\">\n                        <a [routerLink]=\"['/category', category.link]\" >\n                            {{ category.title }}\n                        </a>\n                        <ul class=\"uk-nav-sub uk-list-divider\" *ngIf='category.children'>\n                            <li *ngFor='let child of category.children'>\n                                <a [routerLink]=\"['/category', child.link]\" (click)=\"hideOffCanvas('#nav-offcanvas')\">\n                                    {{ child.title }} </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    </div>\n</div>\n\n<div id=\"cart-offcanvas\" uk-offcanvas=\"overlay: true; flip: true\" class=\"uk-offcanvas uk-offcanvas-overlay\"\n    style=\"z-index: 1010;\">\n    <aside class=\"uk-offcanvas-bar uk-padding-remove uk-offcanvas-bar-animation uk-offcanvas-slide\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-height-1-1 uk-flex uk-flex-column tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div class=\"uk-grid-small uk-flex-1 uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-first-column\">\n                        <div class=\"uk-h3\">Cart</div>\n                    </div><button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" uk-close=\"\"></button>\n                </div>\n            </header>\n            <div class=\"uk-card-body uk-overflow-auto\">\n                <ul class=\"uk-list uk-list-divider\" *ngIf=\"cartProducts && cartProducts.data\">\n                    <li *ngFor=\"let cartItem of cartProducts.data\">\n                        <article>\n                            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-width-1-4 uk-first-column\">\n                                    <div class=\"tm-ratio tm-ratio-4-3\">\n                                        <a class=\"tm-media-box\" (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                                            [routerLink]=\"['/product', cartItem.product.id]\">\n                                            <figure class=\"tm-media-box-wrap\">\n                                                <img class=\"\"\n                                                    src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                    appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\">\n                                            </figure>\n                                        </a>\n                                    </div>\n                                </div>\n                                <div class=\"uk-width-expand\">\n                                    <div class=\"uk-text-meta uk-text-xsmall\">\n                                        {{ cartItem.product.category.title }}\n                                    </div>\n                                    <a class=\"uk-link-heading uk-text-small\"\n                                        [routerLink]=\"['/product', cartItem.product.id]\"\n                                        (click)=\"hideOffCanvas('#cart-offcanvas')\">\n                                        {{ cartItem.product.name }}\n                                    </a>\n                                    <div class=\"uk-margin-xsmall uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                        <div class=\"uk-text-bolder uk-text-small uk-first-column\">\n                                            ${{ cartItem.price }}\n                                        </div>\n                                        <div class=\"uk-text-meta uk-text-xsmall\">\n                                            {{ cartItem.quantity }} × ${{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                </div>\n                                <div>\n                                    <span (click)=\"removeProductFromCart(cartItem)\" href=\"#\"\n                                        class=\"uk-icon-link uk-text-danger uk-invisible-hover uk-icon\" href=\"#\"\n                                        uk-icon=\"icon: close; ratio: .75\" uk-tooltip=\"Remove\" title=\"\"\n                                        aria-expanded=\"false\"></span>\n                                </div>\n                            </div>\n                        </article>\n                    </li>\n                </ul>\n            </div>\n            <footer class=\"uk-card-footer\">\n                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-text-muted uk-h4 uk-first-column\">Subtotal</div>\n                    <div class=\"uk-h4 uk-text-bolder\">${{ cartTotal }}</div>\n                </div>\n                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-margin-small uk-grid\" uk-grid=\"\">\n                    <div>\n                        <a (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                            class=\"uk-button uk-button-default uk-margin-small uk-width-1-1\" routerLink=\"/cart\">view\n                            cart</a>\n                    </div>\n                    <div>\n                        <a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\" routerLink=\"/checkout\">checkout</a>\n                    </div>\n                </div>\n            </footer>\n        </div>\n    </aside>\n</div>";
     /***/
   },
 
@@ -471,7 +491,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                <h4>Roles</h4>\n                </div>\n                <div class=\"uk-width-expand uk-text-right panel-icons\">\n                \n                    <button class=\"uk-button uk-button-primary\" uk-toggle=\"target: #createRoleModal\">\n                        Create Role\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <table class=\"uk-table uk-table-divider uk-table-striped\">\n                <caption></caption>\n                <thead>\n                    <tr>\n                        <th>Title</th>\n                        <th>Description</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <th>Title</th>\n                        <th>Description</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    \n                    <tr *ngFor=\"let role of roles.data\">\n                        <td>{{ role.title }}</td>\n                        <td>{{ role.description }}</td>\n                        <td><a (click)=\"deleteRoles(role.id)\" class=\"uk-icon-button uk-button-danger uk-icon\" uk-icon=\"trash\"></a></td>\n                        <td>{{ role.created }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div id=\"createRoleModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Role</h2>\n        <hr>\n        <form id=\"createRoleForm\" #createRoleForm=\"ngForm\" (ngSubmit)=\"onSubmit(createRoleForm)\">\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"title\">Role Title</label>\n                <input class=\"uk-input\" form=\"createRoleForm\" id=\"title\" name=\"title\" required type=\"text\" [(ngModel)]=\"role.title\" #title=\"ngModel\">\n                <div [hidden]=\"title.valid || title.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Title is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"description\">Role Description</label>\n                <textarea class=\"uk-textarea\" form=\"createRoleForm\" id=\"description\" name=\"description\" required=\"\"  [(ngModel)]=\"role.description\" #description=\"ngModel\"></textarea>\n                <div [hidden]=\"description.valid || description.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Description is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createRoleForm\" type=\"submit\" value=\"Create Role\" [disabled]=\"!createRoleForm.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                <h4>Roles</h4>\n                </div>\n                <div class=\"uk-width-expand uk-text-right panel-icons\">\n                \n                    <button class=\"uk-button uk-button-primary\" uk-toggle=\"target: #createRoleModal\">\n                        Create Role\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <table class=\"uk-table uk-table-divider uk-table-striped\">\n                <caption></caption>\n                <thead>\n                    <tr>\n                        <th>Title</th>\n                        <th>Description</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <th>Title</th>\n                        <th>Description</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    \n                    <tr *ngFor=\"let role of roles.data | async\">\n                        <td>{{ role.title }}</td>\n                        <td>{{ role.description }}</td>\n                        <td><a (click)=\"deleteRoles(role.id)\" class=\"uk-icon-button uk-button-danger uk-icon\" uk-icon=\"trash\"></a></td>\n                        <td>{{ role.created }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div id=\"createRoleModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Role</h2>\n        <hr>\n        <form id=\"createRoleForm\" #createRoleForm=\"ngForm\" (ngSubmit)=\"onSubmit(createRoleForm)\">\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"title\">Role Title</label>\n                <input class=\"uk-input\" form=\"createRoleForm\" id=\"title\" name=\"title\" required type=\"text\" [(ngModel)]=\"role.title\" #title=\"ngModel\">\n                <div [hidden]=\"title.valid || title.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Title is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"description\">Role Description</label>\n                <textarea class=\"uk-textarea\" form=\"createRoleForm\" id=\"description\" name=\"description\" required=\"\"  [(ngModel)]=\"role.description\" #description=\"ngModel\"></textarea>\n                <div [hidden]=\"description.valid || description.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Description is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createRoleForm\" type=\"submit\" value=\"Create Role\" [disabled]=\"!createRoleForm.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>";
     /***/
   },
 
@@ -516,6 +536,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/store-address-page/store-address-page.component.html":
+  /*!************************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/store-address-page/store-address-page.component.html ***!
+    \************************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesAdminStoreAddressPageStoreAddressPageComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                    <h4>Store Address</h4>\n                </div>\n                <div class=\"uk-width-expand uk-text-right panel-icons\">\n\n                    <button class=\"uk-button uk-button-primary\" uk-toggle=\"target: #createStoreAddressModal\">\n                        Create Store Address\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <div class=\"uk-overflow-auto\">\n                <table class=\"uk-table uk-table-divider uk-table-striped uk-table-responsive\">\n                    <caption></caption>\n                    <thead>\n                        <tr>\n                            <th>Name</th>\n                            <th>Phone</th>\n                            <th>Opened</th>\n                            <th>Action</th>\n                            <th>Date</th>\n                        </tr>\n                    </thead>\n                    <tfoot>\n                        <tr>\n                            <th>Name</th>\n                            <th>Phone</th>\n                            <th>Opened</th>\n                            <th>Action</th>\n                            <th>Date</th>\n                        </tr>\n                    </tfoot>\n                    <tbody *ngIf='storeAddresses && storeAddresses.data'>\n\n                        <tr *ngFor=\"let storeAddress of storeAddresses.data\">\n                            <td>{{ storeAddress.name }}</td>\n                            <td>{{ storeAddress.phone }}</td>\n                            <td>{{ storeAddress.opened }}</td>\n                            <!-- <td>\n                                <iframe [src]=\"storeAddress.iframe | safe\" width=\"300\" height=\"150\" frameborder=\"0\"\n                                    style=\"border:0;\" allowfullscreen=\"\"></iframe>\n                            </td> -->\n                            <td>\n                                <!-- <a (click)=\"deleteRoles(storeAddress.id)\" class=\"uk-icon-button uk-button-danger uk-icon\" uk-icon=\"trash\"></a> -->\n                            </td>\n                            <td>{{ storeAddress.created | date: 'short' }}</td>\n                        </tr>\n                    </tbody>\n                </table>\n\n            </div>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div id=\"createStoreAddressModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Store Address</h2>\n        <hr>\n        <form id=\"createStoreAddress\" #createStoreAddress=\"ngForm\" (ngSubmit)=\"onSubmit(createStoreAddress)\">\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"title\">Store Name</label>\n                <input class=\"uk-input\" form=\"createStoreAddress\" id=\"name\" name=\"name\" required type=\"text\"\n                    [(ngModel)]=\"storeAddress.name\" #name=\"ngModel\">\n                <div [hidden]=\"name.valid || name.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Name is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"title\">Phone</label>\n                <input class=\"uk-input\" form=\"createStoreAddress\" id=\"phone\" name=\"phone\" required type=\"text\"\n                    [(ngModel)]=\"storeAddress.phone\" #phone=\"ngModel\">\n                <div [hidden]=\"phone.valid || phone.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Phone is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"opened\">Opened <span class=\"uk-text-muted\">eg (8:00 - 17:00)</span></label>\n                <input class=\"uk-input\" form=\"createStoreAddress\" id=\"opened\" name=\"opened\" required type=\"text\"\n                    [(ngModel)]=\"storeAddress.opened\" #opened=\"ngModel\">\n                <div [hidden]=\"opened.valid || opened.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Opened is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"address\">Address</label>\n                <textarea class=\"uk-textarea\" form=\"createStoreAddress\" id=\"address\" name=\"address\" required=\"\"\n                    [(ngModel)]=\"storeAddress.address\" #address=\"ngModel\"></textarea>\n                <div [hidden]=\"address.valid || address.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Address is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"iframe\">Iframe</label>\n                <textarea class=\"uk-textarea\" form=\"createStoreAddress\" id=\"iframe\" name=\"iframe\" required=\"\"\n                    [(ngModel)]=\"storeAddress.iframe\" #iframe=\"ngModel\"></textarea>\n                <div [hidden]=\"iframe.valid || iframe.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Iframe is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createStoreAddress\" type=\"submit\"\n                    value=\"Create Store Address\" [disabled]=\"!createStoreAddress.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/cart-page/cart-page.component.html":
   /*!************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/cart-page/cart-page.component.html ***!
@@ -531,7 +571,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n            <div class=\"uk-text-center uk-first-column\">\n                <ul class=\"uk-breadcrumb uk-flex-center uk-margin-remove\">\n                    <li><a routerLink=\"/\">Home</a></li>\n                    <li><span>Cart</span></li>\n                </ul>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">Cart</h1>\n            </div>\n            <div class=\"uk-grid-margin uk-first-column\">\n                <div class=\"uk-grid-medium uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-1-1 uk-width-expand@m uk-first-column\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\"\n                            *ngIf=\"cartProducts && cartProducts.data\">\n                            <header\n                                class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                                <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-first-column\">product</div>\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-first-column\">price</div>\n                                            <div class=\"tm-quantity-column\">quantity</div>\n                                            <div>sum</div>\n                                            <div class=\"uk-width-auto\">\n                                                <div style=\"width: 20px;\"></div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </header>\n                            <div class=\"uk-card-body\" *ngFor=\"let cartItem of cartProducts.data\">\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                                    uk-grid=\"\">\n                                    <!-- Product cell-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-width-1-3 uk-first-column\">\n                                                <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                        [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                        <figure class=\"tm-media-box-wrap\">\n                                                            <img class=\"\"\n                                                                src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                                appImgFallback=\"product\"\n                                                                alt=\"{{ cartItem.product.name }}\" />\n                                                        </figure>\n                                                    </a>\n                                                </div>\n                                            </div>\n                                            <div class=\"uk-width-expand\">\n                                                <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                                <a class=\"uk-link-heading\"\n                                                    [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                            </div>\n                                        </div>\n                                    </div><!-- Other cells-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                            uk-grid=\"\">\n                                            <div class=\"uk-first-column\">\n                                                <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                                <div>${{ cartItem.unit_price }}</div>\n                                            </div>\n                                            <div class=\"tm-cart-quantity-column\">\n                                                <a (click)=\"updateCart(-1, cartItem)\" uk-icon=\"icon: minus; ratio: .75\" class=\"uk-icon\"></a>\n                                                    <input class=\"uk-input tm-quantity-input\" id=\"product-2\" type=\"text\" maxlength=\"3\" value=\"1\" [(ngModel)]='cartItem.quantity'>\n                                                    <a (click)=\"updateCart(-1, cartItem)\" uk-icon=\"icon: plus; ratio: .75\" class=\"uk-icon\"></a>\n                                                </div>\n                                            <div>\n                                                <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                                <div>${{ cartItem.price }}</div>\n                                            </div>\n                                            <div class=\"uk-width-auto@s\">\n                                                <a class=\"uk-text-danger\" uk-tooltip=\"Remove\"\n                                                    (click)=\"removeProductFromCart(cartItem)\" title=\"\"\n                                                    aria-expanded=\"false\">\n                                                    <span uk-icon=\"close\" class=\"uk-icon\"></span>\n                                                </a>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"uk-width-1-1 tm-aside-column uk-width-1-4@m\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                            uk-sticky=\"offset: 30; bottom: true; media: @m;\">\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Subtotal</div>\n                                    <div>${{ cartTotal * .95 }}</div>\n                                </div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Vat (5%)</div>\n                                    <div>${{ cartTotal * .05 }}</div>\n                                </div>\n                            </div>\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Total</div>\n                                    <div class=\"uk-text-lead uk-text-bolder\">${{ cartTotal }}</div>\n                                </div><a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                                    href=\"checkout.html\">checkout</a>\n                            </div>\n                        </div>\n                        <div class=\"uk-sticky-placeholder\" hidden=\"\" style=\"height: 230px; margin: 0px;\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>";
+    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n            <div class=\"uk-text-center uk-first-column\">\n                <ul class=\"uk-breadcrumb uk-flex-center uk-margin-remove\">\n                    <li><a routerLink=\"/\">Home</a></li>\n                    <li><span>Cart</span></li>\n                </ul>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">Cart</h1>\n            </div>\n            <div class=\"uk-grid-margin uk-first-column\">\n                <div class=\"uk-grid-medium uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-1-1 uk-width-expand@m uk-first-column\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\"\n                            *ngIf=\"cartProducts && cartProducts.data\">\n                            <header\n                                class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                                <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-first-column\">product</div>\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-first-column\">price</div>\n                                            <div class=\"tm-quantity-column\">quantity</div>\n                                            <div>sum</div>\n                                            <div class=\"uk-width-auto\">\n                                                <div style=\"width: 20px;\"></div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </header>\n                            <div class=\"uk-card-body\" *ngFor=\"let cartItem of cartProducts.data\">\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                                    uk-grid=\"\">\n                                    <!-- Product cell-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-width-1-3 uk-first-column\">\n                                                <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                        [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                        <figure class=\"tm-media-box-wrap\">\n                                                            <img class=\"\"\n                                                                src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                                appImgFallback=\"product\"\n                                                                alt=\"{{ cartItem.product.name }}\" />\n                                                        </figure>\n                                                    </a>\n                                                </div>\n                                            </div>\n                                            <div class=\"uk-width-expand\">\n                                                <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                                <a class=\"uk-link-heading\"\n                                                    [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                            </div>\n                                        </div>\n                                    </div><!-- Other cells-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                            uk-grid=\"\">\n                                            <div class=\"uk-first-column\">\n                                                <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                                <div>${{ cartItem.unit_price }}</div>\n                                            </div>\n                                            <div class=\"tm-cart-quantity-column\">\n                                                <a (click)=\"updateCart(-1, cartItem)\" uk-icon=\"icon: minus; ratio: .75\" class=\"uk-icon\"></a>\n                                                    <input class=\"uk-input tm-quantity-input\" id=\"product-2\" type=\"text\" maxlength=\"3\" value=\"1\" [(ngModel)]='cartItem.quantity'>\n                                                    <a (click)=\"updateCart(1, cartItem)\" uk-icon=\"icon: plus; ratio: .75\" class=\"uk-icon\"></a>\n                                                </div>\n                                            <div>\n                                                <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                                <div>${{ cartItem.price }}</div>\n                                            </div>\n                                            <div class=\"uk-width-auto@s\">\n                                                <a class=\"uk-text-danger\" uk-tooltip=\"Remove\"\n                                                    (click)=\"removeProductFromCart(cartItem)\" title=\"\"\n                                                    aria-expanded=\"false\">\n                                                    <span uk-icon=\"close\" class=\"uk-icon\"></span>\n                                                </a>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"uk-width-1-1 tm-aside-column uk-width-1-4@m\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                            uk-sticky=\"offset: 30; bottom: true; media: @m;\">\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Subtotal</div>\n                                    <div>${{ cartTotal * .95 }}</div>\n                                </div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Vat (5%)</div>\n                                    <div>${{ cartTotal * .05 }}</div>\n                                </div>\n                            </div>\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Total</div>\n                                    <div class=\"uk-text-lead uk-text-bolder\">${{ cartTotal }}</div>\n                                </div><a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                                    routerLink=\"/checkout\">Checkout</a>\n                            </div>\n                        </div>\n                        <div class=\"uk-sticky-placeholder\" hidden=\"\" style=\"height: 230px; margin: 0px;\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>";
     /***/
   },
 
@@ -576,6 +616,46 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/checkout-page/checkout-page.component.html":
+  /*!********************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/checkout-page/checkout-page.component.html ***!
+    \********************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesCheckoutPageCheckoutPageComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid-stack\" uk-grid>\n            <section class=\"uk-text-center\">\n                <a class=\"uk-link-muted uk-text-small\" routerLink=\"/cart\">\n                    <span class=\"uk-margin-xsmall-right\" uk-icon=\"icon: arrow-left; ratio: .75;\"></span>\n                    Return to cart\n                </a>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">\n                    Checkout\n                </h1>\n                <hr />\n            </section>\n        </div>\n    </div>\n    <div class=\"uk-container\">\n        <div uk-grid class=\"uk-padding\">\n            <div class=\"uk-width-1-1 uk-width-3-4@m\">\n                <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid-stack\" uk-grid>\n                    <section class=\"uk-grid-margin\">\n                        <h2 class=\"tm-checkout-title\">Shipping</h2>\n                        <div class=\"uk-card uk-card-default uk-card-small uk-card-body tm-ignore-container\">\n                            <div class=\"uk-grid-small uk-grid-match uk-child-width-1-1 uk-child-width-1-3@s uk-flex-center uk-grid\"\n                                uk-switcher=\"toggle: > * > .tm-choose\" uk-grid=\"\">\n                                <div>\n                                    <a class=\"tm-choose {{ order.shipping ? '' : 'uk-active' }}\"\n                                        (click)='order.shipping = false'>\n                                        <div class=\"tm-choose-title\">Pick up from Store</div>\n                                    </a>\n                                </div>\n                                <div>\n                                    <a class=\"tm-choose {{ order.shipping ? 'uk-active' : ''}}\"\n                                        (click)='order.shipping = true'>\n                                        <div class=\"tm-choose-title\">Delivery</div>\n                                    </a>\n                                </div>\n                            </div>\n                            <div class=\"uk-switcher uk-margin\">\n                                <section class=\"\">\n                                    <div class=\"uk-grid-small uk-grid-match uk-child-width-1-1 uk-child-width-1-2@m\"\n                                        uk-grid=\"\" *ngIf='storeAddresses && storeAddresses.data'>\n                                        <div *ngFor='let storeAddress of storeAddresses.data'\n                                            (click)='order.store_address_id = storeAddress.id; order.address_id = 0'>\n                                            <div\n                                                class=\"uk-text-small uk-padding-small box {{ order.store_address_id === storeAddress.id ? 'selected' : '' }}\">\n                                                <h4 class=\"uk-text-bolder\">{{ storeAddress.name}}</h4>\n                                                <div>\n                                                    {{ storeAddress.address }}\n                                                </div>\n                                                <div>Daily {{ storeAddress.opened }}</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </section>\n                                <div>\n                                    <div class=\"uk-grid-small uk-grid-match uk-child-width-1-1 uk-child-width-1-2@m\" uk-grid=\"\">\n                                        <div uk-toggle=\"target: #createClientAddressModal\">\n                                            <div class=\"uk-text-middle uk-text-center uk-padding\">\n                                                <a href=\"#\" class=\"uk-icon-button\">\n                                                    <fa-icon icon=\"plus\"></fa-icon>\n                                                </a>\n                                            </div>\n                                        </div>\n                                        <ng-container *ngIf='addresses && addresses'>\n                                            <div *ngFor='let address of addresses.data'\n                                                (click)='order.store_address_id = 0; order.address_id = address.id'>\n    \n                                                <div\n                                                    class=\"uk-text-small uk-padding-small box {{ order.address_id === address.id ? 'selected' : '' }}\">\n                                                    <h4 class=\"uk-text-bolder\">{{ address.country.name}}</h4>\n                                                    <div>\n                                                        {{ address.state + ', ' + address.city }}\n                                                    </div>\n                                                    <div>{{ address.address }}</div>\n                                                    <div>{{ address.postal_code }}</div>\n                                                </div>\n                                            </div>\n                                        </ng-container>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </section>\n                    <section class=\"uk-grid-margin\">\n                        <h2 class=\"tm-checkout-title\">Payment</h2>\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\">\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-grid-match uk-child-width-1-1 uk-child-width-1-3@s uk-flex-center uk-grid\"\n                                    uk-switcher=\"toggle: > * > .tm-choose\" uk-grid=\"\">\n                                    <div>\n                                        <a class=\"tm-choose {{ order.payment_type == 'offline' ? 'uk-active' : '' }}\"\n                                            (click)='order.payment_type = \"offline\"'>\n                                            <div class=\"tm-choose-title\">payment upon receipt</div>\n                                            <div class=\"tm-choose-description\">Cash, credit card</div>\n                                        </a>\n                                    </div>\n                                    <div>\n                                        <a class=\"tm-choose {{ order.payment_type == 'online' ? 'uk-active' : ''}}\"\n                                            (click)='order.payment_type = \"online\"'>\n                                            <div class=\"tm-choose-title\">online by card</div>\n                                            <div class=\"tm-choose-description\">Visa, MasterCard</div>\n                                        </a>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </section>\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-width-1-4@m\">\n                <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                    uk-sticky=\"offset: 30; bottom: true; media: @m;\">\n                    <section class=\"uk-card-body\" *ngIf='cartProducts && cartProducts.data'>\n                        <h4>Items in order</h4>\n                        <app-checkout-item *ngFor=\"let cartItem of cartProducts.data\" [cartItem]='cartItem'>\n                        </app-checkout-item>\n                    </section>\n                    <div class=\"uk-card-body\">\n                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-width-expand uk-text-muted\">Subtotal</div>\n                            <div>${{ cartTotal * .95 }}</div>\n                        </div>\n                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-width-expand uk-text-muted\">Vat (5%)</div>\n                            <div>${{ cartTotal * .05 }}</div>\n                        </div>\n                    </div>\n                    <div class=\"uk-card-body\">\n                        <div class=\"uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-width-expand uk-text-muted\">Total</div>\n                            <div class=\"uk-text-lead uk-text-bolder\">${{ cartTotal }}</div>\n                        </div>\n                        <a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                            (click)='checkout()'>Checkout</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>\n\n\n<div id=\"createClientAddressModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Store Address</h2>\n        <hr>\n        <form id=\"createClientAddress\" #createClientAddress=\"ngForm\" (ngSubmit)=\"onSubmit(createClientAddress)\">\n\n\n            <div class=\"uk-grid-small uk-grid uk-grid-stack\" uk-grid=\"\">\n                <div class=\"uk-width-1-1\">\n                    <label *ngIf=\"countries && countries.data\">\n                        <div class=\"uk-form-label uk-form-label-required\">Country</div>\n                        <select class=\"uk-select\" required [(ngModel)]='currentAddress.country_id' #country=\"ngModel\"\n                            name=\"country\" form=\"createClientAddress\">\n                            <option [value]='country.id' *ngFor='let country of countries.data'>{{ country.name }}\n                            </option>\n                        </select>\n                    </label>\n                </div>\n            </div>\n            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                <div class=\"uk-width-expand\">\n                    <label>\n                        <div class=\"uk-form-label uk-form-label-required\">State</div>\n                        <input form=\"createClientAddress\" class=\"uk-input\" type=\"text\" name='state'\n                            [(ngModel)]='currentAddress.state' required='' #state='ngModel'>\n                    </label>\n                    <div [hidden]=\"state.valid || state.pristine\" class=\"uk-alert uk-alert-danger\">\n                        State is required!\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                <div class=\"uk-width-expand\">\n                    <label>\n                        <div class=\"uk-form-label uk-form-label-required\">City</div>\n                        <input form=\"createClientAddress\" class=\"uk-input\" type=\"text\" name='city'\n                            [(ngModel)]='currentAddress.city' required='' #city='ngModel'>\n                    </label>\n                    <div [hidden]=\"city.valid || city.pristine\" class=\"uk-alert uk-alert-danger\">\n                        City is required!\n                    </div>\n                </div>\n                <div class=\"uk-width-1-3 uk-width-1-6@s\">\n                    <label>\n                        <div class=\"uk-form-label uk-form-label-required\">Post Code</div>\n                        <input form=\"createClientAddress\" class=\"uk-input\" type=\"text\" name='postal_code'\n                            [(ngModel)]='currentAddress.postal_code' #postal_code='ngModel'>\n                    </label>\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"address\">Address</label>\n                <textarea class=\"uk-textarea\" form=\"createClientAddress\" id=\"address\" name=\"address\" required=\"\"\n                    [(ngModel)]=\"currentAddress.address\" #address=\"ngModel\"></textarea>\n                <div [hidden]=\"address.valid || address.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Address is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createClientAddress\" type=\"submit\"\n                    value=\"Create Store Address\" [disabled]=\"!createClientAddress.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-address/client-address.component.html":
+  /*!*****************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-address/client-address.component.html ***!
+    \*****************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesClientClientAddressClientAddressComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\">\n    <header class=\"uk-card-header\">\n        <div uk-grid=''>\n            <div class=\"uk-width-expand\">\n                <h1 class=\"uk-h2\">Address</h1>\n            </div>\n            <div class=\"uk-width-1-5\">\n                \n                <a href=\"#\" class=\"uk-icon-button uk-button-primary\"  uk-toggle=\"target: #createClientAddressModal\">\n                    <fa-icon icon=\"plus\"></fa-icon>\n                </a>\n            </div>\n        </div>\n    </header>\n    <div>\n        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m\" uk-grid=\"\">\n            <ng-container *ngIf='addresses && addresses.data'>\n                <div *ngFor='let address of addresses.data'>\n                <div class=\"uk-text-small uk-padding-small\">\n                    <h4 class=\"uk-text-bolder\">{{ address.country.name}}</h4>\n                    <div>\n                        {{ address.state + ', ' + address.city }}\n                    </div>\n                    <div>{{ address.address }}</div>\n                    <div>{{ address.postal_code }}</div>\n                </div>\n            </div>\n            </ng-container>\n        </div>\n    </div>\n</div>\n\n<div id=\"createClientAddressModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Store Address</h2>\n        <hr>\n        <form id=\"createClientAddress\" #createClientAddress=\"ngForm\" (ngSubmit)=\"onSubmit(createClientAddress)\">\n\n\n            <div class=\"uk-grid-small uk-grid uk-grid-stack\" uk-grid=\"\">\n                <div class=\"uk-width-1-1\">\n                    <label *ngIf=\"countries && countries.data\">\n                        <div class=\"uk-form-label uk-form-label-required\">Country</div>\n                        <select class=\"uk-select\" required [(ngModel)]='currentAddress.country_id' #country=\"ngModel\"\n                            name=\"country\" form=\"createClientAddress\">\n                            <option [value]='country.id' *ngFor='let country of countries.data'>{{ country.name }}\n                            </option>\n                        </select>\n                    </label>\n                </div>\n            </div>\n            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                <div class=\"uk-width-expand\">\n                    <label>\n                        <div class=\"uk-form-label uk-form-label-required\">State</div>\n                        <input form=\"createClientAddress\" class=\"uk-input\" type=\"text\" name='state'\n                            [(ngModel)]='currentAddress.state' required='' #state='ngModel'>\n                    </label>\n                    <div [hidden]=\"state.valid || state.pristine\" class=\"uk-alert uk-alert-danger\">\n                        State is required!\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                <div class=\"uk-width-expand\">\n                    <label>\n                        <div class=\"uk-form-label uk-form-label-required\">City</div>\n                        <input form=\"createClientAddress\" class=\"uk-input\" type=\"text\" name='city'\n                            [(ngModel)]='currentAddress.city' required='' #city='ngModel'>\n                    </label>\n                    <div [hidden]=\"city.valid || city.pristine\" class=\"uk-alert uk-alert-danger\">\n                        City is required!\n                    </div>\n                </div>\n                <div class=\"uk-width-1-3 uk-width-1-6@s\">\n                    <label>\n                        <div class=\"uk-form-label uk-form-label-required\">Post Code</div>\n                        <input form=\"createClientAddress\" class=\"uk-input\" type=\"text\" name='postal_code'\n                            [(ngModel)]='currentAddress.postal_code' #postal_code='ngModel'>\n                    </label>\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"address\">Address</label>\n                <textarea class=\"uk-textarea\" form=\"createClientAddress\" id=\"address\" name=\"address\" required=\"\"\n                    [(ngModel)]=\"currentAddress.address\" #address=\"ngModel\"></textarea>\n                <div [hidden]=\"address.valid || address.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Address is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createClientAddress\" type=\"submit\"\n                    value=\"Create Store Address\" [disabled]=\"!createClientAddress.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-favourites/client-favourites.component.html":
   /*!***********************************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-favourites/client-favourites.component.html ***!
@@ -596,6 +676,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-order/client-order.component.html":
+  /*!*************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-order/client-order.component.html ***!
+    \*************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesClientClientOrderClientOrderComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\" *ngIf='order && order.data'>\n    <header class=\"uk-card-header\">\n        <div uk-grid>\n            <div class='uk-width-expand'>\n                <h1 class=\"uk-h2\">\n                    #{{ order.data.id }}\n                    <span class=\"uk-text-muted uk-text-small\">\n                        from {{ order.data.created | date: 'mediumDate'}}\n                    </span>\n                </h1>\n            </div>\n            <div class='uk-width-1-5 uk-text-right' *ngIf='!order.data.paid && order.data.payment_type === \"online\"'>\n                <angular4-paystack [email]=\"client.email\" [amount]=\"order.data.price * 100\" [ref]=\"reference\"\n                    [class]=\"'uk-button uk-button-primary'\" (close)=\"paymentCancel()\" (callback)=\"paymentDone($event)\">\n                    Pay Now\n                </angular4-paystack>\n            </div>\n        </div>\n    </header>\n    <div>\n        <section class=\"uk-card-body\">\n            <div class=\"uk-child-width-1-1 uk-child-width-1-2@m\" uk-grid=''>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\">\n                        <h4>\n                            {{ order.data.shipping_string }}\n                        </h4>\n                        <div>\n                            Payment: {{ order.data.payment_type_string }}\n                        </div>\n                        <div>\n                            Total:\n                            <span [innerHTML]='\"&#8358;\"'></span>\n                            {{ order.data.price | number }}\n                        </div>\n                        <div>\n                            Status:\n                            <span class=\"uk-label\">\n                                {{ order.data.status_string }}\n                            </span>\n                        </div>\n                        <div>\n                            Paid:\n                            <span class=\"{{ order.data.paid ? 'uk-text-success' : 'uk-text-danger' }}\">\n                                {{ order.data.paid ? 'YES' : 'NO' }}\n                            </span>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.address.country.name}}</h4>\n                        <div>\n                            {{ order.data.address.state + ', ' + order.data.address.city }}\n                        </div>\n                        <div>{{ order.data.address.address }}</div>\n                        <div>{{ order.data.address.postal_code }}</div>\n                    </div>\n\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.store_address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.store_address.name}}</h4>\n                        <div>\n                            {{ order.data.store_address.address }}\n                        </div>\n                        <div>Daily {{ order.data.store_address.opened }}</div>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"uk-card-body uk-margin-large-top\">\n\n            <div>\n                <div *ngIf=\"orderData && orderData.data\">\n                    <header\n                        class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                        <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>product</div>\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                    <div>price</div>\n                                    <div class=\"tm-quantity-column\">quantity</div>\n                                    <div>sum</div>\n                                    <div class=\"uk-width-auto\">\n                                        <div style=\"width: 20px;\"></div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </header>\n                    <div class=\"uk-card-body\" *ngFor=\"let cartItem of orderData.data\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                            uk-grid=\"\">\n                            <!-- Product cell-->\n                            <div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-1-3\">\n                                        <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                <figure class=\"tm-media-box-wrap\">\n                                                    <img class=\"\"\n                                                        src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                        appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\" />\n                                                </figure>\n                                            </a>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-width-expand\">\n                                        <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                        <a class=\"uk-link-heading\"\n                                            [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                    </div>\n                                </div>\n                            </div><!-- Other cells-->\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                    uk-grid=\"\">\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                        <div>${{ cartItem.unit_price }}</div>\n                                    </div>\n                                    <div class=\"tm-cart-quantity-column\">\n                                        {{ cartItem.quantity }}\n                                    </div>\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                        <div>${{ cartItem.price }}</div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</div>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-orders/client-orders.component.html":
   /*!***************************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-orders/client-orders.component.html ***!
@@ -611,7 +711,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\">\n    <header class=\"uk-card-header\">\n        <h1 class=\"uk-h2\">Orders</h1>\n    </header>\n    <section class=\"uk-card-body\">\n        <h3><a class=\"uk-link-heading\" href=\"#\">#36637649\n                <span class=\"uk-text-muted uk-text-small\">from June 17, 2018</span></a></h3>\n        <table\n            class=\"uk-table uk-table-small uk-table-justify uk-table-responsive uk-table-divider uk-margin-small-top uk-margin-remove-bottom\">\n            <tbody>\n                <tr>\n                    <th class=\"uk-width-medium\">Items</th>\n                    <td>7</td>\n                </tr>\n                <tr>\n                    <th class=\"uk-width-medium\">Shipping</th>\n                    <td>Pick up from store</td>\n                </tr>\n                <tr>\n                    <th class=\"uk-width-medium\">Payment</th>\n                    <td>Online by card</td>\n                </tr>\n                <tr>\n                    <th class=\"uk-width-medium\">Total</th>\n                    <td>$4896.00</td>\n                </tr>\n                <tr>\n                    <th class=\"uk-width-medium\">Status</th>\n                    <td><span class=\"uk-label\">Processing</span></td>\n                </tr>\n            </tbody>\n        </table>\n    </section>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\">\n    <header class=\"uk-card-header\">\n        <h1 class=\"uk-h2\">Orders</h1>\n    </header>\n    <div *ngIf='orders && orders.data'>\n        <section class=\"uk-card-body\" *ngFor='let order of orders.data'>\n            <h3>\n                <a class=\"uk-link-heading\" [routerLink]=\"['/account/order/', order.id]\" href=\"#\">\n                    #{{ order.id }}\n                    <span class=\"uk-text-muted uk-text-small\">\n                        from {{ order.created | date: 'mediumDate'}}\n                    </span>\n                </a>\n            </h3>\n            <table\n                class=\"uk-table uk-table-small uk-table-justify uk-table-responsive uk-table-divider uk-margin-small-top uk-margin-remove-bottom\">\n                <tbody>\n                    <tr>\n                        <th class=\"uk-width-medium\">Shipping</th>\n                        <td>{{ order.shipping_string }} </td>\n                    </tr>\n                    <tr>\n                        <th class=\"uk-width-medium\">Payment</th>\n                        <td>{{ order.payment_type_string }}</td>\n                    </tr>\n                    <tr>\n                        <th class=\"uk-width-medium\">Total</th>\n                        <td>\n                            <span [innerHTML]='\"&#8358;\"'></span>\n                            {{ order.price | number }}\n                        </td>\n                    </tr>\n                    <tr>\n                        <th class=\"uk-width-medium\">Status</th>\n                        <td><span class=\"uk-label\">{{ order.status_string }}</span></td>\n                    </tr>\n                </tbody>\n            </table>\n        </section>\n    </div>\n</div>";
     /***/
   },
 
@@ -711,7 +811,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\" *ngIf=\"product && product.data\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid>\n            <div class=\"uk-text-center\">\n                <app-breadcrumb product='true' [data]='product.data'></app-breadcrumb>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">\n                    {{ product.data.name }}\n                </h1>\n            </div>\n        </div>\n        <div class=\"uk-grid-margin\">\n            <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                <div>\n                    <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\">\n                        <div class=\"uk-grid-small uk-grid-collapse uk-grid-match uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-width-1-1 uk-width-expand@m\">\n                                <div class=\"uk-grid-collapse uk-child-width-1-1 uk-grid-stack\" uk-grid=\"\">\n                                    <div style=\"padding: 1rem;\">\n                                        <figure class=\"uk-flex-middle uk-text-center\">\n                                            <img style=\"width: auto; height: 300px;\"\n                                                src=\"{{ product.data.default_image ? product.data.default_image.image_url : '' }}\"\n                                                appImgFallback=\"product\" [alt]=\"product.data.name\">\n                                        </figure>\n                                    </div>\n                                    <div class=\"uk-grid-margin\" *ngIf=\"productImages && productImages.data\">\n                                        <div class=\"uk-card-body uk-flex uk-flex-center\">\n                                            <div class=\"uk-width-5-6\">\n                                                <div uk-slider=\"finite: true\" class=\"uk-slider\">\n                                                    <div class=\"uk-position-relative\">\n                                                        <div class=\"uk-slider-container\">\n                                                            <ul class=\"tm-slider-items uk-slider-items uk-child-width-1-4 uk-grid uk-grid-small\"\n                                                                uk-lightbox=\"\">\n                                                                <li\n                                                                    *ngFor=\"let image of productImages.data; let i = index\">\n                                                                    <div class=\"tm-ratio tm-ratio-1-1\">\n                                                                        <a class=\"uk-card-body tm-media-box tm-media-box-zoom\"\n                                                                            [href]=\"image.image_url\">\n                                                                            <figure class=\"tm-media-box-wrap\">\n                                                                                <img [src]=\"image.thumb_url\"\n                                                                                    alt=\"product.data.name\">\n                                                                            </figure>\n                                                                        </a>\n                                                                    </div>\n                                                                </li>\n                                                            </ul>\n                                                            <div>\n                                                                <a class=\"uk-position-center-left-out uk-position-small uk-slidenav-previous uk-icon uk-slidenav uk-invisible\"\n                                                                    href=\"#\" uk-slider-item=\"previous\"\n                                                                    uk-slidenav-previous=\"\"></a>\n                                                                <a class=\"uk-position-center-right-out uk-position-small uk-slidenav-next uk-icon uk-slidenav\"\n                                                                    href=\"#\" uk-slider-item=\"next\"\n                                                                    uk-slidenav-next=\"\"></a>\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"uk-width-1-1 uk-width-1-3@m tm-product-info\">\n                                <div class=\"uk-card-body\">\n                                    <div>\n                                        <h4>{{ product.data.creator.title | uppercase }}</h4>\n                                    </div>\n                                    <div class=\"uk-margin\">\n                                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-flex uk-flex-middle\">\n                                                <ul class=\"uk-iconnav uk-margin-xsmall-bottom tm-rating\">\n                                                    <li *ngFor=\"let item of createRange(5); let currentElementIndex=index;\"\n                                                        (click)='updateRating(currentElementIndex + 1)'>\n                                                        <span class=\"uk-icon\"\n                                                            [ngClass]=\"(currentElementIndex + 1) <= product.data.reviews_score ? 'uk-text-warning' : ''\"\n                                                            uk-icon=\"star\"></span>\n                                                    </li>\n                                                </ul>\n                                                <div class=\"uk-margin-xsmall-left\">\n                                                    <a class=\"uk-text-meta js-scroll-to-description\"\n                                                        href=\"#\">({{ product.data.reviews_length }})</a>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-margin\">\n                                        <div class=\"uk-padding-small uk-background-primary-lighten uk-border-rounded\">\n                                            <div class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\"\n                                                uk-grid=\"\">\n                                                <div>\n                                                    <del class=\"uk-text-meta\"\n                                                        *ngIf='product.data.on_sale'><span [innerHTML]='\"&#8358;\"'></span>{{ product.data.price | number }}</del>\n                                                    <div class=\"tm-product-price\">\n                                                        <span [innerHTML]='\"&#8358;\"'></span> {{ product.data.on_sale ? product.data.on_sale_price : product.data.price | number }}\n                                                    </div>\n                                                </div>\n                                                <div class=\"uk-grid-margin\">\n                                                    <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                                        <div>\n                                                            <a (click)='quantity > 1 ? quantity = quantity - 1 :  quantity = 1'\n                                                                uk-icon=\"icon: minus; ratio: .75\" class=\"uk-icon\"></a>\n                                                            <input class=\"uk-input tm-quantity-input\" type=\"text\"\n                                                                maxlength=\"3\" [ngModel]='quantity' />\n                                                            <a (click)=\"quantity = quantity + 1\"\n                                                                uk-icon=\"icon: plus; ratio: .75\" class=\"uk-icon\"></a>\n                                                        </div>\n                                                        <div>\n                                                            <button (click)=\"addToCart()\" [disabled]=\"addingToCart\"\n                                                                class=\"uk-button uk-button-primary tm-product-add-button tm-shine js-add-to-cart\">\n                                                                add to cart\n                                                            </button>\n                                                        </div>\n                                                        <div\n                                                            class=\"uk-width-auto uk-width-expand@s uk-flex uk-flex-middle uk-text-meta\">\n                                                            <a class=\"uk-margin-small-right js-add-to js-add-to-favorites tm-action-button-active js-added-to\"\n                                                                (click)='addToFavourite()' uk-tooltip=\"Add to favorites\"\n                                                                title=\"\" aria-expanded=\"false\">\n                                                                <span uk-icon=\"heart\" class=\"uk-icon\"></span>\n                                                            </a>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-margin\">\n                                        <div class=\"uk-padding-small uk-background-muted uk-border-rounded\">\n\n\n                                            <p>\n                                                {{ product.data.summary }}\n                                            </p>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"uk-width-1-1 tm-product-description uk-grid-margin\" id=\"description\">\n                                <header>\n                                    <nav class=\"tm-product-nav uk-sticky\"\n                                        uk-sticky=\"offset: 60; bottom: #description; cls-active: tm-product-nav-fixed;\">\n                                        <ul class=\"uk-subnav uk-subnav-pill js-product-switcher\"\n                                            uk-switcher=\"connect: .js-tabs\">\n                                            <li aria-expanded=\"false\"><a class=\"js-scroll-to-description\"\n                                                    href=\"#description\">Overview</a></li>\n                                            <li aria-expanded=\"true\" class=\"uk-active\"><a\n                                                    class=\"js-scroll-to-description\"\n                                                    href=\"#description\">Specifications</a></li>\n                                            <li aria-expanded=\"false\"><a class=\"js-scroll-to-description\"\n                                                    href=\"#description\">Reviews\n                                                    <span>({{ product.data.reviews_length }})</span></a></li>\n                                        </ul>\n                                    </nav>\n                                    <div class=\"uk-sticky-placeholder\" style=\"height: 71px; margin: 0px;\" hidden=\"\">\n                                    </div>\n                                </header>\n                                <div class=\"uk-card-body\">\n                                    <div class=\"uk-switcher js-product-switcher js-tabs\">\n                                        <section>\n                                            <article class=\"uk-article\">\n                                                <div class=\"uk-article-body\" [innerHtml]='product.data.description'>\n                                                </div>\n\n                                            </article>\n                                        </section>\n                                        <section class=\"uk-active\">\n                                            <table\n                                                class=\"uk-table uk-table-divider uk-table-justify uk-table-responsive\">\n                                                <tbody>\n                                                    <tr *ngFor=\"let filter of product.data.filters; let i = index \">\n                                                        <th class=\"uk-width-medium\">{{ filter.filter.title }}</th>\n                                                        <td class=\"uk-table-expand\">{{ filter.value }}</td>\n                                                    </tr>\n                                                </tbody>\n                                            </table>\n                                        </section>\n                                        <section>\n                                            <div class=\"uk-grid-small uk-grid-divider uk-grid\" uk-grid=\"\">\n                                                <div\n                                                    class=\"uk-width-1-1 uk-width-1-5@s uk-text-center tm-reviews-column\">\n                                                    <div class=\"uk-text-meta uk-text-uppercase\">average rating</div>\n                                                    <div class=\"uk-heading-primary\">{{ product.data.reviews_score }}\n                                                    </div>\n                                                    <div class=\"uk-flex uk-flex-center\">\n                                                        <ul class=\"uk-iconnav tm-rating\">\n                                                            <li *ngFor=\"let item of createRange(5); let currentElementIndex=index;\"\n                                                                (click)='updateRating(currentElementIndex + 1)'>\n                                                                <span class=\"uk-icon\"\n                                                                    [ngClass]=\"(currentElementIndex + 1) <= product.data.reviews_score ? 'uk-text-warning' : ''\"\n                                                                    uk-icon=\"star\"></span>\n                                                            </li>\n                                                        </ul>\n                                                    </div>\n                                                    <div class=\"uk-margin-small-top uk-text-meta\">based on\n                                                        {{ product.data.reviews_length }} reviews\n                                                    </div><button\n                                                        class=\"uk-button uk-button-primary uk-margin-top uk-width-1-1\"\n                                                        uk-toggle=\"target: #review\">write a review</button>\n                                                </div>\n                                                <div class=\"uk-width-1-1 uk-width-expand@s\">\n                                                    <div class=\"uk-grid-small uk-grid-divider uk-child-width-1-1 uk-grid uk-grid-stack\"\n                                                        uk-grid=\"\"\n                                                        *ngIf=\"(productReviews && productReviews.data);  else beTheFirst\">\n                                                        <article *ngFor=\"let productReview of productReviews.data;\">\n                                                            <section\n                                                                class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\"\n                                                                uk-grid=\"\">\n                                                                <header>\n                                                                    <div class=\"uk-h4 uk-margin-remove\">\n                                                                        {{ productReview.client.first_name }}\n                                                                        {{ productReview.client.last_name }}\n                                                                    </div>\n                                                                    <time\n                                                                        class=\"uk-text-meta\">{{ productReview.created | date: 'MMMM d, yyyy' }}</time>\n                                                                </header>\n                                                                <div class=\"uk-grid-margin\">\n                                                                    <ul class=\"uk-iconnav uk-margin-bottom tm-rating\">\n                                                                        <li *ngFor=\"let item of createRange(5); let currentElementIndex=index;\"\n                                                                            (click)='updateRating(currentElementIndex + 1)'>\n                                                                            <span class=\"uk-icon\"\n                                                                                [ngClass]=\"(currentElementIndex + 1) <= productReview.score ? 'uk-text-warning' : ''\"\n                                                                                uk-icon=\"star\"></span>\n                                                                        </li>\n                                                                    </ul>\n                                                                    <div>\n                                                                        <p>{{ productReview.review }}</p>\n                                                                    </div>\n                                                                </div>\n                                                            </section>\n                                                        </article>\n                                                    </div>\n                                                    <ng-template #beTheFirst>\n                                                        <div class=\"uk-padding uk-text-center\">\n                                                            <h2>\n                                                                Be the first to review this.\n                                                            </h2>\n                                                        </div>\n                                                    </ng-template>\n                                                </div>\n                                            </div>\n                                        </section>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n\n\n<div id=\"review\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <button class=\"uk-modal-close-outside uk-close uk-icon\" type=\"button\" uk-close=\"\"></button>\n        <div *ngIf='client !== null'>\n            <h2 class=\"uk-modal-title uk-text-center\">Review</h2>\n            <form *ngIf='!reviewing' class=\"uk-form-stacked\" id=\"reviewForm\" #reviewForm='ngForm'\n                (ngSubmit)='reviewProduct(reviewForm)'>\n                <div class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                    <div class=\"uk-grid-margin uk-first-column\">\n                        <div class=\"uk-form-label\">Rating</div>\n                        <div [hidden]=\"rating.valid || rating.pristine\" class=\"uk-alert uk-alert-danger\">\n                            Rating is required!\n                        </div>\n                        <ul class=\"uk-iconnav tm-rating\">\n                            <li *ngFor=\"let item of createRange(5); let currentElementIndex=index;\"\n                                (click)='updateRating(currentElementIndex + 1)'>\n                                <span class=\"uk-icon\"\n                                    [ngClass]=\"(currentElementIndex + 1) <= review.rating ? 'uk-text-warning' : ''\"\n                                    uk-icon=\"star\"></span>\n                            </li>\n                        </ul>\n                        <input type=\"hidden\" required=\"\" #rating='ngModel' name=\"rating\" [(ngModel)]='review.rating'>\n                    </div>\n                    <div class=\"uk-grid-margin uk-first-column\"><label>\n                            <div class=\"uk-form-label uk-form-label-required\">Review</div>\n\n                            <div [hidden]=\"_review.valid || _review.pristine\" class=\"uk-alert uk-alert-danger\">\n                                Review is required!\n                            </div>\n                            <textarea name=\"review\" class=\"uk-textarea\" rows=\"5\" required=\"\" form='reviewForm'\n                                #_review='ngModel' [(ngModel)]='review.review'></textarea>\n                        </label></div>\n                    <div class=\"uk-text-center uk-grid-margin uk-first-column\">\n                        <button class=\"uk-button uk-button-primary\" type=\"submit\" form='reviewForm'\n                            [disabled]=\"!reviewForm.form.valid || (reviewing)\">Send</button>\n                    </div>\n                </div>\n            </form>\n            <div *ngIf='reviewing' class=\"uk-text-center uk-padding-large\">\n                <span uk-spinner=\"ratio: 4.5\"></span>\n            </div>\n        </div>\n        <div *ngIf='client === null'>\n            <h1>\n                Login to drop a comment\n            </h1>\n            <h4>\n                <a routerLink='/sign-in' class=\"uk-modal-close\">Click Here</a>\n            </h4>\n        </div>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\" *ngIf=\"product && product.data\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid>\n            <div class=\"uk-text-center\">\n                <app-breadcrumb product='true' [data]='product.data'></app-breadcrumb>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">\n                    {{ product.data.name }}\n                </h1>\n            </div>\n        </div>\n        <div class=\"uk-grid-margin\">\n            <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                <div>\n                    <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\">\n                        <div class=\"uk-grid-small uk-grid-collapse uk-grid-match uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-width-1-1 uk-width-expand@m\">\n                                <div class=\"uk-grid-collapse uk-child-width-1-1 uk-grid-stack\" uk-grid=\"\">\n                                    <div style=\"padding: 1rem;\">\n                                        <figure class=\"uk-flex-middle uk-text-center\">\n                                            <img style=\"width: auto; height: 300px;\"\n                                                src=\"{{ product.data.default_image ? product.data.default_image.image_url : '' }}\"\n                                                appImgFallback=\"product\" [alt]=\"product.data.name\">\n                                        </figure>\n                                    </div>\n                                    <div class=\"uk-grid-margin\" *ngIf=\"productImages && productImages.data\">\n                                        <div class=\"uk-card-body uk-flex uk-flex-center\">\n                                            <div class=\"uk-width-5-6\">\n                                                <div uk-slider=\"finite: true\" class=\"uk-slider\">\n                                                    <div class=\"uk-position-relative\">\n                                                        <div class=\"uk-slider-container\">\n                                                            <ul class=\"tm-slider-items uk-slider-items uk-child-width-1-4 uk-grid uk-grid-small\"\n                                                                uk-lightbox=\"\">\n                                                                <li\n                                                                    *ngFor=\"let image of productImages.data; let i = index\">\n                                                                    <div class=\"tm-ratio tm-ratio-1-1\">\n                                                                        <a class=\"uk-card-body tm-media-box tm-media-box-zoom\"\n                                                                            [href]=\"image.image_url\">\n                                                                            <figure class=\"tm-media-box-wrap\">\n                                                                                <img [src]=\"image.thumb_url\"\n                                                                                    alt=\"product.data.name\">\n                                                                            </figure>\n                                                                        </a>\n                                                                    </div>\n                                                                </li>\n                                                            </ul>\n                                                            <div>\n                                                                <a class=\"uk-position-center-left-out uk-position-small uk-slidenav-previous uk-icon uk-slidenav uk-invisible\"\n                                                                    href=\"#\" uk-slider-item=\"previous\"\n                                                                    uk-slidenav-previous=\"\"></a>\n                                                                <a class=\"uk-position-center-right-out uk-position-small uk-slidenav-next uk-icon uk-slidenav\"\n                                                                    href=\"#\" uk-slider-item=\"next\"\n                                                                    uk-slidenav-next=\"\"></a>\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"uk-width-1-1 uk-width-1-3@m tm-product-info\">\n                                <div class=\"uk-card-body\">\n                                    <div>\n                                        <h4>{{ product.data.creator.title | uppercase }}</h4>\n                                    </div>\n                                    <div class=\"uk-margin\">\n                                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-flex uk-flex-middle\">\n                                                <ul class=\"uk-iconnav uk-margin-xsmall-bottom tm-rating\">\n                                                    <li *ngFor=\"let item of createRange(5); let currentElementIndex=index;\"\n                                                        (click)='updateRating(currentElementIndex + 1)'>\n                                                        <span class=\"uk-icon\"\n                                                            [ngClass]=\"(currentElementIndex + 1) <= product.data.reviews_score ? 'uk-text-warning' : ''\"\n                                                            uk-icon=\"star\"></span>\n                                                    </li>\n                                                </ul>\n                                                <div class=\"uk-margin-xsmall-left\">\n                                                    <a class=\"uk-text-meta js-scroll-to-description\"\n                                                        href=\"#\">({{ product.data.reviews_length }})</a>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-margin\">\n                                        <div class=\"uk-padding-small uk-background-primary-lighten uk-border-rounded\">\n                                            <div class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\"\n                                                uk-grid=\"\">\n                                                <div>\n                                                    <del class=\"uk-text-meta\"\n                                                        *ngIf='product.data.on_sale'><span [innerHTML]='\"&#8358;\"'></span>{{ product.data.price | number }}</del>\n                                                    <div class=\"tm-product-price\">\n                                                        <span [innerHTML]='\"&#8358;\"'></span> {{ product.data.on_sale ? product.data.on_sale_price : product.data.price | number }}\n                                                    </div>\n                                                </div>\n                                                <div class=\"uk-grid-margin\">\n                                                    <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                                        <div>\n                                                            <a (click)=\"quantity > 1 ? quantity = quantity - 1 :  quantity = 1\" uk-icon=\"icon: minus; ratio: .75\" class=\"uk-icon\"></a>\n                                                            <input class=\"uk-input tm-quantity-input\" type=\"text\"\n                                                                maxlength=\"3\" [ngModel]='quantity' />\n                                                            <a (click)=\"quantity = quantity + 1\" uk-icon=\"icon: plus; ratio: .75\" class=\"uk-icon\"></a>\n                                                        </div>\n                                                        <div>\n                                                            <button (click)=\"addToCart()\" [disabled]=\"addingToCart\"\n                                                                class=\"uk-button uk-button-primary tm-product-add-button tm-shine js-add-to-cart\">\n                                                                add to cart\n                                                            </button>\n                                                        </div>\n                                                        <div\n                                                            class=\"uk-width-auto uk-width-expand@s uk-flex uk-flex-middle uk-text-meta\">\n                                                            <a class=\"uk-margin-small-right js-add-to js-add-to-favorites tm-action-button-active js-added-to\"\n                                                                (click)='addToFavourite()' uk-tooltip=\"Add to favorites\"\n                                                                title=\"\" aria-expanded=\"false\">\n                                                                <span uk-icon=\"heart\" class=\"uk-icon\"></span>\n                                                            </a>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-margin\">\n                                        <div class=\"uk-padding-small uk-background-muted uk-border-rounded\">\n\n\n                                            <p>\n                                                {{ product.data.summary }}\n                                            </p>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"uk-width-1-1 tm-product-description uk-grid-margin\" id=\"description\">\n                                <header>\n                                    <nav class=\"tm-product-nav uk-sticky\"\n                                        uk-sticky=\"offset: 60; bottom: #description; cls-active: tm-product-nav-fixed;\">\n                                        <ul class=\"uk-subnav uk-subnav-pill js-product-switcher\"\n                                            uk-switcher=\"connect: .js-tabs\">\n                                            <li aria-expanded=\"false\"><a class=\"js-scroll-to-description\"\n                                                    href=\"#description\">Overview</a></li>\n                                            <li aria-expanded=\"true\" class=\"uk-active\"><a\n                                                    class=\"js-scroll-to-description\"\n                                                    href=\"#description\">Specifications</a></li>\n                                            <li aria-expanded=\"false\"><a class=\"js-scroll-to-description\"\n                                                    href=\"#description\">Reviews\n                                                    <span>({{ product.data.reviews_length }})</span></a></li>\n                                        </ul>\n                                    </nav>\n                                    <div class=\"uk-sticky-placeholder\" style=\"height: 71px; margin: 0px;\" hidden=\"\">\n                                    </div>\n                                </header>\n                                <div class=\"uk-card-body\">\n                                    <div class=\"uk-switcher js-product-switcher js-tabs\">\n                                        <section>\n                                            <article class=\"uk-article\">\n                                                <div class=\"uk-article-body\" [innerHtml]='product.data.description'>\n                                                </div>\n\n                                            </article>\n                                        </section>\n                                        <section class=\"uk-active\">\n                                            <table\n                                                class=\"uk-table uk-table-divider uk-table-justify uk-table-responsive\">\n                                                <tbody>\n                                                    <tr *ngFor=\"let filter of product.data.filters; let i = index \">\n                                                        <th class=\"uk-width-medium\">{{ filter.filter.title }}</th>\n                                                        <td class=\"uk-table-expand\">{{ filter.value }}</td>\n                                                    </tr>\n                                                </tbody>\n                                            </table>\n                                        </section>\n                                        <section>\n                                            <div class=\"uk-grid-small uk-grid-divider uk-grid\" uk-grid=\"\">\n                                                <div\n                                                    class=\"uk-width-1-1 uk-width-1-5@s uk-text-center tm-reviews-column\">\n                                                    <div class=\"uk-text-meta uk-text-uppercase\">average rating</div>\n                                                    <div class=\"uk-heading-primary\">{{ product.data.reviews_score }}\n                                                    </div>\n                                                    <div class=\"uk-flex uk-flex-center\">\n                                                        <ul class=\"uk-iconnav tm-rating\">\n                                                            <li *ngFor=\"let item of createRange(5); let currentElementIndex=index;\"\n                                                                (click)='updateRating(currentElementIndex + 1)'>\n                                                                <span class=\"uk-icon\"\n                                                                    [ngClass]=\"(currentElementIndex + 1) <= product.data.reviews_score ? 'uk-text-warning' : ''\"\n                                                                    uk-icon=\"star\"></span>\n                                                            </li>\n                                                        </ul>\n                                                    </div>\n                                                    <div class=\"uk-margin-small-top uk-text-meta\">based on\n                                                        {{ product.data.reviews_length }} reviews\n                                                    </div><button\n                                                        class=\"uk-button uk-button-primary uk-margin-top uk-width-1-1\"\n                                                        uk-toggle=\"target: #review\">write a review</button>\n                                                </div>\n                                                <div class=\"uk-width-1-1 uk-width-expand@s\">\n                                                    <div class=\"uk-grid-small uk-grid-divider uk-child-width-1-1 uk-grid uk-grid-stack\"\n                                                        uk-grid=\"\"\n                                                        *ngIf=\"(productReviews && productReviews.data);  else beTheFirst\">\n                                                        <article *ngFor=\"let productReview of productReviews.data;\">\n                                                            <section\n                                                                class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\"\n                                                                uk-grid=\"\">\n                                                                <header>\n                                                                    <div class=\"uk-h4 uk-margin-remove\">\n                                                                        {{ productReview.client.first_name }}\n                                                                        {{ productReview.client.last_name }}\n                                                                    </div>\n                                                                    <time\n                                                                        class=\"uk-text-meta\">{{ productReview.created | date: 'MMMM d, yyyy' }}</time>\n                                                                </header>\n                                                                <div class=\"uk-grid-margin\">\n                                                                    <ul class=\"uk-iconnav uk-margin-bottom tm-rating\">\n                                                                        <li *ngFor=\"let item of createRange(5); let currentElementIndex=index;\"\n                                                                            (click)='updateRating(currentElementIndex + 1)'>\n                                                                            <span class=\"uk-icon\"\n                                                                                [ngClass]=\"(currentElementIndex + 1) <= productReview.score ? 'uk-text-warning' : ''\"\n                                                                                uk-icon=\"star\"></span>\n                                                                        </li>\n                                                                    </ul>\n                                                                    <div>\n                                                                        <p>{{ productReview.review }}</p>\n                                                                    </div>\n                                                                </div>\n                                                            </section>\n                                                        </article>\n                                                    </div>\n                                                    <ng-template #beTheFirst>\n                                                        <div class=\"uk-padding uk-text-center\">\n                                                            <h2>\n                                                                Be the first to review this.\n                                                            </h2>\n                                                        </div>\n                                                    </ng-template>\n                                                </div>\n                                            </div>\n                                        </section>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n\n\n<div id=\"review\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <button class=\"uk-modal-close-outside uk-close uk-icon\" type=\"button\" uk-close=\"\"></button>\n        <div *ngIf='client !== null'>\n            <h2 class=\"uk-modal-title uk-text-center\">Review</h2>\n            <form *ngIf='!reviewing' class=\"uk-form-stacked\" id=\"reviewForm\" #reviewForm='ngForm'\n                (ngSubmit)='reviewProduct(reviewForm)'>\n                <div class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                    <div class=\"uk-grid-margin uk-first-column\">\n                        <div class=\"uk-form-label\">Rating</div>\n                        <div [hidden]=\"rating.valid || rating.pristine\" class=\"uk-alert uk-alert-danger\">\n                            Rating is required!\n                        </div>\n                        <ul class=\"uk-iconnav tm-rating\">\n                            <li *ngFor=\"let item of createRange(5); let currentElementIndex=index;\"\n                                (click)='updateRating(currentElementIndex + 1)'>\n                                <span class=\"uk-icon\"\n                                    [ngClass]=\"(currentElementIndex + 1) <= review.rating ? 'uk-text-warning' : ''\"\n                                    uk-icon=\"star\"></span>\n                            </li>\n                        </ul>\n                        <input type=\"hidden\" required=\"\" #rating='ngModel' name=\"rating\" [(ngModel)]='review.rating'>\n                    </div>\n                    <div class=\"uk-grid-margin uk-first-column\"><label>\n                            <div class=\"uk-form-label uk-form-label-required\">Review</div>\n\n                            <div [hidden]=\"_review.valid || _review.pristine\" class=\"uk-alert uk-alert-danger\">\n                                Review is required!\n                            </div>\n                            <textarea name=\"review\" class=\"uk-textarea\" rows=\"5\" required=\"\" form='reviewForm'\n                                #_review='ngModel' [(ngModel)]='review.review'></textarea>\n                        </label></div>\n                    <div class=\"uk-text-center uk-grid-margin uk-first-column\">\n                        <button class=\"uk-button uk-button-primary\" type=\"submit\" form='reviewForm'\n                            [disabled]=\"!reviewForm.form.valid || (reviewing)\">Send</button>\n                    </div>\n                </div>\n            </form>\n            <div *ngIf='reviewing' class=\"uk-text-center uk-padding-large\">\n                <span uk-spinner=\"ratio: 4.5\"></span>\n            </div>\n        </div>\n        <div *ngIf='client === null'>\n            <h1>\n                Login to drop a comment\n            </h1>\n            <h4>\n                <a routerLink='/sign-in' class=\"uk-modal-close\">Click Here</a>\n            </h4>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -1535,9 +1635,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
-    /*! ./pages/admin/admin-banners-page/admin-banners-page.component */
-    "./src/app/pages/admin/admin-banners-page/admin-banners-page.component.ts"); // Layouts
+    var _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    /*! @app/pages/admin/admin-banners-page/admin-banners-page.component */
+    "./src/app/pages/admin/admin-banners-page/admin-banners-page.component.ts");
+    /* harmony import */
+
+
+    var _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    /*! @app/pages/checkout-page/checkout-page.component */
+    "./src/app/pages/checkout-page/checkout-page.component.ts");
+    /* harmony import */
+
+
+    var _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    /*! ./pages/admin/store-address-page/store-address-page.component */
+    "./src/app/pages/admin/store-address-page/store-address-page.component.ts");
+    /* harmony import */
+
+
+    var _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    /*! ./pages/client/client-order/client-order.component */
+    "./src/app/pages/client/client-order/client-order.component.ts");
+    /* harmony import */
+
+
+    var _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
+    /*! ./pages/client/client-address/client-address.component */
+    "./src/app/pages/client/client-address/client-address.component.ts"); // Layouts
     // General Pages
     // Admin Pages
     // Guards
@@ -1555,7 +1679,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         component: _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_15__["AdminRolesPageComponent"]
       }, {
         path: 'banners',
-        component: _pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_30__["AdminBannersPageComponent"]
+        component: _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_30__["AdminBannersPageComponent"]
       }, {
         path: 'staffs',
         component: _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_16__["AdminStaffsPageComponent"]
@@ -1571,6 +1695,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         path: 'category/:id',
         component: _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_19__["AdminCategoryPageComponent"]
+      }, {
+        path: 'store-address',
+        component: _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_32__["StoreAddressPageComponent"]
       }, {
         path: 'products',
         component: _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminProductsPageComponent"]
@@ -1616,6 +1743,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         },
         component: _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_10__["CartPageComponent"]
       }, {
+        path: 'checkout',
+        canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"]],
+        data: {
+          role: 'client'
+        },
+        component: _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_31__["CheckoutPageComponent"]
+      }, {
         path: 'account',
         component: _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_25__["ClientLayoutComponent"],
         canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"]],
@@ -1628,6 +1762,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }, {
           path: 'orders',
           component: _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_28__["ClientOrdersComponent"]
+        }, {
+          path: 'order/:id',
+          component: _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_33__["ClientOrderComponent"]
+        }, {
+          path: 'address',
+          component: _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_34__["ClientAddressComponent"]
         }, {
           path: 'personal',
           component: _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_26__["ClientProfileComponent"]
@@ -1798,267 +1938,315 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var angular4_paystack__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! angular4-paystack */
+    "./node_modules/angular4-paystack/fesm2015/angular4-paystack.js");
+    /* harmony import */
+
+
+    var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @fortawesome/free-brands-svg-icons */
     "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
     /* harmony import */
 
 
-    var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! @fortawesome/free-regular-svg-icons */
     "./node_modules/@fortawesome/free-regular-svg-icons/index.es.js");
     /* harmony import */
 
 
-    var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @fortawesome/free-solid-svg-icons */
     "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
     /* harmony import */
 
 
-    var _app_app_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _app_app_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @app/app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _app_components_nav_bar_nav_bar_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _app_components_nav_bar_nav_bar_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @app/components/nav-bar/nav-bar.component */
     "./src/app/components/nav-bar/nav-bar.component.ts");
     /* harmony import */
 
 
-    var _app_app_routing_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _app_app_routing_module__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @app/app-routing.module */
     "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
-    var _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! @app/pages/home-page/home-page.component */
     "./src/app/pages/home-page/home-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! @app/pages/sign-up-page/sign-up-page.component */
     "./src/app/pages/sign-up-page/sign-up-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! @app/pages/sign-in-page/sign-in-page.component */
     "./src/app/pages/sign-in-page/sign-in-page.component.ts");
     /* harmony import */
 
 
-    var _app_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _app_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! @app/components/footer/footer.component */
     "./src/app/components/footer/footer.component.ts");
     /* harmony import */
 
 
-    var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! @app/layout/default-layout/default-layout.component */
     "./src/app/layout/default-layout/default-layout.component.ts");
     /* harmony import */
 
 
-    var _app_layout_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _app_layout_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! @app/layout/admin-layout/admin-layout.component */
     "./src/app/layout/admin-layout/admin-layout.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    var _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! @app/pages/admin/admin-index-page/admin-index-page.component */
     "./src/app/pages/admin/admin-index-page/admin-index-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    var _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! @app/pages/admin/admin-roles-page/admin-roles-page.component */
     "./src/app/pages/admin/admin-roles-page/admin-roles-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    var _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! @app/pages/admin/admin-staff-page/admin-staff-page.component */
     "./src/app/pages/admin/admin-staff-page/admin-staff-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    var _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! @app/pages/admin/admin-staffs-page/admin-staffs-page.component */
     "./src/app/pages/admin/admin-staffs-page/admin-staffs-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    var _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
     /*! @app/pages/admin/admin-categories-page/admin-categories-page.component */
     "./src/app/pages/admin/admin-categories-page/admin-categories-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    var _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
     /*! @app/pages/admin/admin-category-page/admin-category-page.component */
     "./src/app/pages/admin/admin-category-page/admin-category-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    var _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! @app/pages/admin/admin-products-page/admin-products-page.component */
     "./src/app/pages/admin/admin-products-page/admin-products-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
+    var _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
     /*! @app/pages/admin/admin-product-page/admin-product-page.component */
     "./src/app/pages/admin/admin-product-page/admin-product-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    var _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
     /*! @app/pages/admin/admin-create-product-page/admin-create-product-page.component */
     "./src/app/pages/admin/admin-create-product-page/admin-create-product-page.component.ts");
     /* harmony import */
 
 
-    var _app_directive_img_fallback_directive__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    var _app_directive_img_fallback_directive__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
     /*! @app/directive/img-fallback.directive */
     "./src/app/directive/img-fallback.directive.ts");
     /* harmony import */
 
 
-    var _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    var _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
     /*! @app/pages/catalog-page/catalog-page.component */
     "./src/app/pages/catalog-page/catalog-page.component.ts");
     /* harmony import */
 
 
-    var _pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    var _pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
     /*! ./pages/category-page/category-page.component */
     "./src/app/pages/category-page/category-page.component.ts");
     /* harmony import */
 
 
-    var _components_grid_grid_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    var _components_grid_grid_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
     /*! ./components/grid/grid.component */
     "./src/app/components/grid/grid.component.ts");
     /* harmony import */
 
 
-    var _components_admin_product_update_product_update_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    var _components_admin_product_update_product_update_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
     /*! ./components/admin/product-update/product-update.component */
     "./src/app/components/admin/product-update/product-update.component.ts");
     /* harmony import */
 
 
-    var _components_admin_product_categories_product_categories_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
+    var _components_admin_product_categories_product_categories_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
     /*! ./components/admin/product-categories/product-categories.component */
     "./src/app/components/admin/product-categories/product-categories.component.ts");
     /* harmony import */
 
 
-    var _pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
+    var _pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
     /*! ./pages/admin/admin-filters-page/admin-filters-page.component */
     "./src/app/pages/admin/admin-filters-page/admin-filters-page.component.ts");
     /* harmony import */
 
 
-    var _components_admin_sidebar_admin_sidebar_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
+    var _components_admin_sidebar_admin_sidebar_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
     /*! ./components/admin-sidebar/admin-sidebar.component */
     "./src/app/components/admin-sidebar/admin-sidebar.component.ts");
     /* harmony import */
 
 
-    var _components_admin_product_filter_product_filter_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
+    var _components_admin_product_filter_product_filter_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(
     /*! ./components/admin/product-filter/product-filter.component */
     "./src/app/components/admin/product-filter/product-filter.component.ts");
     /* harmony import */
 
 
-    var _pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(
+    var _pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(
     /*! ./pages/product-page/product-page.component */
     "./src/app/pages/product-page/product-page.component.ts");
     /* harmony import */
 
 
-    var _components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(
+    var _components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(
     /*! ./components/breadcrumb/breadcrumb.component */
     "./src/app/components/breadcrumb/breadcrumb.component.ts");
     /* harmony import */
 
 
-    var _components_product_carousel_product_carousel_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(
+    var _components_product_carousel_product_carousel_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(
     /*! ./components/product-carousel/product-carousel.component */
     "./src/app/components/product-carousel/product-carousel.component.ts");
     /* harmony import */
 
 
-    var _pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(
+    var _pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(
     /*! ./pages/error-pages/error-pages.component */
     "./src/app/pages/error-pages/error-pages.component.ts");
     /* harmony import */
 
 
-    var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(
+    var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(
     /*! ./guards/auth.guard */
     "./src/app/guards/auth.guard.ts");
     /* harmony import */
 
 
-    var _pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(
+    var _pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(
     /*! ./pages/client/client-profile/client-profile.component */
     "./src/app/pages/client/client-profile/client-profile.component.ts");
     /* harmony import */
 
 
-    var _layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(
+    var _layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(
     /*! ./layout/client-layout/client-layout.component */
     "./src/app/layout/client-layout/client-layout.component.ts");
     /* harmony import */
 
 
-    var _pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(
+    var _pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(
     /*! ./pages/client/client-favourites/client-favourites.component */
     "./src/app/pages/client/client-favourites/client-favourites.component.ts");
     /* harmony import */
 
 
-    var _pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(
+    var _pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(
     /*! ./pages/client/client-orders/client-orders.component */
     "./src/app/pages/client/client-orders/client-orders.component.ts");
     /* harmony import */
 
 
-    var _pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(
+    var _pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(
     /*! ./pages/client/client-settings/client-settings.component */
     "./src/app/pages/client/client-settings/client-settings.component.ts");
     /* harmony import */
 
 
-    var _pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(
+    var _pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(
     /*! ./pages/product-search/product-search.component */
     "./src/app/pages/product-search/product-search.component.ts");
     /* harmony import */
 
 
-    var _pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(
+    var _pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(
     /*! ./pages/admin/admin-banners-page/admin-banners-page.component */
     "./src/app/pages/admin/admin-banners-page/admin-banners-page.component.ts");
     /* harmony import */
 
 
-    var _pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(
+    var _pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(
     /*! ./pages/cart-page/cart-page.component */
-    "./src/app/pages/cart-page/cart-page.component.ts"); // FontAwesome Icons
+    "./src/app/pages/cart-page/cart-page.component.ts");
+    /* harmony import */
+
+
+    var _pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(
+    /*! ./pages/checkout-page/checkout-page.component */
+    "./src/app/pages/checkout-page/checkout-page.component.ts");
+    /* harmony import */
+
+
+    var _components_checkout_item_checkout_item_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(
+    /*! ./components/checkout-item/checkout-item.component */
+    "./src/app/components/checkout-item/checkout-item.component.ts");
+    /* harmony import */
+
+
+    var _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(
+    /*! ./pages/admin/store-address-page/store-address-page.component */
+    "./src/app/pages/admin/store-address-page/store-address-page.component.ts");
+    /* harmony import */
+
+
+    var _pipes_safe_pipe__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(
+    /*! ./pipes/safe.pipe */
+    "./src/app/pipes/safe.pipe.ts");
+    /* harmony import */
+
+
+    var _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(
+    /*! ./pages/client/client-order/client-order.component */
+    "./src/app/pages/client/client-order/client-order.component.ts");
+    /* harmony import */
+
+
+    var _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(
+    /*! ./pages/client/client-address/client-address.component */
+    "./src/app/pages/client/client-address/client-address.component.ts");
+    /* harmony import */
+
+
+    var _constants__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(
+    /*! ./constants */
+    "./src/app/constants.ts"); // FontAwesome Icons
 
 
     var AppModule = function AppModule(library) {
       _classCallCheck(this, AppModule);
 
-      library.addIconPacks(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_8__["fab"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_10__["fas"], _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_9__["far"]);
+      library.addIconPacks(_fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_9__["fab"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__["fas"], _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_10__["far"]);
     };
 
     AppModule.ctorParameters = function () {
@@ -2068,10 +2256,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"], _app_components_nav_bar_nav_bar_component__WEBPACK_IMPORTED_MODULE_12__["NavBarComponent"], _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_14__["HomePageComponent"], _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_15__["SignUpPageComponent"], _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_16__["SignInPageComponent"], _app_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_17__["FooterComponent"], _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_18__["DefaultLayoutComponent"], _app_layout_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_19__["AdminLayoutComponent"], _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_20__["AdminIndexPageComponent"], _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_21__["AdminRolesPageComponent"], _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminStaffPageComponent"], _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_23__["AdminStaffsPageComponent"], _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_24__["AdminCategoriesPageComponent"], _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_25__["AdminCategoryPageComponent"], _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_26__["AdminProductsPageComponent"], _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_27__["AdminProductPageComponent"], _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_28__["AdminCreateProductPageComponent"], _app_directive_img_fallback_directive__WEBPACK_IMPORTED_MODULE_29__["ImgFallbackDirective"], _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_30__["CatalogPageComponent"], _pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_31__["CategoryPageComponent"], _components_grid_grid_component__WEBPACK_IMPORTED_MODULE_32__["GridComponent"], _components_admin_product_update_product_update_component__WEBPACK_IMPORTED_MODULE_33__["ProductUpdateComponent"], _components_admin_product_categories_product_categories_component__WEBPACK_IMPORTED_MODULE_34__["ProductCategoriesComponent"], _pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_35__["AdminFiltersPageComponent"], _components_admin_sidebar_admin_sidebar_component__WEBPACK_IMPORTED_MODULE_36__["AdminSidebarComponent"], _components_admin_product_filter_product_filter_component__WEBPACK_IMPORTED_MODULE_37__["ProductFilterComponent"], _pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_38__["ProductPageComponent"], _components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_39__["BreadcrumbComponent"], _components_product_carousel_product_carousel_component__WEBPACK_IMPORTED_MODULE_40__["ProductCarouselComponent"], _pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_41__["ErrorPagesComponent"], _pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_43__["ClientProfileComponent"], _layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_44__["ClientLayoutComponent"], _pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_45__["ClientFavouritesComponent"], _pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_46__["ClientOrdersComponent"], _pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_47__["ClientSettingsComponent"], _pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_48__["ProductSearchComponent"], _pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_49__["AdminBannersPageComponent"], _pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_50__["CartPageComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_app_routing_module__WEBPACK_IMPORTED_MODULE_13__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeModule"], _tinymce_tinymce_angular__WEBPACK_IMPORTED_MODULE_6__["EditorModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"]],
-      providers: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_42__["AuthGuard"]],
-      bootstrap: [_app_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"]]
+      declarations: [_app_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"], _app_components_nav_bar_nav_bar_component__WEBPACK_IMPORTED_MODULE_13__["NavBarComponent"], _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_15__["HomePageComponent"], _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_16__["SignUpPageComponent"], _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_17__["SignInPageComponent"], _app_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_18__["FooterComponent"], _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_19__["DefaultLayoutComponent"], _app_layout_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_20__["AdminLayoutComponent"], _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_21__["AdminIndexPageComponent"], _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminRolesPageComponent"], _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_23__["AdminStaffPageComponent"], _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_24__["AdminStaffsPageComponent"], _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_25__["AdminCategoriesPageComponent"], _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_26__["AdminCategoryPageComponent"], _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_27__["AdminProductsPageComponent"], _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_28__["AdminProductPageComponent"], _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_29__["AdminCreateProductPageComponent"], _app_directive_img_fallback_directive__WEBPACK_IMPORTED_MODULE_30__["ImgFallbackDirective"], _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_31__["CatalogPageComponent"], _pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_32__["CategoryPageComponent"], _components_grid_grid_component__WEBPACK_IMPORTED_MODULE_33__["GridComponent"], _components_admin_product_update_product_update_component__WEBPACK_IMPORTED_MODULE_34__["ProductUpdateComponent"], _components_admin_product_categories_product_categories_component__WEBPACK_IMPORTED_MODULE_35__["ProductCategoriesComponent"], _pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_36__["AdminFiltersPageComponent"], _components_admin_sidebar_admin_sidebar_component__WEBPACK_IMPORTED_MODULE_37__["AdminSidebarComponent"], _components_admin_product_filter_product_filter_component__WEBPACK_IMPORTED_MODULE_38__["ProductFilterComponent"], _pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_39__["ProductPageComponent"], _components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_40__["BreadcrumbComponent"], _components_product_carousel_product_carousel_component__WEBPACK_IMPORTED_MODULE_41__["ProductCarouselComponent"], _pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_42__["ErrorPagesComponent"], _pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_44__["ClientProfileComponent"], _layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_45__["ClientLayoutComponent"], _pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_46__["ClientFavouritesComponent"], _pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_47__["ClientOrdersComponent"], _pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_48__["ClientSettingsComponent"], _pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_49__["ProductSearchComponent"], _pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_50__["AdminBannersPageComponent"], _pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_51__["CartPageComponent"], _pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_52__["CheckoutPageComponent"], _components_checkout_item_checkout_item_component__WEBPACK_IMPORTED_MODULE_53__["CheckoutItemComponent"], _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_54__["StoreAddressPageComponent"], _pipes_safe_pipe__WEBPACK_IMPORTED_MODULE_55__["SafePipe"], _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_56__["ClientOrderComponent"], _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_57__["ClientAddressComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_app_routing_module__WEBPACK_IMPORTED_MODULE_14__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeModule"], _tinymce_tinymce_angular__WEBPACK_IMPORTED_MODULE_6__["EditorModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], angular4_paystack__WEBPACK_IMPORTED_MODULE_8__["Angular4PaystackModule"].forRoot(_constants__WEBPACK_IMPORTED_MODULE_58__["Constants"].PAYSTACK_PUBLIC_API)],
+      providers: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_43__["AuthGuard"]],
+      bootstrap: [_app_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]]
     })], AppModule);
     /***/
   },
@@ -2759,6 +2947,86 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/components/checkout-item/checkout-item.component.css":
+  /*!**********************************************************************!*\
+    !*** ./src/app/components/checkout-item/checkout-item.component.css ***!
+    \**********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsCheckoutItemCheckoutItemComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2hlY2tvdXQtaXRlbS9jaGVja291dC1pdGVtLmNvbXBvbmVudC5jc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/checkout-item/checkout-item.component.ts":
+  /*!*********************************************************************!*\
+    !*** ./src/app/components/checkout-item/checkout-item.component.ts ***!
+    \*********************************************************************/
+
+  /*! exports provided: CheckoutItemComponent */
+
+  /***/
+  function srcAppComponentsCheckoutItemCheckoutItemComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CheckoutItemComponent", function () {
+      return CheckoutItemComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var CheckoutItemComponent =
+    /*#__PURE__*/
+    function () {
+      function CheckoutItemComponent() {
+        _classCallCheck(this, CheckoutItemComponent);
+      }
+
+      _createClass(CheckoutItemComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return CheckoutItemComponent;
+    }();
+
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()], CheckoutItemComponent.prototype, "cartItem", void 0);
+    CheckoutItemComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-checkout-item',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./checkout-item.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/checkout-item/checkout-item.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./checkout-item.component.css */
+      "./src/app/components/checkout-item/checkout-item.component.css")).default]
+    })], CheckoutItemComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/components/footer/footer.component.css":
   /*!********************************************************!*\
     !*** ./src/app/components/footer/footer.component.css ***!
@@ -3235,6 +3503,40 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./product-carousel.component.css */
       "./src/app/components/product-carousel/product-carousel.component.css")).default]
     })], ProductCarouselComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/constants.ts":
+  /*!******************************!*\
+    !*** ./src/app/constants.ts ***!
+    \******************************/
+
+  /*! exports provided: Constants */
+
+  /***/
+  function srcAppConstantsTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "Constants", function () {
+      return Constants;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+
+    var Constants = function Constants() {
+      _classCallCheck(this, Constants);
+    };
+
+    Constants.PAYSTACK_PUBLIC_API = 'pk_test_533ae82e7b31896e71e6a6ae4411257cdeb83605';
     /***/
   },
 
@@ -3881,6 +4183,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               }
             }, _callee5, this);
           }));
+        }
+      }, {
+        key: "clearProductsFromCart",
+        value: function clearProductsFromCart() {
+          localStorage.removeItem('cart');
+          this.getCartProducts();
         }
       }, {
         key: "getCartItemsCount",
@@ -5469,7 +5777,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, AdminRolesPageComponent);
 
         this.rolesServices = rolesServices;
-        this.roles = {};
         this.role = {
           title: '',
           description: ''
@@ -5902,6 +6209,153 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/pages/admin/store-address-page/store-address-page.component.css":
+  /*!*********************************************************************************!*\
+    !*** ./src/app/pages/admin/store-address-page/store-address-page.component.css ***!
+    \*********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesAdminStoreAddressPageStoreAddressPageComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2FkbWluL3N0b3JlLWFkZHJlc3MtcGFnZS9zdG9yZS1hZGRyZXNzLXBhZ2UuY29tcG9uZW50LmNzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/admin/store-address-page/store-address-page.component.ts":
+  /*!********************************************************************************!*\
+    !*** ./src/app/pages/admin/store-address-page/store-address-page.component.ts ***!
+    \********************************************************************************/
+
+  /*! exports provided: StoreAddressPageComponent */
+
+  /***/
+  function srcAppPagesAdminStoreAddressPageStoreAddressPageComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "StoreAddressPageComponent", function () {
+      return StoreAddressPageComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/addresses.service */
+    "./src/app/services/addresses.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/utils/notification */
+    "./src/app/utils/notification.ts");
+
+    var StoreAddressPageComponent =
+    /*#__PURE__*/
+    function () {
+      function StoreAddressPageComponent(addressServices) {
+        _classCallCheck(this, StoreAddressPageComponent);
+
+        this.addressServices = addressServices;
+        this.storeAddress = {
+          name: '',
+          address: '',
+          phone: '',
+          iframe: '',
+          opened: ''
+        };
+      }
+
+      _createClass(StoreAddressPageComponent, [{
+        key: "onSubmit",
+        value: function onSubmit(form) {
+          var _this54 = this;
+
+          this.addressServices.createStoreAddress(this.storeAddress).subscribe(function (data) {
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+
+            if (data.status === 'success') {
+              _this54.getStoreAddress();
+
+              form.form.reset();
+            }
+          });
+        }
+      }, {
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.getStoreAddress();
+        }
+      }, {
+        key: "getStoreAddress",
+        value: function getStoreAddress() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee24() {
+            var _this55 = this;
+
+            return regeneratorRuntime.wrap(function _callee24$(_context24) {
+              while (1) {
+                switch (_context24.prev = _context24.next) {
+                  case 0:
+                    this.addressServices.getStoreAddresses().subscribe(function (data) {
+                      return _this55.storeAddresses = data;
+                    });
+
+                  case 1:
+                  case "end":
+                    return _context24.stop();
+                }
+              }
+            }, _callee24, this);
+          }));
+        }
+      }]);
+
+      return StoreAddressPageComponent;
+    }();
+
+    StoreAddressPageComponent.ctorParameters = function () {
+      return [{
+        type: _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_2__["AddressesService"]
+      }];
+    };
+
+    StoreAddressPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-store-address-page',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./store-address-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/store-address-page/store-address-page.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./store-address-page.component.css */
+      "./src/app/pages/admin/store-address-page/store-address-page.component.css")).default]
+    })], StoreAddressPageComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/pages/cart-page/cart-page.component.css":
   /*!*********************************************************!*\
     !*** ./src/app/pages/cart-page/cart-page.component.css ***!
@@ -5994,28 +6448,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getCartProducts() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee24() {
-            var _this54 = this;
+          regeneratorRuntime.mark(function _callee25() {
+            var _this56 = this;
 
             var id;
-            return regeneratorRuntime.wrap(function _callee24$(_context24) {
+            return regeneratorRuntime.wrap(function _callee25$(_context25) {
               while (1) {
-                switch (_context24.prev = _context24.next) {
+                switch (_context25.prev = _context25.next) {
                   case 0:
                     this.cart = JSON.parse(localStorage.getItem('cart'));
                     id = this.cart === null || this.cart.id === null ? 0 : this.cart.id;
                     this.productServices.getCartProducts(id).subscribe(function (data) {
-                      _this54.getCartItemsCount(data);
+                      _this56.getCartItemsCount(data);
 
-                      _this54.cartProducts = data;
+                      _this56.cartProducts = data;
                     });
 
                   case 3:
                   case "end":
-                    return _context24.stop();
+                    return _context25.stop();
                 }
               }
-            }, _callee24, this);
+            }, _callee25, this);
           }));
         }
       }, {
@@ -6035,25 +6489,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function removeProductFromCart(cartItem) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee25() {
-            var _this55 = this;
+          regeneratorRuntime.mark(function _callee26() {
+            var _this57 = this;
 
-            return regeneratorRuntime.wrap(function _callee25$(_context25) {
+            return regeneratorRuntime.wrap(function _callee26$(_context26) {
               while (1) {
-                switch (_context25.prev = _context25.next) {
+                switch (_context26.prev = _context26.next) {
                   case 0:
                     this.productServices.removeProductFromCart(cartItem.id).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-                      _this55.getCartProducts();
+                      _this57.getCartProducts();
                     });
 
                   case 1:
                   case "end":
-                    return _context25.stop();
+                    return _context26.stop();
                 }
               }
-            }, _callee25, this);
+            }, _callee26, this);
           }));
         }
       }, {
@@ -6061,13 +6515,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function updateCart(amount, cartItem) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee26() {
-            var _this56 = this;
+          regeneratorRuntime.mark(function _callee27() {
+            var _this58 = this;
 
             var cartData;
-            return regeneratorRuntime.wrap(function _callee26$(_context26) {
+            return regeneratorRuntime.wrap(function _callee27$(_context27) {
               while (1) {
-                switch (_context26.prev = _context26.next) {
+                switch (_context27.prev = _context27.next) {
                   case 0:
                     cartData = {
                       product: cartItem.product.id,
@@ -6085,22 +6539,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                       cartItem.quantity += amount;
 
                       if (cartItem.quantity <= 0) {
-                        var index = _this56.cartProducts.data.indexOf(cartItem, 0);
+                        var index = _this58.cartProducts.data.indexOf(cartItem, 0);
 
-                        _this56.cartProducts.data.splice(index, 1);
+                        _this58.cartProducts.data.splice(index, 1);
                       }
 
-                      _this56.defaultLayout.getCartProducts();
+                      _this58.defaultLayout.getCartProducts();
 
-                      _this56.getCartProducts();
+                      _this58.getCartProducts();
                     });
 
                   case 2:
                   case "end":
-                    return _context26.stop();
+                    return _context27.stop();
                 }
               }
-            }, _callee26, this);
+            }, _callee27, this);
           }));
         }
       }]);
@@ -6203,10 +6657,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getBaseCategories",
         value: function getBaseCategories() {
-          var _this57 = this;
+          var _this59 = this;
 
           this.categoriesService.getCategoryByParent().subscribe(function (data) {
-            _this57.categories = data;
+            _this59.categories = data;
             console.log(data);
           });
         }
@@ -6318,44 +6772,44 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoryPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this58 = this;
+          var _this60 = this;
 
           this.route.params.subscribe(function (data) {
-            _this58.link = data.link;
+            _this60.link = data.link;
 
-            _this58.getCategoryByLink(_this58.link);
+            _this60.getCategoryByLink(_this60.link);
           });
         }
       }, {
         key: "getQueryParams",
         value: function getQueryParams(id) {
-          var _this59 = this;
+          var _this61 = this;
 
           this.route.queryParams.subscribe(function (data) {
-            _this59.queryParams = data;
+            _this61.queryParams = data;
 
-            _this59.getProductsByCategory();
+            _this61.getProductsByCategory();
           });
         }
       }, {
         key: "getCategoryByLink",
         value: function getCategoryByLink(link) {
-          var _this60 = this;
+          var _this62 = this;
 
           this.categoriesServices.getCategoryByLink(link).subscribe(function (data) {
-            _this60.category = data;
+            _this62.category = data;
 
-            _this60.getQueryParams(data.data.id);
+            _this62.getQueryParams(data.data.id);
           });
         }
       }, {
         key: "getProductsByCategory",
         value: function getProductsByCategory() {
-          var _this61 = this;
+          var _this63 = this;
 
           var page = this.queryParams.page ? this.queryParams.page : 0;
           this.productServices.getProductsByCategory(this.category.data.id, page, 1).subscribe(function (data) {
-            _this61.products = data;
+            _this63.products = data;
           });
         }
       }]);
@@ -6382,6 +6836,393 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./category-page.component.css */
       "./src/app/pages/category-page/category-page.component.css")).default]
     })], CategoryPageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/checkout-page/checkout-page.component.css":
+  /*!*****************************************************************!*\
+    !*** ./src/app/pages/checkout-page/checkout-page.component.css ***!
+    \*****************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesCheckoutPageCheckoutPageComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".selected {\r\n    border-color: #1e87f0 !important;\r\n}\r\n.box {\r\n    border: 1px solid #ddd;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvY2hlY2tvdXQtcGFnZS9jaGVja291dC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQ0FBZ0M7QUFDcEM7QUFDQTtJQUNJLHNCQUFzQjtBQUMxQiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2NoZWNrb3V0LXBhZ2UvY2hlY2tvdXQtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNlbGVjdGVkIHtcclxuICAgIGJvcmRlci1jb2xvcjogIzFlODdmMCAhaW1wb3J0YW50O1xyXG59XHJcbi5ib3gge1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgI2RkZDtcclxufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/checkout-page/checkout-page.component.ts":
+  /*!****************************************************************!*\
+    !*** ./src/app/pages/checkout-page/checkout-page.component.ts ***!
+    \****************************************************************/
+
+  /*! exports provided: CheckoutPageComponent */
+
+  /***/
+  function srcAppPagesCheckoutPageCheckoutPageComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CheckoutPageComponent", function () {
+      return CheckoutPageComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_product_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/product.service */
+    "./src/app/services/product.service.ts");
+    /* harmony import */
+
+
+    var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/layout/default-layout/default-layout.component */
+    "./src/app/layout/default-layout/default-layout.component.ts");
+    /* harmony import */
+
+
+    var _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @app/services/addresses.service */
+    "./src/app/services/addresses.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @app/utils/notification */
+    "./src/app/utils/notification.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+
+    var CheckoutPageComponent =
+    /*#__PURE__*/
+    function () {
+      function CheckoutPageComponent(productServices, addressServices, defaultLayout, router) {
+        _classCallCheck(this, CheckoutPageComponent);
+
+        this.productServices = productServices;
+        this.addressServices = addressServices;
+        this.defaultLayout = defaultLayout;
+        this.router = router;
+        this.currentAddress = {
+          country_id: 0,
+          client_id: 0,
+          state: '',
+          city: '',
+          address: '',
+          postal_code: ''
+        };
+        this.order = {
+          cart_id: 0,
+          client_id: 0,
+          shipping: false,
+          address_id: 0,
+          store_address_id: 0,
+          payment_type: 'offline'
+        };
+        this.cartItems = 0;
+        this.cartTotal = 0;
+        this.client = JSON.parse(localStorage.getItem('client'));
+      }
+
+      _createClass(CheckoutPageComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.getCartProducts();
+          this.getStoreAddress();
+          this.getCountries();
+          this.getClientAddress();
+        }
+      }, {
+        key: "getCartProducts",
+        value: function getCartProducts() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee28() {
+            var _this64 = this;
+
+            var id;
+            return regeneratorRuntime.wrap(function _callee28$(_context28) {
+              while (1) {
+                switch (_context28.prev = _context28.next) {
+                  case 0:
+                    this.cart = JSON.parse(localStorage.getItem('cart'));
+                    id = this.cart === null || this.cart.id === null ? 0 : this.cart.id;
+                    this.productServices.getCartProducts(id).subscribe(function (data) {
+                      _this64.getCartItemsCount(data);
+
+                      _this64.cartProducts = data;
+                    });
+
+                  case 3:
+                  case "end":
+                    return _context28.stop();
+                }
+              }
+            }, _callee28, this);
+          }));
+        }
+      }, {
+        key: "getStoreAddress",
+        value: function getStoreAddress() {
+          var _this65 = this;
+
+          this.addressServices.getStoreAddresses().subscribe(function (data) {
+            _this65.storeAddresses = data;
+          });
+        }
+      }, {
+        key: "getClientAddress",
+        value: function getClientAddress() {
+          var _this66 = this;
+
+          this.addressServices.getClientAddresses(this.client.id).subscribe(function (data) {
+            _this66.addresses = data;
+          });
+        }
+      }, {
+        key: "checkout",
+        value: function checkout() {
+          var _this67 = this;
+
+          this.order.cart_id = this.cart.id;
+          this.order.client_id = this.client.id;
+          this.productServices.checkout(this.order).subscribe(function (data) {
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+
+            _this67.defaultLayout.clearProductsFromCart();
+
+            if (data.status === 'success') {
+              _this67.router.navigate(['/account/order/', data.data.id]);
+            }
+          });
+        }
+      }, {
+        key: "getCountries",
+        value: function getCountries() {
+          var _this68 = this;
+
+          this.addressServices.getCountries().subscribe(function (data) {
+            _this68.countries = data;
+          });
+        }
+      }, {
+        key: "getCartItemsCount",
+        value: function getCartItemsCount(cartData) {
+          var cartCount = 0;
+          var cartTotal = 0;
+          cartData.data.forEach(function (value) {
+            cartCount += value.quantity;
+            cartTotal += value.price;
+          });
+          this.cartItems = cartCount;
+          this.cartTotal = cartTotal;
+        }
+      }, {
+        key: "onSubmit",
+        value: function onSubmit(form) {
+          var _this69 = this;
+
+          this.currentAddress.client_id = this.client.id;
+          this.addressServices.createAddress(this.currentAddress).subscribe(function (data) {
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+
+            if (data.status === 'success') {
+              _this69.getClientAddress();
+
+              form.form.reset();
+            }
+          });
+        }
+      }]);
+
+      return CheckoutPageComponent;
+    }();
+
+    CheckoutPageComponent.ctorParameters = function () {
+      return [{
+        type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_2__["ProductService"]
+      }, {
+        type: _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_4__["AddressesService"]
+      }, {
+        type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_3__["DefaultLayoutComponent"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]
+      }];
+    };
+
+    CheckoutPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-checkout-page',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./checkout-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/checkout-page/checkout-page.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./checkout-page.component.css */
+      "./src/app/pages/checkout-page/checkout-page.component.css")).default]
+    })], CheckoutPageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/client/client-address/client-address.component.css":
+  /*!**************************************************************************!*\
+    !*** ./src/app/pages/client/client-address/client-address.component.css ***!
+    \**************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesClientClientAddressClientAddressComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2NsaWVudC9jbGllbnQtYWRkcmVzcy9jbGllbnQtYWRkcmVzcy5jb21wb25lbnQuY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/client/client-address/client-address.component.ts":
+  /*!*************************************************************************!*\
+    !*** ./src/app/pages/client/client-address/client-address.component.ts ***!
+    \*************************************************************************/
+
+  /*! exports provided: ClientAddressComponent */
+
+  /***/
+  function srcAppPagesClientClientAddressClientAddressComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ClientAddressComponent", function () {
+      return ClientAddressComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/addresses.service */
+    "./src/app/services/addresses.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/utils/notification */
+    "./src/app/utils/notification.ts");
+
+    var ClientAddressComponent =
+    /*#__PURE__*/
+    function () {
+      function ClientAddressComponent(addressServices) {
+        _classCallCheck(this, ClientAddressComponent);
+
+        this.addressServices = addressServices;
+        this.currentAddress = {
+          country_id: 0,
+          client_id: 0,
+          state: '',
+          city: '',
+          address: '',
+          postal_code: ''
+        };
+        this.client = JSON.parse(localStorage.getItem('client'));
+      }
+
+      _createClass(ClientAddressComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.getClientAddress();
+        }
+      }, {
+        key: "getClientAddress",
+        value: function getClientAddress() {
+          var _this70 = this;
+
+          this.addressServices.getClientAddresses(this.client.id).subscribe(function (data) {
+            _this70.addresses = data;
+            console.log(data);
+          });
+        }
+      }, {
+        key: "onSubmit",
+        value: function onSubmit(form) {
+          var _this71 = this;
+
+          this.currentAddress.client_id = this.client.id;
+          this.addressServices.createAddress(this.currentAddress).subscribe(function (data) {
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+
+            if (data.status === 'success') {
+              _this71.getClientAddress();
+
+              form.form.reset();
+            }
+          });
+        }
+      }]);
+
+      return ClientAddressComponent;
+    }();
+
+    ClientAddressComponent.ctorParameters = function () {
+      return [{
+        type: _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_2__["AddressesService"]
+      }];
+    };
+
+    ClientAddressComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-client-address',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./client-address.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-address/client-address.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./client-address.component.css */
+      "./src/app/pages/client/client-address/client-address.component.css")).default]
+    })], ClientAddressComponent);
     /***/
   },
 
@@ -6464,21 +7305,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ClientFavouritesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this62 = this;
+          var _this72 = this;
 
           this.route.queryParams.subscribe(function (data) {
-            _this62.params = data;
+            _this72.params = data;
 
-            _this62.getFavourites();
+            _this72.getFavourites();
           });
         }
       }, {
         key: "getFavourites",
         value: function getFavourites() {
-          var _this63 = this;
+          var _this73 = this;
 
           this.clientServices.getFavourites(this.client.id, this.params).subscribe(function (data) {
-            _this63.products = data;
+            _this73.products = data;
           });
         }
       }, {
@@ -6518,6 +7359,206 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./client-favourites.component.css */
       "./src/app/pages/client/client-favourites/client-favourites.component.css")).default]
     })], ClientFavouritesComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/client/client-order/client-order.component.css":
+  /*!**********************************************************************!*\
+    !*** ./src/app/pages/client/client-order/client-order.component.css ***!
+    \**********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesClientClientOrderClientOrderComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2NsaWVudC9jbGllbnQtb3JkZXIvY2xpZW50LW9yZGVyLmNvbXBvbmVudC5jc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/client/client-order/client-order.component.ts":
+  /*!*********************************************************************!*\
+    !*** ./src/app/pages/client/client-order/client-order.component.ts ***!
+    \*********************************************************************/
+
+  /*! exports provided: ClientOrderComponent */
+
+  /***/
+  function srcAppPagesClientClientOrderClientOrderComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ClientOrderComponent", function () {
+      return ClientOrderComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/order.service */
+    "./src/app/services/order.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @app/services/product.service */
+    "./src/app/services/product.service.ts");
+    /* harmony import */
+
+
+    var _app_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @app/constants */
+    "./src/app/constants.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @app/utils/notification */
+    "./src/app/utils/notification.ts");
+
+    var ClientOrderComponent =
+    /*#__PURE__*/
+    function () {
+      function ClientOrderComponent(route, router, orderService, productServices) {
+        _classCallCheck(this, ClientOrderComponent);
+
+        this.route = route;
+        this.router = router;
+        this.orderService = orderService;
+        this.productServices = productServices;
+        this.reference = '';
+        this.paystackPublicApi = _app_constants__WEBPACK_IMPORTED_MODULE_5__["Constants"].PAYSTACK_PUBLIC_API;
+        this.client = JSON.parse(localStorage.getItem('client'));
+      }
+
+      _createClass(ClientOrderComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this74 = this;
+
+          this.route.params.subscribe(function (params) {
+            _this74.params = params;
+
+            _this74.getOrder();
+          });
+          this.reference = "ref-".concat(Math.ceil(Math.random() * 10e13));
+        }
+      }, {
+        key: "getOrder",
+        value: function getOrder() {
+          var _this75 = this;
+
+          this.orderService.getOrder(this.params.id).subscribe(function (data) {
+            _this75.order = data;
+
+            if (data.status === 'success') {
+              _this75.getCartProducts();
+            }
+          });
+        }
+      }, {
+        key: "getCartProducts",
+        value: function getCartProducts() {
+          var _this76 = this;
+
+          this.productServices.getCartProducts(this.order.data.cart.id).subscribe(function (data) {
+            _this76.getCartItemsCount(data);
+
+            _this76.orderData = data;
+          });
+        }
+      }, {
+        key: "getCartItemsCount",
+        value: function getCartItemsCount(cartData) {
+          var cartCount = 0;
+          var cartTotal = 0;
+          cartData.data.forEach(function (value) {
+            cartCount += value.quantity;
+            cartTotal += value.price;
+          });
+          this.cartItems = cartCount;
+          this.cartTotal = cartTotal;
+        }
+      }, {
+        key: "paymentInit",
+        value: function paymentInit() {
+          console.log('Payment initialized');
+        }
+      }, {
+        key: "paymentDone",
+        value: function paymentDone(ref) {
+          var _this77 = this;
+
+          this.orderService.verifyPayment({
+            order_id: this.order.data.id,
+            ref: ref.reference
+          }).subscribe(function (data) {
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
+
+            if (data.status === 'success') {
+              _this77.order = data;
+            }
+          });
+        }
+      }, {
+        key: "paymentCancel",
+        value: function paymentCancel() {
+          console.log('payment failed');
+        }
+      }]);
+
+      return ClientOrderComponent;
+    }();
+
+    ClientOrderComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }, {
+        type: _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__["OrderService"]
+      }, {
+        type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__["ProductService"]
+      }];
+    };
+
+    ClientOrderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-client-order',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./client-order.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/client/client-order/client-order.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./client-order.component.css */
+      "./src/app/pages/client/client-order/client-order.component.css")).default]
+    })], ClientOrderComponent);
     /***/
   },
 
@@ -6572,21 +7613,48 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/client.service */
+    "./src/app/services/client.service.ts");
 
     var ClientOrdersComponent =
     /*#__PURE__*/
     function () {
-      function ClientOrdersComponent() {
+      function ClientOrdersComponent(clientServices) {
         _classCallCheck(this, ClientOrdersComponent);
+
+        this.clientServices = clientServices;
+        this.client = JSON.parse(localStorage.getItem('client'));
       }
 
       _createClass(ClientOrdersComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.getOrders();
+        }
+      }, {
+        key: "getOrders",
+        value: function getOrders() {
+          var _this78 = this;
+
+          this.clientServices.getOrders(this.client.id).subscribe(function (data) {
+            _this78.orders = data;
+            console.log(data);
+          });
+        }
       }]);
 
       return ClientOrdersComponent;
     }();
+
+    ClientOrdersComponent.ctorParameters = function () {
+      return [{
+        type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"]
+      }];
+    };
 
     ClientOrdersComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-client-orders',
@@ -6683,25 +7751,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee27() {
-            var _this64 = this;
+          regeneratorRuntime.mark(function _callee29() {
+            var _this79 = this;
 
-            return regeneratorRuntime.wrap(function _callee27$(_context27) {
+            return regeneratorRuntime.wrap(function _callee29$(_context29) {
               while (1) {
-                switch (_context27.prev = _context27.next) {
+                switch (_context29.prev = _context29.next) {
                   case 0:
                     this.clientServices.getClient(this.client.id).subscribe(function (data) {
                       if (data.status === 'success') {
-                        _this64.client = data.data;
+                        _this79.client = data.data;
                       }
                     });
 
                   case 1:
                   case "end":
-                    return _context27.stop();
+                    return _context29.stop();
                 }
               }
-            }, _callee27, this);
+            }, _callee29, this);
           }));
         }
       }, {
@@ -6715,15 +7783,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function updateClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee28() {
-            var _this65 = this;
+          regeneratorRuntime.mark(function _callee30() {
+            var _this80 = this;
 
-            return regeneratorRuntime.wrap(function _callee28$(_context28) {
+            return regeneratorRuntime.wrap(function _callee30$(_context30) {
               while (1) {
-                switch (_context28.prev = _context28.next) {
+                switch (_context30.prev = _context30.next) {
                   case 0:
                     this.clientServices.updateClient(this.client.id, this.client).subscribe(function (data) {
-                      _this65.updatingClient = false;
+                      _this80.updatingClient = false;
 
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
@@ -6734,10 +7802,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 1:
                   case "end":
-                    return _context28.stop();
+                    return _context30.stop();
                 }
               }
-            }, _callee28, this);
+            }, _callee30, this);
           }));
         }
       }]);
@@ -6858,16 +7926,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function updateClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee29() {
-            var _this66 = this;
+          regeneratorRuntime.mark(function _callee31() {
+            var _this81 = this;
 
-            return regeneratorRuntime.wrap(function _callee29$(_context29) {
+            return regeneratorRuntime.wrap(function _callee31$(_context31) {
               while (1) {
-                switch (_context29.prev = _context29.next) {
+                switch (_context31.prev = _context31.next) {
                   case 0:
                     if (this.updatePassword.new_password === this.updatePassword.repeat_password) {
                       this.clientService.updateClientPassword(this.client.id, this.updatePassword).subscribe(function (data) {
-                        _this66.updatingClient = false;
+                        _this81.updatingClient = false;
 
                         _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
                       });
@@ -6879,10 +7947,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 1:
                   case "end":
-                    return _context29.stop();
+                    return _context31.stop();
                 }
               }
-            }, _callee29, this);
+            }, _callee31, this);
           }));
         }
       }]);
@@ -7072,20 +8140,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getProducts",
         value: function getProducts() {
-          var _this67 = this;
+          var _this82 = this;
 
           var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
           this.productService.getProducts(page, 1).subscribe(function (data) {
-            return _this67.products = data;
+            return _this82.products = data;
           });
         }
       }, {
         key: "getBanners",
         value: function getBanners() {
-          var _this68 = this;
+          var _this83 = this;
 
           this.bannerImageService.getActiveBannerImage().subscribe(function (data) {
-            return _this68.banners = data;
+            return _this83.banners = data;
           });
         }
       }]);
@@ -7229,14 +8297,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this69 = this;
+          var _this84 = this;
 
           this.route.params.subscribe(function (params) {
-            _this69.params = params;
+            _this84.params = params;
 
-            _this69.getProduct();
+            _this84.getProduct();
 
-            _this69.getProductImages();
+            _this84.getProductImages();
           });
         }
       }, {
@@ -7250,25 +8318,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getProduct() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee30() {
-            var _this70 = this;
+          regeneratorRuntime.mark(function _callee32() {
+            var _this85 = this;
 
-            return regeneratorRuntime.wrap(function _callee30$(_context30) {
+            return regeneratorRuntime.wrap(function _callee32$(_context32) {
               while (1) {
-                switch (_context30.prev = _context30.next) {
+                switch (_context32.prev = _context32.next) {
                   case 0:
                     this.productServices.getProduct(this.params.id).subscribe(function (data) {
-                      _this70.product = data;
+                      _this85.product = data;
 
-                      _this70.getReviews();
+                      _this85.getReviews();
                     });
 
                   case 1:
                   case "end":
-                    return _context30.stop();
+                    return _context32.stop();
                 }
               }
-            }, _callee30, this);
+            }, _callee32, this);
           }));
         }
       }, {
@@ -7276,32 +8344,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getReviews() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee31() {
-            var _this71 = this;
+          regeneratorRuntime.mark(function _callee33() {
+            var _this86 = this;
 
-            return regeneratorRuntime.wrap(function _callee31$(_context31) {
+            return regeneratorRuntime.wrap(function _callee33$(_context33) {
               while (1) {
-                switch (_context31.prev = _context31.next) {
+                switch (_context33.prev = _context33.next) {
                   case 0:
                     this.productServices.productReviews(this.params.id).subscribe(function (data) {
-                      _this71.productReviews = data;
+                      _this86.productReviews = data;
                     });
 
                   case 1:
                   case "end":
-                    return _context31.stop();
+                    return _context33.stop();
                 }
               }
-            }, _callee31, this);
+            }, _callee33, this);
           }));
         }
       }, {
         key: "getProductImages",
         value: function getProductImages() {
-          var _this72 = this;
+          var _this87 = this;
 
           this.productImagesService.getProductImages(this.params.id).subscribe(function (data) {
-            _this72.productImages = data;
+            _this87.productImages = data;
           });
         }
       }, {
@@ -7309,11 +8377,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function addToFavourite() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee32() {
+          regeneratorRuntime.mark(function _callee34() {
             var favouriteData;
-            return regeneratorRuntime.wrap(function _callee32$(_context32) {
+            return regeneratorRuntime.wrap(function _callee34$(_context34) {
               while (1) {
-                switch (_context32.prev = _context32.next) {
+                switch (_context34.prev = _context34.next) {
                   case 0:
                     if (this.client == null) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show('Login to add to favourite', 'failed');
@@ -7329,10 +8397,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 1:
                   case "end":
-                    return _context32.stop();
+                    return _context34.stop();
                 }
               }
-            }, _callee32, this);
+            }, _callee34, this);
           }));
         }
       }, {
@@ -7340,13 +8408,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function reviewProduct(form) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee33() {
-            var _this73 = this;
+          regeneratorRuntime.mark(function _callee35() {
+            var _this88 = this;
 
             var reviewData;
-            return regeneratorRuntime.wrap(function _callee33$(_context33) {
+            return regeneratorRuntime.wrap(function _callee35$(_context35) {
               while (1) {
-                switch (_context33.prev = _context33.next) {
+                switch (_context35.prev = _context35.next) {
                   case 0:
                     this.reviewing = true;
                     reviewData = {
@@ -7359,16 +8427,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     this.productServices.reviewProduct(reviewData).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
 
-                      _this73.getProduct();
+                      _this88.getProduct();
                     });
                     this.reviewing = false;
 
                   case 5:
                   case "end":
-                    return _context33.stop();
+                    return _context35.stop();
                 }
               }
-            }, _callee33, this);
+            }, _callee35, this);
           }));
         }
       }, {
@@ -7376,13 +8444,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function addToCart() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee34() {
-            var _this74 = this;
+          regeneratorRuntime.mark(function _callee36() {
+            var _this89 = this;
 
             var cartData;
-            return regeneratorRuntime.wrap(function _callee34$(_context34) {
+            return regeneratorRuntime.wrap(function _callee36$(_context36) {
               while (1) {
-                switch (_context34.prev = _context34.next) {
+                switch (_context36.prev = _context36.next) {
                   case 0:
                     this.setCart();
 
@@ -7403,18 +8471,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                         _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
 
-                        _this74.addingToCart = false;
+                        _this89.addingToCart = false;
 
-                        _this74.defaultLayout.getCartProducts();
+                        _this89.defaultLayout.getCartProducts();
                       });
                     }
 
                   case 2:
                   case "end":
-                    return _context34.stop();
+                    return _context36.stop();
                 }
               }
-            }, _callee34, this);
+            }, _callee36, this);
           }));
         }
       }, {
@@ -7530,13 +8598,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProductSearchComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this75 = this;
+          var _this90 = this;
 
           console.log('here');
           this.route.queryParams.subscribe(function (data) {
-            _this75.params = data;
+            _this90.params = data;
 
-            _this75.findProducts();
+            _this90.findProducts();
           });
         }
       }, {
@@ -7544,24 +8612,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function findProducts() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee35() {
-            var _this76 = this;
+          regeneratorRuntime.mark(function _callee37() {
+            var _this91 = this;
 
-            return regeneratorRuntime.wrap(function _callee35$(_context35) {
+            return regeneratorRuntime.wrap(function _callee37$(_context37) {
               while (1) {
-                switch (_context35.prev = _context35.next) {
+                switch (_context37.prev = _context37.next) {
                   case 0:
                     this.productServices.findProducts(this.params).subscribe(function (data) {
                       console.log(data);
-                      _this76.products = data;
+                      _this91.products = data;
                     });
 
                   case 1:
                   case "end":
-                    return _context35.stop();
+                    return _context37.stop();
                 }
               }
-            }, _callee35, this);
+            }, _callee37, this);
           }));
         }
       }, {
@@ -7693,10 +8761,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SignInPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this77 = this;
+          var _this92 = this;
 
           this.route.queryParams.subscribe(function (data) {
-            _this77.returnUrl = data.returnUrl || '/account';
+            _this92.returnUrl = data.returnUrl || '/account';
           });
         }
       }, {
@@ -7710,29 +8778,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function loginClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee36() {
-            var _this78 = this;
+          regeneratorRuntime.mark(function _callee38() {
+            var _this93 = this;
 
-            return regeneratorRuntime.wrap(function _callee36$(_context36) {
+            return regeneratorRuntime.wrap(function _callee38$(_context38) {
               while (1) {
-                switch (_context36.prev = _context36.next) {
+                switch (_context38.prev = _context38.next) {
                   case 0:
                     this.clientService.loginClient(this.client).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-                      _this78.isLoggingIN = false;
+                      _this93.isLoggingIN = false;
 
                       if (data.status === 'success') {
-                        _this78.router.navigateByUrl(_this78.returnUrl);
+                        _this93.router.navigateByUrl(_this93.returnUrl);
                       }
                     });
 
                   case 1:
                   case "end":
-                    return _context36.stop();
+                    return _context38.stop();
                 }
               }
-            }, _callee36, this);
+            }, _callee38, this);
           }));
         }
       }]);
@@ -7858,25 +8926,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function registerClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee37() {
-            var _this79 = this;
+          regeneratorRuntime.mark(function _callee39() {
+            var _this94 = this;
 
-            return regeneratorRuntime.wrap(function _callee37$(_context37) {
+            return regeneratorRuntime.wrap(function _callee39$(_context39) {
               while (1) {
-                switch (_context37.prev = _context37.next) {
+                switch (_context39.prev = _context39.next) {
                   case 0:
                     this.clientService.createClient(this.client).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-                      _this79.registering = false;
+                      _this94.registering = false;
                     });
 
                   case 1:
                   case "end":
-                    return _context37.stop();
+                    return _context39.stop();
                 }
               }
-            }, _callee37, this);
+            }, _callee39, this);
           }));
         }
       }]);
@@ -7899,6 +8967,171 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./sign-up-page.component.css */
       "./src/app/pages/sign-up-page/sign-up-page.component.css")).default]
     })], SignUpPageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pipes/safe.pipe.ts":
+  /*!************************************!*\
+    !*** ./src/app/pipes/safe.pipe.ts ***!
+    \************************************/
+
+  /*! exports provided: SafePipe */
+
+  /***/
+  function srcAppPipesSafePipeTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SafePipe", function () {
+      return SafePipe;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+
+    var SafePipe =
+    /*#__PURE__*/
+    function () {
+      function SafePipe(sanitizer) {
+        _classCallCheck(this, SafePipe);
+
+        this.sanitizer = sanitizer;
+      }
+
+      _createClass(SafePipe, [{
+        key: "transform",
+        value: function transform(url) {
+          console.log('here');
+          console.log(url);
+          return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+        }
+      }]);
+
+      return SafePipe;
+    }();
+
+    SafePipe.ctorParameters = function () {
+      return [{
+        type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"]
+      }];
+    };
+
+    SafePipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+      name: 'safe'
+    })], SafePipe);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/addresses.service.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/services/addresses.service.ts ***!
+    \***********************************************/
+
+  /*! exports provided: AddressesService */
+
+  /***/
+  function srcAppServicesAddressesServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddressesService", function () {
+      return AddressesService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var AddressesService =
+    /*#__PURE__*/
+    function () {
+      function AddressesService(http) {
+        _classCallCheck(this, AddressesService);
+
+        this.http = http;
+      }
+
+      _createClass(AddressesService, [{
+        key: "getAddresses",
+        value: function getAddresses() {
+          return this.http.get("/api/address");
+        }
+      }, {
+        key: "getClientAddresses",
+        value: function getClientAddresses(client) {
+          return this.http.get("/api/address/".concat(client));
+        }
+      }, {
+        key: "createAddress",
+        value: function createAddress(data) {
+          return this.http.post('/api/address', data);
+        }
+      }, {
+        key: "getCountries",
+        value: function getCountries() {
+          return this.http.get("/api/country");
+        }
+      }, {
+        key: "createStoreAddress",
+        value: function createStoreAddress(data) {
+          return this.http.post('/api/store_address', data);
+        }
+      }, {
+        key: "getStoreAddresses",
+        value: function getStoreAddresses() {
+          return this.http.get("/api/store_address");
+        }
+      }]);
+
+      return AddressesService;
+    }();
+
+    AddressesService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    AddressesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], AddressesService);
     /***/
   },
 
@@ -8264,6 +9497,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function updateClientPassword(client, data) {
           return this.http.put("/api/client/change_password/".concat(client), data);
         }
+      }, {
+        key: "getOrders",
+        value: function getOrders(client) {
+          return this.http.get("/api/client/order/".concat(client));
+        }
       }]);
 
       return ClientService;
@@ -8369,6 +9607,80 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     FilterService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
     })], FilterService);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/order.service.ts":
+  /*!*******************************************!*\
+    !*** ./src/app/services/order.service.ts ***!
+    \*******************************************/
+
+  /*! exports provided: OrderService */
+
+  /***/
+  function srcAppServicesOrderServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "OrderService", function () {
+      return OrderService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var OrderService =
+    /*#__PURE__*/
+    function () {
+      function OrderService(http) {
+        _classCallCheck(this, OrderService);
+
+        this.http = http;
+      }
+
+      _createClass(OrderService, [{
+        key: "getOrder",
+        value: function getOrder(id) {
+          return this.http.get("/api/order/".concat(id));
+        }
+      }, {
+        key: "verifyPayment",
+        value: function verifyPayment(data) {
+          return this.http.post("/api/order/verify_payment", data);
+        }
+      }]);
+
+      return OrderService;
+    }();
+
+    OrderService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    OrderService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], OrderService);
     /***/
   },
 
@@ -8597,6 +9909,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "getCartProducts",
         value: function getCartProducts(id) {
           return this.http.get("/api/cart/products/".concat(id));
+        }
+      }, {
+        key: "checkout",
+        value: function checkout(data) {
+          return this.http.post("/api/checkout", data);
         }
       }]);
 
