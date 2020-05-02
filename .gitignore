@@ -22,6 +22,8 @@ __pycache__/
 *.o
 *.so
 
+*.pyc
+
 
 # Packages #
 ############
