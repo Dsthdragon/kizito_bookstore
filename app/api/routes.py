@@ -99,6 +99,21 @@ def get_role(role_id):
 
 
 # Administrators Endpoints
+@bp.route('/administrator/login', methods=['POST'])
+def login_administrator():
+    data = request.get_json()
+    if not data:
+        return jsonify(status='failed', message="No data sent!")
+
+    admin_model = Admin.query.filter_by(email=data.get('email')).first()
+    if admin_model and admin_model.check_password(data.get('password')):
+        resp = make_response(jsonify(status="success", message="Login Successful!"))
+        resp.set_cookie('auth', admin_model.user.generate_token())
+        return resp
+
+    return jsonify(status='failed', message='Invalid email/password')
+
+
 @bp.route('/administrator')
 def get_administrators():
     limited = request.args.get('limited', 1, type=int)
@@ -112,6 +127,122 @@ def get_administrators():
         has_next = False
     admin_schema = AdminSchema(many=True).dump(admin_model)
     return jsonify(status="success", message="Administrators Found", data=admin_schema, has_next=has_next)
+
+
+@bp.route('/administrator', methods=['POST'])
+def create_administrator():
+    data = request.get_json()
+    if not data:
+        return jsonify(status='failed', message='No Data sent!')
+
+    if not data.get('fullname'):
+        return jsonify(status='failed', message="Full Name required!")
+
+    if not data.get('email'):
+        return jsonify(status='failed', message="Email address required!")
+
+    if not data.get('password'):
+        return jsonify(status='failed', message="Password required!")
+
+    admin_model = Admin.query.filter_by(email=data.get('email')).first()
+    if admin_model:
+        return jsonify(status='failed', message='Email Already in system')
+
+    role_model = Role.query.get(data.get('role'))
+    if not role_model:
+        return jsonify(status='failed', message='Role Not Found')
+
+    user_model = User()
+
+    admin_model = Admin()
+    admin_model.user = user_model
+    admin_model.email = data.get('email')
+    admin_model.role_id = data.get('role')
+    admin_model.fullname = data.get('fullname')
+    admin_model.set_password(data.get('password'))
+
+    db.session.add_all([user_model, admin_model])
+    db.session.commit()
+
+    resp = make_response(jsonify(status="success", message="Admin Created!"))
+    resp.set_cookie('auth', admin_model.user.generate_token())
+    return resp
+
+
+@bp.route('/administrator/<int:admin_id>', methods=['PUT'])
+@login_required
+def update_admin(admin_id):
+    data = request.get_json()
+    if not data:
+        return jsonify(status='failed', message='No Data sent!')
+
+    if not data.get('fullname'):
+        return jsonify(status='failed', message="Full Name required!")
+
+    if not data.get('email'):
+        return jsonify(status='failed', message="Email required!")
+
+    admin_model = Admin.query.get(admin_id)
+    if not admin_model:
+        return jsonify(status='failed', message='Admin Not Found')
+
+    admin_model.full_name = data.get('fullname')
+    admin_model.email = data.get('email')
+
+    db.session.commit()
+    admin_schema = AdminSchema().dump(admin_model)
+    return jsonify(status='success', message='Admin Update', data=admin_schema)
+
+
+@bp.route('/administrator/change_password/<int:admin_id>', methods=['PUT'])
+@login_required
+def change_admin_password(admin_id):
+    data = request.get_json()
+
+    if not data:
+        return jsonify(status='failed', message='No Data sent!')
+
+    if not data.get('password'):
+        return jsonify(status='failed', message="Password is required!")
+
+    if not data.get('new_password'):
+        return jsonify(status='failed', message="New Password is required!")
+
+    admin_model = Admin.query.get(admin_id)
+    if not admin_model:
+        return jsonify(status='failed', message='Client Not Found')
+
+    if not admin_model.check_password(data.get('password')):
+        return jsonify(status='failed', message='Invalid Password')
+
+    admin_model.set_password(data.get('new_password'))
+
+    db.session.commit()
+    admin_schema = ClientSchema().dump(admin_model)
+    return jsonify(status='success', message='Admin Password Update', data=admin_schema)
+
+
+@bp.route('/administrator/<int:admin_id>/avatar', methods=['PUT'])
+def upload_admin_avatar(admin_id):
+    data = request.get_json()
+    if not data:
+        return jsonify(status="failed", message="No Data Sent!")
+    if not data.get('type'):
+        return jsonify(status="failed", message="Image type required!")
+    if not data.get('img'):
+        return jsonify(status="failed", message="Image data not sent!")
+    if data.get('type').lower() not in ALLOWED_EXTENSIONS:
+        return jsonify(status="failed", message="Extension not supported!")
+    admin_model = Admin.query.get(admin_id)
+    if not admin_model:
+        return jsonify(status='failed', message='Admin Not Found')
+
+    unique_filename = str(uuid.uuid4()) + '.' + data['type'].lower()
+    admin_model.save_image(unique_filename, data['img'])
+    db.session.commit()
+    admin_schema = AdminSchema().dump(admin_model)
+
+    return jsonify(status='success', message='Avatar uploaded', data=admin_schema)
 
 
 @bp.route('/administrator/<admin_id>')
@@ -1193,6 +1324,17 @@ def get_client_orders(client_id):
     return jsonify(
         status="success",
         message="Client Orders Found!",
+        data=OrderSchema(many=True).dump(orders)
+    )
+
+
+@bp.route("/order")
+def get_orders():
+    orders = Order.query.all()
+
+    return jsonify(
+        status="success",
+        message="Orders Found!",
         data=OrderSchema(many=True).dump(orders)
     )
 

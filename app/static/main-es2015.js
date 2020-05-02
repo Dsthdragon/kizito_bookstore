@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ul class=\"uk-nav-default uk-nav-parent-icon\" data-uk-nav>\n    <li class=\"uk-nav-header\">MAIN SECTIONS</li>\n    <li><a routerLink=\"/admin\">Dashboard</a></li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Parent</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a href=\"#\">Sub item</a></li>\n            <li><a href=\"#\">Sub item</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">PRODUCT</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Product Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/products\">Products</a></li>\n            <li><a routerLink=\"/admin/filters\">Filters</a></li>\n            <li><a routerLink=\"/admin/categories\">Categories</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">SETTINGS</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Admin Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/staffs\">Staff</a></li>\n            <li><a routerLink=\"/admin/banners\">Banners</a></li>\n            <li><a routerLink=\"/admin/roles\">Roles</a></li>\n            <li><a routerLink=\"/admin/store-address\">Store Address</a></li>\n        </ul>\n    </li>\n</ul>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ul class=\"uk-nav-default uk-nav-parent-icon\" data-uk-nav>\n    <li class=\"uk-nav-header\">MAIN SECTIONS</li>\n    <li><a routerLink=\"/admin\">Dashboard</a></li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Parent</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a href=\"#\">Sub item</a></li>\n            <li><a href=\"#\">Sub item</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">PRODUCT</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Product Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/products\">Products</a></li>\n            <li><a routerLink=\"/admin/filters\">Filters</a></li>\n            <li><a routerLink=\"/admin/categories\">Categories</a></li>\n            <li><a routerLink=\"/admin/orders\">Orders</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">SETTINGS</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Admin Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/staffs\">Staff</a></li>\n            <li><a routerLink=\"/admin/banners\">Banners</a></li>\n            <li><a routerLink=\"/admin/roles\">Roles</a></li>\n            <li><a routerLink=\"/admin/store-address\">Store Address</a></li>\n        </ul>\n    </li>\n</ul>");
 
 /***/ }),
 
@@ -175,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-offcanvas-content\">\n        <!--HEADER-->\n        <header id=\"top-head\" class=\"uk-position-fixed\">\n            <div class=\"uk-container uk-container-expand uk-background-primary\">\n                <nav class=\"uk-navbar uk-light\" data-uk-navbar=\"mode:click\">\n                    <div class=\"uk-navbar-left\">\n                        <a class=\"uk-navbar-item uk-logo\" routerLink=\"/admin\">Logo</a>\n                        <ul class=\"uk-navbar-nav uk-visible@m\">\n                            <li class=\"uk-active\"><a href=\"#\">Accounts</a></li>\n                            <li>\n                                <a href=\"#\">Settings <span data-uk-icon=\"icon: triangle-down\"></span></a>\n                                <div class=\"uk-navbar-dropdown\">\n                                    <ul class=\"uk-nav uk-navbar-dropdown-nav\">\n                                        <li class=\"uk-nav-header\">YOUR ACCOUNT</li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: info\"></span> Summary</a></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: refresh\"></span> Edit</a></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: settings\"></span> Configuration</a></li>\n                                        <li class=\"uk-nav-divider\"></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: image\"></span> Your Data</a></li>\n                                        <li class=\"uk-nav-divider\"></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: sign-out\"></span> Logout</a></li>\n                                        \n                                    </ul>\n                                </div>\n                            </li>\n                        </ul>\n                        <div class=\"uk-navbar-item uk-visible@s\">\n                            <form action=\"dashboard.html\" class=\"uk-search uk-search-default\">\n                                <span data-uk-search-icon></span>\n                                <input class=\"uk-search-input search-field\" type=\"search\" placeholder=\"Search\">\n                            </form>\n                        </div>\n                    </div>\n                    <div class=\"uk-navbar-right\">\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a href=\"#\" data-uk-icon=\"icon:user\"></a>\n                                <div class=\"uk-navbar-dropdown uk-navbar-dropdown-bottom-left\">\n                                    <ul class=\"uk-nav uk-navbar-dropdown-nav\">\n                                        <li class=\"uk-nav-header\">YOUR ACCOUNT</li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: info\"></span> Summary</a></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: refresh\"></span> Edit</a></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: settings\"></span> Configuration</a></li>\n                                        <li class=\"uk-nav-divider\"></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: image\"></span> Your Pictures</a></li>\n                                        <li class=\"uk-nav-divider\"></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: sign-out\"></span> Logout</a></li>\n                                        \n                                    </ul>\n                                </div>\n                            </li>\n                            <li><a href=\"#\" data-uk-icon=\"icon: settings\"></a></li>\n                            <li><a href=\"#\" data-uk-icon=\"icon: cog\"></a></li>\n                            <li><a class=\"uk-navbar-toggle\" data-uk-toggle data-uk-navbar-toggle-icon href=\"#offcanvas-nav\"></a></li>\n                        </ul>\n                    </div>\n                </nav>\n            </div>\n        </header>\n        <!--/HEADER-->\n        <!-- LEFT BAR -->\n        <aside id=\"left-col\" class=\"uk-light uk-visible@m\">\n            <div class=\"profile-bar\">\n                <div class=\"uk-grid uk-grid-small uk-flex uk-flex-middle\" data-uk-grid>\n                    <div class=\"uk-width-auto\"><img src=\"/static/img/avatar.svg\" alt=\"\" class=\"uk-border-circle profile-img\"></div>\n                    <div class=\"uk-width-expand\">\n                        <span class=\"uk-text-small uk-text-muted\">Welcome</span>\n                        <h4 class=\"uk-margin-remove-vertical text-light\">Finn the Human</h4>\n                    </div>\n                </div>\n            </div>\n            <div class=\"bar-content uk-position-relative\">\n                <app-admin-sidebar></app-admin-sidebar>\n\t\t\t</div>\n        </aside>\n        <!-- /LEFT BAR -->\n        <!-- CONTENT -->\n        <div id=\"content\" data-uk-height-viewport=\"expand: true\">\n            <div class=\"uk-container uk-container-expand\">\n                <router-outlet></router-outlet>\n                <footer class=\"uk-section uk-section-small uk-text-center\">\n                    <hr>\n                    Rinnas Store App Powered by <a href=\"//rinnas.com\">Rinnas Tech</a>\n                </footer>\n            </div>\n        </div>\n        <!-- /CONTENT -->\n        <!-- OFFCANVAS -->\n        <div id=\"offcanvas-nav\" data-uk-offcanvas=\"flip: true; overlay: true\">\n            <div class=\"uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide\">\n                <button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" data-uk-close></button>\n                <app-admin-sidebar></app-admin-sidebar>\n            </div>\n        </div>\n        <!-- /OFFCANVAS -->\n    </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-offcanvas-content\">\n        <!--HEADER-->\n        <header id=\"top-head\" class=\"uk-position-fixed\">\n            <div class=\"uk-container uk-container-expand uk-background-primary\">\n                <nav class=\"uk-navbar uk-light\" data-uk-navbar=\"mode:click\">\n                    <div class=\"uk-navbar-left\">\n                        <a class=\"uk-navbar-item uk-logo\" routerLink=\"/admin\">Logo</a>\n                    </div>\n                    <div class=\"uk-navbar-right\">\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a (click)='logout()'>\n                                    <span data-uk-icon=\"icon: sign-out\"></span>\n                                </a>\n                            </li>\n                            <li><a class=\"uk-navbar-toggle\" data-uk-toggle data-uk-navbar-toggle-icon href=\"#offcanvas-nav\"></a></li>\n                        </ul>\n                    </div>\n                </nav>\n            </div>\n        </header>\n        <!--/HEADER-->\n        <!-- LEFT BAR -->\n        <aside id=\"left-col\" class=\"uk-light uk-visible@m\">\n            <div class=\"profile-bar\">\n                <div class=\"uk-grid uk-grid-small uk-flex uk-flex-middle\" data-uk-grid>\n                    <div class=\"uk-width-auto\">\n                        <img src=\"{{ admin.avatar ? admin.avatar_url : '' }}\" alt=\"\"  appImgFallback=\"avatar\" class=\"uk-border-circle profile-img\">\n                    </div>\n                    <div class=\"uk-width-expand\">\n                        <span class=\"uk-text-small uk-text-muted\">Welcome</span>\n                        <h4 class=\"uk-margin-remove-vertical text-light\">\n                            {{ admin.fullname }}\n                        </h4>\n                    </div>\n                </div>\n            </div>\n            <div class=\"bar-content uk-position-relative\">\n                <app-admin-sidebar></app-admin-sidebar>\n\t\t\t</div>\n        </aside>\n        <!-- /LEFT BAR -->\n        <!-- CONTENT -->\n        <div id=\"content\" data-uk-height-viewport=\"expand: true\">\n            <div class=\"uk-container uk-container-expand\">\n                <router-outlet></router-outlet>\n                <footer class=\"uk-section uk-section-small uk-text-center\">\n                    <hr>\n                    Rinnas Store App Powered by <a href=\"//rinnas.com\">Rinnas Tech</a>\n                </footer>\n            </div>\n        </div>\n        <!-- /CONTENT -->\n        <!-- OFFCANVAS -->\n        <div id=\"offcanvas-nav\" data-uk-offcanvas=\"flip: true; overlay: true\" >\n            <div class=\"uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide\">\n                <button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" data-uk-close></button>\n                <app-admin-sidebar></app-admin-sidebar>\n            </div>\n        </div>\n        <!-- /OFFCANVAS -->\n    </div>");
 
 /***/ }),
 
@@ -201,7 +201,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-offcanvas-content\">\n    <header>\n        <div class=\"uk-navbar-container uk-light uk-visible@m tm-toolbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <nav>\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a href=\"#\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: receiver; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">0802 464 8237</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a href=\"contacts.html\" onclick=\"return false\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: location; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">Store in Murg Shopping Mall</span>\n                                    <span uk-icon=\"icon: triangle-down; ratio: .75;\" class=\"uk-icon\"></span>\n                                </a>\n                                <div class=\"uk-margin-remove uk-drop\" uk-drop=\"mode: click; pos: bottom-center;\">\n                                    <div\n                                        class=\"uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom\">\n                                        <iframe\n                                            src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31521.168896374664!2d7.457733600614864!3d9.0504340343759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b9cb59fb45d%3A0xa6d73b0eb006e31e!2sKizito%20Bookshops%20Limited!5e0!3m2!1sen!2sng!4v1582035608762!5m2!1sen!2sng\"\n                                            width=\"300\" height=\"150\" frameborder=\"0\" style=\"border:0;\"\n                                            allowfullscreen=\"\"></iframe>\n                                        <div class=\"uk-card-body\">\n                                            <div class=\"uk-text-small\">\n                                                <div>Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area\n                                                    10, Garki, Abuja</div>\n                                                <div>Daily 09:00–19:00</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-navbar-item\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: clock; ratio: .75;\"></span>\n                                    Daily 09:00–19:00\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-navbar-container tm-navbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <button class=\"uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon\"\n                        uk-toggle=\"target: #nav-offcanvas\" uk-navbar-toggle-icon=\"\"></button>\n                    <a class=\"uk-navbar-item uk-logo\" routerLink='/'>\n                        <img src=\"static/img/logo.svg\" width=\"90\" height=\"32\" alt=\"Logo\"></a>\n                    <nav class=\"uk-visible@m\">\n                        <ul class=\"uk-navbar-nav\" *ngIf='categories && categories.data'>\n                            <li *ngFor='let category of categories.data'>\n                                <a class=\"uk-link-reset\" [routerLink]=\"['/category', category.link]\">\n                                    {{ category.title }}\n                                    <span *ngIf='category.children' class=\"uk-margin-xsmall-left uk-icon\"\n                                        uk-icon=\"icon: chevron-down; ratio: .75;\"></span>\n                                </a>\n\n                                <div *ngIf='category.children' class=\"uk-navbar-dropdown\" uk-dropdown=\"offset: 0\">\n                                    <div class=\"\">\n                                        <ul class=\"uk-nav uk-nav-default\">\n                                            <li *ngFor='let child of category.children'>\n                                                <a [routerLink]=\"['/category', child.link]\">\n                                                    {{ child.title }} </a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n                <div class=\"uk-navbar-right\">\n                    <a class=\"uk-navbar-toggle tm-navbar-button uk-search-icon uk-icon\" href=\"#\" uk-search-icon=\"\"></a>\n                    <div class=\"uk-navbar-dropdown uk-padding-small uk-margin-remove\"\n                        uk-drop=\"mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x\">\n                        <div class=\"uk-container\">\n                            <div class=\"uk-grid-small uk-flex-middle uk-grid uk-grid-stack\" uk-grid=\"\">\n                                <div class=\"uk-width-expand\">\n                                    <form class=\"uk-search uk-search-navbar uk-width-1-1\" (ngSubmit)='search()'>\n                                        <input class=\"uk-search-input\" type=\"search\" placeholder=\"Search…\" autofocus=\"\"\n                                            name=\"searchValue\" [(ngModel)]='searchValue' />\n                                    </form>\n                                </div>\n                                <div class=\"uk-width-auto\">\n                                    <a class=\"uk-navbar-dropdown-close uk-close uk-icon\" href=\"#\" uk-close=\"\"></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button uk-icon\" routerLink='/account/orders'\n                        uk-icon=\"user\">\n                    </a>\n                    <div class=\"uk-padding-small uk-margin-remove uk-dropdown\"\n                        uk-dropdown=\"pos: bottom-right; offset: -10; delay-hide: 200;\" style=\"min-width: 150px;\">\n                        <ul class=\"uk-nav uk-dropdown-nav\">\n                            <li>\n                                <a routerLink='/account/orders'>\n                                    Orders\n                                    <!-- <span>(2)</span> -->\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/favourites'>\n                                    Favorites\n                                    <!-- <span>(3)</span> -->\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/personal'>\n                                    Personal\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/settings'>\n                                    Settings\n                                </a>\n                            </li>\n                            <li class=\"uk-nav-divider\"></li>\n                            <li><a (click)=\"logout()\">Log out</a>\n                            </li>\n                        </ul>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button\" uk-toggle=\"target: #cart-offcanvas\">\n                        <span uk-icon=\"cart\" class=\"uk-icon\"></span>\n                        <span class=\"uk-badge\" *ngIf=\"cartItems > 0\">{{ cartItems }}</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </header>\n    <main>\n        <div class=\"uk-padding uk-text-center\" *ngIf=\"loading\">\n            <span uk-spinner=\"ratio: 4.5\"></span>\n        </div>\n        <div *ngIf=\"!loading\">\n            <router-outlet></router-outlet>\n        </div>\n    </main>\n    <footer>\n        <section class=\"uk-section uk-section-secondary uk-section-small uk-light\">\n            <div class=\"uk-container\">\n                <div class=\"uk-grid-medium uk-child-width-1-1 uk-child-width-1-4@m uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-first-column\">\n                        <a class=\"uk-logo\" href=\"index.html\">\n                            <img src=\"/static/logo-inverse.svg\" width=\"90\" height=\"32\" alt=\"Logo\" />\n                        </a>\n                        <p class=\"uk-text-small\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut\n                            mauris eros. Nulla quis ante sed tortor efficitur facilisis.</p>\n                        <ul class=\"uk-iconnav\">\n                            <li><a href=\"#\" title=\"Facebook\" uk-icon=\"facebook\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Twitter\" uk-icon=\"twitter\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"YouTube\" uk-icon=\"youtube\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Instagram\" uk-icon=\"instagram\" class=\"uk-icon\"></a></li>\n                        </ul>\n                    </div>\n                    <div>\n                        <nav class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-first-column\">\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a href=\"catalog.html\">Catalog</a></li>\n                                    <li><a href=\"brands.html\">Brands</a></li>\n                                    <li><a href=\"delivery.html\">Delivery</a></li>\n                                    <li><a href=\"faq.html\">FAQ</a></li>\n                                    <li><a href=\"#\">Payment</a></li>\n                                </ul>\n                            </div>\n                            <div>\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a href=\"about.html\">About</a></li>\n                                    <li><a href=\"contacts.html\">Contacts</a></li>\n                                    <li><a href=\"blog.html\">Blog</a></li>\n                                    <li><a href=\"news.html\">News</a></li>\n                                </ul>\n                            </div>\n                        </nav>\n                    </div>\n                    <div>\n                        <ul class=\"uk-list uk-text-small\">\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"receiver\"></span>\n                                    <span class=\"tm-pseudo\">8 800 799 99 99</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"mail\"></span>\n                                    <span class=\"tm-pseudo\">example@example.com</span>\n                                </a>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"location\"></span>\n                                    <span>St.&nbsp;Petersburg, Nevsky&nbsp;Prospect&nbsp;28</span>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"clock\"></span>\n                                    <span>Daily 10:00–22:00</span>\n                                </div>\n                            </li>\n                        </ul>\n                    </div>\n                    <div>\n                        <form class=\"uk-form-stacked\">\n                            <label>\n                                <div class=\"uk-form-label uk-text-muted\">Subscribe for updates</div>\n                                <div class=\"uk-inline uk-width-1-1\">\n                                    <a class=\"uk-form-icon uk-form-icon-flip uk-icon\" href=\"#\" uk-icon=\"mail\"></a>\n                                    <input class=\"uk-input\" type=\"email\" placeholder=\"Your email\" required=\"\">\n                                </div>\n                            </label>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </footer>\n</div>\n\n\n<div id=\"nav-offcanvas\" uk-offcanvas=\"overlay: true\" class=\"uk-offcanvas uk-offcanvas-overlay\" style=\"z-index: 1010;\">\n    <div class=\"uk-offcanvas-bar uk-padding-remove\">\n        <div class=\"uk-card uk-card-default uk-card-small tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div>\n                    <a class=\"uk-link-muted uk-text-bold\" href=\"#\">\n                        0802 464 8237\n                    </a>\n                    <div class=\"uk-text-xsmall uk-text-muted\" style=\"margin-top: -2px;\">\n                        <div>\n                            Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area 10, Garki, Abuja\n                        </div>\n                        <div>Daily 09:00–19:00</div>\n                    </div>\n                </div>\n            </header>\n            <nav class=\"uk-card-small uk-card-body\" *ngIf='categories'>\n                <ul class=\"uk-nav-default uk-nav-parent-icon uk-list-divider uk-nav\" uk-nav *ngIf=\"categories.data\">\n                    <li *ngFor='let category of categories.data' class=\"uk-parent\">\n                        <a [routerLink]=\"['/category', category.link]\" >\n                            {{ category.title }}\n                        </a>\n                        <ul class=\"uk-nav-sub uk-list-divider\" *ngIf='category.children'>\n                            <li *ngFor='let child of category.children'>\n                                <a [routerLink]=\"['/category', child.link]\" (click)=\"hideOffCanvas('#nav-offcanvas')\">\n                                    {{ child.title }} </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    </div>\n</div>\n\n<div id=\"cart-offcanvas\" uk-offcanvas=\"overlay: true; flip: true\" class=\"uk-offcanvas uk-offcanvas-overlay\"\n    style=\"z-index: 1010;\">\n    <aside class=\"uk-offcanvas-bar uk-padding-remove uk-offcanvas-bar-animation uk-offcanvas-slide\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-height-1-1 uk-flex uk-flex-column tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div class=\"uk-grid-small uk-flex-1 uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-first-column\">\n                        <div class=\"uk-h3\">Cart</div>\n                    </div><button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" uk-close=\"\"></button>\n                </div>\n            </header>\n            <div class=\"uk-card-body uk-overflow-auto\">\n                <ul class=\"uk-list uk-list-divider\" *ngIf=\"cartProducts && cartProducts.data\">\n                    <li *ngFor=\"let cartItem of cartProducts.data\">\n                        <article>\n                            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-width-1-4 uk-first-column\">\n                                    <div class=\"tm-ratio tm-ratio-4-3\">\n                                        <a class=\"tm-media-box\" (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                                            [routerLink]=\"['/product', cartItem.product.id]\">\n                                            <figure class=\"tm-media-box-wrap\">\n                                                <img class=\"\"\n                                                    src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                    appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\">\n                                            </figure>\n                                        </a>\n                                    </div>\n                                </div>\n                                <div class=\"uk-width-expand\">\n                                    <div class=\"uk-text-meta uk-text-xsmall\">\n                                        {{ cartItem.product.category.title }}\n                                    </div>\n                                    <a class=\"uk-link-heading uk-text-small\"\n                                        [routerLink]=\"['/product', cartItem.product.id]\"\n                                        (click)=\"hideOffCanvas('#cart-offcanvas')\">\n                                        {{ cartItem.product.name }}\n                                    </a>\n                                    <div class=\"uk-margin-xsmall uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                        <div class=\"uk-text-bolder uk-text-small uk-first-column\">\n                                            ${{ cartItem.price }}\n                                        </div>\n                                        <div class=\"uk-text-meta uk-text-xsmall\">\n                                            {{ cartItem.quantity }} × ${{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                </div>\n                                <div>\n                                    <span (click)=\"removeProductFromCart(cartItem)\" href=\"#\"\n                                        class=\"uk-icon-link uk-text-danger uk-invisible-hover uk-icon\" href=\"#\"\n                                        uk-icon=\"icon: close; ratio: .75\" uk-tooltip=\"Remove\" title=\"\"\n                                        aria-expanded=\"false\"></span>\n                                </div>\n                            </div>\n                        </article>\n                    </li>\n                </ul>\n            </div>\n            <footer class=\"uk-card-footer\">\n                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-text-muted uk-h4 uk-first-column\">Subtotal</div>\n                    <div class=\"uk-h4 uk-text-bolder\">${{ cartTotal }}</div>\n                </div>\n                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-margin-small uk-grid\" uk-grid=\"\">\n                    <div>\n                        <a (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                            class=\"uk-button uk-button-default uk-margin-small uk-width-1-1\" routerLink=\"/cart\">view\n                            cart</a>\n                    </div>\n                    <div>\n                        <a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\" routerLink=\"/checkout\">checkout</a>\n                    </div>\n                </div>\n            </footer>\n        </div>\n    </aside>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-offcanvas-content\">\n    <header>\n        <div class=\"uk-navbar-container uk-light uk-visible@m tm-toolbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <nav>\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a href=\"#\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: receiver; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">0802 464 8237</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a href=\"contacts.html\" onclick=\"return false\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: location; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">Store in Murg Shopping Mall</span>\n                                    <span uk-icon=\"icon: triangle-down; ratio: .75;\" class=\"uk-icon\"></span>\n                                </a>\n                                <div class=\"uk-margin-remove uk-drop\" uk-drop=\"mode: click; pos: bottom-center;\">\n                                    <div\n                                        class=\"uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom\">\n                                        <iframe\n                                            src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31521.168896374664!2d7.457733600614864!3d9.0504340343759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b9cb59fb45d%3A0xa6d73b0eb006e31e!2sKizito%20Bookshops%20Limited!5e0!3m2!1sen!2sng!4v1582035608762!5m2!1sen!2sng\"\n                                            width=\"300\" height=\"150\" frameborder=\"0\" style=\"border:0;\"\n                                            allowfullscreen=\"\"></iframe>\n                                        <div class=\"uk-card-body\">\n                                            <div class=\"uk-text-small\">\n                                                <div>Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area\n                                                    10, Garki, Abuja</div>\n                                                <div>Daily 09:00–19:00</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-navbar-item\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: clock; ratio: .75;\"></span>\n                                    Daily 09:00–19:00\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-navbar-container tm-navbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <button class=\"uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon\"\n                        uk-toggle=\"target: #nav-offcanvas\" uk-navbar-toggle-icon=\"\"></button>\n                    <a class=\"uk-navbar-item uk-logo\" routerLink='/'>\n                        <img src=\"static/img/logo.svg\" width=\"90\" height=\"32\" alt=\"Logo\"></a>\n                    <nav class=\"uk-visible@m\">\n                        <ul class=\"uk-navbar-nav\" *ngIf='categories && categories.data'>\n                            <li *ngFor='let category of categories.data'>\n                                <a class=\"uk-link-reset\" [routerLink]=\"['/category', category.link]\">\n                                    {{ category.title }}\n                                    <span *ngIf='category.children' class=\"uk-margin-xsmall-left uk-icon\"\n                                        uk-icon=\"icon: chevron-down; ratio: .75;\"></span>\n                                </a>\n\n                                <div *ngIf='category.children' class=\"uk-navbar-dropdown\" uk-dropdown=\"offset: 0\">\n                                    <div class=\"\">\n                                        <ul class=\"uk-nav uk-nav-default\">\n                                            <li *ngFor='let child of category.children'>\n                                                <a [routerLink]=\"['/category', child.link]\">\n                                                    {{ child.title }} </a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n                <div class=\"uk-navbar-right\">\n                    <a class=\"uk-navbar-toggle tm-navbar-button uk-search-icon uk-icon\" href=\"#\" uk-search-icon=\"\"></a>\n                    <div class=\"uk-navbar-dropdown uk-padding-small uk-margin-remove\"\n                        uk-drop=\"mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x\">\n                        <div class=\"uk-container\">\n                            <div class=\"uk-grid-small uk-flex-middle uk-grid uk-grid-stack\" uk-grid=\"\">\n                                <div class=\"uk-width-expand\">\n                                    <form class=\"uk-search uk-search-navbar uk-width-1-1\" (ngSubmit)='search()'>\n                                        <input class=\"uk-search-input\" type=\"search\" placeholder=\"Search…\" autofocus=\"\"\n                                            name=\"searchValue\" [(ngModel)]='searchValue' />\n                                    </form>\n                                </div>\n                                <div class=\"uk-width-auto\">\n                                    <a class=\"uk-navbar-dropdown-close uk-close uk-icon\" href=\"#\" uk-close=\"\"></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button uk-icon\" routerLink='/account/orders'\n                        uk-icon=\"user\">\n                    </a>\n                    <div class=\"uk-padding-small uk-margin-remove uk-dropdown\"\n                        uk-dropdown=\"pos: bottom-right; offset: -10; delay-hide: 200;\" style=\"min-width: 150px;\">\n                        <ul class=\"uk-nav uk-dropdown-nav\">\n                            <ng-container *ngIf=\"userServices.type.value !== '' else notLoggedIn \">\n                                <ng-container *ngIf=\"userServices.type.value === 'client' else isAdmin\">\n                                    <li>\n                                        Hello, {{ userServices.current.value.first_name }}\n                                    </li>\n\n                                    <li class=\"uk-nav-divider\"></li>\n                                    <li>\n                                        <a routerLink='/account/orders'>\n                                            Orders\n                                            <!-- <span>(2)</span> -->\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <a routerLink='/account/favourites'>\n                                            Favorites\n                                            <!-- <span>(3)</span> -->\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <a routerLink='/account/personal'>\n                                            Personal\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <a routerLink='/account/settings'>\n                                            Settings\n                                        </a>\n                                    </li>\n                                </ng-container>\n                                <ng-template #isAdmin>\n                                    <li>\n                                        <a routerLink='/admin'>\n                                            Dashboard\n                                            <!-- <span>(2)</span> -->\n                                        </a>\n                                    </li>\n                                </ng-template>\n                                <li class=\"uk-nav-divider\"></li>\n                                <li><a (click)=\"logout()\">Log out</a>\n                                </li>\n                            </ng-container>\n                            \n                            <ng-template #notLoggedIn>\n                                <li>\n                                    <a routerLink='/sign-in'>\n                                        Login\n                                    </a>\n                                </li>\n                                <li>\n                                    <a routerLink='/sign-up'>\n                                        Register\n                                    </a>\n                                </li>\n                            </ng-template>\n                        </ul>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button\" uk-toggle=\"target: #cart-offcanvas\">\n                        <span uk-icon=\"cart\" class=\"uk-icon\"></span>\n                        <span class=\"uk-badge\" *ngIf=\"cartItems > 0\">{{ cartItems }}</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </header>\n    <main>\n        <div class=\"uk-padding uk-text-center\" *ngIf=\"loading\">\n            <span uk-spinner=\"ratio: 4.5\"></span>\n        </div>\n        <div *ngIf=\"!loading\">\n            <router-outlet></router-outlet>\n        </div>\n    </main>\n    <footer>\n        <section class=\"uk-section uk-section-secondary uk-section-small uk-light\">\n            <div class=\"uk-container\">\n                <div class=\"uk-grid-medium uk-child-width-1-1 uk-child-width-1-4@m uk-grid\" uk-grid=\"\">\n                    <div class=\"\">\n                        <a class=\"uk-logo\" routerLink=\"/\">\n                            <img src=\"/static/img/logo-inverse.svg\" width=\"90\" height=\"32\" alt=\"Logo\" />\n                        </a>\n                        <p class=\"uk-text-small\">\n                            Reading is Fun\n                        </p>\n                        <ul class=\"uk-iconnav\">\n                            <li><a href=\"#\" title=\"Facebook\" uk-icon=\"facebook\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Twitter\" uk-icon=\"twitter\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"YouTube\" uk-icon=\"youtube\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Instagram\" uk-icon=\"instagram\" class=\"uk-icon\"></a></li>\n                        </ul>\n                    </div>\n                    <div>\n                        <nav class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a routerLink='/cart'>Cart</a></li>\n                                    <li><a routerLink='/account'>Account</a></li>\n                                    <li><a routerLink='/sign-in'>Login</a></li>\n                                    <li><a routerLink='/sign-up'>Register</a></li>\n                                    <li><a routerLink='/admin'>Admin</a></li>\n                                </ul>\n                            </div>\n                            <div class=\"\">\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a routerLink='/catalog'>Catalog</a></li>\n                                    <li *ngFor='let category of categories.data' >\n                                        <a [routerLink]=\"['/category', category.link]\">\n                                            {{ category.title }}\n                                        </a>\n                                    </li>\n                                </ul>\n                            </div>\n                        </nav>\n                    </div>\n                    <div>\n                        <ul class=\"uk-list uk-text-small\">\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"receiver\"></span>\n                                    <span class=\"tm-pseudo\">0802 464 8237</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"mail\"></span>\n                                    <span class=\"tm-pseudo\">example@example.com</span>\n                                </a>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"location\"></span>\n                                    <span>\n                                        Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area\n                                        10, Garki, Abuja\n                                    </span>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"clock\"></span>\n                                    <span>Daily 09:00–19:00</span>\n                                </div>\n                            </li>\n                        </ul>\n                    </div>\n                    <div>\n                        <form class=\"uk-form-stacked\">\n                            <label>\n                                <div class=\"uk-form-label uk-text-muted\">Subscribe for updates</div>\n                                <div class=\"uk-inline uk-width-1-1\">\n                                    <a class=\"uk-form-icon uk-form-icon-flip uk-icon\" href=\"#\" uk-icon=\"mail\"></a>\n                                    <input class=\"uk-input\" type=\"email\" placeholder=\"Your email\" required=\"\">\n                                </div>\n                            </label>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </footer>\n</div>\n\n\n<div id=\"nav-offcanvas\" uk-offcanvas=\"overlay: true\" class=\"uk-offcanvas uk-offcanvas-overlay\" style=\"z-index: 1010;\">\n    <div class=\"uk-offcanvas-bar uk-padding-remove\">\n        <div class=\"uk-card uk-card-default uk-card-small tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div>\n                    <a class=\"uk-link-muted uk-text-bold\" href=\"#\">\n                        0802 464 8237\n                    </a>\n                    <div class=\"uk-text-xsmall uk-text-muted\" style=\"margin-top: -2px;\">\n                        <div>\n                            Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area 10, Garki, Abuja\n                        </div>\n                        <div>Daily 09:00–19:00</div>\n                    </div>\n                </div>\n            </header>\n            <nav class=\"uk-card-small uk-card-body\" *ngIf='categories'>\n                <ul class=\"uk-nav-default uk-nav-parent-icon uk-list-divider uk-nav\" uk-nav *ngIf=\"categories.data\">\n                    <li *ngFor='let category of categories.data' class=\"uk-parent\">\n                        <a [routerLink]=\"['/category', category.link]\">\n                            {{ category.title }}\n                        </a>\n                        <ul class=\"uk-nav-sub uk-list-divider\" *ngIf='category.children'>\n                            <li *ngFor='let child of category.children'>\n                                <a [routerLink]=\"['/category', child.link]\" (click)=\"hideOffCanvas('#nav-offcanvas')\">\n                                    {{ child.title }} </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    </div>\n</div>\n\n<div id=\"cart-offcanvas\" uk-offcanvas=\"overlay: true; flip: true\" class=\"uk-offcanvas uk-offcanvas-overlay\"\n    style=\"z-index: 1010;\">\n    <aside class=\"uk-offcanvas-bar uk-padding-remove uk-offcanvas-bar-animation uk-offcanvas-slide\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-height-1-1 uk-flex uk-flex-column tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div class=\"uk-grid-small uk-flex-1 uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand \">\n                        <div class=\"uk-h3\">Cart</div>\n                    </div><button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" uk-close=\"\"></button>\n                </div>\n            </header>\n            <div class=\"uk-card-body uk-overflow-auto\">\n                <ul class=\"uk-list uk-list-divider\" *ngIf=\"cartProducts && cartProducts.data\">\n                    <li *ngFor=\"let cartItem of cartProducts.data\">\n                        <article>\n                            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-width-1-4 \">\n                                    <div class=\"tm-ratio tm-ratio-4-3\">\n                                        <a class=\"tm-media-box\" (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                                            [routerLink]=\"['/product', cartItem.product.id]\">\n                                            <figure class=\"tm-media-box-wrap\">\n                                                <img class=\"\"\n                                                    src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                    appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\">\n                                            </figure>\n                                        </a>\n                                    </div>\n                                </div>\n                                <div class=\"uk-width-expand\">\n                                    <div class=\"uk-text-meta uk-text-xsmall\">\n                                        {{ cartItem.product.category.title }}\n                                    </div>\n                                    <a class=\"uk-link-heading uk-text-small\"\n                                        [routerLink]=\"['/product', cartItem.product.id]\"\n                                        (click)=\"hideOffCanvas('#cart-offcanvas')\">\n                                        {{ cartItem.product.name }}\n                                    </a>\n                                    <div class=\"uk-margin-xsmall uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                        <div class=\"uk-text-bolder uk-text-small \">\n                                            ${{ cartItem.price }}\n                                        </div>\n                                        <div class=\"uk-text-meta uk-text-xsmall\">\n                                            {{ cartItem.quantity }} × ${{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                </div>\n                                <div>\n                                    <span (click)=\"removeProductFromCart(cartItem)\" href=\"#\"\n                                        class=\"uk-icon-link uk-text-danger uk-invisible-hover uk-icon\" href=\"#\"\n                                        uk-icon=\"icon: close; ratio: .75\" uk-tooltip=\"Remove\" title=\"\"\n                                        aria-expanded=\"false\"></span>\n                                </div>\n                            </div>\n                        </article>\n                    </li>\n                </ul>\n            </div>\n            <footer class=\"uk-card-footer\">\n                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-text-muted uk-h4 \">Subtotal</div>\n                    <div class=\"uk-h4 uk-text-bolder\">${{ cartTotal }}</div>\n                </div>\n                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-margin-small uk-grid\" uk-grid=\"\">\n                    <div>\n                        <a (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                            class=\"uk-button uk-button-default uk-margin-small uk-width-1-1\" routerLink=\"/cart\">view\n                            cart</a>\n                    </div>\n                    <div>\n                        <a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                            routerLink=\"/checkout\">checkout</a>\n                    </div>\n                </div>\n            </footer>\n        </div>\n    </aside>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.html":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.html ***!
+  \******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-flex uk-flex-center uk-flex-middle uk-background-muted uk-height-viewport\">\n    <div class=\"uk-width-medium uk-padding-small\">\n        <form id=\"loginClientForm\" #loginClientForm=\"ngForm\" (ngSubmit)=\"onSubmit(loginClientForm)\">\n            <fieldset class=\"uk-fieldset\">\n                <legend class=\"uk-legend\">Login</legend>\n                <div [hidden]=\"email.valid || email.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Email is required!\n                </div>\n                <div [hidden]=\"password.valid || password.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Password is required!\n                </div>\n                <div class=\"uk-margin\">\n                    <div class=\"uk-inline uk-width-1-1\">\n                        <span class=\"uk-form-icon uk-form-icon-flip uk-icon\" data-uk-icon=\"icon: user\"></span>\n                        <input class=\"uk-input uk-form-large\" required=\"\" placeholder=\"Email\" type=\"email\" name=\"email\"\n                            #email=\"ngModel\" [(ngModel)]='client.email' form=\"loginClientForm\">\n                    </div>\n                </div>\n                <div class=\"uk-margin\">\n                    <div class=\"uk-inline uk-width-1-1\">\n                        <span class=\"uk-form-icon uk-form-icon-flip uk-icon\" data-uk-icon=\"icon: lock\"></span>\n                        <input class=\"uk-input uk-form-large\" required=\"\" placeholder=\"Password\" type=\"password\"\n                            name=\"email\" #password=\"ngModel\" [(ngModel)]='client.password' form=\"loginClientForm\">\n                    </div>\n                </div>\n                <!--                 \n                <div class=\"uk-margin\">\n                    <label><input class=\"uk-checkbox\" type=\"checkbox\"> Keep me logged in</label>\n                </div> -->\n                <div class=\"uk-margin\">\n                    <button type=\"submit\" form=\"loginClientForm\" class=\"uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1\"  [disabled]=\"!loginClientForm.form.valid || (isLoggingIN)\">\n                        LOG IN\n                        <span class=\"uk-margin-left\" *ngIf='isLoggingIN'>\n                            <span uk-spinner=\"ratio: 1\"></span>\n                        </span>\n                    </button>\n                </div>\n            </fieldset>\n        </form>\n        <div>\n            <div class=\"uk-text-center\">\n                <a class=\"uk-link-reset uk-text-small\"\n                    data-uk-toggle=\"target: #recover;animation: uk-animation-slide-top-small\">Forgot your password?</a>\n            </div>\n            <div class=\"uk-margin-small-top\" id=\"recover\" hidden=\"\">\n                <form action=\"login.html\">\n\n                    <div class=\"uk-margin-small\">\n                        <div class=\"uk-inline uk-width-1-1\">\n                            <span class=\"uk-form-icon uk-form-icon-flip uk-icon\" data-uk-icon=\"icon: mail\"></span>\n                            <input class=\"uk-input\" placeholder=\"E-mail\" required=\"\" type=\"text\">\n                        </div>\n                    </div>\n                    <div class=\"uk-margin-small\">\n                        <button type=\"submit\" class=\"uk-button uk-button-primary uk-button-primary uk-width-1-1\">SEND\n                            PASSWORD</button>\n                    </div>\n\n                </form>\n            </div>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -279,7 +292,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n                <div class=\"uk-grid uk-grid-divider uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@l uk-child-width-1-5@xl\" data-uk-grid>\n                        <div>\n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:users\" class=\"uk-margin-small-right uk-text-primary\"></span>New Users</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove  uk-text-primary\">2.134</h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-success\" data-uk-icon=\"icon: triangle-up\">15%</span> more than last week.\n                            </div>\n                        </div>\n                        <div>\n                            \n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:social\" class=\"uk-margin-small-right uk-text-primary\"></span>Social Media</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove uk-text-primary\">8.490</h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-warning\" data-uk-icon=\"icon: triangle-down\">-15%</span> less than last week.\n                            </div>\n                            \n                        </div>\n                        <div>\n                            \n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:clock\" class=\"uk-margin-small-right uk-text-primary\"></span>Traffic hours</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove uk-text-primary\">12.00<small class=\"uk-text-small\">PM</small></h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-success\" data-uk-icon=\"icon: triangle-up\"> 19%</span> more than last week.\n                            </div>\n                            \n                        </div>\n                        <div>\n                            \n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:search\" class=\"uk-margin-small-right uk-text-primary\"></span>Week Search</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove uk-text-primary\">9.543</h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-danger\" data-uk-icon=\"icon: triangle-down\"> -23%</span> less than last week.\n                            </div>\n                            \n                        </div>\n                        <div class=\"uk-visible@xl\">\n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:users\" class=\"uk-margin-small-right uk-text-primary\"></span>Lorem ipsum</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove uk-text-primary\">5.284</h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-success\" data-uk-icon=\"icon: triangle-up\"> 7%</span> more than last week.\n                            </div>\n                        </div>\n                    </div>\n                    <hr>\n                    <div class=\"uk-grid uk-grid-medium uk-grid-match\" data-uk-grid>\n                        <!-- panel -->\n                        <div class=\"uk-width-2-3@l uk-width-1-2@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Geographic Chart</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa1.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\"uk-width-1-2@s uk-width-1-3@l uk-width-1-4@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Activity</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa2.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\"uk-width-1-2@s uk-width-1-3@l uk-width-1-4@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Conversions</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa3.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\" uk-width-2-3@l uk-width-1-2@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Consectetur sit</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <div class=\"uk-overflow-auto\">\n                                    <table class=\"uk-table uk-table-hover uk-table-divider uk-table-middle\">\n                                        <thead>\n                                            <tr>\n                                                <th class=\"uk-table-shrink\"></th>\n                                                <th>Name</th>\n                                                <th>Description</th>\n                                                <th>Date</th>\n                                                <th>Action</th>\n                                            </tr>\n                                        </thead>\n                                        <tbody>\n                                            <tr>\n                                                <td><img src=\"https://picsum.photos/40/40/?random=1\" alt=\"Alt text\" class=\"uk-border-circle uk-preserve-width \"></td>\n                                                <td>John Doe</td>\n                                                <td>Maecenas sagittis, massa nulla luctus mauris</td>\n                                                <td>11/09/18</td>\n                                                <td>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-success\" data-uk-icon=\"check\"></a>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-danger\" data-uk-icon=\"close\"></a>\n                                                </td>\n                                            </tr>\n                                            <tr>\n                                                <td><img src=\"https://picsum.photos/40/40/?random=2\" alt=\"Alt text\" class=\"uk-border-circle uk-preserve-width \"></td>\n                                                <td>Larry Boile</td>\n                                                <td>Maecenas sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>\n                                                <td>13/09/18</td>\n                                                <td>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-success\" data-uk-icon=\"check\"></a>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-danger\" data-uk-icon=\"close\"></a>\n                                                </td>\n                                            </tr>\n                                            <tr>\n                                                <td><img src=\"https://picsum.photos/40/40/?random=3\" alt=\"Alt text\" class=\"uk-border-circle uk-preserve-width \"></td>\n                                                <td>Susan Lee</td>\n                                                <td>Sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>\n                                                <td>18/09/18</td>\n                                                <td>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-success\" data-uk-icon=\"check\"></a>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-danger\" data-uk-icon=\"close\"></a>\n                                                </td>\n                                            </tr>\n                                            <tr>\n                                                <td><img src=\"https://picsum.photos/40/40/?random=4\" alt=\"Alt text\" class=\"uk-border-circle uk-preserve-width \"></td>\n                                                <td>Jerry Thomas</td>\n                                                <td>Maecenas sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>\n                                                <td>21/09/18</td>\n                                                <td>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-success\" data-uk-icon=\"check\"></a>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-danger\" data-uk-icon=\"close\"></a>\n                                                </td>\n                                            </tr>\n                                        </tbody>\n                                    </table>\n                                </div>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\"uk-width-1-2@s uk-width-1-2@l uk-width-1-4@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Lorem ipsum</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa4.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\"uk-width-1-2@s uk-width-1-2@l uk-width-1-4@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Ipsum dolor</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa4.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                    </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-grid-match uk-grid-medium\" uk-grid>\n    <div class=\"uk-width-2-3@m uk-grid-margin\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n            <div class=\"uk-card-header\">\n                <div class=\"uk-grid uk-grid-small\">\n                    <div class=\"uk-width-auto\">\n                        <h4 class=\"uk-margin-remove-bottom\">Profile</h4>\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-card-body\" *ngIf=\"admin && admin.data\">\n                <p>\n                    <b>Fullname: </b>\n                    {{ admin.data.fullname }}\n                </p>\n                <p>\n                    <b>Email: </b>\n                    {{ admin.data.email }}\n                </p>\n                <p>\n                    <b>Role: </b>\n                    {{ admin.data.role.title }}\n                </p>\n            </div>\n        </div>\n    </div>\n    <div class=\"uk-width-1-3@m\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n            <div class=\"uk-card-header\" style=\"padding-left: 5rem; padding-right: 5rem;\">\n                <img src=\"{{ userService.current.value.image_url }}\" appImgFallback=\"avatar\" alt=\"\" class=\"uk-border-circle\" />\n            </div>\n            <div class=\"uk-card-body\">\n                <p><span data-uk-icon=\"icon: user\"></span> {{ userService.current.value.fullname }}</p>\n                <p><span data-uk-icon=\"icon: mail\"></span> {{ userService.current.value.email }}</p>\n            </div>\n            <div class=\"uk-card-footer\">\n                <button class=\"uk-button uk-button-primary uk-width-1-1\" uk-toggle=\"target: #changePasswordModal\">\n                    <span data-uk-icon=\"icon: lock\"></span>\n                </button>\n            </div>\n        </div>\n    </div>\n</div>\n\n<!-- This is the modal -->\n<div id=\"changePasswordModal\" uk-modal>\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Change Password</h2>\n        <hr />\n        <form class=\"uk-form-stacked\" id=\"updatePasswordForm\" #updatePasswordFrom=\"ngForm\" (ngSubmit)=\"onSubmit(updatePasswordFrom)\">\n            <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                <fieldset class=\"uk-fieldset uk-grid-margin \">\n                    <legend class=\"uk-h4\">Password</legend>\n                    <div class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                        <div class=\"\">\n                            <label>\n                                <div class=\"uk-form-label\">Current Password</div>\n                                <input class=\"uk-input uk-form-width-large\" required=\"\" name=\"password\" #password='ngModel' [(ngModel)]='updatePassword.password' form=\"updatePasswordFrom\" type=\"password\">\n                            </label>\n                            <div [hidden]=\"password.valid || password.pristine\" class=\"uk-alert uk-alert-danger\">\n                                Password is required!\n                            </div>\n                        </div>\n                        <div class=\"uk-grid-margin \">\n                            <label>\n                                <div class=\"uk-form-label\">New Password</div>\n                                <input class=\"uk-input uk-form-width-large\" required=\"\" name=\"new_password\" #new_password='ngModel' [(ngModel)]='updatePassword.new_password' form=\"updatePasswordFrom\"  type=\"password\">\n                            </label>\n                            <div [hidden]=\"new_password.valid || new_password.pristine\" class=\"uk-alert uk-alert-danger\">\n                                New Password is required!\n                            </div>\n                        </div>\n                        <div class=\"uk-grid-margin \">\n                            <label>\n                                <div class=\"uk-form-label\">Confirm Password</div>\n                                <input class=\"uk-input uk-form-width-large\" required=\"\" name=\"repeat_password\" #repeat_password='ngModel' [(ngModel)]='updatePassword.repeat_password' form=\"updatePasswordFrom\"  type=\"password\">\n                            </label>\n                            <div [hidden]=\"repeat_password.valid || repeat_password.pristine\" class=\"uk-alert uk-alert-danger\">\n                                Repeat Password is required!\n                            </div>\n                        </div>\n                        <div class=\"uk-grid-margin \">\n                            <button class=\"uk-button uk-button-primary\"\n                                [disabled]=\"!updatePasswordFrom.form.valid || (updatingStaff)\">\n                                update password\n                                <span class=\"uk-margin-left\" *ngIf='updatingStaff'>\n                                    <span uk-spinner=\"ratio: 1\"></span>\n                                </span>\n                            </button>\n                        </div>\n                    </div>\n                </fieldset>\n            </div>\n        </form>\n    </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-order-page/admin-order-page.component.html":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-order-page/admin-order-page.component.html ***!
+  \********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\" *ngIf='order && order.data'>\n    <header class=\"uk-card-header\">\n        <div uk-grid>\n            <div class='uk-width-expand'>\n                <h1 class=\"uk-h2\">\n                    #{{ order.data.id }}\n                    <span class=\"uk-text-muted uk-text-small\">\n                        from {{ order.data.created | date: 'mediumDate'}}\n                    </span>\n                </h1>\n            </div>\n        </div>\n    </header>\n    <div>\n        <section class=\"uk-card-body\">\n            <div class=\"uk-child-width-1-1 uk-child-width-1-3@m\" uk-grid=''>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\"  uk-grid=''>\n                        <div class=\"uk-width-auto\">\n                            <img src=\"{{ order.data.client.avatar ? order.data.client.avatar_url : '' }}\" alt=\"\"\n                                appImgFallback=\"avatar\" class=\"uk-width-1-1 uk-border-circle profile-img\">\n                        </div>\n                        <div class=\"uk-width-expand\">\n                            <h4>\n                                {{ order.data.client.last_name + ' ' + order.data.client.first_name  }}\n                            </h4>\n                            <div>{{ order.data.client.email }}</div>\n                            <div>{{ order.data.client.phone }}</div>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\">\n                        <h4>\n                            {{ order.data.shipping_string }}\n                        </h4>\n                        <div>\n                            Payment: {{ order.data.payment_type_string }}\n                        </div>\n                        <div>\n                            Total:\n                            <span [innerHTML]='\"&#8358;\"'></span>\n                            {{ order.data.price | number }}\n                        </div>\n                        <div>\n                            Status:\n                            <span class=\"uk-label\">\n                                {{ order.data.status_string }}\n                            </span>\n                        </div>\n                        <div>\n                            Paid:\n                            <span class=\"{{ order.data.paid ? 'uk-text-success' : 'uk-text-danger' }}\">\n                                {{ order.data.paid ? 'YES' : 'NO' }}\n                            </span>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.address.country.name}}</h4>\n                        <div>\n                            {{ order.data.address.state + ', ' + order.data.address.city }}\n                        </div>\n                        <div>{{ order.data.address.address }}</div>\n                        <div>{{ order.data.address.postal_code }}</div>\n                    </div>\n\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.store_address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.store_address.name}}</h4>\n                        <div>\n                            {{ order.data.store_address.address }}\n                        </div>\n                        <div>Daily {{ order.data.store_address.opened }}</div>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"uk-card-footer\">\n\n            <div>\n                <div *ngIf=\"orderData && orderData.data\">\n                    <header\n                        class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                        <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>product</div>\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                    <div>price</div>\n                                    <div class=\"tm-quantity-column\">quantity</div>\n                                    <div>sum</div>\n                                    <div class=\"uk-width-auto\">\n                                        <div style=\"width: 20px;\"></div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </header>\n                    <div class=\"uk-card-body\" *ngFor=\"let cartItem of orderData.data\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                            uk-grid=\"\">\n                            <!-- Product cell-->\n                            <div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-1-3\">\n                                        <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                <figure class=\"tm-media-box-wrap\">\n                                                    <img class=\"\"\n                                                        src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                        appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\" />\n                                                </figure>\n                                            </a>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-width-expand\">\n                                        <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                        <a class=\"uk-link-heading\"\n                                            [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                    </div>\n                                </div>\n                            </div><!-- Other cells-->\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                    uk-grid=\"\">\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                        <div>\n                                            <span [innerHTML]='\"&#8358;\"'></span>\n                                            {{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                    <div class=\"tm-cart-quantity-column\">\n                                        {{ cartItem.quantity }}\n                                    </div>\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                        <div>\n                                            <span [innerHTML]='\"&#8358;\"'></span>\n                                            {{ cartItem.price }}\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-orders-page/admin-orders-page.component.html":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-orders-page/admin-orders-page.component.html ***!
+  \**********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                    <h4>Orders</h4>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <table class=\"uk-table uk-table-divider uk-table-striped\">\n                <caption></caption>\n                <thead>\n                    <tr>\n                        <th>Customer</th>\n                        <th>Shipping</th>\n                        <th>Payment</th>\n                        <th>Total</th>\n                        <th>Status</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <th>Customer</th>\n                        <th>Payment</th>\n                        <th>Total</th>\n                        <th>Status</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </tfoot>\n                <tbody *ngIf='orders && orders.data'>\n\n                    <tr *ngFor=\"let order of orders.data\">\n                        <td>\n                            {{ order.client.last_name }} {{ order.client.first_name }}\n                        </td>\n                        <td>{{ order.shipping_string }}</td>\n                        <td>{{ order.payment_type_string }}</td>\n                        <td>{{ order.price | number }}</td>\n                        <td>\n                            <span class=\"uk-label\">{{ order.status_string }}</span>\n                        </td>\n                        <td>\n                            <a [routerLink]=\"['/admin/order', order.id]\"\n                                class=\"uk-icon-button uk-button-primary uk-icon\" uk-icon=\"arrow-right\"></a>\n                        </td>\n                        <td>{{ order.created | date: 'short' }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -344,7 +383,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                <h4>Staffs</h4>\n                </div>\n                <div class=\"uk-width-expand uk-text-right panel-icons\">\n                \n                    <button class=\"uk-button uk-button-primary\" uk-toggle=\"target: #createStaffModal\">\n                        Create Staff\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <table class=\"uk-table uk-table-divider uk-table-striped\">\n                <caption></caption>\n                <thead>\n                    <tr>\n                        <th>Fullname</th>\n                        <th>Email</th>\n                        <th>Role</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <th>Fullname</th>\n                        <th>Email</th>\n                        <th>Role</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    \n                    <tr *ngFor=\"let admin of admins.data\">\n                        <td>{{ admin.fullname }}</td>\n                        <td>{{ admin.email }}</td>\n                        <td>{{ admin.role.title }}</td>\n                        <td><a [routerLink]=\"['/admin/staff', admin.id]\" class=\"uk-icon-button uk-button-primary uk-icon\" uk-icon=\"arrow-right\"></a></td>\n                        <td>{{ admin.created }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>\n    \n<div id=\"createStaffModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Role</h2>\n        <hr>\n        <form id=\"createStaffForm\" #createStaffForm=\"ngForm\" (ngSubmit)=\"onSubmit(createStaffForm)\">\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"fullname\">Fullname</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"fullname\" name=\"fullname\" required type=\"text\" [(ngModel)]=\"admin.fullname\" #fullname=\"ngModel\">\n                <div [hidden]=\"fullname.valid || fullname.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Fullname is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"email\">Email Address</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"email\" name=\"email\" required type=\"text\" [(ngModel)]=\"admin.email\" #email=\"ngModel\">\n                <div [hidden]=\"email.valid || email.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Email Address is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"role\">Role</label>\n                <select class=\"uk-select\" form=\"createStaffForm\" id=\"role\" name=\"role\" required [(ngModel)]=\"admin.role\" #role=\"ngModel\">\n                    <option value=''>--Select Role--</option>\n                    <option *ngFor='let role of roles.data' [value]='role.id'>\n                        {{role.title}}\n                    </option>\n                </select>\n                <div [hidden]=\"role.valid || role.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Role is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createStaffForm\" type=\"submit\" value=\"Create Staff\" [disabled]=\"!createStaffForm.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                <h4>Staffs</h4>\n                </div>\n                <div class=\"uk-width-expand uk-text-right panel-icons\">\n                \n                    <button class=\"uk-button uk-button-primary\" uk-toggle=\"target: #createStaffModal\">\n                        Create Staff\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <table class=\"uk-table uk-table-divider uk-table-striped\">\n                <caption></caption>\n                <thead>\n                    <tr>\n                        <th>Fullname</th>\n                        <th>Email</th>\n                        <th>Role</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <th>Fullname</th>\n                        <th>Email</th>\n                        <th>Role</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </tfoot>\n                <tbody *ngIf='admins && admins.data'>\n                    \n                    <tr *ngFor=\"let admin of admins.data\">\n                        <td>{{ admin.fullname }}</td>\n                        <td>{{ admin.email }}</td>\n                        <td>{{ admin.role.title }}</td>\n                        <td>\n                            <a [routerLink]=\"['/admin/staff', admin.id]\" class=\"uk-icon-button uk-button-primary uk-icon\" uk-icon=\"arrow-right\"></a>\n                        </td>\n                        <td>{{ admin.created }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>\n    \n<div id=\"createStaffModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Role</h2>\n        <hr>\n        <form id=\"createStaffForm\" #createStaffForm=\"ngForm\" (ngSubmit)=\"onSubmit(createStaffForm)\">\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"fullname\">Fullname</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"fullname\" name=\"fullname\" required type=\"text\" [(ngModel)]=\"admin.fullname\" #fullname=\"ngModel\">\n                <div [hidden]=\"fullname.valid || fullname.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Fullname is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"email\">Email Address</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"email\" name=\"email\" required type=\"text\" [(ngModel)]=\"admin.email\" #email=\"ngModel\">\n                <div [hidden]=\"email.valid || email.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Email Address is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"password\">Password</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"password\" name=\"password\" required type=\"password\" [(ngModel)]=\"admin.password\" #password=\"ngModel\">\n                <div [hidden]=\"password.valid || password.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Password is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"role\">Role</label>\n                <select class=\"uk-select\" form=\"createStaffForm\" id=\"role\" name=\"role\" required [(ngModel)]=\"admin.role\" #role=\"ngModel\">\n                    <option value=''>--Select Role--</option>\n                    <option *ngFor='let role of roles.data' [value]='role.id'>\n                        {{role.title}}\n                    </option>\n                </select>\n                <div [hidden]=\"role.valid || role.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Role is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createStaffForm\" type=\"submit\" value=\"Create Staff\" [disabled]=\"!createStaffForm.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -370,7 +409,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n            <div class=\"uk-text-center uk-first-column\">\n                <ul class=\"uk-breadcrumb uk-flex-center uk-margin-remove\">\n                    <li><a routerLink=\"/\">Home</a></li>\n                    <li><span>Cart</span></li>\n                </ul>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">Cart</h1>\n            </div>\n            <div class=\"uk-grid-margin uk-first-column\">\n                <div class=\"uk-grid-medium uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-1-1 uk-width-expand@m uk-first-column\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\"\n                            *ngIf=\"cartProducts && cartProducts.data\">\n                            <header\n                                class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                                <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-first-column\">product</div>\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-first-column\">price</div>\n                                            <div class=\"tm-quantity-column\">quantity</div>\n                                            <div>sum</div>\n                                            <div class=\"uk-width-auto\">\n                                                <div style=\"width: 20px;\"></div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </header>\n                            <div class=\"uk-card-body\" *ngFor=\"let cartItem of cartProducts.data\">\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                                    uk-grid=\"\">\n                                    <!-- Product cell-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-width-1-3 uk-first-column\">\n                                                <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                        [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                        <figure class=\"tm-media-box-wrap\">\n                                                            <img class=\"\"\n                                                                src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                                appImgFallback=\"product\"\n                                                                alt=\"{{ cartItem.product.name }}\" />\n                                                        </figure>\n                                                    </a>\n                                                </div>\n                                            </div>\n                                            <div class=\"uk-width-expand\">\n                                                <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                                <a class=\"uk-link-heading\"\n                                                    [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                            </div>\n                                        </div>\n                                    </div><!-- Other cells-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                            uk-grid=\"\">\n                                            <div class=\"uk-first-column\">\n                                                <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                                <div>${{ cartItem.unit_price }}</div>\n                                            </div>\n                                            <div class=\"tm-cart-quantity-column\">\n                                                <a (click)=\"updateCart(-1, cartItem)\" uk-icon=\"icon: minus; ratio: .75\" class=\"uk-icon\"></a>\n                                                    <input class=\"uk-input tm-quantity-input\" id=\"product-2\" type=\"text\" maxlength=\"3\" value=\"1\" [(ngModel)]='cartItem.quantity'>\n                                                    <a (click)=\"updateCart(1, cartItem)\" uk-icon=\"icon: plus; ratio: .75\" class=\"uk-icon\"></a>\n                                                </div>\n                                            <div>\n                                                <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                                <div>${{ cartItem.price }}</div>\n                                            </div>\n                                            <div class=\"uk-width-auto@s\">\n                                                <a class=\"uk-text-danger\" uk-tooltip=\"Remove\"\n                                                    (click)=\"removeProductFromCart(cartItem)\" title=\"\"\n                                                    aria-expanded=\"false\">\n                                                    <span uk-icon=\"close\" class=\"uk-icon\"></span>\n                                                </a>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"uk-width-1-1 tm-aside-column uk-width-1-4@m\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                            uk-sticky=\"offset: 30; bottom: true; media: @m;\">\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Subtotal</div>\n                                    <div>${{ cartTotal * .95 }}</div>\n                                </div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Vat (5%)</div>\n                                    <div>${{ cartTotal * .05 }}</div>\n                                </div>\n                            </div>\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Total</div>\n                                    <div class=\"uk-text-lead uk-text-bolder\">${{ cartTotal }}</div>\n                                </div><a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                                    routerLink=\"/checkout\">Checkout</a>\n                            </div>\n                        </div>\n                        <div class=\"uk-sticky-placeholder\" hidden=\"\" style=\"height: 230px; margin: 0px;\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>");
+/* harmony default export */ __webpack_exports__["default"] = ("<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n            <div class=\"uk-text-center uk-first-column\">\n                <ul class=\"uk-breadcrumb uk-flex-center uk-margin-remove\">\n                    <li><a routerLink=\"/\">Home</a></li>\n                    <li><span>Cart</span></li>\n                </ul>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">Cart</h1>\n            </div>\n            <div class=\"uk-grid-margin uk-first-column\">\n                <div class=\"uk-grid-medium uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-1-1 uk-width-expand@m uk-first-column\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\"\n                            *ngIf=\"cartProducts && cartProducts.data\">\n                            <header\n                                class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                                <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-first-column\">product</div>\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-first-column\">price</div>\n                                            <div class=\"tm-quantity-column\">quantity</div>\n                                            <div>sum</div>\n                                            <div class=\"uk-width-auto\">\n                                                <div style=\"width: 20px;\"></div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </header>\n                            <div class=\"uk-card-body\" *ngFor=\"let cartItem of cartProducts.data\">\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                                    uk-grid=\"\">\n                                    <!-- Product cell-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-width-1-3 uk-first-column\">\n                                                <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                        [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                        <figure class=\"tm-media-box-wrap\">\n                                                            <img class=\"\"\n                                                                src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                                appImgFallback=\"product\"\n                                                                alt=\"{{ cartItem.product.name }}\" />\n                                                        </figure>\n                                                    </a>\n                                                </div>\n                                            </div>\n                                            <div class=\"uk-width-expand\">\n                                                <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                                <a class=\"uk-link-heading\"\n                                                    [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                            </div>\n                                        </div>\n                                    </div><!-- Other cells-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                            uk-grid=\"\">\n                                            <div class=\"uk-first-column\">\n                                                <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                                <div>\n                                                    <span [innerHTML]='\"&#8358;\"'></span>\n                                                    {{ cartItem.unit_price }}\n                                                </div>\n                                            </div>\n                                            <div class=\"tm-cart-quantity-column\">\n                                                <a (click)=\"updateCart(-1, cartItem)\" uk-icon=\"icon: minus; ratio: .75\" class=\"uk-icon\"></a>\n                                                    <input class=\"uk-input tm-quantity-input\" id=\"product-2\" type=\"text\" maxlength=\"3\" value=\"1\" [(ngModel)]='cartItem.quantity'>\n                                                    <a (click)=\"updateCart(1, cartItem)\" uk-icon=\"icon: plus; ratio: .75\" class=\"uk-icon\"></a>\n                                                </div>\n                                            <div>\n                                                <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                                <div>\n                                                    <span [innerHTML]='\"&#8358;\"'></span>\n                                                    {{ cartItem.price }}\n                                                </div>\n                                            </div>\n                                            <div class=\"uk-width-auto@s\">\n                                                <a class=\"uk-text-danger\" uk-tooltip=\"Remove\"\n                                                    (click)=\"removeProductFromCart(cartItem)\" title=\"\"\n                                                    aria-expanded=\"false\">\n                                                    <span uk-icon=\"close\" class=\"uk-icon\"></span>\n                                                </a>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"uk-width-1-1 tm-aside-column uk-width-1-4@m\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                            uk-sticky=\"offset: 30; bottom: true; media: @m;\">\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Subtotal</div>\n                                    <div>\n                                        <span [innerHTML]='\"&#8358;\"'></span>\n                                        {{ cartTotal * .95 }}\n                                    </div>\n                                </div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Vat (5%)</div>\n                                    <div>\n                                        <span [innerHTML]='\"&#8358;\"'></span>\n                                        {{ cartTotal * .05 }}\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Total</div>\n                                    <div class=\"uk-text-lead uk-text-bolder\">\n                                        <span [innerHTML]='\"&#8358;\"'></span>\n                                        {{ cartTotal }}\n                                    </div>\n                                </div><a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                                    routerLink=\"/checkout\">Checkout</a>\n                            </div>\n                        </div>\n                        <div class=\"uk-sticky-placeholder\" hidden=\"\" style=\"height: 230px; margin: 0px;\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>");
 
 /***/ }),
 
@@ -448,7 +487,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\" *ngIf='order && order.data'>\n    <header class=\"uk-card-header\">\n        <div uk-grid>\n            <div class='uk-width-expand'>\n                <h1 class=\"uk-h2\">\n                    #{{ order.data.id }}\n                    <span class=\"uk-text-muted uk-text-small\">\n                        from {{ order.data.created | date: 'mediumDate'}}\n                    </span>\n                </h1>\n            </div>\n            <div class='uk-width-1-5 uk-text-right' *ngIf='!order.data.paid && order.data.payment_type === \"online\"'>\n                <angular4-paystack [email]=\"client.email\" [amount]=\"order.data.price * 100\" [ref]=\"reference\"\n                    [class]=\"'uk-button uk-button-primary'\" (close)=\"paymentCancel()\" (callback)=\"paymentDone($event)\">\n                    Pay Now\n                </angular4-paystack>\n            </div>\n        </div>\n    </header>\n    <div>\n        <section class=\"uk-card-body\">\n            <div class=\"uk-child-width-1-1 uk-child-width-1-2@m\" uk-grid=''>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\">\n                        <h4>\n                            {{ order.data.shipping_string }}\n                        </h4>\n                        <div>\n                            Payment: {{ order.data.payment_type_string }}\n                        </div>\n                        <div>\n                            Total:\n                            <span [innerHTML]='\"&#8358;\"'></span>\n                            {{ order.data.price | number }}\n                        </div>\n                        <div>\n                            Status:\n                            <span class=\"uk-label\">\n                                {{ order.data.status_string }}\n                            </span>\n                        </div>\n                        <div>\n                            Paid:\n                            <span class=\"{{ order.data.paid ? 'uk-text-success' : 'uk-text-danger' }}\">\n                                {{ order.data.paid ? 'YES' : 'NO' }}\n                            </span>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.address.country.name}}</h4>\n                        <div>\n                            {{ order.data.address.state + ', ' + order.data.address.city }}\n                        </div>\n                        <div>{{ order.data.address.address }}</div>\n                        <div>{{ order.data.address.postal_code }}</div>\n                    </div>\n\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.store_address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.store_address.name}}</h4>\n                        <div>\n                            {{ order.data.store_address.address }}\n                        </div>\n                        <div>Daily {{ order.data.store_address.opened }}</div>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"uk-card-body uk-margin-large-top\">\n\n            <div>\n                <div *ngIf=\"orderData && orderData.data\">\n                    <header\n                        class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                        <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>product</div>\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                    <div>price</div>\n                                    <div class=\"tm-quantity-column\">quantity</div>\n                                    <div>sum</div>\n                                    <div class=\"uk-width-auto\">\n                                        <div style=\"width: 20px;\"></div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </header>\n                    <div class=\"uk-card-body\" *ngFor=\"let cartItem of orderData.data\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                            uk-grid=\"\">\n                            <!-- Product cell-->\n                            <div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-1-3\">\n                                        <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                <figure class=\"tm-media-box-wrap\">\n                                                    <img class=\"\"\n                                                        src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                        appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\" />\n                                                </figure>\n                                            </a>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-width-expand\">\n                                        <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                        <a class=\"uk-link-heading\"\n                                            [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                    </div>\n                                </div>\n                            </div><!-- Other cells-->\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                    uk-grid=\"\">\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                        <div>${{ cartItem.unit_price }}</div>\n                                    </div>\n                                    <div class=\"tm-cart-quantity-column\">\n                                        {{ cartItem.quantity }}\n                                    </div>\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                        <div>${{ cartItem.price }}</div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\" *ngIf='order && order.data'>\n    <header class=\"uk-card-header\">\n        <div uk-grid>\n            <div class='uk-width-expand'>\n                <h1 class=\"uk-h2\">\n                    #{{ order.data.id }}\n                    <span class=\"uk-text-muted uk-text-small\">\n                        from {{ order.data.created | date: 'mediumDate'}}\n                    </span>\n                </h1>\n            </div>\n            <div class='uk-width-1-5 uk-text-right' *ngIf='!order.data.paid && order.data.payment_type === \"online\"'>\n                <angular4-paystack [email]=\"client.email\" [amount]=\"order.data.price * 100\" [ref]=\"reference\"\n                    [class]=\"'uk-button uk-button-primary'\" (close)=\"paymentCancel()\" (callback)=\"paymentDone($event)\">\n                    Pay Now\n                </angular4-paystack>\n            </div>\n        </div>\n    </header>\n    <div>\n        <section class=\"uk-card-body\">\n            <div class=\"uk-child-width-1-1 uk-child-width-1-2@m\" uk-grid=''>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\">\n                        <h4>\n                            {{ order.data.shipping_string }}\n                        </h4>\n                        <div>\n                            Payment: {{ order.data.payment_type_string }}\n                        </div>\n                        <div>\n                            Total:\n                            <span [innerHTML]='\"&#8358;\"'></span>\n                            {{ order.data.price | number }}\n                        </div>\n                        <div>\n                            Status:\n                            <span class=\"uk-label\">\n                                {{ order.data.status_string }}\n                            </span>\n                        </div>\n                        <div>\n                            Paid:\n                            <span class=\"{{ order.data.paid ? 'uk-text-success' : 'uk-text-danger' }}\">\n                                {{ order.data.paid ? 'YES' : 'NO' }}\n                            </span>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.address.country.name}}</h4>\n                        <div>\n                            {{ order.data.address.state + ', ' + order.data.address.city }}\n                        </div>\n                        <div>{{ order.data.address.address }}</div>\n                        <div>{{ order.data.address.postal_code }}</div>\n                    </div>\n\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.store_address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.store_address.name}}</h4>\n                        <div>\n                            {{ order.data.store_address.address }}\n                        </div>\n                        <div>Daily {{ order.data.store_address.opened }}</div>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"uk-card-body uk-margin-large-top\">\n\n            <div>\n                <div *ngIf=\"orderData && orderData.data\">\n                    <header\n                        class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                        <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>product</div>\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                    <div>price</div>\n                                    <div class=\"tm-quantity-column\">quantity</div>\n                                    <div>sum</div>\n                                    <div class=\"uk-width-auto\">\n                                        <div style=\"width: 20px;\"></div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </header>\n                    <div class=\"uk-card-body\" *ngFor=\"let cartItem of orderData.data\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                            uk-grid=\"\">\n                            <!-- Product cell-->\n                            <div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-1-3\">\n                                        <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                <figure class=\"tm-media-box-wrap\">\n                                                    <img class=\"\"\n                                                        src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                        appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\" />\n                                                </figure>\n                                            </a>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-width-expand\">\n                                        <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                        <a class=\"uk-link-heading\"\n                                            [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                    </div>\n                                </div>\n                            </div><!-- Other cells-->\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                    uk-grid=\"\">\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                        <div>\n                                            <span [innerHTML]='\"&#8358;\"'></span>\n                                            {{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                    <div class=\"tm-cart-quantity-column\">\n                                        {{ cartItem.quantity }}\n                                    </div>\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                        <div>\n                                            <span [innerHTML]='\"&#8358;\"'></span>\n                                            {{ cartItem.price }}\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -816,33 +855,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/pages/home-page/home-page.component */ "./src/app/pages/home-page/home-page.component.ts");
 /* harmony import */ var _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/pages/sign-up-page/sign-up-page.component */ "./src/app/pages/sign-up-page/sign-up-page.component.ts");
 /* harmony import */ var _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/pages/sign-in-page/sign-in-page.component */ "./src/app/pages/sign-in-page/sign-in-page.component.ts");
-/* harmony import */ var _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/pages/catalog-page/catalog-page.component */ "./src/app/pages/catalog-page/catalog-page.component.ts");
-/* harmony import */ var _app_pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/pages/category-page/category-page.component */ "./src/app/pages/category-page/category-page.component.ts");
-/* harmony import */ var _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/pages/cart-page/cart-page.component */ "./src/app/pages/cart-page/cart-page.component.ts");
-/* harmony import */ var _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/pages/error-pages/error-pages.component */ "./src/app/pages/error-pages/error-pages.component.ts");
-/* harmony import */ var _app_pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @app/pages/product-page/product-page.component */ "./src/app/pages/product-page/product-page.component.ts");
-/* harmony import */ var _app_pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/pages/product-search/product-search.component */ "./src/app/pages/product-search/product-search.component.ts");
-/* harmony import */ var _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @app/pages/admin/admin-index-page/admin-index-page.component */ "./src/app/pages/admin/admin-index-page/admin-index-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/pages/admin/admin-roles-page/admin-roles-page.component */ "./src/app/pages/admin/admin-roles-page/admin-roles-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @app/pages/admin/admin-staffs-page/admin-staffs-page.component */ "./src/app/pages/admin/admin-staffs-page/admin-staffs-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @app/pages/admin/admin-staff-page/admin-staff-page.component */ "./src/app/pages/admin/admin-staff-page/admin-staff-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @app/pages/admin/admin-categories-page/admin-categories-page.component */ "./src/app/pages/admin/admin-categories-page/admin-categories-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @app/pages/admin/admin-category-page/admin-category-page.component */ "./src/app/pages/admin/admin-category-page/admin-category-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @app/pages/admin/admin-create-product-page/admin-create-product-page.component */ "./src/app/pages/admin/admin-create-product-page/admin-create-product-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @app/pages/admin/admin-product-page/admin-product-page.component */ "./src/app/pages/admin/admin-product-page/admin-product-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @app/pages/admin/admin-products-page/admin-products-page.component */ "./src/app/pages/admin/admin-products-page/admin-products-page.component.ts");
-/* harmony import */ var _app_pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @app/pages/admin/admin-filters-page/admin-filters-page.component */ "./src/app/pages/admin/admin-filters-page/admin-filters-page.component.ts");
-/* harmony import */ var _app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @app/guards/auth.guard */ "./src/app/guards/auth.guard.ts");
-/* harmony import */ var _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @app/layout/client-layout/client-layout.component */ "./src/app/layout/client-layout/client-layout.component.ts");
-/* harmony import */ var _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @app/pages/client/client-profile/client-profile.component */ "./src/app/pages/client/client-profile/client-profile.component.ts");
-/* harmony import */ var _app_pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @app/pages/client/client-favourites/client-favourites.component */ "./src/app/pages/client/client-favourites/client-favourites.component.ts");
-/* harmony import */ var _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @app/pages/client/client-orders/client-orders.component */ "./src/app/pages/client/client-orders/client-orders.component.ts");
-/* harmony import */ var _app_pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @app/pages/client/client-settings/client-settings.component */ "./src/app/pages/client/client-settings/client-settings.component.ts");
-/* harmony import */ var _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @app/pages/admin/admin-banners-page/admin-banners-page.component */ "./src/app/pages/admin/admin-banners-page/admin-banners-page.component.ts");
-/* harmony import */ var _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @app/pages/checkout-page/checkout-page.component */ "./src/app/pages/checkout-page/checkout-page.component.ts");
-/* harmony import */ var _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./pages/admin/store-address-page/store-address-page.component */ "./src/app/pages/admin/store-address-page/store-address-page.component.ts");
-/* harmony import */ var _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./pages/client/client-order/client-order.component */ "./src/app/pages/client/client-order/client-order.component.ts");
-/* harmony import */ var _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./pages/client/client-address/client-address.component */ "./src/app/pages/client/client-address/client-address.component.ts");
+/* harmony import */ var _app_pages_admin_sign_in_page_admin_sign_in_page_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/pages/admin-sign-in-page/admin-sign-in-page.component */ "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.ts");
+/* harmony import */ var _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/pages/catalog-page/catalog-page.component */ "./src/app/pages/catalog-page/catalog-page.component.ts");
+/* harmony import */ var _app_pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/pages/category-page/category-page.component */ "./src/app/pages/category-page/category-page.component.ts");
+/* harmony import */ var _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/pages/cart-page/cart-page.component */ "./src/app/pages/cart-page/cart-page.component.ts");
+/* harmony import */ var _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @app/pages/error-pages/error-pages.component */ "./src/app/pages/error-pages/error-pages.component.ts");
+/* harmony import */ var _app_pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/pages/product-page/product-page.component */ "./src/app/pages/product-page/product-page.component.ts");
+/* harmony import */ var _app_pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @app/pages/product-search/product-search.component */ "./src/app/pages/product-search/product-search.component.ts");
+/* harmony import */ var _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/pages/admin/admin-index-page/admin-index-page.component */ "./src/app/pages/admin/admin-index-page/admin-index-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @app/pages/admin/admin-roles-page/admin-roles-page.component */ "./src/app/pages/admin/admin-roles-page/admin-roles-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @app/pages/admin/admin-staffs-page/admin-staffs-page.component */ "./src/app/pages/admin/admin-staffs-page/admin-staffs-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @app/pages/admin/admin-staff-page/admin-staff-page.component */ "./src/app/pages/admin/admin-staff-page/admin-staff-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_orders_page_admin_orders_page_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @app/pages/admin/admin-orders-page/admin-orders-page.component */ "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_order_page_admin_order_page_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @app/pages/admin/admin-order-page/admin-order-page.component */ "./src/app/pages/admin/admin-order-page/admin-order-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @app/pages/admin/admin-categories-page/admin-categories-page.component */ "./src/app/pages/admin/admin-categories-page/admin-categories-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @app/pages/admin/admin-category-page/admin-category-page.component */ "./src/app/pages/admin/admin-category-page/admin-category-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @app/pages/admin/admin-create-product-page/admin-create-product-page.component */ "./src/app/pages/admin/admin-create-product-page/admin-create-product-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @app/pages/admin/admin-product-page/admin-product-page.component */ "./src/app/pages/admin/admin-product-page/admin-product-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @app/pages/admin/admin-products-page/admin-products-page.component */ "./src/app/pages/admin/admin-products-page/admin-products-page.component.ts");
+/* harmony import */ var _app_pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @app/pages/admin/admin-filters-page/admin-filters-page.component */ "./src/app/pages/admin/admin-filters-page/admin-filters-page.component.ts");
+/* harmony import */ var _app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @app/guards/auth.guard */ "./src/app/guards/auth.guard.ts");
+/* harmony import */ var _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @app/layout/client-layout/client-layout.component */ "./src/app/layout/client-layout/client-layout.component.ts");
+/* harmony import */ var _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @app/pages/client/client-profile/client-profile.component */ "./src/app/pages/client/client-profile/client-profile.component.ts");
+/* harmony import */ var _app_pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @app/pages/client/client-favourites/client-favourites.component */ "./src/app/pages/client/client-favourites/client-favourites.component.ts");
+/* harmony import */ var _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @app/pages/client/client-orders/client-orders.component */ "./src/app/pages/client/client-orders/client-orders.component.ts");
+/* harmony import */ var _app_pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @app/pages/client/client-settings/client-settings.component */ "./src/app/pages/client/client-settings/client-settings.component.ts");
+/* harmony import */ var _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @app/pages/admin/admin-banners-page/admin-banners-page.component */ "./src/app/pages/admin/admin-banners-page/admin-banners-page.component.ts");
+/* harmony import */ var _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @app/pages/checkout-page/checkout-page.component */ "./src/app/pages/checkout-page/checkout-page.component.ts");
+/* harmony import */ var _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./pages/admin/store-address-page/store-address-page.component */ "./src/app/pages/admin/store-address-page/store-address-page.component.ts");
+/* harmony import */ var _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pages/client/client-order/client-order.component */ "./src/app/pages/client/client-order/client-order.component.ts");
+/* harmony import */ var _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./pages/client/client-address/client-address.component */ "./src/app/pages/client/client-address/client-address.component.ts");
 
 
 
@@ -859,7 +901,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 // Admin Pages
+
+
 
 
 
@@ -887,20 +932,24 @@ const routes = [
     {
         path: 'admin',
         component: _app_layout_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_3__["AdminLayoutComponent"],
+        canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__["AuthGuard"]],
+        data: { role: 'admin' },
         children: [
-            { path: '', component: _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_14__["AdminIndexPageComponent"] },
-            { path: 'roles', component: _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_15__["AdminRolesPageComponent"] },
-            { path: 'banners', component: _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_30__["AdminBannersPageComponent"] },
-            { path: 'staffs', component: _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_16__["AdminStaffsPageComponent"] },
-            { path: 'staff/:id', component: _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_17__["AdminStaffPageComponent"] },
-            { path: 'filters', component: _app_pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_23__["AdminFiltersPageComponent"] },
-            { path: 'categories', component: _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_18__["AdminCategoriesPageComponent"] },
-            { path: 'category/:id', component: _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_19__["AdminCategoryPageComponent"] },
-            { path: 'store-address', component: _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_32__["StoreAddressPageComponent"] },
-            { path: 'products', component: _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminProductsPageComponent"] },
-            { path: 'product/:id', component: _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_21__["AdminProductPageComponent"] },
-            { path: 'create-product', component: _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_20__["AdminCreateProductPageComponent"] },
-            { path: '**', component: _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_11__["ErrorPagesComponent"] }
+            { path: '', component: _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_15__["AdminIndexPageComponent"] },
+            { path: 'roles', component: _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_16__["AdminRolesPageComponent"] },
+            { path: 'banners', component: _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_33__["AdminBannersPageComponent"] },
+            { path: 'staffs', component: _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_17__["AdminStaffsPageComponent"] },
+            { path: 'staff/:id', component: _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_18__["AdminStaffPageComponent"] },
+            { path: 'orders', component: _app_pages_admin_admin_orders_page_admin_orders_page_component__WEBPACK_IMPORTED_MODULE_19__["AdminOrdersPageComponent"] },
+            { path: 'order/:id', component: _app_pages_admin_admin_order_page_admin_order_page_component__WEBPACK_IMPORTED_MODULE_20__["AdminOrderPageComponent"] },
+            { path: 'filters', component: _app_pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_26__["AdminFiltersPageComponent"] },
+            { path: 'categories', component: _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_21__["AdminCategoriesPageComponent"] },
+            { path: 'category/:id', component: _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminCategoryPageComponent"] },
+            { path: 'store-address', component: _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_35__["StoreAddressPageComponent"] },
+            { path: 'products', component: _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_25__["AdminProductsPageComponent"] },
+            { path: 'product/:id', component: _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_24__["AdminProductPageComponent"] },
+            { path: 'create-product', component: _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_23__["AdminCreateProductPageComponent"] },
+            { path: '**', component: _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_12__["ErrorPagesComponent"] }
         ]
     },
     {
@@ -908,30 +957,31 @@ const routes = [
         component: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutComponent"],
         children: [
             { path: '', component: _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_5__["HomePageComponent"] },
-            { path: 'catalog', component: _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_8__["CatalogPageComponent"] },
-            { path: 'category/:link', component: _app_pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_9__["CategoryPageComponent"] },
-            { path: 'product/:id/:name', component: _app_pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_12__["ProductPageComponent"] },
+            { path: 'catalog', component: _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_9__["CatalogPageComponent"] },
+            { path: 'category/:link', component: _app_pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_10__["CategoryPageComponent"] },
+            { path: 'product/:id/:name', component: _app_pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_13__["ProductPageComponent"] },
             { path: 'sign-up', component: _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_6__["SignUpPageComponent"] },
             { path: 'sign-in', component: _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_7__["SignInPageComponent"] },
-            { path: 'search', component: _app_pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_13__["ProductSearchComponent"] },
-            { path: 'cart', canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"]], data: { role: 'client' }, component: _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_10__["CartPageComponent"] },
-            { path: 'checkout', canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"]], data: { role: 'client' }, component: _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_31__["CheckoutPageComponent"] },
+            { path: 'admin-sign-in', component: _app_pages_admin_sign_in_page_admin_sign_in_page_component__WEBPACK_IMPORTED_MODULE_8__["AdminSignInPageComponent"] },
+            { path: 'search', component: _app_pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_14__["ProductSearchComponent"] },
+            { path: 'cart', canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__["AuthGuard"]], data: { role: 'client' }, component: _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_11__["CartPageComponent"] },
+            { path: 'checkout', canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__["AuthGuard"]], data: { role: 'client' }, component: _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_34__["CheckoutPageComponent"] },
             {
                 path: 'account',
-                component: _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_25__["ClientLayoutComponent"],
-                canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"]],
+                component: _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_28__["ClientLayoutComponent"],
+                canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__["AuthGuard"]],
                 data: { role: 'client' },
                 children: [
-                    { path: 'favourites', component: _app_pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_27__["ClientFavouritesComponent"] },
-                    { path: 'orders', component: _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_28__["ClientOrdersComponent"] },
-                    { path: 'order/:id', component: _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_33__["ClientOrderComponent"] },
-                    { path: 'address', component: _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_34__["ClientAddressComponent"] },
-                    { path: 'personal', component: _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_26__["ClientProfileComponent"] },
-                    { path: 'settings', component: _app_pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_29__["ClientSettingsComponent"] },
+                    { path: 'favourites', component: _app_pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_30__["ClientFavouritesComponent"] },
+                    { path: 'orders', component: _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_31__["ClientOrdersComponent"] },
+                    { path: 'order/:id', component: _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_36__["ClientOrderComponent"] },
+                    { path: 'address', component: _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_37__["ClientAddressComponent"] },
+                    { path: 'personal', component: _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_29__["ClientProfileComponent"] },
+                    { path: 'settings', component: _app_pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_32__["ClientSettingsComponent"] },
                     { path: '', redirectTo: '/account/personal', pathMatch: 'full' },
                 ]
             },
-            { path: '**', component: _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_11__["ErrorPagesComponent"] }
+            { path: '**', component: _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_12__["ErrorPagesComponent"] }
         ]
     },
 ];
@@ -1061,6 +1111,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./pages/client/client-order/client-order.component */ "./src/app/pages/client/client-order/client-order.component.ts");
 /* harmony import */ var _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./pages/client/client-address/client-address.component */ "./src/app/pages/client/client-address/client-address.component.ts");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./constants */ "./src/app/constants.ts");
+/* harmony import */ var _pages_admin_sign_in_page_admin_sign_in_page_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./pages/admin-sign-in-page/admin-sign-in-page.component */ "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.ts");
+/* harmony import */ var _pages_admin_admin_orders_page_admin_orders_page_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./pages/admin/admin-orders-page/admin-orders-page.component */ "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.ts");
+/* harmony import */ var _pages_admin_admin_order_page_admin_order_page_component__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./pages/admin/admin-order-page/admin-order-page.component */ "./src/app/pages/admin/admin-order-page/admin-order-page.component.ts");
 
 
 
@@ -1071,6 +1124,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // FontAwesome Icons
+
+
+
 
 
 
@@ -1175,7 +1231,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_54__["StoreAddressPageComponent"],
             _pipes_safe_pipe__WEBPACK_IMPORTED_MODULE_55__["SafePipe"],
             _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_56__["ClientOrderComponent"],
-            _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_57__["ClientAddressComponent"]
+            _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_57__["ClientAddressComponent"],
+            _pages_admin_sign_in_page_admin_sign_in_page_component__WEBPACK_IMPORTED_MODULE_59__["AdminSignInPageComponent"],
+            _pages_admin_admin_orders_page_admin_orders_page_component__WEBPACK_IMPORTED_MODULE_60__["AdminOrdersPageComponent"],
+            _pages_admin_admin_order_page_admin_order_page_component__WEBPACK_IMPORTED_MODULE_61__["AdminOrderPageComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1724,6 +1783,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/layout/default-layout/default-layout.component */ "./src/app/layout/default-layout/default-layout.component.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+
 
 
 
@@ -1731,13 +1792,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let GridComponent = class GridComponent {
-    constructor(productServices, router, defaultLayout) {
+    constructor(productServices, router, defaultLayout, userServices) {
         this.productServices = productServices;
         this.router = router;
         this.defaultLayout = defaultLayout;
+        this.userServices = userServices;
         this.canRemove = false;
         this.addingToCart = false;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
         this.filters = this.product.filters.slice(0, 4);
@@ -1808,7 +1870,8 @@ let GridComponent = class GridComponent {
 GridComponent.ctorParameters = () => [
     { type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_2__["ProductService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
-    { type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutComponent"] }
+    { type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutComponent"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
@@ -2018,10 +2081,11 @@ let AuthGuard = class AuthGuard {
         return this.userServices.auth().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(data => {
             if (data.isAuth) {
                 if (next.data.role === 'client') {
-                    localStorage.setItem('client', JSON.stringify(data.client));
+                    this.userServices.setUser(data.client, 'client');
                     return data.isClient;
                 }
                 if (next.data.role === 'admin') {
+                    this.userServices.setUser(data.admin, 'admin');
                     return data.isAdmin;
                 }
             }
@@ -2029,7 +2093,7 @@ let AuthGuard = class AuthGuard {
                 this.router.navigate(['/sign-in'], { queryParams: { returnUrl: state.url } });
             }
             if (next.data.role === 'admin') {
-                this.router.navigate(['/sign-in']);
+                this.router.navigate(['/admin-sign-in']);
             }
             return false;
         }));
@@ -2074,13 +2138,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminLayoutComponent", function() { return AdminLayoutComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
 
 
 let AdminLayoutComponent = class AdminLayoutComponent {
-    constructor() { }
+    constructor(router, userServices) {
+        this.router = router;
+        this.userServices = userServices;
+    }
     ngOnInit() {
+        this.admin = this.userServices.current.value;
+    }
+    logout() {
+        this.userServices.setUser({}, '');
+        this.userServices.logout().subscribe((data) => {
+            this.router.navigate(['/admin-sign-in']);
+        });
     }
 };
+AdminLayoutComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"] }
+];
 AdminLayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-admin-layout',
@@ -2159,11 +2241,11 @@ let ClientLayoutComponent = class ClientLayoutComponent {
         reader.readAsDataURL(file);
     }
     ngOnInit() {
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
         this.currentRoute = this.router.url;
     }
     logout() {
-        localStorage.removeItem('client');
+        this.userServices.setUser({}, '');
         this.userServices.logout().subscribe((data) => {
             this.router.navigate(['/sign-in']);
         });
@@ -2263,8 +2345,7 @@ let DefaultLayoutComponent = class DefaultLayoutComponent {
         });
     }
     logout() {
-        localStorage.removeItem('client');
-        localStorage.removeItem('admin');
+        this.userServices.setUser({}, '');
         this.userServices.logout().subscribe((data) => {
             this.router.navigate(['/sign-in']);
         });
@@ -2326,6 +2407,81 @@ DefaultLayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./default-layout.component.css */ "./src/app/layout/default-layout/default-layout.component.css")).default]
     })
 ], DefaultLayoutComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.css ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2FkbWluLXNpZ24taW4tcGFnZS9hZG1pbi1zaWduLWluLXBhZ2UuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: AdminSignInPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminSignInPageComponent", function() { return AdminSignInPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/admin.service */ "./src/app/services/admin.service.ts");
+/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+let AdminSignInPageComponent = class AdminSignInPageComponent {
+    constructor(adminService, router) {
+        this.adminService = adminService;
+        this.router = router;
+        this.client = { email: '', password: '' };
+        this.isLoggingIN = false;
+    }
+    ngOnInit() {
+    }
+    onSubmit(form) {
+        this.isLoggingIN = true;
+        this.login();
+    }
+    login() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.adminService.loginAdministrator(this.client)
+                .subscribe(data => {
+                _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+                this.isLoggingIN = false;
+                if (data.status === 'success') {
+                    this.router.navigateByUrl('/admin');
+                }
+            });
+        });
+    }
+};
+AdminSignInPageComponent.ctorParameters = () => [
+    { type: _app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__["AdminService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
+];
+AdminSignInPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admin-sign-in-page',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./admin-sign-in-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-sign-in-page.component.css */ "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.css")).default]
+    })
+], AdminSignInPageComponent);
 
 
 
@@ -2837,13 +2993,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminIndexPageComponent", function() { return AdminIndexPageComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/admin.service */ "./src/app/services/admin.service.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+
+
+
 
 
 let AdminIndexPageComponent = class AdminIndexPageComponent {
-    constructor() { }
+    constructor(adminService, userService) {
+        this.adminService = adminService;
+        this.userService = userService;
+        this.updatePassword = {
+            password: '',
+            new_password: '',
+            repeat_password: '',
+        };
+        this.updatingStaff = false;
+    }
     ngOnInit() {
+        this.getAdmin();
+    }
+    onSubmit(form) {
+        this.updatingStaff = true;
+        this.updateStaff();
+        form.form.reset();
+    }
+    getAdmin() {
+        this.adminService.getAdministrator(this.userService.current.value.id).subscribe(data => {
+            this.admin = data;
+        });
+    }
+    updateStaff() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            if (this.updatePassword.new_password === this.updatePassword.repeat_password) {
+                this.adminService.updateAdminPassword(this.userService.current.value.id, this.updatePassword).subscribe(data => {
+                    this.updatingStaff = false;
+                    _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
+                });
+            }
+            else {
+                this.updatingStaff = false;
+                _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show('Password confirmation faied', 'failed');
+            }
+        });
     }
 };
+AdminIndexPageComponent.ctorParameters = () => [
+    { type: _app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__["AdminService"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
+];
 AdminIndexPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-admin-index-page',
@@ -2851,6 +3051,155 @@ AdminIndexPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-index-page.component.css */ "./src/app/pages/admin/admin-index-page/admin-index-page.component.css")).default]
     })
 ], AdminIndexPageComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/admin/admin-order-page/admin-order-page.component.css":
+/*!*****************************************************************************!*\
+  !*** ./src/app/pages/admin/admin-order-page/admin-order-page.component.css ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2FkbWluL2FkbWluLW9yZGVyLXBhZ2UvYWRtaW4tb3JkZXItcGFnZS5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/pages/admin/admin-order-page/admin-order-page.component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/pages/admin/admin-order-page/admin-order-page.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: AdminOrderPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminOrderPageComponent", function() { return AdminOrderPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_services_order_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/order.service */ "./src/app/services/order.service.ts");
+/* harmony import */ var _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/product.service */ "./src/app/services/product.service.ts");
+
+
+
+
+
+let AdminOrderPageComponent = class AdminOrderPageComponent {
+    constructor(route, router, orderService, productServices) {
+        this.route = route;
+        this.router = router;
+        this.orderService = orderService;
+        this.productServices = productServices;
+        this.reference = '';
+    }
+    ngOnInit() {
+        this.route.params.subscribe(params => {
+            this.params = params;
+            this.getOrder();
+        });
+        this.reference = `ref-${Math.ceil(Math.random() * 10e13)}`;
+    }
+    getOrder() {
+        this.orderService.getOrder(this.params.id).subscribe(data => {
+            this.order = data;
+            if (data.status === 'success') {
+                this.getCartProducts();
+            }
+        });
+    }
+    getCartProducts() {
+        this.productServices.getCartProducts(this.order.data.cart.id).subscribe(data => {
+            this.getCartItemsCount(data);
+            this.orderData = data;
+        });
+    }
+    getCartItemsCount(cartData) {
+        let cartCount = 0;
+        let cartTotal = 0;
+        cartData.data.forEach((value) => {
+            cartCount += value.quantity;
+            cartTotal += value.price;
+        });
+        this.cartItems = cartCount;
+        this.cartTotal = cartTotal;
+    }
+};
+AdminOrderPageComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: _app_services_order_service__WEBPACK_IMPORTED_MODULE_3__["OrderService"] },
+    { type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__["ProductService"] }
+];
+AdminOrderPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admin-order-page',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./admin-order-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-order-page/admin-order-page.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-order-page.component.css */ "./src/app/pages/admin/admin-order-page/admin-order-page.component.css")).default]
+    })
+], AdminOrderPageComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.css":
+/*!*******************************************************************************!*\
+  !*** ./src/app/pages/admin/admin-orders-page/admin-orders-page.component.css ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2FkbWluL2FkbWluLW9yZGVycy1wYWdlL2FkbWluLW9yZGVycy1wYWdlLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.ts":
+/*!******************************************************************************!*\
+  !*** ./src/app/pages/admin/admin-orders-page/admin-orders-page.component.ts ***!
+  \******************************************************************************/
+/*! exports provided: AdminOrdersPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminOrdersPageComponent", function() { return AdminOrdersPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/order.service */ "./src/app/services/order.service.ts");
+
+
+
+let AdminOrdersPageComponent = class AdminOrdersPageComponent {
+    constructor(orderService) {
+        this.orderService = orderService;
+    }
+    ngOnInit() {
+        this.getOrders();
+    }
+    getOrders() {
+        this.orderService.getOrders().subscribe(data => {
+            this.orders = data;
+            console.log(data);
+        });
+    }
+};
+AdminOrdersPageComponent.ctorParameters = () => [
+    { type: _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__["OrderService"] }
+];
+AdminOrdersPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admin-orders-page',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./admin-orders-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-orders-page/admin-orders-page.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-orders-page.component.css */ "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.css")).default]
+    })
+], AdminOrdersPageComponent);
 
 
 
@@ -3247,7 +3596,7 @@ let AdminStaffsPageComponent = class AdminStaffsPageComponent {
     constructor(rolesService, adminService) {
         this.rolesService = rolesService;
         this.adminService = adminService;
-        this.admin = { fullname: '', email: '', role: '' };
+        this.admin = { fullname: '', email: '', role: '', password: '' };
     }
     onSubmit(form) {
         this.createAdministrators();
@@ -3392,20 +3741,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_services_product_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
-/* harmony import */ var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/layout/default-layout/default-layout.component */ "./src/app/layout/default-layout/default-layout.component.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+/* harmony import */ var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/layout/default-layout/default-layout.component */ "./src/app/layout/default-layout/default-layout.component.ts");
+
 
 
 
 
 
 let CartPageComponent = class CartPageComponent {
-    constructor(productServices, defaultLayout) {
+    constructor(productServices, defaultLayout, userServices) {
         this.productServices = productServices;
         this.defaultLayout = defaultLayout;
+        this.userServices = userServices;
         this.cartItems = 0;
         this.cartTotal = 0;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
         this.getCartProducts();
@@ -3433,7 +3785,7 @@ let CartPageComponent = class CartPageComponent {
     removeProductFromCart(cartItem) {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             this.productServices.removeProductFromCart(cartItem.id).subscribe(data => {
-                _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+                _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
                 this.getCartProducts();
             });
         });
@@ -3450,7 +3802,7 @@ let CartPageComponent = class CartPageComponent {
                 if (data.status === 'success') {
                     localStorage.setItem('cart', JSON.stringify(data.data));
                 }
-                _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+                _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
                 cartItem.quantity += amount;
                 if (cartItem.quantity <= 0) {
                     const index = this.cartProducts.data.indexOf(cartItem, 0);
@@ -3464,7 +3816,8 @@ let CartPageComponent = class CartPageComponent {
 };
 CartPageComponent.ctorParameters = () => [
     { type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_2__["ProductService"] },
-    { type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutComponent"] }
+    { type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutComponent"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
 ];
 CartPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3646,8 +3999,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_services_product_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/product.service */ "./src/app/services/product.service.ts");
 /* harmony import */ var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/layout/default-layout/default-layout.component */ "./src/app/layout/default-layout/default-layout.component.ts");
 /* harmony import */ var _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/addresses.service */ "./src/app/services/addresses.service.ts");
-/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
@@ -3656,11 +4011,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let CheckoutPageComponent = class CheckoutPageComponent {
-    constructor(productServices, addressServices, defaultLayout, router) {
+    constructor(productServices, addressServices, defaultLayout, router, userServices) {
         this.productServices = productServices;
         this.addressServices = addressServices;
         this.defaultLayout = defaultLayout;
         this.router = router;
+        this.userServices = userServices;
         this.currentAddress = {
             country_id: 0,
             client_id: 0,
@@ -3679,7 +4035,7 @@ let CheckoutPageComponent = class CheckoutPageComponent {
         };
         this.cartItems = 0;
         this.cartTotal = 0;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
         this.getCartProducts();
@@ -3711,7 +4067,7 @@ let CheckoutPageComponent = class CheckoutPageComponent {
         this.order.cart_id = this.cart.id;
         this.order.client_id = this.client.id;
         this.productServices.checkout(this.order).subscribe(data => {
-            _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
             this.defaultLayout.clearProductsFromCart();
             if (data.status === 'success') {
                 this.router.navigate(['/account/order/', data.data.id]);
@@ -3737,7 +4093,7 @@ let CheckoutPageComponent = class CheckoutPageComponent {
         this.currentAddress.client_id = this.client.id;
         this.addressServices.createAddress(this.currentAddress)
             .subscribe(data => {
-            _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
             if (data.status === 'success') {
                 this.getClientAddress();
                 form.form.reset();
@@ -3749,7 +4105,8 @@ CheckoutPageComponent.ctorParameters = () => [
     { type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_2__["ProductService"] },
     { type: _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_4__["AddressesService"] },
     { type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_3__["DefaultLayoutComponent"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_5__["UserService"] }
 ];
 CheckoutPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3789,14 +4146,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/addresses.service */ "./src/app/services/addresses.service.ts");
-/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+
 
 
 
 
 let ClientAddressComponent = class ClientAddressComponent {
-    constructor(addressServices) {
+    constructor(addressServices, userServices) {
         this.addressServices = addressServices;
+        this.userServices = userServices;
         this.currentAddress = {
             country_id: 0,
             client_id: 0,
@@ -3805,7 +4165,7 @@ let ClientAddressComponent = class ClientAddressComponent {
             address: '',
             postal_code: ''
         };
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
         this.getClientAddress();
@@ -3820,7 +4180,7 @@ let ClientAddressComponent = class ClientAddressComponent {
         this.currentAddress.client_id = this.client.id;
         this.addressServices.createAddress(this.currentAddress)
             .subscribe(data => {
-            _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
             if (data.status === 'success') {
                 this.getClientAddress();
                 form.form.reset();
@@ -3829,7 +4189,8 @@ let ClientAddressComponent = class ClientAddressComponent {
     }
 };
 ClientAddressComponent.ctorParameters = () => [
-    { type: _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_2__["AddressesService"] }
+    { type: _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_2__["AddressesService"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
 ];
 ClientAddressComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3869,17 +4230,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/client.service */ "./src/app/services/client.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
 
 let ClientFavouritesComponent = class ClientFavouritesComponent {
-    constructor(clientServices, route, router) {
+    constructor(clientServices, route, router, userServices) {
         this.clientServices = clientServices;
         this.route = route;
         this.router = router;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.userServices = userServices;
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
         this.route.queryParams.subscribe(data => {
@@ -3906,8 +4270,9 @@ let ClientFavouritesComponent = class ClientFavouritesComponent {
 };
 ClientFavouritesComponent.ctorParameters = () => [
     { type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
 ];
 ClientFavouritesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3947,10 +4312,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/order.service */ "./src/app/services/order.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/constants */ "./src/app/constants.ts");
-/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_services_product_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/constants */ "./src/app/constants.ts");
+/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+
 
 
 
@@ -3959,14 +4326,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ClientOrderComponent = class ClientOrderComponent {
-    constructor(route, router, orderService, productServices) {
+    constructor(route, router, orderService, productServices, userServices) {
         this.route = route;
         this.router = router;
         this.orderService = orderService;
         this.productServices = productServices;
+        this.userServices = userServices;
         this.reference = '';
-        this.paystackPublicApi = _app_constants__WEBPACK_IMPORTED_MODULE_5__["Constants"].PAYSTACK_PUBLIC_API;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.paystackPublicApi = _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].PAYSTACK_PUBLIC_API;
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
         this.route.params.subscribe(params => {
@@ -4005,7 +4373,7 @@ let ClientOrderComponent = class ClientOrderComponent {
     paymentDone(ref) {
         this.orderService.verifyPayment({ order_id: this.order.data.id, ref: ref.reference })
             .subscribe(data => {
-            _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_7__["Notification"].show(data.message, data.status);
             if (data.status === 'success') {
                 this.order = data;
             }
@@ -4016,10 +4384,11 @@ let ClientOrderComponent = class ClientOrderComponent {
     }
 };
 ClientOrderComponent.ctorParameters = () => [
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
     { type: _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__["OrderService"] },
-    { type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__["ProductService"] }
+    { type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_5__["ProductService"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
 ];
 ClientOrderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4059,13 +4428,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+
 
 
 
 let ClientOrdersComponent = class ClientOrdersComponent {
-    constructor(clientServices) {
+    constructor(clientServices, userServices) {
         this.clientServices = clientServices;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.userServices = userServices;
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
         this.getOrders();
@@ -4078,7 +4450,8 @@ let ClientOrdersComponent = class ClientOrdersComponent {
     }
 };
 ClientOrdersComponent.ctorParameters = () => [
-    { type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"] }
+    { type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
 ];
 ClientOrdersComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4119,15 +4492,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/client.service */ "./src/app/services/client.service.ts");
 /* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+
 
 
 
 
 let ClientProfileComponent = class ClientProfileComponent {
-    constructor(clientServices) {
+    constructor(clientServices, userServices) {
         this.clientServices = clientServices;
+        this.userServices = userServices;
         this.updatingClient = false;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
     }
@@ -4150,14 +4526,15 @@ let ClientProfileComponent = class ClientProfileComponent {
                 this.updatingClient = false;
                 _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
                 if (data.status === 'success') {
-                    localStorage.setItem('client', JSON.stringify(data.data));
+                    this.userServices.setUser(data.data, 'client');
                 }
             });
         });
     }
 };
 ClientProfileComponent.ctorParameters = () => [
-    { type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"] }
+    { type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"] }
 ];
 ClientProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4197,21 +4574,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/client.service */ "./src/app/services/client.service.ts");
-/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+
 
 
 
 
 let ClientSettingsComponent = class ClientSettingsComponent {
-    constructor(clientService) {
+    constructor(clientService, userServices) {
         this.clientService = clientService;
+        this.userServices = userServices;
         this.updatePassword = {
             password: '',
             new_password: '',
             repeat_password: '',
         };
         this.updatingClient = false;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
     }
     ngOnInit() {
     }
@@ -4225,18 +4605,19 @@ let ClientSettingsComponent = class ClientSettingsComponent {
             if (this.updatePassword.new_password === this.updatePassword.repeat_password) {
                 this.clientService.updateClientPassword(this.client.id, this.updatePassword).subscribe(data => {
                     this.updatingClient = false;
-                    _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+                    _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
                 });
             }
             else {
                 this.updatingClient = false;
-                _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show('Password confirmation faied', 'failed');
+                _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show('Password confirmation faied', 'failed');
             }
         });
     }
 };
 ClientSettingsComponent.ctorParameters = () => [
-    { type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"] }
+    { type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] }
 ];
 ClientSettingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4388,9 +4769,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _app_services_product_images_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/product-images.service */ "./src/app/services/product-images.service.ts");
-/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
-/* harmony import */ var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/layout/default-layout/default-layout.component */ "./src/app/layout/default-layout/default-layout.component.ts");
+/* harmony import */ var _app_services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _app_services_product_images_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/services/product-images.service */ "./src/app/services/product-images.service.ts");
+/* harmony import */ var _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/utils/notification */ "./src/app/utils/notification.ts");
+/* harmony import */ var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/layout/default-layout/default-layout.component */ "./src/app/layout/default-layout/default-layout.component.ts");
+
 
 
 
@@ -4399,11 +4782,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ProductPageComponent = class ProductPageComponent {
-    constructor(route, productServices, productImagesService, defaultLayout) {
+    constructor(route, productServices, productImagesService, defaultLayout, userServices) {
         this.route = route;
         this.productServices = productServices;
         this.productImagesService = productImagesService;
         this.defaultLayout = defaultLayout;
+        this.userServices = userServices;
         this.addingToCart = false;
         this.reviewing = false;
         this.review = {
@@ -4411,7 +4795,7 @@ let ProductPageComponent = class ProductPageComponent {
             review: ''
         };
         this.quantity = 1;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
     }
     createRange(range) {
         const items = [];
@@ -4450,7 +4834,7 @@ let ProductPageComponent = class ProductPageComponent {
     addToFavourite() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             if (this.client == null) {
-                _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show('Login to add to favourite', 'failed');
+                _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show('Login to add to favourite', 'failed');
             }
             else {
                 const favouriteData = {
@@ -4458,7 +4842,7 @@ let ProductPageComponent = class ProductPageComponent {
                     product: this.product.data.id
                 };
                 this.productServices.addToFavourite(favouriteData).subscribe(data => {
-                    _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+                    _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
                 });
             }
         });
@@ -4474,7 +4858,7 @@ let ProductPageComponent = class ProductPageComponent {
             };
             form.form.reset();
             this.productServices.reviewProduct(reviewData).subscribe(data => {
-                _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+                _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
                 this.getProduct();
             });
             this.reviewing = false;
@@ -4484,7 +4868,7 @@ let ProductPageComponent = class ProductPageComponent {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             this.setCart();
             if (this.client == null) {
-                _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show('Login to add to cart', 'failed');
+                _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show('Login to add to cart', 'failed');
             }
             else {
                 this.addingToCart = true;
@@ -4498,7 +4882,7 @@ let ProductPageComponent = class ProductPageComponent {
                     if (data.status === 'success') {
                         localStorage.setItem('cart', JSON.stringify(data.data));
                     }
-                    _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+                    _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
                     this.addingToCart = false;
                     this.defaultLayout.getCartProducts();
                 });
@@ -4512,8 +4896,9 @@ let ProductPageComponent = class ProductPageComponent {
 ProductPageComponent.ctorParameters = () => [
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
     { type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"] },
-    { type: _app_services_product_images_service__WEBPACK_IMPORTED_MODULE_4__["ProductImagesService"] },
-    { type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutComponent"] }
+    { type: _app_services_product_images_service__WEBPACK_IMPORTED_MODULE_5__["ProductImagesService"] },
+    { type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_7__["DefaultLayoutComponent"] },
+    { type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"] }
 ];
 ProductPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4878,6 +5263,18 @@ let AdminService = class AdminService {
     getAdministrator(id) {
         return this.http.get(`/api/administrator/${id}`);
     }
+    updateAdminPassword(id, data) {
+        return this.http.put(`/api/administrator/change_password/${id}`, data);
+    }
+    loginAdministrator(data) {
+        return this.http.post('/api/administrator/login', data);
+    }
+    updateAdministrator(id, data) {
+        return this.http.put(`/api/administrator/${id}`, data);
+    }
+    uploadAvatarAdministrator(id, data) {
+        return this.http.put(`/api/administrator/${id}/avatar`, data);
+    }
 };
 AdminService.ctorParameters = () => [
     { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
@@ -5127,6 +5524,9 @@ let OrderService = class OrderService {
     constructor(http) {
         this.http = http;
     }
+    getOrders() {
+        return this.http.get(`/api/order`);
+    }
     getOrder(id) {
         return this.http.get(`/api/order/${id}`);
     }
@@ -5344,12 +5744,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
 
 
 
 let UserService = class UserService {
     constructor(http) {
         this.http = http;
+        this.current = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](this.start);
+        this.type = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]('');
+    }
+    setUser(data = null, type = '') {
+        if (data === null) {
+            data = JSON.parse(localStorage.getItem('user'));
+            type = localStorage.getItem('type');
+        }
+        else {
+            localStorage.setItem('user', JSON.stringify(data));
+            localStorage.setItem('type', type);
+        }
+        this.current.next(data);
+        this.type.next(type);
     }
     auth() {
         return this.http.get('/api/auth');

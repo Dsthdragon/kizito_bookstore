@@ -71,7 +71,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ul class=\"uk-nav-default uk-nav-parent-icon\" data-uk-nav>\n    <li class=\"uk-nav-header\">MAIN SECTIONS</li>\n    <li><a routerLink=\"/admin\">Dashboard</a></li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Parent</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a href=\"#\">Sub item</a></li>\n            <li><a href=\"#\">Sub item</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">PRODUCT</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Product Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/products\">Products</a></li>\n            <li><a routerLink=\"/admin/filters\">Filters</a></li>\n            <li><a routerLink=\"/admin/categories\">Categories</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">SETTINGS</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Admin Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/staffs\">Staff</a></li>\n            <li><a routerLink=\"/admin/banners\">Banners</a></li>\n            <li><a routerLink=\"/admin/roles\">Roles</a></li>\n            <li><a routerLink=\"/admin/store-address\">Store Address</a></li>\n        </ul>\n    </li>\n</ul>";
+    __webpack_exports__["default"] = "<ul class=\"uk-nav-default uk-nav-parent-icon\" data-uk-nav>\n    <li class=\"uk-nav-header\">MAIN SECTIONS</li>\n    <li><a routerLink=\"/admin\">Dashboard</a></li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Parent</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a href=\"#\">Sub item</a></li>\n            <li><a href=\"#\">Sub item</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">PRODUCT</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Product Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/products\">Products</a></li>\n            <li><a routerLink=\"/admin/filters\">Filters</a></li>\n            <li><a routerLink=\"/admin/categories\">Categories</a></li>\n            <li><a routerLink=\"/admin/orders\">Orders</a></li>\n        </ul>\n    </li>\n    <li class=\"uk-nav-header\">SETTINGS</li>\n    <li class=\"uk-parent\">\n        <a href=\"#\">Admin Settings</a>\n        <ul class=\"uk-nav-sub\">\n            <li><a routerLink=\"/admin/staffs\">Staff</a></li>\n            <li><a routerLink=\"/admin/banners\">Banners</a></li>\n            <li><a routerLink=\"/admin/roles\">Roles</a></li>\n            <li><a routerLink=\"/admin/store-address\">Store Address</a></li>\n        </ul>\n    </li>\n</ul>";
     /***/
   },
 
@@ -271,7 +271,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"uk-offcanvas-content\">\n        <!--HEADER-->\n        <header id=\"top-head\" class=\"uk-position-fixed\">\n            <div class=\"uk-container uk-container-expand uk-background-primary\">\n                <nav class=\"uk-navbar uk-light\" data-uk-navbar=\"mode:click\">\n                    <div class=\"uk-navbar-left\">\n                        <a class=\"uk-navbar-item uk-logo\" routerLink=\"/admin\">Logo</a>\n                        <ul class=\"uk-navbar-nav uk-visible@m\">\n                            <li class=\"uk-active\"><a href=\"#\">Accounts</a></li>\n                            <li>\n                                <a href=\"#\">Settings <span data-uk-icon=\"icon: triangle-down\"></span></a>\n                                <div class=\"uk-navbar-dropdown\">\n                                    <ul class=\"uk-nav uk-navbar-dropdown-nav\">\n                                        <li class=\"uk-nav-header\">YOUR ACCOUNT</li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: info\"></span> Summary</a></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: refresh\"></span> Edit</a></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: settings\"></span> Configuration</a></li>\n                                        <li class=\"uk-nav-divider\"></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: image\"></span> Your Data</a></li>\n                                        <li class=\"uk-nav-divider\"></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: sign-out\"></span> Logout</a></li>\n                                        \n                                    </ul>\n                                </div>\n                            </li>\n                        </ul>\n                        <div class=\"uk-navbar-item uk-visible@s\">\n                            <form action=\"dashboard.html\" class=\"uk-search uk-search-default\">\n                                <span data-uk-search-icon></span>\n                                <input class=\"uk-search-input search-field\" type=\"search\" placeholder=\"Search\">\n                            </form>\n                        </div>\n                    </div>\n                    <div class=\"uk-navbar-right\">\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a href=\"#\" data-uk-icon=\"icon:user\"></a>\n                                <div class=\"uk-navbar-dropdown uk-navbar-dropdown-bottom-left\">\n                                    <ul class=\"uk-nav uk-navbar-dropdown-nav\">\n                                        <li class=\"uk-nav-header\">YOUR ACCOUNT</li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: info\"></span> Summary</a></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: refresh\"></span> Edit</a></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: settings\"></span> Configuration</a></li>\n                                        <li class=\"uk-nav-divider\"></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: image\"></span> Your Pictures</a></li>\n                                        <li class=\"uk-nav-divider\"></li>\n                                        <li><a href=\"#\"><span data-uk-icon=\"icon: sign-out\"></span> Logout</a></li>\n                                        \n                                    </ul>\n                                </div>\n                            </li>\n                            <li><a href=\"#\" data-uk-icon=\"icon: settings\"></a></li>\n                            <li><a href=\"#\" data-uk-icon=\"icon: cog\"></a></li>\n                            <li><a class=\"uk-navbar-toggle\" data-uk-toggle data-uk-navbar-toggle-icon href=\"#offcanvas-nav\"></a></li>\n                        </ul>\n                    </div>\n                </nav>\n            </div>\n        </header>\n        <!--/HEADER-->\n        <!-- LEFT BAR -->\n        <aside id=\"left-col\" class=\"uk-light uk-visible@m\">\n            <div class=\"profile-bar\">\n                <div class=\"uk-grid uk-grid-small uk-flex uk-flex-middle\" data-uk-grid>\n                    <div class=\"uk-width-auto\"><img src=\"/static/img/avatar.svg\" alt=\"\" class=\"uk-border-circle profile-img\"></div>\n                    <div class=\"uk-width-expand\">\n                        <span class=\"uk-text-small uk-text-muted\">Welcome</span>\n                        <h4 class=\"uk-margin-remove-vertical text-light\">Finn the Human</h4>\n                    </div>\n                </div>\n            </div>\n            <div class=\"bar-content uk-position-relative\">\n                <app-admin-sidebar></app-admin-sidebar>\n\t\t\t</div>\n        </aside>\n        <!-- /LEFT BAR -->\n        <!-- CONTENT -->\n        <div id=\"content\" data-uk-height-viewport=\"expand: true\">\n            <div class=\"uk-container uk-container-expand\">\n                <router-outlet></router-outlet>\n                <footer class=\"uk-section uk-section-small uk-text-center\">\n                    <hr>\n                    Rinnas Store App Powered by <a href=\"//rinnas.com\">Rinnas Tech</a>\n                </footer>\n            </div>\n        </div>\n        <!-- /CONTENT -->\n        <!-- OFFCANVAS -->\n        <div id=\"offcanvas-nav\" data-uk-offcanvas=\"flip: true; overlay: true\">\n            <div class=\"uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide\">\n                <button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" data-uk-close></button>\n                <app-admin-sidebar></app-admin-sidebar>\n            </div>\n        </div>\n        <!-- /OFFCANVAS -->\n    </div>";
+    __webpack_exports__["default"] = "<div class=\"uk-offcanvas-content\">\n        <!--HEADER-->\n        <header id=\"top-head\" class=\"uk-position-fixed\">\n            <div class=\"uk-container uk-container-expand uk-background-primary\">\n                <nav class=\"uk-navbar uk-light\" data-uk-navbar=\"mode:click\">\n                    <div class=\"uk-navbar-left\">\n                        <a class=\"uk-navbar-item uk-logo\" routerLink=\"/admin\">Logo</a>\n                    </div>\n                    <div class=\"uk-navbar-right\">\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a (click)='logout()'>\n                                    <span data-uk-icon=\"icon: sign-out\"></span>\n                                </a>\n                            </li>\n                            <li><a class=\"uk-navbar-toggle\" data-uk-toggle data-uk-navbar-toggle-icon href=\"#offcanvas-nav\"></a></li>\n                        </ul>\n                    </div>\n                </nav>\n            </div>\n        </header>\n        <!--/HEADER-->\n        <!-- LEFT BAR -->\n        <aside id=\"left-col\" class=\"uk-light uk-visible@m\">\n            <div class=\"profile-bar\">\n                <div class=\"uk-grid uk-grid-small uk-flex uk-flex-middle\" data-uk-grid>\n                    <div class=\"uk-width-auto\">\n                        <img src=\"{{ admin.avatar ? admin.avatar_url : '' }}\" alt=\"\"  appImgFallback=\"avatar\" class=\"uk-border-circle profile-img\">\n                    </div>\n                    <div class=\"uk-width-expand\">\n                        <span class=\"uk-text-small uk-text-muted\">Welcome</span>\n                        <h4 class=\"uk-margin-remove-vertical text-light\">\n                            {{ admin.fullname }}\n                        </h4>\n                    </div>\n                </div>\n            </div>\n            <div class=\"bar-content uk-position-relative\">\n                <app-admin-sidebar></app-admin-sidebar>\n\t\t\t</div>\n        </aside>\n        <!-- /LEFT BAR -->\n        <!-- CONTENT -->\n        <div id=\"content\" data-uk-height-viewport=\"expand: true\">\n            <div class=\"uk-container uk-container-expand\">\n                <router-outlet></router-outlet>\n                <footer class=\"uk-section uk-section-small uk-text-center\">\n                    <hr>\n                    Rinnas Store App Powered by <a href=\"//rinnas.com\">Rinnas Tech</a>\n                </footer>\n            </div>\n        </div>\n        <!-- /CONTENT -->\n        <!-- OFFCANVAS -->\n        <div id=\"offcanvas-nav\" data-uk-offcanvas=\"flip: true; overlay: true\" >\n            <div class=\"uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide\">\n                <button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" data-uk-close></button>\n                <app-admin-sidebar></app-admin-sidebar>\n            </div>\n        </div>\n        <!-- /OFFCANVAS -->\n    </div>";
     /***/
   },
 
@@ -311,7 +311,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"uk-offcanvas-content\">\n    <header>\n        <div class=\"uk-navbar-container uk-light uk-visible@m tm-toolbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <nav>\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a href=\"#\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: receiver; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">0802 464 8237</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a href=\"contacts.html\" onclick=\"return false\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: location; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">Store in Murg Shopping Mall</span>\n                                    <span uk-icon=\"icon: triangle-down; ratio: .75;\" class=\"uk-icon\"></span>\n                                </a>\n                                <div class=\"uk-margin-remove uk-drop\" uk-drop=\"mode: click; pos: bottom-center;\">\n                                    <div\n                                        class=\"uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom\">\n                                        <iframe\n                                            src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31521.168896374664!2d7.457733600614864!3d9.0504340343759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b9cb59fb45d%3A0xa6d73b0eb006e31e!2sKizito%20Bookshops%20Limited!5e0!3m2!1sen!2sng!4v1582035608762!5m2!1sen!2sng\"\n                                            width=\"300\" height=\"150\" frameborder=\"0\" style=\"border:0;\"\n                                            allowfullscreen=\"\"></iframe>\n                                        <div class=\"uk-card-body\">\n                                            <div class=\"uk-text-small\">\n                                                <div>Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area\n                                                    10, Garki, Abuja</div>\n                                                <div>Daily 09:00–19:00</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-navbar-item\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: clock; ratio: .75;\"></span>\n                                    Daily 09:00–19:00\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-navbar-container tm-navbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <button class=\"uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon\"\n                        uk-toggle=\"target: #nav-offcanvas\" uk-navbar-toggle-icon=\"\"></button>\n                    <a class=\"uk-navbar-item uk-logo\" routerLink='/'>\n                        <img src=\"static/img/logo.svg\" width=\"90\" height=\"32\" alt=\"Logo\"></a>\n                    <nav class=\"uk-visible@m\">\n                        <ul class=\"uk-navbar-nav\" *ngIf='categories && categories.data'>\n                            <li *ngFor='let category of categories.data'>\n                                <a class=\"uk-link-reset\" [routerLink]=\"['/category', category.link]\">\n                                    {{ category.title }}\n                                    <span *ngIf='category.children' class=\"uk-margin-xsmall-left uk-icon\"\n                                        uk-icon=\"icon: chevron-down; ratio: .75;\"></span>\n                                </a>\n\n                                <div *ngIf='category.children' class=\"uk-navbar-dropdown\" uk-dropdown=\"offset: 0\">\n                                    <div class=\"\">\n                                        <ul class=\"uk-nav uk-nav-default\">\n                                            <li *ngFor='let child of category.children'>\n                                                <a [routerLink]=\"['/category', child.link]\">\n                                                    {{ child.title }} </a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n                <div class=\"uk-navbar-right\">\n                    <a class=\"uk-navbar-toggle tm-navbar-button uk-search-icon uk-icon\" href=\"#\" uk-search-icon=\"\"></a>\n                    <div class=\"uk-navbar-dropdown uk-padding-small uk-margin-remove\"\n                        uk-drop=\"mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x\">\n                        <div class=\"uk-container\">\n                            <div class=\"uk-grid-small uk-flex-middle uk-grid uk-grid-stack\" uk-grid=\"\">\n                                <div class=\"uk-width-expand\">\n                                    <form class=\"uk-search uk-search-navbar uk-width-1-1\" (ngSubmit)='search()'>\n                                        <input class=\"uk-search-input\" type=\"search\" placeholder=\"Search…\" autofocus=\"\"\n                                            name=\"searchValue\" [(ngModel)]='searchValue' />\n                                    </form>\n                                </div>\n                                <div class=\"uk-width-auto\">\n                                    <a class=\"uk-navbar-dropdown-close uk-close uk-icon\" href=\"#\" uk-close=\"\"></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button uk-icon\" routerLink='/account/orders'\n                        uk-icon=\"user\">\n                    </a>\n                    <div class=\"uk-padding-small uk-margin-remove uk-dropdown\"\n                        uk-dropdown=\"pos: bottom-right; offset: -10; delay-hide: 200;\" style=\"min-width: 150px;\">\n                        <ul class=\"uk-nav uk-dropdown-nav\">\n                            <li>\n                                <a routerLink='/account/orders'>\n                                    Orders\n                                    <!-- <span>(2)</span> -->\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/favourites'>\n                                    Favorites\n                                    <!-- <span>(3)</span> -->\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/personal'>\n                                    Personal\n                                </a>\n                            </li>\n                            <li>\n                                <a routerLink='/account/settings'>\n                                    Settings\n                                </a>\n                            </li>\n                            <li class=\"uk-nav-divider\"></li>\n                            <li><a (click)=\"logout()\">Log out</a>\n                            </li>\n                        </ul>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button\" uk-toggle=\"target: #cart-offcanvas\">\n                        <span uk-icon=\"cart\" class=\"uk-icon\"></span>\n                        <span class=\"uk-badge\" *ngIf=\"cartItems > 0\">{{ cartItems }}</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </header>\n    <main>\n        <div class=\"uk-padding uk-text-center\" *ngIf=\"loading\">\n            <span uk-spinner=\"ratio: 4.5\"></span>\n        </div>\n        <div *ngIf=\"!loading\">\n            <router-outlet></router-outlet>\n        </div>\n    </main>\n    <footer>\n        <section class=\"uk-section uk-section-secondary uk-section-small uk-light\">\n            <div class=\"uk-container\">\n                <div class=\"uk-grid-medium uk-child-width-1-1 uk-child-width-1-4@m uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-first-column\">\n                        <a class=\"uk-logo\" href=\"index.html\">\n                            <img src=\"/static/logo-inverse.svg\" width=\"90\" height=\"32\" alt=\"Logo\" />\n                        </a>\n                        <p class=\"uk-text-small\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut\n                            mauris eros. Nulla quis ante sed tortor efficitur facilisis.</p>\n                        <ul class=\"uk-iconnav\">\n                            <li><a href=\"#\" title=\"Facebook\" uk-icon=\"facebook\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Twitter\" uk-icon=\"twitter\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"YouTube\" uk-icon=\"youtube\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Instagram\" uk-icon=\"instagram\" class=\"uk-icon\"></a></li>\n                        </ul>\n                    </div>\n                    <div>\n                        <nav class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div class=\"uk-first-column\">\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a href=\"catalog.html\">Catalog</a></li>\n                                    <li><a href=\"brands.html\">Brands</a></li>\n                                    <li><a href=\"delivery.html\">Delivery</a></li>\n                                    <li><a href=\"faq.html\">FAQ</a></li>\n                                    <li><a href=\"#\">Payment</a></li>\n                                </ul>\n                            </div>\n                            <div>\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a href=\"about.html\">About</a></li>\n                                    <li><a href=\"contacts.html\">Contacts</a></li>\n                                    <li><a href=\"blog.html\">Blog</a></li>\n                                    <li><a href=\"news.html\">News</a></li>\n                                </ul>\n                            </div>\n                        </nav>\n                    </div>\n                    <div>\n                        <ul class=\"uk-list uk-text-small\">\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"receiver\"></span>\n                                    <span class=\"tm-pseudo\">8 800 799 99 99</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"mail\"></span>\n                                    <span class=\"tm-pseudo\">example@example.com</span>\n                                </a>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"location\"></span>\n                                    <span>St.&nbsp;Petersburg, Nevsky&nbsp;Prospect&nbsp;28</span>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"clock\"></span>\n                                    <span>Daily 10:00–22:00</span>\n                                </div>\n                            </li>\n                        </ul>\n                    </div>\n                    <div>\n                        <form class=\"uk-form-stacked\">\n                            <label>\n                                <div class=\"uk-form-label uk-text-muted\">Subscribe for updates</div>\n                                <div class=\"uk-inline uk-width-1-1\">\n                                    <a class=\"uk-form-icon uk-form-icon-flip uk-icon\" href=\"#\" uk-icon=\"mail\"></a>\n                                    <input class=\"uk-input\" type=\"email\" placeholder=\"Your email\" required=\"\">\n                                </div>\n                            </label>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </footer>\n</div>\n\n\n<div id=\"nav-offcanvas\" uk-offcanvas=\"overlay: true\" class=\"uk-offcanvas uk-offcanvas-overlay\" style=\"z-index: 1010;\">\n    <div class=\"uk-offcanvas-bar uk-padding-remove\">\n        <div class=\"uk-card uk-card-default uk-card-small tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div>\n                    <a class=\"uk-link-muted uk-text-bold\" href=\"#\">\n                        0802 464 8237\n                    </a>\n                    <div class=\"uk-text-xsmall uk-text-muted\" style=\"margin-top: -2px;\">\n                        <div>\n                            Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area 10, Garki, Abuja\n                        </div>\n                        <div>Daily 09:00–19:00</div>\n                    </div>\n                </div>\n            </header>\n            <nav class=\"uk-card-small uk-card-body\" *ngIf='categories'>\n                <ul class=\"uk-nav-default uk-nav-parent-icon uk-list-divider uk-nav\" uk-nav *ngIf=\"categories.data\">\n                    <li *ngFor='let category of categories.data' class=\"uk-parent\">\n                        <a [routerLink]=\"['/category', category.link]\" >\n                            {{ category.title }}\n                        </a>\n                        <ul class=\"uk-nav-sub uk-list-divider\" *ngIf='category.children'>\n                            <li *ngFor='let child of category.children'>\n                                <a [routerLink]=\"['/category', child.link]\" (click)=\"hideOffCanvas('#nav-offcanvas')\">\n                                    {{ child.title }} </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    </div>\n</div>\n\n<div id=\"cart-offcanvas\" uk-offcanvas=\"overlay: true; flip: true\" class=\"uk-offcanvas uk-offcanvas-overlay\"\n    style=\"z-index: 1010;\">\n    <aside class=\"uk-offcanvas-bar uk-padding-remove uk-offcanvas-bar-animation uk-offcanvas-slide\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-height-1-1 uk-flex uk-flex-column tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div class=\"uk-grid-small uk-flex-1 uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-first-column\">\n                        <div class=\"uk-h3\">Cart</div>\n                    </div><button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" uk-close=\"\"></button>\n                </div>\n            </header>\n            <div class=\"uk-card-body uk-overflow-auto\">\n                <ul class=\"uk-list uk-list-divider\" *ngIf=\"cartProducts && cartProducts.data\">\n                    <li *ngFor=\"let cartItem of cartProducts.data\">\n                        <article>\n                            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-width-1-4 uk-first-column\">\n                                    <div class=\"tm-ratio tm-ratio-4-3\">\n                                        <a class=\"tm-media-box\" (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                                            [routerLink]=\"['/product', cartItem.product.id]\">\n                                            <figure class=\"tm-media-box-wrap\">\n                                                <img class=\"\"\n                                                    src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                    appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\">\n                                            </figure>\n                                        </a>\n                                    </div>\n                                </div>\n                                <div class=\"uk-width-expand\">\n                                    <div class=\"uk-text-meta uk-text-xsmall\">\n                                        {{ cartItem.product.category.title }}\n                                    </div>\n                                    <a class=\"uk-link-heading uk-text-small\"\n                                        [routerLink]=\"['/product', cartItem.product.id]\"\n                                        (click)=\"hideOffCanvas('#cart-offcanvas')\">\n                                        {{ cartItem.product.name }}\n                                    </a>\n                                    <div class=\"uk-margin-xsmall uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                        <div class=\"uk-text-bolder uk-text-small uk-first-column\">\n                                            ${{ cartItem.price }}\n                                        </div>\n                                        <div class=\"uk-text-meta uk-text-xsmall\">\n                                            {{ cartItem.quantity }} × ${{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                </div>\n                                <div>\n                                    <span (click)=\"removeProductFromCart(cartItem)\" href=\"#\"\n                                        class=\"uk-icon-link uk-text-danger uk-invisible-hover uk-icon\" href=\"#\"\n                                        uk-icon=\"icon: close; ratio: .75\" uk-tooltip=\"Remove\" title=\"\"\n                                        aria-expanded=\"false\"></span>\n                                </div>\n                            </div>\n                        </article>\n                    </li>\n                </ul>\n            </div>\n            <footer class=\"uk-card-footer\">\n                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-text-muted uk-h4 uk-first-column\">Subtotal</div>\n                    <div class=\"uk-h4 uk-text-bolder\">${{ cartTotal }}</div>\n                </div>\n                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-margin-small uk-grid\" uk-grid=\"\">\n                    <div>\n                        <a (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                            class=\"uk-button uk-button-default uk-margin-small uk-width-1-1\" routerLink=\"/cart\">view\n                            cart</a>\n                    </div>\n                    <div>\n                        <a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\" routerLink=\"/checkout\">checkout</a>\n                    </div>\n                </div>\n            </footer>\n        </div>\n    </aside>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"uk-offcanvas-content\">\n    <header>\n        <div class=\"uk-navbar-container uk-light uk-visible@m tm-toolbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <nav>\n                        <ul class=\"uk-navbar-nav\">\n                            <li>\n                                <a href=\"#\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: receiver; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">0802 464 8237</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a href=\"contacts.html\" onclick=\"return false\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: location; ratio: .75;\"></span>\n                                    <span class=\"tm-pseudo\">Store in Murg Shopping Mall</span>\n                                    <span uk-icon=\"icon: triangle-down; ratio: .75;\" class=\"uk-icon\"></span>\n                                </a>\n                                <div class=\"uk-margin-remove uk-drop\" uk-drop=\"mode: click; pos: bottom-center;\">\n                                    <div\n                                        class=\"uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom\">\n                                        <iframe\n                                            src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31521.168896374664!2d7.457733600614864!3d9.0504340343759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b9cb59fb45d%3A0xa6d73b0eb006e31e!2sKizito%20Bookshops%20Limited!5e0!3m2!1sen!2sng!4v1582035608762!5m2!1sen!2sng\"\n                                            width=\"300\" height=\"150\" frameborder=\"0\" style=\"border:0;\"\n                                            allowfullscreen=\"\"></iframe>\n                                        <div class=\"uk-card-body\">\n                                            <div class=\"uk-text-small\">\n                                                <div>Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area\n                                                    10, Garki, Abuja</div>\n                                                <div>Daily 09:00–19:00</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-navbar-item\">\n                                    <span class=\"uk-margin-xsmall-right uk-icon\"\n                                        uk-icon=\"icon: clock; ratio: .75;\"></span>\n                                    Daily 09:00–19:00\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-navbar-container tm-navbar-container\">\n            <div class=\"uk-container uk-navbar\" uk-navbar=\"\">\n                <div class=\"uk-navbar-left\">\n                    <button class=\"uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon\"\n                        uk-toggle=\"target: #nav-offcanvas\" uk-navbar-toggle-icon=\"\"></button>\n                    <a class=\"uk-navbar-item uk-logo\" routerLink='/'>\n                        <img src=\"static/img/logo.svg\" width=\"90\" height=\"32\" alt=\"Logo\"></a>\n                    <nav class=\"uk-visible@m\">\n                        <ul class=\"uk-navbar-nav\" *ngIf='categories && categories.data'>\n                            <li *ngFor='let category of categories.data'>\n                                <a class=\"uk-link-reset\" [routerLink]=\"['/category', category.link]\">\n                                    {{ category.title }}\n                                    <span *ngIf='category.children' class=\"uk-margin-xsmall-left uk-icon\"\n                                        uk-icon=\"icon: chevron-down; ratio: .75;\"></span>\n                                </a>\n\n                                <div *ngIf='category.children' class=\"uk-navbar-dropdown\" uk-dropdown=\"offset: 0\">\n                                    <div class=\"\">\n                                        <ul class=\"uk-nav uk-nav-default\">\n                                            <li *ngFor='let child of category.children'>\n                                                <a [routerLink]=\"['/category', child.link]\">\n                                                    {{ child.title }} </a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </li>\n                        </ul>\n                    </nav>\n                </div>\n                <div class=\"uk-navbar-right\">\n                    <a class=\"uk-navbar-toggle tm-navbar-button uk-search-icon uk-icon\" href=\"#\" uk-search-icon=\"\"></a>\n                    <div class=\"uk-navbar-dropdown uk-padding-small uk-margin-remove\"\n                        uk-drop=\"mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x\">\n                        <div class=\"uk-container\">\n                            <div class=\"uk-grid-small uk-flex-middle uk-grid uk-grid-stack\" uk-grid=\"\">\n                                <div class=\"uk-width-expand\">\n                                    <form class=\"uk-search uk-search-navbar uk-width-1-1\" (ngSubmit)='search()'>\n                                        <input class=\"uk-search-input\" type=\"search\" placeholder=\"Search…\" autofocus=\"\"\n                                            name=\"searchValue\" [(ngModel)]='searchValue' />\n                                    </form>\n                                </div>\n                                <div class=\"uk-width-auto\">\n                                    <a class=\"uk-navbar-dropdown-close uk-close uk-icon\" href=\"#\" uk-close=\"\"></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button uk-icon\" routerLink='/account/orders'\n                        uk-icon=\"user\">\n                    </a>\n                    <div class=\"uk-padding-small uk-margin-remove uk-dropdown\"\n                        uk-dropdown=\"pos: bottom-right; offset: -10; delay-hide: 200;\" style=\"min-width: 150px;\">\n                        <ul class=\"uk-nav uk-dropdown-nav\">\n                            <ng-container *ngIf=\"userServices.type.value !== '' else notLoggedIn \">\n                                <ng-container *ngIf=\"userServices.type.value === 'client' else isAdmin\">\n                                    <li>\n                                        Hello, {{ userServices.current.value.first_name }}\n                                    </li>\n\n                                    <li class=\"uk-nav-divider\"></li>\n                                    <li>\n                                        <a routerLink='/account/orders'>\n                                            Orders\n                                            <!-- <span>(2)</span> -->\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <a routerLink='/account/favourites'>\n                                            Favorites\n                                            <!-- <span>(3)</span> -->\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <a routerLink='/account/personal'>\n                                            Personal\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <a routerLink='/account/settings'>\n                                            Settings\n                                        </a>\n                                    </li>\n                                </ng-container>\n                                <ng-template #isAdmin>\n                                    <li>\n                                        <a routerLink='/admin'>\n                                            Dashboard\n                                            <!-- <span>(2)</span> -->\n                                        </a>\n                                    </li>\n                                </ng-template>\n                                <li class=\"uk-nav-divider\"></li>\n                                <li><a (click)=\"logout()\">Log out</a>\n                                </li>\n                            </ng-container>\n                            \n                            <ng-template #notLoggedIn>\n                                <li>\n                                    <a routerLink='/sign-in'>\n                                        Login\n                                    </a>\n                                </li>\n                                <li>\n                                    <a routerLink='/sign-up'>\n                                        Register\n                                    </a>\n                                </li>\n                            </ng-template>\n                        </ul>\n                    </div>\n                    <a class=\"uk-navbar-item uk-link-muted tm-navbar-button\" uk-toggle=\"target: #cart-offcanvas\">\n                        <span uk-icon=\"cart\" class=\"uk-icon\"></span>\n                        <span class=\"uk-badge\" *ngIf=\"cartItems > 0\">{{ cartItems }}</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </header>\n    <main>\n        <div class=\"uk-padding uk-text-center\" *ngIf=\"loading\">\n            <span uk-spinner=\"ratio: 4.5\"></span>\n        </div>\n        <div *ngIf=\"!loading\">\n            <router-outlet></router-outlet>\n        </div>\n    </main>\n    <footer>\n        <section class=\"uk-section uk-section-secondary uk-section-small uk-light\">\n            <div class=\"uk-container\">\n                <div class=\"uk-grid-medium uk-child-width-1-1 uk-child-width-1-4@m uk-grid\" uk-grid=\"\">\n                    <div class=\"\">\n                        <a class=\"uk-logo\" routerLink=\"/\">\n                            <img src=\"/static/img/logo-inverse.svg\" width=\"90\" height=\"32\" alt=\"Logo\" />\n                        </a>\n                        <p class=\"uk-text-small\">\n                            Reading is Fun\n                        </p>\n                        <ul class=\"uk-iconnav\">\n                            <li><a href=\"#\" title=\"Facebook\" uk-icon=\"facebook\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Twitter\" uk-icon=\"twitter\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"YouTube\" uk-icon=\"youtube\" class=\"uk-icon\"></a></li>\n                            <li><a href=\"#\" title=\"Instagram\" uk-icon=\"instagram\" class=\"uk-icon\"></a></li>\n                        </ul>\n                    </div>\n                    <div>\n                        <nav class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a routerLink='/cart'>Cart</a></li>\n                                    <li><a routerLink='/account'>Account</a></li>\n                                    <li><a routerLink='/sign-in'>Login</a></li>\n                                    <li><a routerLink='/sign-up'>Register</a></li>\n                                    <li><a routerLink='/admin'>Admin</a></li>\n                                </ul>\n                            </div>\n                            <div class=\"\">\n                                <ul class=\"uk-nav uk-nav-default\">\n                                    <li><a routerLink='/catalog'>Catalog</a></li>\n                                    <li *ngFor='let category of categories.data' >\n                                        <a [routerLink]=\"['/category', category.link]\">\n                                            {{ category.title }}\n                                        </a>\n                                    </li>\n                                </ul>\n                            </div>\n                        </nav>\n                    </div>\n                    <div>\n                        <ul class=\"uk-list uk-text-small\">\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"receiver\"></span>\n                                    <span class=\"tm-pseudo\">0802 464 8237</span>\n                                </a>\n                            </li>\n                            <li>\n                                <a class=\"uk-link-muted\" href=\"#\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"mail\"></span>\n                                    <span class=\"tm-pseudo\">example@example.com</span>\n                                </a>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"location\"></span>\n                                    <span>\n                                        Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area\n                                        10, Garki, Abuja\n                                    </span>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-text-muted\">\n                                    <span class=\"uk-margin-small-right uk-icon\" uk-icon=\"clock\"></span>\n                                    <span>Daily 09:00–19:00</span>\n                                </div>\n                            </li>\n                        </ul>\n                    </div>\n                    <div>\n                        <form class=\"uk-form-stacked\">\n                            <label>\n                                <div class=\"uk-form-label uk-text-muted\">Subscribe for updates</div>\n                                <div class=\"uk-inline uk-width-1-1\">\n                                    <a class=\"uk-form-icon uk-form-icon-flip uk-icon\" href=\"#\" uk-icon=\"mail\"></a>\n                                    <input class=\"uk-input\" type=\"email\" placeholder=\"Your email\" required=\"\">\n                                </div>\n                            </label>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </footer>\n</div>\n\n\n<div id=\"nav-offcanvas\" uk-offcanvas=\"overlay: true\" class=\"uk-offcanvas uk-offcanvas-overlay\" style=\"z-index: 1010;\">\n    <div class=\"uk-offcanvas-bar uk-padding-remove\">\n        <div class=\"uk-card uk-card-default uk-card-small tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div>\n                    <a class=\"uk-link-muted uk-text-bold\" href=\"#\">\n                        0802 464 8237\n                    </a>\n                    <div class=\"uk-text-xsmall uk-text-muted\" style=\"margin-top: -2px;\">\n                        <div>\n                            Shop A96, Murg Shopping Mall, Opp. UTC, Moshood Abiola Road, Area 10, Garki, Abuja\n                        </div>\n                        <div>Daily 09:00–19:00</div>\n                    </div>\n                </div>\n            </header>\n            <nav class=\"uk-card-small uk-card-body\" *ngIf='categories'>\n                <ul class=\"uk-nav-default uk-nav-parent-icon uk-list-divider uk-nav\" uk-nav *ngIf=\"categories.data\">\n                    <li *ngFor='let category of categories.data' class=\"uk-parent\">\n                        <a [routerLink]=\"['/category', category.link]\">\n                            {{ category.title }}\n                        </a>\n                        <ul class=\"uk-nav-sub uk-list-divider\" *ngIf='category.children'>\n                            <li *ngFor='let child of category.children'>\n                                <a [routerLink]=\"['/category', child.link]\" (click)=\"hideOffCanvas('#nav-offcanvas')\">\n                                    {{ child.title }} </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    </div>\n</div>\n\n<div id=\"cart-offcanvas\" uk-offcanvas=\"overlay: true; flip: true\" class=\"uk-offcanvas uk-offcanvas-overlay\"\n    style=\"z-index: 1010;\">\n    <aside class=\"uk-offcanvas-bar uk-padding-remove uk-offcanvas-bar-animation uk-offcanvas-slide\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-height-1-1 uk-flex uk-flex-column tm-shadow-remove\">\n            <header class=\"uk-card-header uk-flex uk-flex-middle\">\n                <div class=\"uk-grid-small uk-flex-1 uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand \">\n                        <div class=\"uk-h3\">Cart</div>\n                    </div><button class=\"uk-offcanvas-close uk-close uk-icon\" type=\"button\" uk-close=\"\"></button>\n                </div>\n            </header>\n            <div class=\"uk-card-body uk-overflow-auto\">\n                <ul class=\"uk-list uk-list-divider\" *ngIf=\"cartProducts && cartProducts.data\">\n                    <li *ngFor=\"let cartItem of cartProducts.data\">\n                        <article>\n                            <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                <div class=\"uk-width-1-4 \">\n                                    <div class=\"tm-ratio tm-ratio-4-3\">\n                                        <a class=\"tm-media-box\" (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                                            [routerLink]=\"['/product', cartItem.product.id]\">\n                                            <figure class=\"tm-media-box-wrap\">\n                                                <img class=\"\"\n                                                    src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                    appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\">\n                                            </figure>\n                                        </a>\n                                    </div>\n                                </div>\n                                <div class=\"uk-width-expand\">\n                                    <div class=\"uk-text-meta uk-text-xsmall\">\n                                        {{ cartItem.product.category.title }}\n                                    </div>\n                                    <a class=\"uk-link-heading uk-text-small\"\n                                        [routerLink]=\"['/product', cartItem.product.id]\"\n                                        (click)=\"hideOffCanvas('#cart-offcanvas')\">\n                                        {{ cartItem.product.name }}\n                                    </a>\n                                    <div class=\"uk-margin-xsmall uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                        <div class=\"uk-text-bolder uk-text-small \">\n                                            ${{ cartItem.price }}\n                                        </div>\n                                        <div class=\"uk-text-meta uk-text-xsmall\">\n                                            {{ cartItem.quantity }} × ${{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                </div>\n                                <div>\n                                    <span (click)=\"removeProductFromCart(cartItem)\" href=\"#\"\n                                        class=\"uk-icon-link uk-text-danger uk-invisible-hover uk-icon\" href=\"#\"\n                                        uk-icon=\"icon: close; ratio: .75\" uk-tooltip=\"Remove\" title=\"\"\n                                        aria-expanded=\"false\"></span>\n                                </div>\n                            </div>\n                        </article>\n                    </li>\n                </ul>\n            </div>\n            <footer class=\"uk-card-footer\">\n                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-expand uk-text-muted uk-h4 \">Subtotal</div>\n                    <div class=\"uk-h4 uk-text-bolder\">${{ cartTotal }}</div>\n                </div>\n                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-margin-small uk-grid\" uk-grid=\"\">\n                    <div>\n                        <a (click)=\"hideOffCanvas('#cart-offcanvas')\"\n                            class=\"uk-button uk-button-default uk-margin-small uk-width-1-1\" routerLink=\"/cart\">view\n                            cart</a>\n                    </div>\n                    <div>\n                        <a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                            routerLink=\"/checkout\">checkout</a>\n                    </div>\n                </div>\n            </footer>\n        </div>\n    </aside>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.html":
+  /*!******************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.html ***!
+    \******************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesAdminSignInPageAdminSignInPageComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"uk-flex uk-flex-center uk-flex-middle uk-background-muted uk-height-viewport\">\n    <div class=\"uk-width-medium uk-padding-small\">\n        <form id=\"loginClientForm\" #loginClientForm=\"ngForm\" (ngSubmit)=\"onSubmit(loginClientForm)\">\n            <fieldset class=\"uk-fieldset\">\n                <legend class=\"uk-legend\">Login</legend>\n                <div [hidden]=\"email.valid || email.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Email is required!\n                </div>\n                <div [hidden]=\"password.valid || password.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Password is required!\n                </div>\n                <div class=\"uk-margin\">\n                    <div class=\"uk-inline uk-width-1-1\">\n                        <span class=\"uk-form-icon uk-form-icon-flip uk-icon\" data-uk-icon=\"icon: user\"></span>\n                        <input class=\"uk-input uk-form-large\" required=\"\" placeholder=\"Email\" type=\"email\" name=\"email\"\n                            #email=\"ngModel\" [(ngModel)]='client.email' form=\"loginClientForm\">\n                    </div>\n                </div>\n                <div class=\"uk-margin\">\n                    <div class=\"uk-inline uk-width-1-1\">\n                        <span class=\"uk-form-icon uk-form-icon-flip uk-icon\" data-uk-icon=\"icon: lock\"></span>\n                        <input class=\"uk-input uk-form-large\" required=\"\" placeholder=\"Password\" type=\"password\"\n                            name=\"email\" #password=\"ngModel\" [(ngModel)]='client.password' form=\"loginClientForm\">\n                    </div>\n                </div>\n                <!--                 \n                <div class=\"uk-margin\">\n                    <label><input class=\"uk-checkbox\" type=\"checkbox\"> Keep me logged in</label>\n                </div> -->\n                <div class=\"uk-margin\">\n                    <button type=\"submit\" form=\"loginClientForm\" class=\"uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1\"  [disabled]=\"!loginClientForm.form.valid || (isLoggingIN)\">\n                        LOG IN\n                        <span class=\"uk-margin-left\" *ngIf='isLoggingIN'>\n                            <span uk-spinner=\"ratio: 1\"></span>\n                        </span>\n                    </button>\n                </div>\n            </fieldset>\n        </form>\n        <div>\n            <div class=\"uk-text-center\">\n                <a class=\"uk-link-reset uk-text-small\"\n                    data-uk-toggle=\"target: #recover;animation: uk-animation-slide-top-small\">Forgot your password?</a>\n            </div>\n            <div class=\"uk-margin-small-top\" id=\"recover\" hidden=\"\">\n                <form action=\"login.html\">\n\n                    <div class=\"uk-margin-small\">\n                        <div class=\"uk-inline uk-width-1-1\">\n                            <span class=\"uk-form-icon uk-form-icon-flip uk-icon\" data-uk-icon=\"icon: mail\"></span>\n                            <input class=\"uk-input\" placeholder=\"E-mail\" required=\"\" type=\"text\">\n                        </div>\n                    </div>\n                    <div class=\"uk-margin-small\">\n                        <button type=\"submit\" class=\"uk-button uk-button-primary uk-button-primary uk-width-1-1\">SEND\n                            PASSWORD</button>\n                    </div>\n\n                </form>\n            </div>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -431,7 +451,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n                <div class=\"uk-grid uk-grid-divider uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@l uk-child-width-1-5@xl\" data-uk-grid>\n                        <div>\n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:users\" class=\"uk-margin-small-right uk-text-primary\"></span>New Users</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove  uk-text-primary\">2.134</h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-success\" data-uk-icon=\"icon: triangle-up\">15%</span> more than last week.\n                            </div>\n                        </div>\n                        <div>\n                            \n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:social\" class=\"uk-margin-small-right uk-text-primary\"></span>Social Media</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove uk-text-primary\">8.490</h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-warning\" data-uk-icon=\"icon: triangle-down\">-15%</span> less than last week.\n                            </div>\n                            \n                        </div>\n                        <div>\n                            \n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:clock\" class=\"uk-margin-small-right uk-text-primary\"></span>Traffic hours</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove uk-text-primary\">12.00<small class=\"uk-text-small\">PM</small></h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-success\" data-uk-icon=\"icon: triangle-up\"> 19%</span> more than last week.\n                            </div>\n                            \n                        </div>\n                        <div>\n                            \n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:search\" class=\"uk-margin-small-right uk-text-primary\"></span>Week Search</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove uk-text-primary\">9.543</h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-danger\" data-uk-icon=\"icon: triangle-down\"> -23%</span> less than last week.\n                            </div>\n                            \n                        </div>\n                        <div class=\"uk-visible@xl\">\n                            <span class=\"uk-text-small\"><span data-uk-icon=\"icon:users\" class=\"uk-margin-small-right uk-text-primary\"></span>Lorem ipsum</span>\n                            <h1 class=\"uk-heading-primary uk-margin-remove uk-text-primary\">5.284</h1>\n                            <div class=\"uk-text-small\">\n                                <span class=\"uk-text-success\" data-uk-icon=\"icon: triangle-up\"> 7%</span> more than last week.\n                            </div>\n                        </div>\n                    </div>\n                    <hr>\n                    <div class=\"uk-grid uk-grid-medium uk-grid-match\" data-uk-grid>\n                        <!-- panel -->\n                        <div class=\"uk-width-2-3@l uk-width-1-2@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Geographic Chart</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa1.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\"uk-width-1-2@s uk-width-1-3@l uk-width-1-4@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Activity</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa2.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\"uk-width-1-2@s uk-width-1-3@l uk-width-1-4@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Conversions</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa3.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\" uk-width-2-3@l uk-width-1-2@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Consectetur sit</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <div class=\"uk-overflow-auto\">\n                                    <table class=\"uk-table uk-table-hover uk-table-divider uk-table-middle\">\n                                        <thead>\n                                            <tr>\n                                                <th class=\"uk-table-shrink\"></th>\n                                                <th>Name</th>\n                                                <th>Description</th>\n                                                <th>Date</th>\n                                                <th>Action</th>\n                                            </tr>\n                                        </thead>\n                                        <tbody>\n                                            <tr>\n                                                <td><img src=\"https://picsum.photos/40/40/?random=1\" alt=\"Alt text\" class=\"uk-border-circle uk-preserve-width \"></td>\n                                                <td>John Doe</td>\n                                                <td>Maecenas sagittis, massa nulla luctus mauris</td>\n                                                <td>11/09/18</td>\n                                                <td>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-success\" data-uk-icon=\"check\"></a>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-danger\" data-uk-icon=\"close\"></a>\n                                                </td>\n                                            </tr>\n                                            <tr>\n                                                <td><img src=\"https://picsum.photos/40/40/?random=2\" alt=\"Alt text\" class=\"uk-border-circle uk-preserve-width \"></td>\n                                                <td>Larry Boile</td>\n                                                <td>Maecenas sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>\n                                                <td>13/09/18</td>\n                                                <td>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-success\" data-uk-icon=\"check\"></a>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-danger\" data-uk-icon=\"close\"></a>\n                                                </td>\n                                            </tr>\n                                            <tr>\n                                                <td><img src=\"https://picsum.photos/40/40/?random=3\" alt=\"Alt text\" class=\"uk-border-circle uk-preserve-width \"></td>\n                                                <td>Susan Lee</td>\n                                                <td>Sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>\n                                                <td>18/09/18</td>\n                                                <td>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-success\" data-uk-icon=\"check\"></a>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-danger\" data-uk-icon=\"close\"></a>\n                                                </td>\n                                            </tr>\n                                            <tr>\n                                                <td><img src=\"https://picsum.photos/40/40/?random=4\" alt=\"Alt text\" class=\"uk-border-circle uk-preserve-width \"></td>\n                                                <td>Jerry Thomas</td>\n                                                <td>Maecenas sagittis, dolor id posuere finibus, massa nulla luctus mauris</td>\n                                                <td>21/09/18</td>\n                                                <td>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-success\" data-uk-icon=\"check\"></a>\n                                                    <a href=\"#\" class=\"uk-icon-link uk-text-danger\" data-uk-icon=\"close\"></a>\n                                                </td>\n                                            </tr>\n                                        </tbody>\n                                    </table>\n                                </div>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\"uk-width-1-2@s uk-width-1-2@l uk-width-1-4@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Lorem ipsum</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa4.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                        <!-- panel -->\n                        <div class=\"uk-width-1-2@s uk-width-1-2@l uk-width-1-4@xl\">\n                            <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n                                <div class=\"uk-card-header\">\n                                    <div class=\"uk-grid uk-grid-small\">\n                                        <div class=\"uk-width-auto\"><h4 class=\"uk-margin-remove-bottom\">Ipsum dolor</h4></div>\n                                        <div class=\"uk-width-expand uk-text-right\">\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: move\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link uk-margin-small-right\" data-uk-icon=\"icon: cog\"></a>\n                                            <a href=\"#\" class=\"uk-icon-link\" data-uk-icon=\"icon: close\"></a>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"uk-card-body\">\n                                    <img src=\"img/mapa4.svg\" alt=\"\">\n                                    <p class=\"uk-text-muted uk-text-small uk-text-center\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <!-- /panel -->\n                    </div>";
+    __webpack_exports__["default"] = "<div class=\"uk-grid-match uk-grid-medium\" uk-grid>\n    <div class=\"uk-width-2-3@m uk-grid-margin\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n            <div class=\"uk-card-header\">\n                <div class=\"uk-grid uk-grid-small\">\n                    <div class=\"uk-width-auto\">\n                        <h4 class=\"uk-margin-remove-bottom\">Profile</h4>\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-card-body\" *ngIf=\"admin && admin.data\">\n                <p>\n                    <b>Fullname: </b>\n                    {{ admin.data.fullname }}\n                </p>\n                <p>\n                    <b>Email: </b>\n                    {{ admin.data.email }}\n                </p>\n                <p>\n                    <b>Role: </b>\n                    {{ admin.data.role.title }}\n                </p>\n            </div>\n        </div>\n    </div>\n    <div class=\"uk-width-1-3@m\">\n        <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n            <div class=\"uk-card-header\" style=\"padding-left: 5rem; padding-right: 5rem;\">\n                <img src=\"{{ userService.current.value.image_url }}\" appImgFallback=\"avatar\" alt=\"\" class=\"uk-border-circle\" />\n            </div>\n            <div class=\"uk-card-body\">\n                <p><span data-uk-icon=\"icon: user\"></span> {{ userService.current.value.fullname }}</p>\n                <p><span data-uk-icon=\"icon: mail\"></span> {{ userService.current.value.email }}</p>\n            </div>\n            <div class=\"uk-card-footer\">\n                <button class=\"uk-button uk-button-primary uk-width-1-1\" uk-toggle=\"target: #changePasswordModal\">\n                    <span data-uk-icon=\"icon: lock\"></span>\n                </button>\n            </div>\n        </div>\n    </div>\n</div>\n\n<!-- This is the modal -->\n<div id=\"changePasswordModal\" uk-modal>\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Change Password</h2>\n        <hr />\n        <form class=\"uk-form-stacked\" id=\"updatePasswordForm\" #updatePasswordFrom=\"ngForm\" (ngSubmit)=\"onSubmit(updatePasswordFrom)\">\n            <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                <fieldset class=\"uk-fieldset uk-grid-margin \">\n                    <legend class=\"uk-h4\">Password</legend>\n                    <div class=\"uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n                        <div class=\"\">\n                            <label>\n                                <div class=\"uk-form-label\">Current Password</div>\n                                <input class=\"uk-input uk-form-width-large\" required=\"\" name=\"password\" #password='ngModel' [(ngModel)]='updatePassword.password' form=\"updatePasswordFrom\" type=\"password\">\n                            </label>\n                            <div [hidden]=\"password.valid || password.pristine\" class=\"uk-alert uk-alert-danger\">\n                                Password is required!\n                            </div>\n                        </div>\n                        <div class=\"uk-grid-margin \">\n                            <label>\n                                <div class=\"uk-form-label\">New Password</div>\n                                <input class=\"uk-input uk-form-width-large\" required=\"\" name=\"new_password\" #new_password='ngModel' [(ngModel)]='updatePassword.new_password' form=\"updatePasswordFrom\"  type=\"password\">\n                            </label>\n                            <div [hidden]=\"new_password.valid || new_password.pristine\" class=\"uk-alert uk-alert-danger\">\n                                New Password is required!\n                            </div>\n                        </div>\n                        <div class=\"uk-grid-margin \">\n                            <label>\n                                <div class=\"uk-form-label\">Confirm Password</div>\n                                <input class=\"uk-input uk-form-width-large\" required=\"\" name=\"repeat_password\" #repeat_password='ngModel' [(ngModel)]='updatePassword.repeat_password' form=\"updatePasswordFrom\"  type=\"password\">\n                            </label>\n                            <div [hidden]=\"repeat_password.valid || repeat_password.pristine\" class=\"uk-alert uk-alert-danger\">\n                                Repeat Password is required!\n                            </div>\n                        </div>\n                        <div class=\"uk-grid-margin \">\n                            <button class=\"uk-button uk-button-primary\"\n                                [disabled]=\"!updatePasswordFrom.form.valid || (updatingStaff)\">\n                                update password\n                                <span class=\"uk-margin-left\" *ngIf='updatingStaff'>\n                                    <span uk-spinner=\"ratio: 1\"></span>\n                                </span>\n                            </button>\n                        </div>\n                    </div>\n                </fieldset>\n            </div>\n        </form>\n    </div>\n</div>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-order-page/admin-order-page.component.html":
+  /*!********************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-order-page/admin-order-page.component.html ***!
+    \********************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesAdminAdminOrderPageAdminOrderPageComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\" *ngIf='order && order.data'>\n    <header class=\"uk-card-header\">\n        <div uk-grid>\n            <div class='uk-width-expand'>\n                <h1 class=\"uk-h2\">\n                    #{{ order.data.id }}\n                    <span class=\"uk-text-muted uk-text-small\">\n                        from {{ order.data.created | date: 'mediumDate'}}\n                    </span>\n                </h1>\n            </div>\n        </div>\n    </header>\n    <div>\n        <section class=\"uk-card-body\">\n            <div class=\"uk-child-width-1-1 uk-child-width-1-3@m\" uk-grid=''>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\"  uk-grid=''>\n                        <div class=\"uk-width-auto\">\n                            <img src=\"{{ order.data.client.avatar ? order.data.client.avatar_url : '' }}\" alt=\"\"\n                                appImgFallback=\"avatar\" class=\"uk-width-1-1 uk-border-circle profile-img\">\n                        </div>\n                        <div class=\"uk-width-expand\">\n                            <h4>\n                                {{ order.data.client.last_name + ' ' + order.data.client.first_name  }}\n                            </h4>\n                            <div>{{ order.data.client.email }}</div>\n                            <div>{{ order.data.client.phone }}</div>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\">\n                        <h4>\n                            {{ order.data.shipping_string }}\n                        </h4>\n                        <div>\n                            Payment: {{ order.data.payment_type_string }}\n                        </div>\n                        <div>\n                            Total:\n                            <span [innerHTML]='\"&#8358;\"'></span>\n                            {{ order.data.price | number }}\n                        </div>\n                        <div>\n                            Status:\n                            <span class=\"uk-label\">\n                                {{ order.data.status_string }}\n                            </span>\n                        </div>\n                        <div>\n                            Paid:\n                            <span class=\"{{ order.data.paid ? 'uk-text-success' : 'uk-text-danger' }}\">\n                                {{ order.data.paid ? 'YES' : 'NO' }}\n                            </span>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.address.country.name}}</h4>\n                        <div>\n                            {{ order.data.address.state + ', ' + order.data.address.city }}\n                        </div>\n                        <div>{{ order.data.address.address }}</div>\n                        <div>{{ order.data.address.postal_code }}</div>\n                    </div>\n\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.store_address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.store_address.name}}</h4>\n                        <div>\n                            {{ order.data.store_address.address }}\n                        </div>\n                        <div>Daily {{ order.data.store_address.opened }}</div>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"uk-card-footer\">\n\n            <div>\n                <div *ngIf=\"orderData && orderData.data\">\n                    <header\n                        class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                        <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>product</div>\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                    <div>price</div>\n                                    <div class=\"tm-quantity-column\">quantity</div>\n                                    <div>sum</div>\n                                    <div class=\"uk-width-auto\">\n                                        <div style=\"width: 20px;\"></div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </header>\n                    <div class=\"uk-card-body\" *ngFor=\"let cartItem of orderData.data\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                            uk-grid=\"\">\n                            <!-- Product cell-->\n                            <div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-1-3\">\n                                        <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                <figure class=\"tm-media-box-wrap\">\n                                                    <img class=\"\"\n                                                        src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                        appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\" />\n                                                </figure>\n                                            </a>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-width-expand\">\n                                        <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                        <a class=\"uk-link-heading\"\n                                            [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                    </div>\n                                </div>\n                            </div><!-- Other cells-->\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                    uk-grid=\"\">\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                        <div>\n                                            <span [innerHTML]='\"&#8358;\"'></span>\n                                            {{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                    <div class=\"tm-cart-quantity-column\">\n                                        {{ cartItem.quantity }}\n                                    </div>\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                        <div>\n                                            <span [innerHTML]='\"&#8358;\"'></span>\n                                            {{ cartItem.price }}\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-orders-page/admin-orders-page.component.html":
+  /*!**********************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-orders-page/admin-orders-page.component.html ***!
+    \**********************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesAdminAdminOrdersPageAdminOrdersPageComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                    <h4>Orders</h4>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <table class=\"uk-table uk-table-divider uk-table-striped\">\n                <caption></caption>\n                <thead>\n                    <tr>\n                        <th>Customer</th>\n                        <th>Shipping</th>\n                        <th>Payment</th>\n                        <th>Total</th>\n                        <th>Status</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <th>Customer</th>\n                        <th>Payment</th>\n                        <th>Total</th>\n                        <th>Status</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </tfoot>\n                <tbody *ngIf='orders && orders.data'>\n\n                    <tr *ngFor=\"let order of orders.data\">\n                        <td>\n                            {{ order.client.last_name }} {{ order.client.first_name }}\n                        </td>\n                        <td>{{ order.shipping_string }}</td>\n                        <td>{{ order.payment_type_string }}</td>\n                        <td>{{ order.price | number }}</td>\n                        <td>\n                            <span class=\"uk-label\">{{ order.status_string }}</span>\n                        </td>\n                        <td>\n                            <a [routerLink]=\"['/admin/order', order.id]\"\n                                class=\"uk-icon-button uk-button-primary uk-icon\" uk-icon=\"arrow-right\"></a>\n                        </td>\n                        <td>{{ order.created | date: 'short' }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -531,7 +591,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                <h4>Staffs</h4>\n                </div>\n                <div class=\"uk-width-expand uk-text-right panel-icons\">\n                \n                    <button class=\"uk-button uk-button-primary\" uk-toggle=\"target: #createStaffModal\">\n                        Create Staff\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <table class=\"uk-table uk-table-divider uk-table-striped\">\n                <caption></caption>\n                <thead>\n                    <tr>\n                        <th>Fullname</th>\n                        <th>Email</th>\n                        <th>Role</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <th>Fullname</th>\n                        <th>Email</th>\n                        <th>Role</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    \n                    <tr *ngFor=\"let admin of admins.data\">\n                        <td>{{ admin.fullname }}</td>\n                        <td>{{ admin.email }}</td>\n                        <td>{{ admin.role.title }}</td>\n                        <td><a [routerLink]=\"['/admin/staff', admin.id]\" class=\"uk-icon-button uk-button-primary uk-icon\" uk-icon=\"arrow-right\"></a></td>\n                        <td>{{ admin.created }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>\n    \n<div id=\"createStaffModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Role</h2>\n        <hr>\n        <form id=\"createStaffForm\" #createStaffForm=\"ngForm\" (ngSubmit)=\"onSubmit(createStaffForm)\">\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"fullname\">Fullname</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"fullname\" name=\"fullname\" required type=\"text\" [(ngModel)]=\"admin.fullname\" #fullname=\"ngModel\">\n                <div [hidden]=\"fullname.valid || fullname.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Fullname is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"email\">Email Address</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"email\" name=\"email\" required type=\"text\" [(ngModel)]=\"admin.email\" #email=\"ngModel\">\n                <div [hidden]=\"email.valid || email.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Email Address is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"role\">Role</label>\n                <select class=\"uk-select\" form=\"createStaffForm\" id=\"role\" name=\"role\" required [(ngModel)]=\"admin.role\" #role=\"ngModel\">\n                    <option value=''>--Select Role--</option>\n                    <option *ngFor='let role of roles.data' [value]='role.id'>\n                        {{role.title}}\n                    </option>\n                </select>\n                <div [hidden]=\"role.valid || role.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Role is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createStaffForm\" type=\"submit\" value=\"Create Staff\" [disabled]=\"!createStaffForm.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"uk-width-1-1 uk-margin-top\">\n    <div class=\"uk-card uk-card-default uk-card-small uk-card-hover\">\n        <div class=\"uk-card-header\">\n            <div class=\"uk-grid uk-grid-small\">\n                <div class=\"uk-width-auto\">\n                <h4>Staffs</h4>\n                </div>\n                <div class=\"uk-width-expand uk-text-right panel-icons\">\n                \n                    <button class=\"uk-button uk-button-primary\" uk-toggle=\"target: #createStaffModal\">\n                        Create Staff\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-card-body\">\n            <table class=\"uk-table uk-table-divider uk-table-striped\">\n                <caption></caption>\n                <thead>\n                    <tr>\n                        <th>Fullname</th>\n                        <th>Email</th>\n                        <th>Role</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </thead>\n                <tfoot>\n                    <tr>\n                        <th>Fullname</th>\n                        <th>Email</th>\n                        <th>Role</th>\n                        <th>Action</th>\n                        <th>Date</th>\n                    </tr>\n                </tfoot>\n                <tbody *ngIf='admins && admins.data'>\n                    \n                    <tr *ngFor=\"let admin of admins.data\">\n                        <td>{{ admin.fullname }}</td>\n                        <td>{{ admin.email }}</td>\n                        <td>{{ admin.role.title }}</td>\n                        <td>\n                            <a [routerLink]=\"['/admin/staff', admin.id]\" class=\"uk-icon-button uk-button-primary uk-icon\" uk-icon=\"arrow-right\"></a>\n                        </td>\n                        <td>{{ admin.created }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <div class=\"uk-card-footer\">\n            <div class=\"uk-padding-small uk-padding-remove-vertical\">\n                <ul class=\"uk-pagination\">\n\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>\n    \n<div id=\"createStaffModal\" uk-modal=\"\" class=\"uk-modal\">\n    <div class=\"uk-modal-dialog uk-modal-body\">\n        <h2 class=\"uk-modal-title\">Create Role</h2>\n        <hr>\n        <form id=\"createStaffForm\" #createStaffForm=\"ngForm\" (ngSubmit)=\"onSubmit(createStaffForm)\">\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"fullname\">Fullname</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"fullname\" name=\"fullname\" required type=\"text\" [(ngModel)]=\"admin.fullname\" #fullname=\"ngModel\">\n                <div [hidden]=\"fullname.valid || fullname.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Fullname is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"email\">Email Address</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"email\" name=\"email\" required type=\"text\" [(ngModel)]=\"admin.email\" #email=\"ngModel\">\n                <div [hidden]=\"email.valid || email.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Email Address is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"password\">Password</label>\n                <input class=\"uk-input\" form=\"createStaffForm\" id=\"password\" name=\"password\" required type=\"password\" [(ngModel)]=\"admin.password\" #password=\"ngModel\">\n                <div [hidden]=\"password.valid || password.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Password is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <label for=\"role\">Role</label>\n                <select class=\"uk-select\" form=\"createStaffForm\" id=\"role\" name=\"role\" required [(ngModel)]=\"admin.role\" #role=\"ngModel\">\n                    <option value=''>--Select Role--</option>\n                    <option *ngFor='let role of roles.data' [value]='role.id'>\n                        {{role.title}}\n                    </option>\n                </select>\n                <div [hidden]=\"role.valid || role.pristine\" class=\"uk-alert uk-alert-danger\">\n                    Role is required!\n                </div>\n            </div>\n            <div class=\"uk-width-1-1 uk-margin-small\">\n                <input class=\"uk-width-1-1 uk-button uk-button-primary\" form=\"createStaffForm\" type=\"submit\" value=\"Create Staff\" [disabled]=\"!createStaffForm.form.valid\" />\n            </div>\n        </form>\n    </div>\n</div>";
     /***/
   },
 
@@ -571,7 +631,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n            <div class=\"uk-text-center uk-first-column\">\n                <ul class=\"uk-breadcrumb uk-flex-center uk-margin-remove\">\n                    <li><a routerLink=\"/\">Home</a></li>\n                    <li><span>Cart</span></li>\n                </ul>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">Cart</h1>\n            </div>\n            <div class=\"uk-grid-margin uk-first-column\">\n                <div class=\"uk-grid-medium uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-1-1 uk-width-expand@m uk-first-column\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\"\n                            *ngIf=\"cartProducts && cartProducts.data\">\n                            <header\n                                class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                                <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-first-column\">product</div>\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-first-column\">price</div>\n                                            <div class=\"tm-quantity-column\">quantity</div>\n                                            <div>sum</div>\n                                            <div class=\"uk-width-auto\">\n                                                <div style=\"width: 20px;\"></div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </header>\n                            <div class=\"uk-card-body\" *ngFor=\"let cartItem of cartProducts.data\">\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                                    uk-grid=\"\">\n                                    <!-- Product cell-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-width-1-3 uk-first-column\">\n                                                <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                        [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                        <figure class=\"tm-media-box-wrap\">\n                                                            <img class=\"\"\n                                                                src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                                appImgFallback=\"product\"\n                                                                alt=\"{{ cartItem.product.name }}\" />\n                                                        </figure>\n                                                    </a>\n                                                </div>\n                                            </div>\n                                            <div class=\"uk-width-expand\">\n                                                <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                                <a class=\"uk-link-heading\"\n                                                    [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                            </div>\n                                        </div>\n                                    </div><!-- Other cells-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                            uk-grid=\"\">\n                                            <div class=\"uk-first-column\">\n                                                <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                                <div>${{ cartItem.unit_price }}</div>\n                                            </div>\n                                            <div class=\"tm-cart-quantity-column\">\n                                                <a (click)=\"updateCart(-1, cartItem)\" uk-icon=\"icon: minus; ratio: .75\" class=\"uk-icon\"></a>\n                                                    <input class=\"uk-input tm-quantity-input\" id=\"product-2\" type=\"text\" maxlength=\"3\" value=\"1\" [(ngModel)]='cartItem.quantity'>\n                                                    <a (click)=\"updateCart(1, cartItem)\" uk-icon=\"icon: plus; ratio: .75\" class=\"uk-icon\"></a>\n                                                </div>\n                                            <div>\n                                                <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                                <div>${{ cartItem.price }}</div>\n                                            </div>\n                                            <div class=\"uk-width-auto@s\">\n                                                <a class=\"uk-text-danger\" uk-tooltip=\"Remove\"\n                                                    (click)=\"removeProductFromCart(cartItem)\" title=\"\"\n                                                    aria-expanded=\"false\">\n                                                    <span uk-icon=\"close\" class=\"uk-icon\"></span>\n                                                </a>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"uk-width-1-1 tm-aside-column uk-width-1-4@m\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                            uk-sticky=\"offset: 30; bottom: true; media: @m;\">\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Subtotal</div>\n                                    <div>${{ cartTotal * .95 }}</div>\n                                </div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Vat (5%)</div>\n                                    <div>${{ cartTotal * .05 }}</div>\n                                </div>\n                            </div>\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Total</div>\n                                    <div class=\"uk-text-lead uk-text-bolder\">${{ cartTotal }}</div>\n                                </div><a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                                    routerLink=\"/checkout\">Checkout</a>\n                            </div>\n                        </div>\n                        <div class=\"uk-sticky-placeholder\" hidden=\"\" style=\"height: 230px; margin: 0px;\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>";
+    __webpack_exports__["default"] = "<section class=\"uk-section uk-section-small\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-medium uk-child-width-1-1 uk-grid uk-grid-stack\" uk-grid=\"\">\n            <div class=\"uk-text-center uk-first-column\">\n                <ul class=\"uk-breadcrumb uk-flex-center uk-margin-remove\">\n                    <li><a routerLink=\"/\">Home</a></li>\n                    <li><span>Cart</span></li>\n                </ul>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">Cart</h1>\n            </div>\n            <div class=\"uk-grid-margin uk-first-column\">\n                <div class=\"uk-grid-medium uk-grid\" uk-grid=\"\">\n                    <div class=\"uk-width-1-1 uk-width-expand@m uk-first-column\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\"\n                            *ngIf=\"cartProducts && cartProducts.data\">\n                            <header\n                                class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                                <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-first-column\">product</div>\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-first-column\">price</div>\n                                            <div class=\"tm-quantity-column\">quantity</div>\n                                            <div>sum</div>\n                                            <div class=\"uk-width-auto\">\n                                                <div style=\"width: 20px;\"></div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </header>\n                            <div class=\"uk-card-body\" *ngFor=\"let cartItem of cartProducts.data\">\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                                    uk-grid=\"\">\n                                    <!-- Product cell-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                            <div class=\"uk-width-1-3 uk-first-column\">\n                                                <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                        [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                        <figure class=\"tm-media-box-wrap\">\n                                                            <img class=\"\"\n                                                                src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                                appImgFallback=\"product\"\n                                                                alt=\"{{ cartItem.product.name }}\" />\n                                                        </figure>\n                                                    </a>\n                                                </div>\n                                            </div>\n                                            <div class=\"uk-width-expand\">\n                                                <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                                <a class=\"uk-link-heading\"\n                                                    [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                            </div>\n                                        </div>\n                                    </div><!-- Other cells-->\n                                    <div>\n                                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                            uk-grid=\"\">\n                                            <div class=\"uk-first-column\">\n                                                <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                                <div>\n                                                    <span [innerHTML]='\"&#8358;\"'></span>\n                                                    {{ cartItem.unit_price }}\n                                                </div>\n                                            </div>\n                                            <div class=\"tm-cart-quantity-column\">\n                                                <a (click)=\"updateCart(-1, cartItem)\" uk-icon=\"icon: minus; ratio: .75\" class=\"uk-icon\"></a>\n                                                    <input class=\"uk-input tm-quantity-input\" id=\"product-2\" type=\"text\" maxlength=\"3\" value=\"1\" [(ngModel)]='cartItem.quantity'>\n                                                    <a (click)=\"updateCart(1, cartItem)\" uk-icon=\"icon: plus; ratio: .75\" class=\"uk-icon\"></a>\n                                                </div>\n                                            <div>\n                                                <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                                <div>\n                                                    <span [innerHTML]='\"&#8358;\"'></span>\n                                                    {{ cartItem.price }}\n                                                </div>\n                                            </div>\n                                            <div class=\"uk-width-auto@s\">\n                                                <a class=\"uk-text-danger\" uk-tooltip=\"Remove\"\n                                                    (click)=\"removeProductFromCart(cartItem)\" title=\"\"\n                                                    aria-expanded=\"false\">\n                                                    <span uk-icon=\"close\" class=\"uk-icon\"></span>\n                                                </a>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"uk-width-1-1 tm-aside-column uk-width-1-4@m\">\n                        <div class=\"uk-card uk-card-default uk-card-small tm-ignore-container uk-sticky\"\n                            uk-sticky=\"offset: 30; bottom: true; media: @m;\">\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Subtotal</div>\n                                    <div>\n                                        <span [innerHTML]='\"&#8358;\"'></span>\n                                        {{ cartTotal * .95 }}\n                                    </div>\n                                </div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Vat (5%)</div>\n                                    <div>\n                                        <span [innerHTML]='\"&#8358;\"'></span>\n                                        {{ cartTotal * .05 }}\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"uk-card-body\">\n                                <div class=\"uk-grid-small uk-flex-middle uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-expand uk-text-muted uk-first-column\">Total</div>\n                                    <div class=\"uk-text-lead uk-text-bolder\">\n                                        <span [innerHTML]='\"&#8358;\"'></span>\n                                        {{ cartTotal }}\n                                    </div>\n                                </div><a class=\"uk-button uk-button-primary uk-margin-small uk-width-1-1\"\n                                    routerLink=\"/checkout\">Checkout</a>\n                            </div>\n                        </div>\n                        <div class=\"uk-sticky-placeholder\" hidden=\"\" style=\"height: 230px; margin: 0px;\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>";
     /***/
   },
 
@@ -691,7 +751,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\" *ngIf='order && order.data'>\n    <header class=\"uk-card-header\">\n        <div uk-grid>\n            <div class='uk-width-expand'>\n                <h1 class=\"uk-h2\">\n                    #{{ order.data.id }}\n                    <span class=\"uk-text-muted uk-text-small\">\n                        from {{ order.data.created | date: 'mediumDate'}}\n                    </span>\n                </h1>\n            </div>\n            <div class='uk-width-1-5 uk-text-right' *ngIf='!order.data.paid && order.data.payment_type === \"online\"'>\n                <angular4-paystack [email]=\"client.email\" [amount]=\"order.data.price * 100\" [ref]=\"reference\"\n                    [class]=\"'uk-button uk-button-primary'\" (close)=\"paymentCancel()\" (callback)=\"paymentDone($event)\">\n                    Pay Now\n                </angular4-paystack>\n            </div>\n        </div>\n    </header>\n    <div>\n        <section class=\"uk-card-body\">\n            <div class=\"uk-child-width-1-1 uk-child-width-1-2@m\" uk-grid=''>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\">\n                        <h4>\n                            {{ order.data.shipping_string }}\n                        </h4>\n                        <div>\n                            Payment: {{ order.data.payment_type_string }}\n                        </div>\n                        <div>\n                            Total:\n                            <span [innerHTML]='\"&#8358;\"'></span>\n                            {{ order.data.price | number }}\n                        </div>\n                        <div>\n                            Status:\n                            <span class=\"uk-label\">\n                                {{ order.data.status_string }}\n                            </span>\n                        </div>\n                        <div>\n                            Paid:\n                            <span class=\"{{ order.data.paid ? 'uk-text-success' : 'uk-text-danger' }}\">\n                                {{ order.data.paid ? 'YES' : 'NO' }}\n                            </span>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.address.country.name}}</h4>\n                        <div>\n                            {{ order.data.address.state + ', ' + order.data.address.city }}\n                        </div>\n                        <div>{{ order.data.address.address }}</div>\n                        <div>{{ order.data.address.postal_code }}</div>\n                    </div>\n\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.store_address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.store_address.name}}</h4>\n                        <div>\n                            {{ order.data.store_address.address }}\n                        </div>\n                        <div>Daily {{ order.data.store_address.opened }}</div>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"uk-card-body uk-margin-large-top\">\n\n            <div>\n                <div *ngIf=\"orderData && orderData.data\">\n                    <header\n                        class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                        <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>product</div>\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                    <div>price</div>\n                                    <div class=\"tm-quantity-column\">quantity</div>\n                                    <div>sum</div>\n                                    <div class=\"uk-width-auto\">\n                                        <div style=\"width: 20px;\"></div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </header>\n                    <div class=\"uk-card-body\" *ngFor=\"let cartItem of orderData.data\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                            uk-grid=\"\">\n                            <!-- Product cell-->\n                            <div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-1-3\">\n                                        <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                <figure class=\"tm-media-box-wrap\">\n                                                    <img class=\"\"\n                                                        src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                        appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\" />\n                                                </figure>\n                                            </a>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-width-expand\">\n                                        <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                        <a class=\"uk-link-heading\"\n                                            [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                    </div>\n                                </div>\n                            </div><!-- Other cells-->\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                    uk-grid=\"\">\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                        <div>${{ cartItem.unit_price }}</div>\n                                    </div>\n                                    <div class=\"tm-cart-quantity-column\">\n                                        {{ cartItem.quantity }}\n                                    </div>\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                        <div>${{ cartItem.price }}</div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"uk-card uk-card-default uk-card-small tm-ignore-container\" *ngIf='order && order.data'>\n    <header class=\"uk-card-header\">\n        <div uk-grid>\n            <div class='uk-width-expand'>\n                <h1 class=\"uk-h2\">\n                    #{{ order.data.id }}\n                    <span class=\"uk-text-muted uk-text-small\">\n                        from {{ order.data.created | date: 'mediumDate'}}\n                    </span>\n                </h1>\n            </div>\n            <div class='uk-width-1-5 uk-text-right' *ngIf='!order.data.paid && order.data.payment_type === \"online\"'>\n                <angular4-paystack [email]=\"client.email\" [amount]=\"order.data.price * 100\" [ref]=\"reference\"\n                    [class]=\"'uk-button uk-button-primary'\" (close)=\"paymentCancel()\" (callback)=\"paymentDone($event)\">\n                    Pay Now\n                </angular4-paystack>\n            </div>\n        </div>\n    </header>\n    <div>\n        <section class=\"uk-card-body\">\n            <div class=\"uk-child-width-1-1 uk-child-width-1-2@m\" uk-grid=''>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\">\n                        <h4>\n                            {{ order.data.shipping_string }}\n                        </h4>\n                        <div>\n                            Payment: {{ order.data.payment_type_string }}\n                        </div>\n                        <div>\n                            Total:\n                            <span [innerHTML]='\"&#8358;\"'></span>\n                            {{ order.data.price | number }}\n                        </div>\n                        <div>\n                            Status:\n                            <span class=\"uk-label\">\n                                {{ order.data.status_string }}\n                            </span>\n                        </div>\n                        <div>\n                            Paid:\n                            <span class=\"{{ order.data.paid ? 'uk-text-success' : 'uk-text-danger' }}\">\n                                {{ order.data.paid ? 'YES' : 'NO' }}\n                            </span>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.address.country.name}}</h4>\n                        <div>\n                            {{ order.data.address.state + ', ' + order.data.address.city }}\n                        </div>\n                        <div>{{ order.data.address.address }}</div>\n                        <div>{{ order.data.address.postal_code }}</div>\n                    </div>\n\n                    <div class=\"uk-text-small uk-padding-small\" *ngIf='order.data.store_address'>\n                        <h4 class=\"uk-text-bolder\">{{ order.data.store_address.name}}</h4>\n                        <div>\n                            {{ order.data.store_address.address }}\n                        </div>\n                        <div>Daily {{ order.data.store_address.opened }}</div>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"uk-card-body uk-margin-large-top\">\n\n            <div>\n                <div *ngIf=\"orderData && orderData.data\">\n                    <header\n                        class=\"uk-card-header uk-text-uppercase uk-text-muted uk-text-center uk-text-small uk-visible@m\">\n                        <div class=\"uk-grid-small uk-child-width-1-2 uk-grid\" uk-grid=\"\">\n                            <div>product</div>\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-expand uk-grid\" uk-grid=\"\">\n                                    <div>price</div>\n                                    <div class=\"tm-quantity-column\">quantity</div>\n                                    <div>sum</div>\n                                    <div class=\"uk-width-auto\">\n                                        <div style=\"width: 20px;\"></div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </header>\n                    <div class=\"uk-card-body\" *ngFor=\"let cartItem of orderData.data\">\n                        <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-flex-middle uk-grid\"\n                            uk-grid=\"\">\n                            <!-- Product cell-->\n                            <div>\n                                <div class=\"uk-grid-small uk-grid\" uk-grid=\"\">\n                                    <div class=\"uk-width-1-3\">\n                                        <div class=\"tm-ratio tm-ratio-4-3\"><a class=\"tm-media-box\"\n                                                [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">\n                                                <figure class=\"tm-media-box-wrap\">\n                                                    <img class=\"\"\n                                                        src=\"{{ cartItem.product.default_image ? cartItem.product.default_image.thumb_url : '' }}\"\n                                                        appImgFallback=\"product\" alt=\"{{ cartItem.product.name }}\" />\n                                                </figure>\n                                            </a>\n                                        </div>\n                                    </div>\n                                    <div class=\"uk-width-expand\">\n                                        <div class=\"uk-text-meta\">{{ cartItem.product.category.title }}</div>\n                                        <a class=\"uk-link-heading\"\n                                            [routerLink]=\"['/product', cartItem.product.id, cartItem.product.name]\">{{ cartItem.product.name }}</a>\n                                    </div>\n                                </div>\n                            </div><!-- Other cells-->\n                            <div>\n                                <div class=\"uk-grid-small uk-child-width-1-1 uk-child-width-expand@s uk-text-center uk-grid\"\n                                    uk-grid=\"\">\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Price</div>\n                                        <div>\n                                            <span [innerHTML]='\"&#8358;\"'></span>\n                                            {{ cartItem.unit_price }}\n                                        </div>\n                                    </div>\n                                    <div class=\"tm-cart-quantity-column\">\n                                        {{ cartItem.quantity }}\n                                    </div>\n                                    <div>\n                                        <div class=\"uk-text-muted uk-hidden@m\">Sum</div>\n                                        <div>\n                                            <span [innerHTML]='\"&#8358;\"'></span>\n                                            {{ cartItem.price }}\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</div>";
     /***/
   },
 
@@ -1503,163 +1563,181 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _app_pages_admin_sign_in_page_admin_sign_in_page_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @app/pages/admin-sign-in-page/admin-sign-in-page.component */
+    "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.ts");
+    /* harmony import */
+
+
+    var _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @app/pages/catalog-page/catalog-page.component */
     "./src/app/pages/catalog-page/catalog-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _app_pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! @app/pages/category-page/category-page.component */
     "./src/app/pages/category-page/category-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @app/pages/cart-page/cart-page.component */
     "./src/app/pages/cart-page/cart-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @app/pages/error-pages/error-pages.component */
     "./src/app/pages/error-pages/error-pages.component.ts");
     /* harmony import */
 
 
-    var _app_pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _app_pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @app/pages/product-page/product-page.component */
     "./src/app/pages/product-page/product-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _app_pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @app/pages/product-search/product-search.component */
     "./src/app/pages/product-search/product-search.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! @app/pages/admin/admin-index-page/admin-index-page.component */
     "./src/app/pages/admin/admin-index-page/admin-index-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! @app/pages/admin/admin-roles-page/admin-roles-page.component */
     "./src/app/pages/admin/admin-roles-page/admin-roles-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! @app/pages/admin/admin-staffs-page/admin-staffs-page.component */
     "./src/app/pages/admin/admin-staffs-page/admin-staffs-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! @app/pages/admin/admin-staff-page/admin-staff-page.component */
     "./src/app/pages/admin/admin-staff-page/admin-staff-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _app_pages_admin_admin_orders_page_admin_orders_page_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    /*! @app/pages/admin/admin-orders-page/admin-orders-page.component */
+    "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.ts");
+    /* harmony import */
+
+
+    var _app_pages_admin_admin_order_page_admin_order_page_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    /*! @app/pages/admin/admin-order-page/admin-order-page.component */
+    "./src/app/pages/admin/admin-order-page/admin-order-page.component.ts");
+    /* harmony import */
+
+
+    var _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! @app/pages/admin/admin-categories-page/admin-categories-page.component */
     "./src/app/pages/admin/admin-categories-page/admin-categories-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! @app/pages/admin/admin-category-page/admin-category-page.component */
     "./src/app/pages/admin/admin-category-page/admin-category-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    var _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! @app/pages/admin/admin-create-product-page/admin-create-product-page.component */
     "./src/app/pages/admin/admin-create-product-page/admin-create-product-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    var _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! @app/pages/admin/admin-product-page/admin-product-page.component */
     "./src/app/pages/admin/admin-product-page/admin-product-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    var _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
     /*! @app/pages/admin/admin-products-page/admin-products-page.component */
     "./src/app/pages/admin/admin-products-page/admin-products-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    var _app_pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
     /*! @app/pages/admin/admin-filters-page/admin-filters-page.component */
     "./src/app/pages/admin/admin-filters-page/admin-filters-page.component.ts");
     /* harmony import */
 
 
-    var _app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    var _app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! @app/guards/auth.guard */
     "./src/app/guards/auth.guard.ts");
     /* harmony import */
 
 
-    var _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    var _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
     /*! @app/layout/client-layout/client-layout.component */
     "./src/app/layout/client-layout/client-layout.component.ts");
     /* harmony import */
 
 
-    var _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    var _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
     /*! @app/pages/client/client-profile/client-profile.component */
     "./src/app/pages/client/client-profile/client-profile.component.ts");
     /* harmony import */
 
 
-    var _app_pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
+    var _app_pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
     /*! @app/pages/client/client-favourites/client-favourites.component */
     "./src/app/pages/client/client-favourites/client-favourites.component.ts");
     /* harmony import */
 
 
-    var _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    var _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
     /*! @app/pages/client/client-orders/client-orders.component */
     "./src/app/pages/client/client-orders/client-orders.component.ts");
     /* harmony import */
 
 
-    var _app_pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    var _app_pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
     /*! @app/pages/client/client-settings/client-settings.component */
     "./src/app/pages/client/client-settings/client-settings.component.ts");
     /* harmony import */
 
 
-    var _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    var _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
     /*! @app/pages/admin/admin-banners-page/admin-banners-page.component */
     "./src/app/pages/admin/admin-banners-page/admin-banners-page.component.ts");
     /* harmony import */
 
 
-    var _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    var _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
     /*! @app/pages/checkout-page/checkout-page.component */
     "./src/app/pages/checkout-page/checkout-page.component.ts");
     /* harmony import */
 
 
-    var _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    var _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
     /*! ./pages/admin/store-address-page/store-address-page.component */
     "./src/app/pages/admin/store-address-page/store-address-page.component.ts");
     /* harmony import */
 
 
-    var _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    var _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
     /*! ./pages/client/client-order/client-order.component */
     "./src/app/pages/client/client-order/client-order.component.ts");
     /* harmony import */
 
 
-    var _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
+    var _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
     /*! ./pages/client/client-address/client-address.component */
     "./src/app/pages/client/client-address/client-address.component.ts"); // Layouts
     // General Pages
@@ -1671,45 +1749,55 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var routes = [{
       path: 'admin',
       component: _app_layout_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_3__["AdminLayoutComponent"],
+      canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__["AuthGuard"]],
+      data: {
+        role: 'admin'
+      },
       children: [{
         path: '',
-        component: _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_14__["AdminIndexPageComponent"]
+        component: _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_15__["AdminIndexPageComponent"]
       }, {
         path: 'roles',
-        component: _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_15__["AdminRolesPageComponent"]
+        component: _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_16__["AdminRolesPageComponent"]
       }, {
         path: 'banners',
-        component: _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_30__["AdminBannersPageComponent"]
+        component: _app_pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_33__["AdminBannersPageComponent"]
       }, {
         path: 'staffs',
-        component: _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_16__["AdminStaffsPageComponent"]
+        component: _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_17__["AdminStaffsPageComponent"]
       }, {
         path: 'staff/:id',
-        component: _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_17__["AdminStaffPageComponent"]
+        component: _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_18__["AdminStaffPageComponent"]
+      }, {
+        path: 'orders',
+        component: _app_pages_admin_admin_orders_page_admin_orders_page_component__WEBPACK_IMPORTED_MODULE_19__["AdminOrdersPageComponent"]
+      }, {
+        path: 'order/:id',
+        component: _app_pages_admin_admin_order_page_admin_order_page_component__WEBPACK_IMPORTED_MODULE_20__["AdminOrderPageComponent"]
       }, {
         path: 'filters',
-        component: _app_pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_23__["AdminFiltersPageComponent"]
+        component: _app_pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_26__["AdminFiltersPageComponent"]
       }, {
         path: 'categories',
-        component: _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_18__["AdminCategoriesPageComponent"]
+        component: _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_21__["AdminCategoriesPageComponent"]
       }, {
         path: 'category/:id',
-        component: _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_19__["AdminCategoryPageComponent"]
+        component: _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminCategoryPageComponent"]
       }, {
         path: 'store-address',
-        component: _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_32__["StoreAddressPageComponent"]
+        component: _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_35__["StoreAddressPageComponent"]
       }, {
         path: 'products',
-        component: _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminProductsPageComponent"]
+        component: _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_25__["AdminProductsPageComponent"]
       }, {
         path: 'product/:id',
-        component: _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_21__["AdminProductPageComponent"]
+        component: _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_24__["AdminProductPageComponent"]
       }, {
         path: 'create-product',
-        component: _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_20__["AdminCreateProductPageComponent"]
+        component: _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_23__["AdminCreateProductPageComponent"]
       }, {
         path: '**',
-        component: _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_11__["ErrorPagesComponent"]
+        component: _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_12__["ErrorPagesComponent"]
       }]
     }, {
       path: '',
@@ -1719,13 +1807,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         component: _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_5__["HomePageComponent"]
       }, {
         path: 'catalog',
-        component: _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_8__["CatalogPageComponent"]
+        component: _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_9__["CatalogPageComponent"]
       }, {
         path: 'category/:link',
-        component: _app_pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_9__["CategoryPageComponent"]
+        component: _app_pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_10__["CategoryPageComponent"]
       }, {
         path: 'product/:id/:name',
-        component: _app_pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_12__["ProductPageComponent"]
+        component: _app_pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_13__["ProductPageComponent"]
       }, {
         path: 'sign-up',
         component: _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_6__["SignUpPageComponent"]
@@ -1733,47 +1821,50 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         path: 'sign-in',
         component: _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_7__["SignInPageComponent"]
       }, {
+        path: 'admin-sign-in',
+        component: _app_pages_admin_sign_in_page_admin_sign_in_page_component__WEBPACK_IMPORTED_MODULE_8__["AdminSignInPageComponent"]
+      }, {
         path: 'search',
-        component: _app_pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_13__["ProductSearchComponent"]
+        component: _app_pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_14__["ProductSearchComponent"]
       }, {
         path: 'cart',
-        canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"]],
+        canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__["AuthGuard"]],
         data: {
           role: 'client'
         },
-        component: _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_10__["CartPageComponent"]
+        component: _app_pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_11__["CartPageComponent"]
       }, {
         path: 'checkout',
-        canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"]],
+        canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__["AuthGuard"]],
         data: {
           role: 'client'
         },
-        component: _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_31__["CheckoutPageComponent"]
+        component: _app_pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_34__["CheckoutPageComponent"]
       }, {
         path: 'account',
-        component: _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_25__["ClientLayoutComponent"],
-        canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_24__["AuthGuard"]],
+        component: _app_layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_28__["ClientLayoutComponent"],
+        canActivate: [_app_guards_auth_guard__WEBPACK_IMPORTED_MODULE_27__["AuthGuard"]],
         data: {
           role: 'client'
         },
         children: [{
           path: 'favourites',
-          component: _app_pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_27__["ClientFavouritesComponent"]
+          component: _app_pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_30__["ClientFavouritesComponent"]
         }, {
           path: 'orders',
-          component: _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_28__["ClientOrdersComponent"]
+          component: _app_pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_31__["ClientOrdersComponent"]
         }, {
           path: 'order/:id',
-          component: _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_33__["ClientOrderComponent"]
+          component: _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_36__["ClientOrderComponent"]
         }, {
           path: 'address',
-          component: _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_34__["ClientAddressComponent"]
+          component: _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_37__["ClientAddressComponent"]
         }, {
           path: 'personal',
-          component: _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_26__["ClientProfileComponent"]
+          component: _app_pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_29__["ClientProfileComponent"]
         }, {
           path: 'settings',
-          component: _app_pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_29__["ClientSettingsComponent"]
+          component: _app_pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_32__["ClientSettingsComponent"]
         }, {
           path: '',
           redirectTo: '/account/personal',
@@ -1781,7 +1872,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }, {
         path: '**',
-        component: _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_11__["ErrorPagesComponent"]
+        component: _app_pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_12__["ErrorPagesComponent"]
       }]
     }];
 
@@ -2240,7 +2331,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _constants__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(
     /*! ./constants */
-    "./src/app/constants.ts"); // FontAwesome Icons
+    "./src/app/constants.ts");
+    /* harmony import */
+
+
+    var _pages_admin_sign_in_page_admin_sign_in_page_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(
+    /*! ./pages/admin-sign-in-page/admin-sign-in-page.component */
+    "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.ts");
+    /* harmony import */
+
+
+    var _pages_admin_admin_orders_page_admin_orders_page_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(
+    /*! ./pages/admin/admin-orders-page/admin-orders-page.component */
+    "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.ts");
+    /* harmony import */
+
+
+    var _pages_admin_admin_order_page_admin_order_page_component__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(
+    /*! ./pages/admin/admin-order-page/admin-order-page.component */
+    "./src/app/pages/admin/admin-order-page/admin-order-page.component.ts"); // FontAwesome Icons
 
 
     var AppModule = function AppModule(library) {
@@ -2256,7 +2365,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"], _app_components_nav_bar_nav_bar_component__WEBPACK_IMPORTED_MODULE_13__["NavBarComponent"], _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_15__["HomePageComponent"], _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_16__["SignUpPageComponent"], _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_17__["SignInPageComponent"], _app_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_18__["FooterComponent"], _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_19__["DefaultLayoutComponent"], _app_layout_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_20__["AdminLayoutComponent"], _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_21__["AdminIndexPageComponent"], _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminRolesPageComponent"], _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_23__["AdminStaffPageComponent"], _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_24__["AdminStaffsPageComponent"], _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_25__["AdminCategoriesPageComponent"], _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_26__["AdminCategoryPageComponent"], _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_27__["AdminProductsPageComponent"], _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_28__["AdminProductPageComponent"], _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_29__["AdminCreateProductPageComponent"], _app_directive_img_fallback_directive__WEBPACK_IMPORTED_MODULE_30__["ImgFallbackDirective"], _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_31__["CatalogPageComponent"], _pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_32__["CategoryPageComponent"], _components_grid_grid_component__WEBPACK_IMPORTED_MODULE_33__["GridComponent"], _components_admin_product_update_product_update_component__WEBPACK_IMPORTED_MODULE_34__["ProductUpdateComponent"], _components_admin_product_categories_product_categories_component__WEBPACK_IMPORTED_MODULE_35__["ProductCategoriesComponent"], _pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_36__["AdminFiltersPageComponent"], _components_admin_sidebar_admin_sidebar_component__WEBPACK_IMPORTED_MODULE_37__["AdminSidebarComponent"], _components_admin_product_filter_product_filter_component__WEBPACK_IMPORTED_MODULE_38__["ProductFilterComponent"], _pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_39__["ProductPageComponent"], _components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_40__["BreadcrumbComponent"], _components_product_carousel_product_carousel_component__WEBPACK_IMPORTED_MODULE_41__["ProductCarouselComponent"], _pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_42__["ErrorPagesComponent"], _pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_44__["ClientProfileComponent"], _layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_45__["ClientLayoutComponent"], _pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_46__["ClientFavouritesComponent"], _pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_47__["ClientOrdersComponent"], _pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_48__["ClientSettingsComponent"], _pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_49__["ProductSearchComponent"], _pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_50__["AdminBannersPageComponent"], _pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_51__["CartPageComponent"], _pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_52__["CheckoutPageComponent"], _components_checkout_item_checkout_item_component__WEBPACK_IMPORTED_MODULE_53__["CheckoutItemComponent"], _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_54__["StoreAddressPageComponent"], _pipes_safe_pipe__WEBPACK_IMPORTED_MODULE_55__["SafePipe"], _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_56__["ClientOrderComponent"], _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_57__["ClientAddressComponent"]],
+      declarations: [_app_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"], _app_components_nav_bar_nav_bar_component__WEBPACK_IMPORTED_MODULE_13__["NavBarComponent"], _app_pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_15__["HomePageComponent"], _app_pages_sign_up_page_sign_up_page_component__WEBPACK_IMPORTED_MODULE_16__["SignUpPageComponent"], _app_pages_sign_in_page_sign_in_page_component__WEBPACK_IMPORTED_MODULE_17__["SignInPageComponent"], _app_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_18__["FooterComponent"], _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_19__["DefaultLayoutComponent"], _app_layout_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_20__["AdminLayoutComponent"], _app_pages_admin_admin_index_page_admin_index_page_component__WEBPACK_IMPORTED_MODULE_21__["AdminIndexPageComponent"], _app_pages_admin_admin_roles_page_admin_roles_page_component__WEBPACK_IMPORTED_MODULE_22__["AdminRolesPageComponent"], _app_pages_admin_admin_staff_page_admin_staff_page_component__WEBPACK_IMPORTED_MODULE_23__["AdminStaffPageComponent"], _app_pages_admin_admin_staffs_page_admin_staffs_page_component__WEBPACK_IMPORTED_MODULE_24__["AdminStaffsPageComponent"], _app_pages_admin_admin_categories_page_admin_categories_page_component__WEBPACK_IMPORTED_MODULE_25__["AdminCategoriesPageComponent"], _app_pages_admin_admin_category_page_admin_category_page_component__WEBPACK_IMPORTED_MODULE_26__["AdminCategoryPageComponent"], _app_pages_admin_admin_products_page_admin_products_page_component__WEBPACK_IMPORTED_MODULE_27__["AdminProductsPageComponent"], _app_pages_admin_admin_product_page_admin_product_page_component__WEBPACK_IMPORTED_MODULE_28__["AdminProductPageComponent"], _app_pages_admin_admin_create_product_page_admin_create_product_page_component__WEBPACK_IMPORTED_MODULE_29__["AdminCreateProductPageComponent"], _app_directive_img_fallback_directive__WEBPACK_IMPORTED_MODULE_30__["ImgFallbackDirective"], _app_pages_catalog_page_catalog_page_component__WEBPACK_IMPORTED_MODULE_31__["CatalogPageComponent"], _pages_category_page_category_page_component__WEBPACK_IMPORTED_MODULE_32__["CategoryPageComponent"], _components_grid_grid_component__WEBPACK_IMPORTED_MODULE_33__["GridComponent"], _components_admin_product_update_product_update_component__WEBPACK_IMPORTED_MODULE_34__["ProductUpdateComponent"], _components_admin_product_categories_product_categories_component__WEBPACK_IMPORTED_MODULE_35__["ProductCategoriesComponent"], _pages_admin_admin_filters_page_admin_filters_page_component__WEBPACK_IMPORTED_MODULE_36__["AdminFiltersPageComponent"], _components_admin_sidebar_admin_sidebar_component__WEBPACK_IMPORTED_MODULE_37__["AdminSidebarComponent"], _components_admin_product_filter_product_filter_component__WEBPACK_IMPORTED_MODULE_38__["ProductFilterComponent"], _pages_product_page_product_page_component__WEBPACK_IMPORTED_MODULE_39__["ProductPageComponent"], _components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_40__["BreadcrumbComponent"], _components_product_carousel_product_carousel_component__WEBPACK_IMPORTED_MODULE_41__["ProductCarouselComponent"], _pages_error_pages_error_pages_component__WEBPACK_IMPORTED_MODULE_42__["ErrorPagesComponent"], _pages_client_client_profile_client_profile_component__WEBPACK_IMPORTED_MODULE_44__["ClientProfileComponent"], _layout_client_layout_client_layout_component__WEBPACK_IMPORTED_MODULE_45__["ClientLayoutComponent"], _pages_client_client_favourites_client_favourites_component__WEBPACK_IMPORTED_MODULE_46__["ClientFavouritesComponent"], _pages_client_client_orders_client_orders_component__WEBPACK_IMPORTED_MODULE_47__["ClientOrdersComponent"], _pages_client_client_settings_client_settings_component__WEBPACK_IMPORTED_MODULE_48__["ClientSettingsComponent"], _pages_product_search_product_search_component__WEBPACK_IMPORTED_MODULE_49__["ProductSearchComponent"], _pages_admin_admin_banners_page_admin_banners_page_component__WEBPACK_IMPORTED_MODULE_50__["AdminBannersPageComponent"], _pages_cart_page_cart_page_component__WEBPACK_IMPORTED_MODULE_51__["CartPageComponent"], _pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_52__["CheckoutPageComponent"], _components_checkout_item_checkout_item_component__WEBPACK_IMPORTED_MODULE_53__["CheckoutItemComponent"], _pages_admin_store_address_page_store_address_page_component__WEBPACK_IMPORTED_MODULE_54__["StoreAddressPageComponent"], _pipes_safe_pipe__WEBPACK_IMPORTED_MODULE_55__["SafePipe"], _pages_client_client_order_client_order_component__WEBPACK_IMPORTED_MODULE_56__["ClientOrderComponent"], _pages_client_client_address_client_address_component__WEBPACK_IMPORTED_MODULE_57__["ClientAddressComponent"], _pages_admin_sign_in_page_admin_sign_in_page_component__WEBPACK_IMPORTED_MODULE_59__["AdminSignInPageComponent"], _pages_admin_admin_orders_page_admin_orders_page_component__WEBPACK_IMPORTED_MODULE_60__["AdminOrdersPageComponent"], _pages_admin_admin_order_page_admin_order_page_component__WEBPACK_IMPORTED_MODULE_61__["AdminOrderPageComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_app_routing_module__WEBPACK_IMPORTED_MODULE_14__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeModule"], _tinymce_tinymce_angular__WEBPACK_IMPORTED_MODULE_6__["EditorModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"], angular4_paystack__WEBPACK_IMPORTED_MODULE_8__["Angular4PaystackModule"].forRoot(_constants__WEBPACK_IMPORTED_MODULE_58__["Constants"].PAYSTACK_PUBLIC_API)],
       providers: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_43__["AuthGuard"]],
       bootstrap: [_app_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]]
@@ -3180,19 +3289,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @app/layout/default-layout/default-layout.component */
     "./src/app/layout/default-layout/default-layout.component.ts");
+    /* harmony import */
+
+
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
 
     var GridComponent =
     /*#__PURE__*/
     function () {
-      function GridComponent(productServices, router, defaultLayout) {
+      function GridComponent(productServices, router, defaultLayout, userServices) {
         _classCallCheck(this, GridComponent);
 
         this.productServices = productServices;
         this.router = router;
         this.defaultLayout = defaultLayout;
+        this.userServices = userServices;
         this.canRemove = false;
         this.addingToCart = false;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
       }
 
       _createClass(GridComponent, [{
@@ -3329,6 +3445,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
       }, {
         type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutComponent"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"]
       }];
     };
 
@@ -3685,11 +3803,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return this.userServices.auth().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
             if (data.isAuth) {
               if (next.data.role === 'client') {
-                localStorage.setItem('client', JSON.stringify(data.client));
+                _this12.userServices.setUser(data.client, 'client');
+
                 return data.isClient;
               }
 
               if (next.data.role === 'admin') {
+                _this12.userServices.setUser(data.admin, 'admin');
+
                 return data.isAdmin;
               }
             }
@@ -3703,7 +3824,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             }
 
             if (next.data.role === 'admin') {
-              _this12.router.navigate(['/sign-in']);
+              _this12.router.navigate(['/admin-sign-in']);
             }
 
             return false;
@@ -3779,21 +3900,56 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var AdminLayoutComponent =
     /*#__PURE__*/
     function () {
-      function AdminLayoutComponent() {
+      function AdminLayoutComponent(router, userServices) {
         _classCallCheck(this, AdminLayoutComponent);
+
+        this.router = router;
+        this.userServices = userServices;
       }
 
       _createClass(AdminLayoutComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.admin = this.userServices.current.value;
+        }
+      }, {
+        key: "logout",
+        value: function logout() {
+          var _this13 = this;
+
+          this.userServices.setUser({}, '');
+          this.userServices.logout().subscribe(function (data) {
+            _this13.router.navigate(['/admin-sign-in']);
+          });
+        }
       }]);
 
       return AdminLayoutComponent;
     }();
+
+    AdminLayoutComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"]
+      }];
+    };
 
     AdminLayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-admin-layout',
@@ -3901,7 +4057,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ClientLayoutComponent, [{
         key: "uploadImageInput",
         value: function uploadImageInput(event) {
-          var _this13 = this;
+          var _this14 = this;
 
           this.isUploading = true;
           var reader = new FileReader();
@@ -3916,13 +4072,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               img: img
             };
 
-            _this13.clientServices.uploadAvatarClient(_this13.client.id, uploadData).subscribe(function (data) {
+            _this14.clientServices.uploadAvatarClient(_this14.client.id, uploadData).subscribe(function (data) {
               console.log(data);
 
               _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
 
-              _this13.client = data.data;
-              _this13.isUploading = false;
+              _this14.client = data.data;
+              _this14.isUploading = false;
             });
           };
 
@@ -3931,17 +4087,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.client = JSON.parse(localStorage.getItem('client'));
+          this.client = this.userServices.current.value;
           this.currentRoute = this.router.url;
         }
       }, {
         key: "logout",
         value: function logout() {
-          var _this14 = this;
+          var _this15 = this;
 
-          localStorage.removeItem('client');
+          this.userServices.setUser({}, '');
           this.userServices.logout().subscribe(function (data) {
-            _this14.router.navigate(['/sign-in']);
+            _this15.router.navigate(['/sign-in']);
           });
         }
       }]);
@@ -4057,7 +4213,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*#__PURE__*/
     function () {
       function DefaultLayoutComponent(categoriesService, router, userServices, productServices) {
-        var _this15 = this;
+        var _this16 = this;
 
         _classCallCheck(this, DefaultLayoutComponent);
 
@@ -4073,7 +4229,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           switch (true) {
             case event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationStart"]:
               {
-                _this15.loading = true;
+                _this16.loading = true;
                 break;
               }
 
@@ -4081,7 +4237,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             case event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationCancel"]:
             case event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationError"]:
               {
-                _this15.loading = false;
+                _this16.loading = false;
                 break;
               }
 
@@ -4102,22 +4258,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getBaseCategories",
         value: function getBaseCategories() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.categoriesService.getCategoryByParent().subscribe(function (data) {
-            _this16.categories = data;
-            _this16.gotCategory = true;
+            _this17.categories = data;
+            _this17.gotCategory = true;
           });
         }
       }, {
         key: "logout",
         value: function logout() {
-          var _this17 = this;
+          var _this18 = this;
 
-          localStorage.removeItem('client');
-          localStorage.removeItem('admin');
+          this.userServices.setUser({}, '');
           this.userServices.logout().subscribe(function (data) {
-            _this17.router.navigate(['/sign-in']);
+            _this18.router.navigate(['/sign-in']);
           });
         }
       }, {
@@ -4135,7 +4290,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee4() {
-            var _this18 = this;
+            var _this19 = this;
 
             var id;
             return regeneratorRuntime.wrap(function _callee4$(_context4) {
@@ -4145,9 +4300,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     this.cart = JSON.parse(localStorage.getItem('cart'));
                     id = this.cart === null || this.cart.id === null ? 0 : this.cart.id;
                     this.productServices.getCartProducts(id).subscribe(function (data) {
-                      _this18.getCartItemsCount(data);
+                      _this19.getCartItemsCount(data);
 
-                      _this18.cartProducts = data;
+                      _this19.cartProducts = data;
                     });
 
                   case 3:
@@ -4164,7 +4319,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee5() {
-            var _this19 = this;
+            var _this20 = this;
 
             return regeneratorRuntime.wrap(function _callee5$(_context5) {
               while (1) {
@@ -4173,7 +4328,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     this.productServices.removeProductFromCart(cartItem.id).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
 
-                      _this19.getCartProducts();
+                      _this20.getCartProducts();
                     });
 
                   case 1:
@@ -4234,6 +4389,155 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./default-layout.component.css */
       "./src/app/layout/default-layout/default-layout.component.css")).default]
     })], DefaultLayoutComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.css":
+  /*!***************************************************************************!*\
+    !*** ./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.css ***!
+    \***************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesAdminSignInPageAdminSignInPageComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2FkbWluLXNpZ24taW4tcGFnZS9hZG1pbi1zaWduLWluLXBhZ2UuY29tcG9uZW50LmNzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.ts":
+  /*!**************************************************************************!*\
+    !*** ./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.ts ***!
+    \**************************************************************************/
+
+  /*! exports provided: AdminSignInPageComponent */
+
+  /***/
+  function srcAppPagesAdminSignInPageAdminSignInPageComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminSignInPageComponent", function () {
+      return AdminSignInPageComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/admin.service */
+    "./src/app/services/admin.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/utils/notification */
+    "./src/app/utils/notification.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+
+    var AdminSignInPageComponent =
+    /*#__PURE__*/
+    function () {
+      function AdminSignInPageComponent(adminService, router) {
+        _classCallCheck(this, AdminSignInPageComponent);
+
+        this.adminService = adminService;
+        this.router = router;
+        this.client = {
+          email: '',
+          password: ''
+        };
+        this.isLoggingIN = false;
+      }
+
+      _createClass(AdminSignInPageComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "onSubmit",
+        value: function onSubmit(form) {
+          this.isLoggingIN = true;
+          this.login();
+        }
+      }, {
+        key: "login",
+        value: function login() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee6() {
+            var _this21 = this;
+
+            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+              while (1) {
+                switch (_context6.prev = _context6.next) {
+                  case 0:
+                    this.adminService.loginAdministrator(this.client).subscribe(function (data) {
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+
+                      _this21.isLoggingIN = false;
+
+                      if (data.status === 'success') {
+                        _this21.router.navigateByUrl('/admin');
+                      }
+                    });
+
+                  case 1:
+                  case "end":
+                    return _context6.stop();
+                }
+              }
+            }, _callee6, this);
+          }));
+        }
+      }]);
+
+      return AdminSignInPageComponent;
+    }();
+
+    AdminSignInPageComponent.ctorParameters = function () {
+      return [{
+        type: _app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__["AdminService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }];
+    };
+
+    AdminSignInPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-admin-sign-in-page',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./admin-sign-in-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./admin-sign-in-page.component.css */
+      "./src/app/pages/admin-sign-in-page/admin-sign-in-page.component.css")).default]
+    })], AdminSignInPageComponent);
     /***/
   },
 
@@ -4321,29 +4625,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getBannerImages() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee6() {
-            var _this20 = this;
+          regeneratorRuntime.mark(function _callee7() {
+            var _this22 = this;
 
-            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+            return regeneratorRuntime.wrap(function _callee7$(_context7) {
               while (1) {
-                switch (_context6.prev = _context6.next) {
+                switch (_context7.prev = _context7.next) {
                   case 0:
                     this.bannerImageServices.getBannerImage().subscribe(function (data) {
-                      _this20.bannerImages = data;
+                      _this22.bannerImages = data;
                     });
 
                   case 1:
                   case "end":
-                    return _context6.stop();
+                    return _context7.stop();
                 }
               }
-            }, _callee6, this);
+            }, _callee7, this);
           }));
         }
       }, {
         key: "uploadImageInput",
         value: function uploadImageInput(event) {
-          var _this21 = this;
+          var _this23 = this;
 
           this.isUploading = true;
           var reader = new FileReader();
@@ -4358,12 +4662,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               img: img
             };
 
-            _this21.bannerImageServices.uploadBannerImage(uploadData).subscribe(function (data) {
+            _this23.bannerImageServices.uploadBannerImage(uploadData).subscribe(function (data) {
               _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-              _this21.isUploading = false;
+              _this23.isUploading = false;
 
-              _this21.getBannerImages();
+              _this23.getBannerImages();
             });
           };
 
@@ -4372,23 +4676,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "deleteBannerImage",
         value: function deleteBannerImage(bannerImage) {
-          var _this22 = this;
+          var _this24 = this;
 
           this.bannerImageServices.deleteBannerImage(bannerImage).subscribe(function (data) {
             _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-            _this22.getBannerImages();
+            _this24.getBannerImages();
           });
         }
       }, {
         key: "toggleBannerVisiblity",
         value: function toggleBannerVisiblity(productImage) {
-          var _this23 = this;
+          var _this25 = this;
 
           this.bannerImageServices.toggleBannerVisibility(productImage).subscribe(function (data) {
             _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-            _this23.getBannerImages();
+            _this25.getBannerImages();
           });
         }
       }]);
@@ -4508,12 +4812,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this24 = this;
+          var _this26 = this;
 
           this.route.queryParams.subscribe(function (params) {
-            _this24.params = params;
+            _this26.params = params;
 
-            _this24.getCategories(params.page ? params.page : 0);
+            _this26.getCategories(params.page ? params.page : 0);
           });
         }
       }, {
@@ -4521,42 +4825,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getCategories(page) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee7() {
-            var _this25 = this;
-
-            return regeneratorRuntime.wrap(function _callee7$(_context7) {
-              while (1) {
-                switch (_context7.prev = _context7.next) {
-                  case 0:
-                    this.categoriesService.getCategories(page, 1).subscribe(function (data) {
-                      _this25.categories = data;
-                      console.log(data);
-                    });
-
-                  case 1:
-                  case "end":
-                    return _context7.stop();
-                }
-              }
-            }, _callee7, this);
-          }));
-        }
-      }, {
-        key: "deleteCategory",
-        value: function deleteCategory(id) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee8() {
-            var _this26 = this;
+            var _this27 = this;
 
             return regeneratorRuntime.wrap(function _callee8$(_context8) {
               while (1) {
                 switch (_context8.prev = _context8.next) {
                   case 0:
-                    this.categoriesService.deleteCategory(id).subscribe(function (data) {
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
-
-                      _this26.getCategories(_this26.params.page ? _this26.params.page : 0);
+                    this.categoriesService.getCategories(page, 1).subscribe(function (data) {
+                      _this27.categories = data;
+                      console.log(data);
                     });
 
                   case 1:
@@ -4568,21 +4846,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }));
         }
       }, {
-        key: "createCategory",
-        value: function createCategory() {
+        key: "deleteCategory",
+        value: function deleteCategory(id) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee9() {
-            var _this27 = this;
+            var _this28 = this;
 
             return regeneratorRuntime.wrap(function _callee9$(_context9) {
               while (1) {
                 switch (_context9.prev = _context9.next) {
                   case 0:
-                    this.categoriesService.createCategory(this.category).subscribe(function (data) {
+                    this.categoriesService.deleteCategory(id).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-                      _this27.getCategories(_this27.params.page ? _this27.params.page : 0);
+                      _this28.getCategories(_this28.params.page ? _this28.params.page : 0);
                     });
 
                   case 1:
@@ -4591,6 +4869,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 }
               }
             }, _callee9, this);
+          }));
+        }
+      }, {
+        key: "createCategory",
+        value: function createCategory() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee10() {
+            var _this29 = this;
+
+            return regeneratorRuntime.wrap(function _callee10$(_context10) {
+              while (1) {
+                switch (_context10.prev = _context10.next) {
+                  case 0:
+                    this.categoriesService.createCategory(this.category).subscribe(function (data) {
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+
+                      _this29.getCategories(_this29.params.page ? _this29.params.page : 0);
+                    });
+
+                  case 1:
+                  case "end":
+                    return _context10.stop();
+                }
+              }
+            }, _callee10, this);
           }));
         }
       }, {
@@ -4718,12 +5022,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this28 = this;
+          var _this30 = this;
 
           this.route.params.subscribe(function (params) {
-            _this28.params = params;
+            _this30.params = params;
 
-            _this28.getCategory();
+            _this30.getCategory();
           });
         }
       }, {
@@ -4731,23 +5035,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getCategory() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee10() {
-            var _this29 = this;
+          regeneratorRuntime.mark(function _callee11() {
+            var _this31 = this;
 
-            return regeneratorRuntime.wrap(function _callee10$(_context10) {
+            return regeneratorRuntime.wrap(function _callee11$(_context11) {
               while (1) {
-                switch (_context10.prev = _context10.next) {
+                switch (_context11.prev = _context11.next) {
                   case 0:
                     this.categoriesService.getCategory(this.params.id).subscribe(function (data) {
-                      return _this29.category = data;
+                      return _this31.category = data;
                     });
 
                   case 1:
                   case "end":
-                    return _context10.stop();
+                    return _context11.stop();
                 }
               }
-            }, _callee10, this);
+            }, _callee11, this);
           }));
         }
       }, {
@@ -4755,13 +5059,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function createCategory() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee11() {
-            var _this30 = this;
+          regeneratorRuntime.mark(function _callee12() {
+            var _this32 = this;
 
             var newCategory;
-            return regeneratorRuntime.wrap(function _callee11$(_context11) {
+            return regeneratorRuntime.wrap(function _callee12$(_context12) {
               while (1) {
-                switch (_context11.prev = _context11.next) {
+                switch (_context12.prev = _context12.next) {
                   case 0:
                     newCategory = {
                       title: this.categoryTitle,
@@ -4770,15 +5074,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     this.categoriesService.createCategory(newCategory).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
 
-                      _this30.getCategory();
+                      _this32.getCategory();
                     });
 
                   case 2:
                   case "end":
-                    return _context11.stop();
+                    return _context12.stop();
                 }
               }
-            }, _callee11, this);
+            }, _callee12, this);
           }));
         }
       }]);
@@ -4913,12 +5217,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function createProduct(form) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee12() {
-            var _this31 = this;
+          regeneratorRuntime.mark(function _callee13() {
+            var _this33 = this;
 
-            return regeneratorRuntime.wrap(function _callee12$(_context12) {
+            return regeneratorRuntime.wrap(function _callee13$(_context13) {
               while (1) {
-                switch (_context12.prev = _context12.next) {
+                switch (_context13.prev = _context13.next) {
                   case 0:
                     this.productService.createProducts(this.product).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
@@ -4927,7 +5231,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                         console.log(data);
                         form.form.reset();
 
-                        _this31.router.navigate(['/admin/product', data.data.id]);
+                        _this33.router.navigate(['/admin/product', data.data.id]);
                       }
 
                       console.log(data);
@@ -4936,10 +5240,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 2:
                   case "end":
-                    return _context12.stop();
+                    return _context13.stop();
                 }
               }
-            }, _callee12, this);
+            }, _callee13, this);
           }));
         }
       }, {
@@ -4952,20 +5256,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getCategories() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee13() {
-            var _this32 = this;
+          regeneratorRuntime.mark(function _callee14() {
+            var _this34 = this;
 
-            return regeneratorRuntime.wrap(function _callee13$(_context13) {
+            return regeneratorRuntime.wrap(function _callee14$(_context14) {
               while (1) {
-                switch (_context13.prev = _context13.next) {
+                switch (_context14.prev = _context14.next) {
                   case 0:
                     this.categoriesService.getCategories().subscribe(function (data) {
-                      _this32.categories = data;
+                      _this34.categories = data;
 
-                      if (_this32.categories.data) {
+                      if (_this34.categories.data) {
                         var optGroup = {};
 
-                        _this32.categories.data.forEach(function (category) {
+                        _this34.categories.data.forEach(function (category) {
                           var title = category.parent ? category.parent.title : 'Base Category';
 
                           if (!optGroup[title]) {
@@ -4976,16 +5280,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                         });
 
                         console.log(optGroup);
-                        _this32.categories.data = optGroup;
+                        _this34.categories.data = optGroup;
                       }
                     });
 
                   case 1:
                   case "end":
-                    return _context13.stop();
+                    return _context14.stop();
                 }
               }
-            }, _callee13, this);
+            }, _callee14, this);
           }));
         }
       }, {
@@ -5113,12 +5417,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this33 = this;
+          var _this35 = this;
 
           this.route.queryParams.subscribe(function (params) {
-            _this33.params = params;
+            _this35.params = params;
 
-            _this33.getFilters(params.page ? params.page : 0);
+            _this35.getFilters(params.page ? params.page : 0);
           });
         }
       }, {
@@ -5126,42 +5430,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getFilters(page) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee14() {
-            var _this34 = this;
-
-            return regeneratorRuntime.wrap(function _callee14$(_context14) {
-              while (1) {
-                switch (_context14.prev = _context14.next) {
-                  case 0:
-                    this.filterService.getFilters(page, 1).subscribe(function (data) {
-                      _this34.filters = data;
-                      console.log(_this34.filters);
-                    });
-
-                  case 1:
-                  case "end":
-                    return _context14.stop();
-                }
-              }
-            }, _callee14, this);
-          }));
-        }
-      }, {
-        key: "deleteFilter",
-        value: function deleteFilter(id) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee15() {
-            var _this35 = this;
+            var _this36 = this;
 
             return regeneratorRuntime.wrap(function _callee15$(_context15) {
               while (1) {
                 switch (_context15.prev = _context15.next) {
                   case 0:
-                    this.filterService.deleteFilter(id).subscribe(function (data) {
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
-
-                      _this35.getFilters(_this35.params.page ? _this35.params.page : 0);
+                    this.filterService.getFilters(page, 1).subscribe(function (data) {
+                      _this36.filters = data;
+                      console.log(_this36.filters);
                     });
 
                   case 1:
@@ -5173,21 +5451,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }));
         }
       }, {
-        key: "createFilter",
-        value: function createFilter() {
+        key: "deleteFilter",
+        value: function deleteFilter(id) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee16() {
-            var _this36 = this;
+            var _this37 = this;
 
             return regeneratorRuntime.wrap(function _callee16$(_context16) {
               while (1) {
                 switch (_context16.prev = _context16.next) {
                   case 0:
-                    this.filterService.createFilter(this.filter).subscribe(function (data) {
+                    this.filterService.deleteFilter(id).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
 
-                      _this36.getFilters(_this36.params.page ? _this36.params.page : 0);
+                      _this37.getFilters(_this37.params.page ? _this37.params.page : 0);
                     });
 
                   case 1:
@@ -5196,6 +5474,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 }
               }
             }, _callee16, this);
+          }));
+        }
+      }, {
+        key: "createFilter",
+        value: function createFilter() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee17() {
+            var _this38 = this;
+
+            return regeneratorRuntime.wrap(function _callee17$(_context17) {
+              while (1) {
+                switch (_context17.prev = _context17.next) {
+                  case 0:
+                    this.filterService.createFilter(this.filter).subscribe(function (data) {
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
+
+                      _this38.getFilters(_this38.params.page ? _this38.params.page : 0);
+                    });
+
+                  case 1:
+                  case "end":
+                    return _context17.stop();
+                }
+              }
+            }, _callee17, this);
           }));
         }
       }, {
@@ -5285,21 +5589,106 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/admin.service */
+    "./src/app/services/admin.service.ts");
+    /* harmony import */
+
+
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @app/utils/notification */
+    "./src/app/utils/notification.ts");
 
     var AdminIndexPageComponent =
     /*#__PURE__*/
     function () {
-      function AdminIndexPageComponent() {
+      function AdminIndexPageComponent(adminService, userService) {
         _classCallCheck(this, AdminIndexPageComponent);
+
+        this.adminService = adminService;
+        this.userService = userService;
+        this.updatePassword = {
+          password: '',
+          new_password: '',
+          repeat_password: ''
+        };
+        this.updatingStaff = false;
       }
 
       _createClass(AdminIndexPageComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.getAdmin();
+        }
+      }, {
+        key: "onSubmit",
+        value: function onSubmit(form) {
+          this.updatingStaff = true;
+          this.updateStaff();
+          form.form.reset();
+        }
+      }, {
+        key: "getAdmin",
+        value: function getAdmin() {
+          var _this39 = this;
+
+          this.adminService.getAdministrator(this.userService.current.value.id).subscribe(function (data) {
+            _this39.admin = data;
+          });
+        }
+      }, {
+        key: "updateStaff",
+        value: function updateStaff() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee18() {
+            var _this40 = this;
+
+            return regeneratorRuntime.wrap(function _callee18$(_context18) {
+              while (1) {
+                switch (_context18.prev = _context18.next) {
+                  case 0:
+                    if (this.updatePassword.new_password === this.updatePassword.repeat_password) {
+                      this.adminService.updateAdminPassword(this.userService.current.value.id, this.updatePassword).subscribe(function (data) {
+                        _this40.updatingStaff = false;
+
+                        _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
+                      });
+                    } else {
+                      this.updatingStaff = false;
+
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show('Password confirmation faied', 'failed');
+                    }
+
+                  case 1:
+                  case "end":
+                    return _context18.stop();
+                }
+              }
+            }, _callee18, this);
+          }));
+        }
       }]);
 
       return AdminIndexPageComponent;
     }();
+
+    AdminIndexPageComponent.ctorParameters = function () {
+      return [{
+        type: _app_services_admin_service__WEBPACK_IMPORTED_MODULE_2__["AdminService"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]
+      }];
+    };
 
     AdminIndexPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-admin-index-page',
@@ -5310,6 +5699,271 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./admin-index-page.component.css */
       "./src/app/pages/admin/admin-index-page/admin-index-page.component.css")).default]
     })], AdminIndexPageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/admin/admin-order-page/admin-order-page.component.css":
+  /*!*****************************************************************************!*\
+    !*** ./src/app/pages/admin/admin-order-page/admin-order-page.component.css ***!
+    \*****************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesAdminAdminOrderPageAdminOrderPageComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2FkbWluL2FkbWluLW9yZGVyLXBhZ2UvYWRtaW4tb3JkZXItcGFnZS5jb21wb25lbnQuY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/admin/admin-order-page/admin-order-page.component.ts":
+  /*!****************************************************************************!*\
+    !*** ./src/app/pages/admin/admin-order-page/admin-order-page.component.ts ***!
+    \****************************************************************************/
+
+  /*! exports provided: AdminOrderPageComponent */
+
+  /***/
+  function srcAppPagesAdminAdminOrderPageAdminOrderPageComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminOrderPageComponent", function () {
+      return AdminOrderPageComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _app_services_order_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/services/order.service */
+    "./src/app/services/order.service.ts");
+    /* harmony import */
+
+
+    var _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @app/services/product.service */
+    "./src/app/services/product.service.ts");
+
+    var AdminOrderPageComponent =
+    /*#__PURE__*/
+    function () {
+      function AdminOrderPageComponent(route, router, orderService, productServices) {
+        _classCallCheck(this, AdminOrderPageComponent);
+
+        this.route = route;
+        this.router = router;
+        this.orderService = orderService;
+        this.productServices = productServices;
+        this.reference = '';
+      }
+
+      _createClass(AdminOrderPageComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this41 = this;
+
+          this.route.params.subscribe(function (params) {
+            _this41.params = params;
+
+            _this41.getOrder();
+          });
+          this.reference = "ref-".concat(Math.ceil(Math.random() * 10e13));
+        }
+      }, {
+        key: "getOrder",
+        value: function getOrder() {
+          var _this42 = this;
+
+          this.orderService.getOrder(this.params.id).subscribe(function (data) {
+            _this42.order = data;
+
+            if (data.status === 'success') {
+              _this42.getCartProducts();
+            }
+          });
+        }
+      }, {
+        key: "getCartProducts",
+        value: function getCartProducts() {
+          var _this43 = this;
+
+          this.productServices.getCartProducts(this.order.data.cart.id).subscribe(function (data) {
+            _this43.getCartItemsCount(data);
+
+            _this43.orderData = data;
+          });
+        }
+      }, {
+        key: "getCartItemsCount",
+        value: function getCartItemsCount(cartData) {
+          var cartCount = 0;
+          var cartTotal = 0;
+          cartData.data.forEach(function (value) {
+            cartCount += value.quantity;
+            cartTotal += value.price;
+          });
+          this.cartItems = cartCount;
+          this.cartTotal = cartTotal;
+        }
+      }]);
+
+      return AdminOrderPageComponent;
+    }();
+
+    AdminOrderPageComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }, {
+        type: _app_services_order_service__WEBPACK_IMPORTED_MODULE_3__["OrderService"]
+      }, {
+        type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__["ProductService"]
+      }];
+    };
+
+    AdminOrderPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-admin-order-page',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./admin-order-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-order-page/admin-order-page.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./admin-order-page.component.css */
+      "./src/app/pages/admin/admin-order-page/admin-order-page.component.css")).default]
+    })], AdminOrderPageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.css":
+  /*!*******************************************************************************!*\
+    !*** ./src/app/pages/admin/admin-orders-page/admin-orders-page.component.css ***!
+    \*******************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesAdminAdminOrdersPageAdminOrdersPageComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2FkbWluL2FkbWluLW9yZGVycy1wYWdlL2FkbWluLW9yZGVycy1wYWdlLmNvbXBvbmVudC5jc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.ts":
+  /*!******************************************************************************!*\
+    !*** ./src/app/pages/admin/admin-orders-page/admin-orders-page.component.ts ***!
+    \******************************************************************************/
+
+  /*! exports provided: AdminOrdersPageComponent */
+
+  /***/
+  function srcAppPagesAdminAdminOrdersPageAdminOrdersPageComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminOrdersPageComponent", function () {
+      return AdminOrdersPageComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @app/services/order.service */
+    "./src/app/services/order.service.ts");
+
+    var AdminOrdersPageComponent =
+    /*#__PURE__*/
+    function () {
+      function AdminOrdersPageComponent(orderService) {
+        _classCallCheck(this, AdminOrdersPageComponent);
+
+        this.orderService = orderService;
+      }
+
+      _createClass(AdminOrdersPageComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.getOrders();
+        }
+      }, {
+        key: "getOrders",
+        value: function getOrders() {
+          var _this44 = this;
+
+          this.orderService.getOrders().subscribe(function (data) {
+            _this44.orders = data;
+            console.log(data);
+          });
+        }
+      }]);
+
+      return AdminOrdersPageComponent;
+    }();
+
+    AdminOrdersPageComponent.ctorParameters = function () {
+      return [{
+        type: _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__["OrderService"]
+      }];
+    };
+
+    AdminOrdersPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-admin-orders-page',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./admin-orders-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/admin/admin-orders-page/admin-orders-page.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./admin-orders-page.component.css */
+      "./src/app/pages/admin/admin-orders-page/admin-orders-page.component.css")).default]
+    })], AdminOrdersPageComponent);
     /***/
   },
 
@@ -5412,14 +6066,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AdminProductPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this37 = this;
+          var _this45 = this;
 
           this.route.params.subscribe(function (params) {
-            _this37.params = params;
+            _this45.params = params;
 
-            _this37.getProduct();
+            _this45.getProduct();
 
-            _this37.getProductImages();
+            _this45.getProductImages();
           });
         }
       }, {
@@ -5427,23 +6081,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getProduct() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee17() {
-            var _this38 = this;
+          regeneratorRuntime.mark(function _callee19() {
+            var _this46 = this;
 
-            return regeneratorRuntime.wrap(function _callee17$(_context17) {
+            return regeneratorRuntime.wrap(function _callee19$(_context19) {
               while (1) {
-                switch (_context17.prev = _context17.next) {
+                switch (_context19.prev = _context19.next) {
                   case 0:
                     this.productService.getProduct(this.params.id).subscribe(function (data) {
-                      _this38.product = data;
+                      _this46.product = data;
                     });
 
                   case 1:
                   case "end":
-                    return _context17.stop();
+                    return _context19.stop();
                 }
               }
-            }, _callee17, this);
+            }, _callee19, this);
           }));
         }
       }, {
@@ -5459,7 +6113,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "uploadImageInput",
         value: function uploadImageInput(event) {
-          var _this39 = this;
+          var _this47 = this;
 
           this.isUploading = true;
           var reader = new FileReader();
@@ -5469,21 +6123,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           reader.onloadend = function () {
             var img = reader.result.toString().split(',')[1];
-            _this39.uploadImageTag = reader.result;
+            _this47.uploadImageTag = reader.result;
             var uploadData = {
-              id: _this39.params.id,
+              id: _this47.params.id,
               type: ext,
               img: img
             };
 
-            _this39.productImagesService.uploadProductImage(uploadData).subscribe(function (data) {
+            _this47.productImagesService.uploadProductImage(uploadData).subscribe(function (data) {
               _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
 
-              _this39.isUploading = false;
+              _this47.isUploading = false;
 
-              _this39.getProduct();
+              _this47.getProduct();
 
-              _this39.getProductImages();
+              _this47.getProductImages();
             });
           };
 
@@ -5492,36 +6146,36 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getProductImages",
         value: function getProductImages() {
-          var _this40 = this;
+          var _this48 = this;
 
           this.productImagesService.getProductImages(this.params.id).subscribe(function (data) {
-            return _this40.productImages = data;
+            return _this48.productImages = data;
           });
         }
       }, {
         key: "deleteProductImage",
         value: function deleteProductImage(productImage) {
-          var _this41 = this;
+          var _this49 = this;
 
           this.productImagesService.deleteProductImage(productImage).subscribe(function (data) {
             _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
 
-            _this41.getProduct();
+            _this49.getProduct();
 
-            _this41.getProductImages();
+            _this49.getProductImages();
           });
         }
       }, {
         key: "setProductMainImage",
         value: function setProductMainImage(productImage) {
-          var _this42 = this;
+          var _this50 = this;
 
           this.productImagesService.setProductMain(productImage).subscribe(function (data) {
             _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
 
-            _this42.getProduct();
+            _this50.getProduct();
 
-            _this42.getProductImages();
+            _this50.getProductImages();
           });
         }
       }]);
@@ -5637,28 +6291,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AdminProductsPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this43 = this;
+          var _this51 = this;
 
           this.route.queryParams.subscribe(function (params) {
-            _this43.params = params;
+            _this51.params = params;
 
-            _this43.getProducts(params.page ? params.page : 0);
+            _this51.getProducts(params.page ? params.page : 0);
           });
         }
       }, {
         key: "getProducts",
         value: function getProducts() {
-          var _this44 = this;
+          var _this52 = this;
 
           var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
           this.productService.getProducts(page, 1).subscribe(function (data) {
-            return _this44.products = data;
+            return _this52.products = data;
           });
         }
       }, {
         key: "deleteProduct",
         value: function deleteProduct(id) {
-          var _this45 = this;
+          var _this53 = this;
 
           if (!confirm('Are you sure')) {
             return;
@@ -5667,7 +6321,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.productService.deleteProduct(id).subscribe(function (data) {
             _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
 
-            _this45.getProducts(_this45.params.page);
+            _this53.getProducts(_this53.params.page);
           });
         }
       }, {
@@ -5799,23 +6453,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getRoles() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee18() {
-            var _this46 = this;
+          regeneratorRuntime.mark(function _callee20() {
+            var _this54 = this;
 
-            return regeneratorRuntime.wrap(function _callee18$(_context18) {
+            return regeneratorRuntime.wrap(function _callee20$(_context20) {
               while (1) {
-                switch (_context18.prev = _context18.next) {
+                switch (_context20.prev = _context20.next) {
                   case 0:
                     this.rolesServices.getRoles().subscribe(function (data) {
-                      return _this46.roles = data;
+                      return _this54.roles = data;
                     });
 
                   case 1:
                   case "end":
-                    return _context18.stop();
+                    return _context20.stop();
                 }
               }
-            }, _callee18, this);
+            }, _callee20, this);
           }));
         }
       }, {
@@ -5823,25 +6477,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function createRoles() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee19() {
-            var _this47 = this;
+          regeneratorRuntime.mark(function _callee21() {
+            var _this55 = this;
 
-            return regeneratorRuntime.wrap(function _callee19$(_context19) {
+            return regeneratorRuntime.wrap(function _callee21$(_context21) {
               while (1) {
-                switch (_context19.prev = _context19.next) {
+                switch (_context21.prev = _context21.next) {
                   case 0:
                     this.rolesServices.createRoles(this.role).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-                      _this47.getRoles();
+                      _this55.getRoles();
                     });
 
                   case 1:
                   case "end":
-                    return _context19.stop();
+                    return _context21.stop();
                 }
               }
-            }, _callee19, this);
+            }, _callee21, this);
           }));
         }
       }, {
@@ -5849,26 +6503,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function deleteRoles(id) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee20() {
-            var _this48 = this;
+          regeneratorRuntime.mark(function _callee22() {
+            var _this56 = this;
 
-            return regeneratorRuntime.wrap(function _callee20$(_context20) {
+            return regeneratorRuntime.wrap(function _callee22$(_context22) {
               while (1) {
-                switch (_context20.prev = _context20.next) {
+                switch (_context22.prev = _context22.next) {
                   case 0:
                     this.rolesServices.deleteRole(id).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-                      _this48.getRoles();
+                      _this56.getRoles();
                     });
                     this.getRoles();
 
                   case 2:
                   case "end":
-                    return _context20.stop();
+                    return _context22.stop();
                 }
               }
-            }, _callee20, this);
+            }, _callee22, this);
           }));
         }
       }]);
@@ -5971,20 +6625,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AdminStaffPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this49 = this;
+          var _this57 = this;
 
           this.route.params.subscribe(function (params) {
-            return _this49.params = params;
+            return _this57.params = params;
           });
           this.getAdministrator();
         }
       }, {
         key: "getAdministrator",
         value: function getAdministrator() {
-          var _this50 = this;
+          var _this58 = this;
 
           this.adminService.getAdministrator(this.params.id).subscribe(function (data) {
-            return _this50.admin = data;
+            return _this58.admin = data;
           });
         }
       }]);
@@ -6093,7 +6747,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.admin = {
           fullname: '',
           email: '',
-          role: ''
+          role: '',
+          password: ''
         };
       }
 
@@ -6114,65 +6769,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getRoles() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee21() {
-            var _this51 = this;
-
-            return regeneratorRuntime.wrap(function _callee21$(_context21) {
-              while (1) {
-                switch (_context21.prev = _context21.next) {
-                  case 0:
-                    this.rolesService.getRoles().subscribe(function (data) {
-                      return _this51.roles = data;
-                    });
-
-                  case 1:
-                  case "end":
-                    return _context21.stop();
-                }
-              }
-            }, _callee21, this);
-          }));
-        }
-      }, {
-        key: "getAdministrators",
-        value: function getAdministrators() {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee22() {
-            var _this52 = this;
-
-            return regeneratorRuntime.wrap(function _callee22$(_context22) {
-              while (1) {
-                switch (_context22.prev = _context22.next) {
-                  case 0:
-                    this.adminService.getAdministrators().subscribe(function (data) {
-                      return _this52.admins = data;
-                    });
-
-                  case 1:
-                  case "end":
-                    return _context22.stop();
-                }
-              }
-            }, _callee22, this);
-          }));
-        }
-      }, {
-        key: "createAdministrators",
-        value: function createAdministrators() {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee23() {
-            var _this53 = this;
+            var _this59 = this;
 
             return regeneratorRuntime.wrap(function _callee23$(_context23) {
               while (1) {
                 switch (_context23.prev = _context23.next) {
                   case 0:
-                    this.adminService.createAdministrators(this.admin).subscribe(function (data) {
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
-
-                      _this53.getAdministrators();
+                    this.rolesService.getRoles().subscribe(function (data) {
+                      return _this59.roles = data;
                     });
 
                   case 1:
@@ -6181,6 +6786,56 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 }
               }
             }, _callee23, this);
+          }));
+        }
+      }, {
+        key: "getAdministrators",
+        value: function getAdministrators() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee24() {
+            var _this60 = this;
+
+            return regeneratorRuntime.wrap(function _callee24$(_context24) {
+              while (1) {
+                switch (_context24.prev = _context24.next) {
+                  case 0:
+                    this.adminService.getAdministrators().subscribe(function (data) {
+                      return _this60.admins = data;
+                    });
+
+                  case 1:
+                  case "end":
+                    return _context24.stop();
+                }
+              }
+            }, _callee24, this);
+          }));
+        }
+      }, {
+        key: "createAdministrators",
+        value: function createAdministrators() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee25() {
+            var _this61 = this;
+
+            return regeneratorRuntime.wrap(function _callee25$(_context25) {
+              while (1) {
+                switch (_context25.prev = _context25.next) {
+                  case 0:
+                    this.adminService.createAdministrators(this.admin).subscribe(function (data) {
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
+
+                      _this61.getAdministrators();
+                    });
+
+                  case 1:
+                  case "end":
+                    return _context25.stop();
+                }
+              }
+            }, _callee25, this);
           }));
         }
       }]);
@@ -6291,13 +6946,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(StoreAddressPageComponent, [{
         key: "onSubmit",
         value: function onSubmit(form) {
-          var _this54 = this;
+          var _this62 = this;
 
           this.addressServices.createStoreAddress(this.storeAddress).subscribe(function (data) {
             _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
             if (data.status === 'success') {
-              _this54.getStoreAddress();
+              _this62.getStoreAddress();
 
               form.form.reset();
             }
@@ -6313,23 +6968,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getStoreAddress() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee24() {
-            var _this55 = this;
+          regeneratorRuntime.mark(function _callee26() {
+            var _this63 = this;
 
-            return regeneratorRuntime.wrap(function _callee24$(_context24) {
+            return regeneratorRuntime.wrap(function _callee26$(_context26) {
               while (1) {
-                switch (_context24.prev = _context24.next) {
+                switch (_context26.prev = _context26.next) {
                   case 0:
                     this.addressServices.getStoreAddresses().subscribe(function (data) {
-                      return _this55.storeAddresses = data;
+                      return _this63.storeAddresses = data;
                     });
 
                   case 1:
                   case "end":
-                    return _context24.stop();
+                    return _context26.stop();
                 }
               }
-            }, _callee24, this);
+            }, _callee26, this);
           }));
         }
       }]);
@@ -6415,27 +7070,34 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @app/utils/notification */
     "./src/app/utils/notification.ts");
     /* harmony import */
 
 
-    var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @app/layout/default-layout/default-layout.component */
     "./src/app/layout/default-layout/default-layout.component.ts");
 
     var CartPageComponent =
     /*#__PURE__*/
     function () {
-      function CartPageComponent(productServices, defaultLayout) {
+      function CartPageComponent(productServices, defaultLayout, userServices) {
         _classCallCheck(this, CartPageComponent);
 
         this.productServices = productServices;
         this.defaultLayout = defaultLayout;
+        this.userServices = userServices;
         this.cartItems = 0;
         this.cartTotal = 0;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
       }
 
       _createClass(CartPageComponent, [{
@@ -6448,28 +7110,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getCartProducts() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee25() {
-            var _this56 = this;
+          regeneratorRuntime.mark(function _callee27() {
+            var _this64 = this;
 
             var id;
-            return regeneratorRuntime.wrap(function _callee25$(_context25) {
+            return regeneratorRuntime.wrap(function _callee27$(_context27) {
               while (1) {
-                switch (_context25.prev = _context25.next) {
+                switch (_context27.prev = _context27.next) {
                   case 0:
                     this.cart = JSON.parse(localStorage.getItem('cart'));
                     id = this.cart === null || this.cart.id === null ? 0 : this.cart.id;
                     this.productServices.getCartProducts(id).subscribe(function (data) {
-                      _this56.getCartItemsCount(data);
+                      _this64.getCartItemsCount(data);
 
-                      _this56.cartProducts = data;
+                      _this64.cartProducts = data;
                     });
 
                   case 3:
                   case "end":
-                    return _context25.stop();
+                    return _context27.stop();
                 }
               }
-            }, _callee25, this);
+            }, _callee27, this);
           }));
         }
       }, {
@@ -6489,25 +7151,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function removeProductFromCart(cartItem) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee26() {
-            var _this57 = this;
+          regeneratorRuntime.mark(function _callee28() {
+            var _this65 = this;
 
-            return regeneratorRuntime.wrap(function _callee26$(_context26) {
+            return regeneratorRuntime.wrap(function _callee28$(_context28) {
               while (1) {
-                switch (_context26.prev = _context26.next) {
+                switch (_context28.prev = _context28.next) {
                   case 0:
                     this.productServices.removeProductFromCart(cartItem.id).subscribe(function (data) {
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
 
-                      _this57.getCartProducts();
+                      _this65.getCartProducts();
                     });
 
                   case 1:
                   case "end":
-                    return _context26.stop();
+                    return _context28.stop();
                 }
               }
-            }, _callee26, this);
+            }, _callee28, this);
           }));
         }
       }, {
@@ -6515,13 +7177,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function updateCart(amount, cartItem) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee27() {
-            var _this58 = this;
+          regeneratorRuntime.mark(function _callee29() {
+            var _this66 = this;
 
             var cartData;
-            return regeneratorRuntime.wrap(function _callee27$(_context27) {
+            return regeneratorRuntime.wrap(function _callee29$(_context29) {
               while (1) {
-                switch (_context27.prev = _context27.next) {
+                switch (_context29.prev = _context29.next) {
                   case 0:
                     cartData = {
                       product: cartItem.product.id,
@@ -6534,27 +7196,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                         localStorage.setItem('cart', JSON.stringify(data.data));
                       }
 
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
 
                       cartItem.quantity += amount;
 
                       if (cartItem.quantity <= 0) {
-                        var index = _this58.cartProducts.data.indexOf(cartItem, 0);
+                        var index = _this66.cartProducts.data.indexOf(cartItem, 0);
 
-                        _this58.cartProducts.data.splice(index, 1);
+                        _this66.cartProducts.data.splice(index, 1);
                       }
 
-                      _this58.defaultLayout.getCartProducts();
+                      _this66.defaultLayout.getCartProducts();
 
-                      _this58.getCartProducts();
+                      _this66.getCartProducts();
                     });
 
                   case 2:
                   case "end":
-                    return _context27.stop();
+                    return _context29.stop();
                 }
               }
-            }, _callee27, this);
+            }, _callee29, this);
           }));
         }
       }]);
@@ -6566,7 +7228,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return [{
         type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_2__["ProductService"]
       }, {
-        type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutComponent"]
+        type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutComponent"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]
       }];
     };
 
@@ -6657,10 +7321,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getBaseCategories",
         value: function getBaseCategories() {
-          var _this59 = this;
+          var _this67 = this;
 
           this.categoriesService.getCategoryByParent().subscribe(function (data) {
-            _this59.categories = data;
+            _this67.categories = data;
             console.log(data);
           });
         }
@@ -6772,44 +7436,44 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoryPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this60 = this;
+          var _this68 = this;
 
           this.route.params.subscribe(function (data) {
-            _this60.link = data.link;
+            _this68.link = data.link;
 
-            _this60.getCategoryByLink(_this60.link);
+            _this68.getCategoryByLink(_this68.link);
           });
         }
       }, {
         key: "getQueryParams",
         value: function getQueryParams(id) {
-          var _this61 = this;
+          var _this69 = this;
 
           this.route.queryParams.subscribe(function (data) {
-            _this61.queryParams = data;
+            _this69.queryParams = data;
 
-            _this61.getProductsByCategory();
+            _this69.getProductsByCategory();
           });
         }
       }, {
         key: "getCategoryByLink",
         value: function getCategoryByLink(link) {
-          var _this62 = this;
+          var _this70 = this;
 
           this.categoriesServices.getCategoryByLink(link).subscribe(function (data) {
-            _this62.category = data;
+            _this70.category = data;
 
-            _this62.getQueryParams(data.data.id);
+            _this70.getQueryParams(data.data.id);
           });
         }
       }, {
         key: "getProductsByCategory",
         value: function getProductsByCategory() {
-          var _this63 = this;
+          var _this71 = this;
 
           var page = this.queryParams.page ? this.queryParams.page : 0;
           this.productServices.getProductsByCategory(this.category.data.id, page, 1).subscribe(function (data) {
-            _this63.products = data;
+            _this71.products = data;
           });
         }
       }]);
@@ -6911,26 +7575,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @app/utils/notification */
     "./src/app/utils/notification.ts");
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
 
     var CheckoutPageComponent =
     /*#__PURE__*/
     function () {
-      function CheckoutPageComponent(productServices, addressServices, defaultLayout, router) {
+      function CheckoutPageComponent(productServices, addressServices, defaultLayout, router, userServices) {
         _classCallCheck(this, CheckoutPageComponent);
 
         this.productServices = productServices;
         this.addressServices = addressServices;
         this.defaultLayout = defaultLayout;
         this.router = router;
+        this.userServices = userServices;
         this.currentAddress = {
           country_id: 0,
           client_id: 0,
@@ -6949,7 +7620,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         };
         this.cartItems = 0;
         this.cartTotal = 0;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
       }
 
       _createClass(CheckoutPageComponent, [{
@@ -6965,72 +7636,72 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getCartProducts() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee28() {
-            var _this64 = this;
+          regeneratorRuntime.mark(function _callee30() {
+            var _this72 = this;
 
             var id;
-            return regeneratorRuntime.wrap(function _callee28$(_context28) {
+            return regeneratorRuntime.wrap(function _callee30$(_context30) {
               while (1) {
-                switch (_context28.prev = _context28.next) {
+                switch (_context30.prev = _context30.next) {
                   case 0:
                     this.cart = JSON.parse(localStorage.getItem('cart'));
                     id = this.cart === null || this.cart.id === null ? 0 : this.cart.id;
                     this.productServices.getCartProducts(id).subscribe(function (data) {
-                      _this64.getCartItemsCount(data);
+                      _this72.getCartItemsCount(data);
 
-                      _this64.cartProducts = data;
+                      _this72.cartProducts = data;
                     });
 
                   case 3:
                   case "end":
-                    return _context28.stop();
+                    return _context30.stop();
                 }
               }
-            }, _callee28, this);
+            }, _callee30, this);
           }));
         }
       }, {
         key: "getStoreAddress",
         value: function getStoreAddress() {
-          var _this65 = this;
+          var _this73 = this;
 
           this.addressServices.getStoreAddresses().subscribe(function (data) {
-            _this65.storeAddresses = data;
+            _this73.storeAddresses = data;
           });
         }
       }, {
         key: "getClientAddress",
         value: function getClientAddress() {
-          var _this66 = this;
+          var _this74 = this;
 
           this.addressServices.getClientAddresses(this.client.id).subscribe(function (data) {
-            _this66.addresses = data;
+            _this74.addresses = data;
           });
         }
       }, {
         key: "checkout",
         value: function checkout() {
-          var _this67 = this;
+          var _this75 = this;
 
           this.order.cart_id = this.cart.id;
           this.order.client_id = this.client.id;
           this.productServices.checkout(this.order).subscribe(function (data) {
-            _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
 
-            _this67.defaultLayout.clearProductsFromCart();
+            _this75.defaultLayout.clearProductsFromCart();
 
             if (data.status === 'success') {
-              _this67.router.navigate(['/account/order/', data.data.id]);
+              _this75.router.navigate(['/account/order/', data.data.id]);
             }
           });
         }
       }, {
         key: "getCountries",
         value: function getCountries() {
-          var _this68 = this;
+          var _this76 = this;
 
           this.addressServices.getCountries().subscribe(function (data) {
-            _this68.countries = data;
+            _this76.countries = data;
           });
         }
       }, {
@@ -7048,14 +7719,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "onSubmit",
         value: function onSubmit(form) {
-          var _this69 = this;
+          var _this77 = this;
 
           this.currentAddress.client_id = this.client.id;
           this.addressServices.createAddress(this.currentAddress).subscribe(function (data) {
-            _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
 
             if (data.status === 'success') {
-              _this69.getClientAddress();
+              _this77.getClientAddress();
 
               form.form.reset();
             }
@@ -7074,7 +7745,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_3__["DefaultLayoutComponent"]
       }, {
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_5__["UserService"]
       }];
     };
 
@@ -7150,17 +7823,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @app/utils/notification */
     "./src/app/utils/notification.ts");
 
     var ClientAddressComponent =
     /*#__PURE__*/
     function () {
-      function ClientAddressComponent(addressServices) {
+      function ClientAddressComponent(addressServices, userServices) {
         _classCallCheck(this, ClientAddressComponent);
 
         this.addressServices = addressServices;
+        this.userServices = userServices;
         this.currentAddress = {
           country_id: 0,
           client_id: 0,
@@ -7169,7 +7849,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           address: '',
           postal_code: ''
         };
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
       }
 
       _createClass(ClientAddressComponent, [{
@@ -7180,24 +7860,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getClientAddress",
         value: function getClientAddress() {
-          var _this70 = this;
+          var _this78 = this;
 
           this.addressServices.getClientAddresses(this.client.id).subscribe(function (data) {
-            _this70.addresses = data;
+            _this78.addresses = data;
             console.log(data);
           });
         }
       }, {
         key: "onSubmit",
         value: function onSubmit(form) {
-          var _this71 = this;
+          var _this79 = this;
 
           this.currentAddress.client_id = this.client.id;
           this.addressServices.createAddress(this.currentAddress).subscribe(function (data) {
-            _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
 
             if (data.status === 'success') {
-              _this71.getClientAddress();
+              _this79.getClientAddress();
 
               form.form.reset();
             }
@@ -7211,6 +7891,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     ClientAddressComponent.ctorParameters = function () {
       return [{
         type: _app_services_addresses_service__WEBPACK_IMPORTED_MODULE_2__["AddressesService"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]
       }];
     };
 
@@ -7286,40 +7968,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
 
     var ClientFavouritesComponent =
     /*#__PURE__*/
     function () {
-      function ClientFavouritesComponent(clientServices, route, router) {
+      function ClientFavouritesComponent(clientServices, route, router, userServices) {
         _classCallCheck(this, ClientFavouritesComponent);
 
         this.clientServices = clientServices;
         this.route = route;
         this.router = router;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.userServices = userServices;
+        this.client = this.userServices.current.value;
       }
 
       _createClass(ClientFavouritesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this72 = this;
+          var _this80 = this;
 
           this.route.queryParams.subscribe(function (data) {
-            _this72.params = data;
+            _this80.params = data;
 
-            _this72.getFavourites();
+            _this80.getFavourites();
           });
         }
       }, {
         key: "getFavourites",
         value: function getFavourites() {
-          var _this73 = this;
+          var _this81 = this;
 
           this.clientServices.getFavourites(this.client.id, this.params).subscribe(function (data) {
-            _this73.products = data;
+            _this81.products = data;
           });
         }
       }, {
@@ -7344,9 +8033,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return [{
         type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"]
       }, {
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]
       }, {
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]
       }];
     };
 
@@ -7422,77 +8113,84 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
     /* harmony import */
 
 
-    var _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _app_services_product_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @app/services/product.service */
     "./src/app/services/product.service.ts");
     /* harmony import */
 
 
-    var _app_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _app_constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @app/constants */
     "./src/app/constants.ts");
     /* harmony import */
 
 
-    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @app/utils/notification */
     "./src/app/utils/notification.ts");
 
     var ClientOrderComponent =
     /*#__PURE__*/
     function () {
-      function ClientOrderComponent(route, router, orderService, productServices) {
+      function ClientOrderComponent(route, router, orderService, productServices, userServices) {
         _classCallCheck(this, ClientOrderComponent);
 
         this.route = route;
         this.router = router;
         this.orderService = orderService;
         this.productServices = productServices;
+        this.userServices = userServices;
         this.reference = '';
-        this.paystackPublicApi = _app_constants__WEBPACK_IMPORTED_MODULE_5__["Constants"].PAYSTACK_PUBLIC_API;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.paystackPublicApi = _app_constants__WEBPACK_IMPORTED_MODULE_6__["Constants"].PAYSTACK_PUBLIC_API;
+        this.client = this.userServices.current.value;
       }
 
       _createClass(ClientOrderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this74 = this;
+          var _this82 = this;
 
           this.route.params.subscribe(function (params) {
-            _this74.params = params;
+            _this82.params = params;
 
-            _this74.getOrder();
+            _this82.getOrder();
           });
           this.reference = "ref-".concat(Math.ceil(Math.random() * 10e13));
         }
       }, {
         key: "getOrder",
         value: function getOrder() {
-          var _this75 = this;
+          var _this83 = this;
 
           this.orderService.getOrder(this.params.id).subscribe(function (data) {
-            _this75.order = data;
+            _this83.order = data;
 
             if (data.status === 'success') {
-              _this75.getCartProducts();
+              _this83.getCartProducts();
             }
           });
         }
       }, {
         key: "getCartProducts",
         value: function getCartProducts() {
-          var _this76 = this;
+          var _this84 = this;
 
           this.productServices.getCartProducts(this.order.data.cart.id).subscribe(function (data) {
-            _this76.getCartItemsCount(data);
+            _this84.getCartItemsCount(data);
 
-            _this76.orderData = data;
+            _this84.orderData = data;
           });
         }
       }, {
@@ -7515,16 +8213,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "paymentDone",
         value: function paymentDone(ref) {
-          var _this77 = this;
+          var _this85 = this;
 
           this.orderService.verifyPayment({
             order_id: this.order.data.id,
             ref: ref.reference
           }).subscribe(function (data) {
-            _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
+            _app_utils_notification__WEBPACK_IMPORTED_MODULE_7__["Notification"].show(data.message, data.status);
 
             if (data.status === 'success') {
-              _this77.order = data;
+              _this85.order = data;
             }
           });
         }
@@ -7540,13 +8238,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     ClientOrderComponent.ctorParameters = function () {
       return [{
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]
       }, {
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
       }, {
         type: _app_services_order_service__WEBPACK_IMPORTED_MODULE_2__["OrderService"]
       }, {
-        type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_4__["ProductService"]
+        type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_5__["ProductService"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]
       }];
     };
 
@@ -7619,15 +8319,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @app/services/client.service */
     "./src/app/services/client.service.ts");
+    /* harmony import */
+
+
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
 
     var ClientOrdersComponent =
     /*#__PURE__*/
     function () {
-      function ClientOrdersComponent(clientServices) {
+      function ClientOrdersComponent(clientServices, userServices) {
         _classCallCheck(this, ClientOrdersComponent);
 
         this.clientServices = clientServices;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.userServices = userServices;
+        this.client = this.userServices.current.value;
       }
 
       _createClass(ClientOrdersComponent, [{
@@ -7638,10 +8345,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getOrders",
         value: function getOrders() {
-          var _this78 = this;
+          var _this86 = this;
 
           this.clientServices.getOrders(this.client.id).subscribe(function (data) {
-            _this78.orders = data;
+            _this86.orders = data;
             console.log(data);
           });
         }
@@ -7653,6 +8360,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     ClientOrdersComponent.ctorParameters = function () {
       return [{
         type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]
       }];
     };
 
@@ -7731,16 +8440,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @app/utils/notification */
     "./src/app/utils/notification.ts");
+    /* harmony import */
+
+
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
 
     var ClientProfileComponent =
     /*#__PURE__*/
     function () {
-      function ClientProfileComponent(clientServices) {
+      function ClientProfileComponent(clientServices, userServices) {
         _classCallCheck(this, ClientProfileComponent);
 
         this.clientServices = clientServices;
+        this.userServices = userServices;
         this.updatingClient = false;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
       }
 
       _createClass(ClientProfileComponent, [{
@@ -7751,25 +8467,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee29() {
-            var _this79 = this;
+          regeneratorRuntime.mark(function _callee31() {
+            var _this87 = this;
 
-            return regeneratorRuntime.wrap(function _callee29$(_context29) {
+            return regeneratorRuntime.wrap(function _callee31$(_context31) {
               while (1) {
-                switch (_context29.prev = _context29.next) {
+                switch (_context31.prev = _context31.next) {
                   case 0:
                     this.clientServices.getClient(this.client.id).subscribe(function (data) {
                       if (data.status === 'success') {
-                        _this79.client = data.data;
+                        _this87.client = data.data;
                       }
                     });
 
                   case 1:
                   case "end":
-                    return _context29.stop();
+                    return _context31.stop();
                 }
               }
-            }, _callee29, this);
+            }, _callee31, this);
           }));
         }
       }, {
@@ -7783,29 +8499,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function updateClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee30() {
-            var _this80 = this;
+          regeneratorRuntime.mark(function _callee32() {
+            var _this88 = this;
 
-            return regeneratorRuntime.wrap(function _callee30$(_context30) {
+            return regeneratorRuntime.wrap(function _callee32$(_context32) {
               while (1) {
-                switch (_context30.prev = _context30.next) {
+                switch (_context32.prev = _context32.next) {
                   case 0:
                     this.clientServices.updateClient(this.client.id, this.client).subscribe(function (data) {
-                      _this80.updatingClient = false;
+                      _this88.updatingClient = false;
 
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
                       if (data.status === 'success') {
-                        localStorage.setItem('client', JSON.stringify(data.data));
+                        _this88.userServices.setUser(data.data, 'client');
                       }
                     });
 
                   case 1:
                   case "end":
-                    return _context30.stop();
+                    return _context32.stop();
                 }
               }
-            }, _callee30, this);
+            }, _callee32, this);
           }));
         }
       }]);
@@ -7816,6 +8532,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     ClientProfileComponent.ctorParameters = function () {
       return [{
         type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"]
       }];
     };
 
@@ -7891,24 +8609,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @app/utils/notification */
     "./src/app/utils/notification.ts");
 
     var ClientSettingsComponent =
     /*#__PURE__*/
     function () {
-      function ClientSettingsComponent(clientService) {
+      function ClientSettingsComponent(clientService, userServices) {
         _classCallCheck(this, ClientSettingsComponent);
 
         this.clientService = clientService;
+        this.userServices = userServices;
         this.updatePassword = {
           password: '',
           new_password: '',
           repeat_password: ''
         };
         this.updatingClient = false;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
       }
 
       _createClass(ClientSettingsComponent, [{
@@ -7926,31 +8651,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function updateClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee31() {
-            var _this81 = this;
+          regeneratorRuntime.mark(function _callee33() {
+            var _this89 = this;
 
-            return regeneratorRuntime.wrap(function _callee31$(_context31) {
+            return regeneratorRuntime.wrap(function _callee33$(_context33) {
               while (1) {
-                switch (_context31.prev = _context31.next) {
+                switch (_context33.prev = _context33.next) {
                   case 0:
                     if (this.updatePassword.new_password === this.updatePassword.repeat_password) {
                       this.clientService.updateClientPassword(this.client.id, this.updatePassword).subscribe(function (data) {
-                        _this81.updatingClient = false;
+                        _this89.updatingClient = false;
 
-                        _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
+                        _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show(data.message, data.status);
                       });
                     } else {
                       this.updatingClient = false;
 
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show('Password confirmation faied', 'failed');
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_4__["Notification"].show('Password confirmation faied', 'failed');
                     }
 
                   case 1:
                   case "end":
-                    return _context31.stop();
+                    return _context33.stop();
                 }
               }
-            }, _callee31, this);
+            }, _callee33, this);
           }));
         }
       }]);
@@ -7961,6 +8686,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     ClientSettingsComponent.ctorParameters = function () {
       return [{
         type: _app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]
       }];
     };
 
@@ -8140,20 +8867,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getProducts",
         value: function getProducts() {
-          var _this82 = this;
+          var _this90 = this;
 
           var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
           this.productService.getProducts(page, 1).subscribe(function (data) {
-            return _this82.products = data;
+            return _this90.products = data;
           });
         }
       }, {
         key: "getBanners",
         value: function getBanners() {
-          var _this83 = this;
+          var _this91 = this;
 
           this.bannerImageService.getActiveBannerImage().subscribe(function (data) {
-            return _this83.banners = data;
+            return _this91.banners = data;
           });
         }
       }]);
@@ -8247,32 +8974,39 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_services_product_images_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _app_services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @app/services/user.service */
+    "./src/app/services/user.service.ts");
+    /* harmony import */
+
+
+    var _app_services_product_images_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @app/services/product-images.service */
     "./src/app/services/product-images.service.ts");
     /* harmony import */
 
 
-    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @app/utils/notification */
     "./src/app/utils/notification.ts");
     /* harmony import */
 
 
-    var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @app/layout/default-layout/default-layout.component */
     "./src/app/layout/default-layout/default-layout.component.ts");
 
     var ProductPageComponent =
     /*#__PURE__*/
     function () {
-      function ProductPageComponent(route, productServices, productImagesService, defaultLayout) {
+      function ProductPageComponent(route, productServices, productImagesService, defaultLayout, userServices) {
         _classCallCheck(this, ProductPageComponent);
 
         this.route = route;
         this.productServices = productServices;
         this.productImagesService = productImagesService;
         this.defaultLayout = defaultLayout;
+        this.userServices = userServices;
         this.addingToCart = false;
         this.reviewing = false;
         this.review = {
@@ -8280,7 +9014,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           review: ''
         };
         this.quantity = 1;
-        this.client = JSON.parse(localStorage.getItem('client'));
+        this.client = this.userServices.current.value;
       }
 
       _createClass(ProductPageComponent, [{
@@ -8297,14 +9031,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this84 = this;
+          var _this92 = this;
 
           this.route.params.subscribe(function (params) {
-            _this84.params = params;
+            _this92.params = params;
 
-            _this84.getProduct();
+            _this92.getProduct();
 
-            _this84.getProductImages();
+            _this92.getProductImages();
           });
         }
       }, {
@@ -8318,82 +9052,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getProduct() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee32() {
-            var _this85 = this;
-
-            return regeneratorRuntime.wrap(function _callee32$(_context32) {
-              while (1) {
-                switch (_context32.prev = _context32.next) {
-                  case 0:
-                    this.productServices.getProduct(this.params.id).subscribe(function (data) {
-                      _this85.product = data;
-
-                      _this85.getReviews();
-                    });
-
-                  case 1:
-                  case "end":
-                    return _context32.stop();
-                }
-              }
-            }, _callee32, this);
-          }));
-        }
-      }, {
-        key: "getReviews",
-        value: function getReviews() {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee33() {
-            var _this86 = this;
-
-            return regeneratorRuntime.wrap(function _callee33$(_context33) {
-              while (1) {
-                switch (_context33.prev = _context33.next) {
-                  case 0:
-                    this.productServices.productReviews(this.params.id).subscribe(function (data) {
-                      _this86.productReviews = data;
-                    });
-
-                  case 1:
-                  case "end":
-                    return _context33.stop();
-                }
-              }
-            }, _callee33, this);
-          }));
-        }
-      }, {
-        key: "getProductImages",
-        value: function getProductImages() {
-          var _this87 = this;
-
-          this.productImagesService.getProductImages(this.params.id).subscribe(function (data) {
-            _this87.productImages = data;
-          });
-        }
-      }, {
-        key: "addToFavourite",
-        value: function addToFavourite() {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee34() {
-            var favouriteData;
+            var _this93 = this;
+
             return regeneratorRuntime.wrap(function _callee34$(_context34) {
               while (1) {
                 switch (_context34.prev = _context34.next) {
                   case 0:
-                    if (this.client == null) {
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show('Login to add to favourite', 'failed');
-                    } else {
-                      favouriteData = {
-                        client: this.client.id,
-                        product: this.product.data.id
-                      };
-                      this.productServices.addToFavourite(favouriteData).subscribe(function (data) {
-                        _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
-                      });
-                    }
+                    this.productServices.getProduct(this.params.id).subscribe(function (data) {
+                      _this93.product = data;
+
+                      _this93.getReviews();
+                    });
 
                   case 1:
                   case "end":
@@ -8404,17 +9074,81 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }));
         }
       }, {
+        key: "getReviews",
+        value: function getReviews() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee35() {
+            var _this94 = this;
+
+            return regeneratorRuntime.wrap(function _callee35$(_context35) {
+              while (1) {
+                switch (_context35.prev = _context35.next) {
+                  case 0:
+                    this.productServices.productReviews(this.params.id).subscribe(function (data) {
+                      _this94.productReviews = data;
+                    });
+
+                  case 1:
+                  case "end":
+                    return _context35.stop();
+                }
+              }
+            }, _callee35, this);
+          }));
+        }
+      }, {
+        key: "getProductImages",
+        value: function getProductImages() {
+          var _this95 = this;
+
+          this.productImagesService.getProductImages(this.params.id).subscribe(function (data) {
+            _this95.productImages = data;
+          });
+        }
+      }, {
+        key: "addToFavourite",
+        value: function addToFavourite() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee36() {
+            var favouriteData;
+            return regeneratorRuntime.wrap(function _callee36$(_context36) {
+              while (1) {
+                switch (_context36.prev = _context36.next) {
+                  case 0:
+                    if (this.client == null) {
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show('Login to add to favourite', 'failed');
+                    } else {
+                      favouriteData = {
+                        client: this.client.id,
+                        product: this.product.data.id
+                      };
+                      this.productServices.addToFavourite(favouriteData).subscribe(function (data) {
+                        _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
+                      });
+                    }
+
+                  case 1:
+                  case "end":
+                    return _context36.stop();
+                }
+              }
+            }, _callee36, this);
+          }));
+        }
+      }, {
         key: "reviewProduct",
         value: function reviewProduct(form) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee35() {
-            var _this88 = this;
+          regeneratorRuntime.mark(function _callee37() {
+            var _this96 = this;
 
             var reviewData;
-            return regeneratorRuntime.wrap(function _callee35$(_context35) {
+            return regeneratorRuntime.wrap(function _callee37$(_context37) {
               while (1) {
-                switch (_context35.prev = _context35.next) {
+                switch (_context37.prev = _context37.next) {
                   case 0:
                     this.reviewing = true;
                     reviewData = {
@@ -8425,18 +9159,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     };
                     form.form.reset();
                     this.productServices.reviewProduct(reviewData).subscribe(function (data) {
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
 
-                      _this88.getProduct();
+                      _this96.getProduct();
                     });
                     this.reviewing = false;
 
                   case 5:
                   case "end":
-                    return _context35.stop();
+                    return _context37.stop();
                 }
               }
-            }, _callee35, this);
+            }, _callee37, this);
           }));
         }
       }, {
@@ -8444,18 +9178,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function addToCart() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee36() {
-            var _this89 = this;
+          regeneratorRuntime.mark(function _callee38() {
+            var _this97 = this;
 
             var cartData;
-            return regeneratorRuntime.wrap(function _callee36$(_context36) {
+            return regeneratorRuntime.wrap(function _callee38$(_context38) {
               while (1) {
-                switch (_context36.prev = _context36.next) {
+                switch (_context38.prev = _context38.next) {
                   case 0:
                     this.setCart();
 
                     if (this.client == null) {
-                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show('Login to add to cart', 'failed');
+                      _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show('Login to add to cart', 'failed');
                     } else {
                       this.addingToCart = true;
                       cartData = {
@@ -8469,20 +9203,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                           localStorage.setItem('cart', JSON.stringify(data.data));
                         }
 
-                        _app_utils_notification__WEBPACK_IMPORTED_MODULE_5__["Notification"].show(data.message, data.status);
+                        _app_utils_notification__WEBPACK_IMPORTED_MODULE_6__["Notification"].show(data.message, data.status);
 
-                        _this89.addingToCart = false;
+                        _this97.addingToCart = false;
 
-                        _this89.defaultLayout.getCartProducts();
+                        _this97.defaultLayout.getCartProducts();
                       });
                     }
 
                   case 2:
                   case "end":
-                    return _context36.stop();
+                    return _context38.stop();
                 }
               }
-            }, _callee36, this);
+            }, _callee38, this);
           }));
         }
       }, {
@@ -8501,9 +9235,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         type: _app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"]
       }, {
-        type: _app_services_product_images_service__WEBPACK_IMPORTED_MODULE_4__["ProductImagesService"]
+        type: _app_services_product_images_service__WEBPACK_IMPORTED_MODULE_5__["ProductImagesService"]
       }, {
-        type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutComponent"]
+        type: _app_layout_default_layout_default_layout_component__WEBPACK_IMPORTED_MODULE_7__["DefaultLayoutComponent"]
+      }, {
+        type: _app_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"]
       }];
     };
 
@@ -8598,13 +9334,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProductSearchComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this90 = this;
+          var _this98 = this;
 
           console.log('here');
           this.route.queryParams.subscribe(function (data) {
-            _this90.params = data;
+            _this98.params = data;
 
-            _this90.findProducts();
+            _this98.findProducts();
           });
         }
       }, {
@@ -8612,24 +9348,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function findProducts() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee37() {
-            var _this91 = this;
+          regeneratorRuntime.mark(function _callee39() {
+            var _this99 = this;
 
-            return regeneratorRuntime.wrap(function _callee37$(_context37) {
+            return regeneratorRuntime.wrap(function _callee39$(_context39) {
               while (1) {
-                switch (_context37.prev = _context37.next) {
+                switch (_context39.prev = _context39.next) {
                   case 0:
                     this.productServices.findProducts(this.params).subscribe(function (data) {
                       console.log(data);
-                      _this91.products = data;
+                      _this99.products = data;
                     });
 
                   case 1:
                   case "end":
-                    return _context37.stop();
+                    return _context39.stop();
                 }
               }
-            }, _callee37, this);
+            }, _callee39, this);
           }));
         }
       }, {
@@ -8761,10 +9497,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SignInPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this92 = this;
+          var _this100 = this;
 
           this.route.queryParams.subscribe(function (data) {
-            _this92.returnUrl = data.returnUrl || '/account';
+            _this100.returnUrl = data.returnUrl || '/account';
           });
         }
       }, {
@@ -8778,29 +9514,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function loginClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee38() {
-            var _this93 = this;
+          regeneratorRuntime.mark(function _callee40() {
+            var _this101 = this;
 
-            return regeneratorRuntime.wrap(function _callee38$(_context38) {
+            return regeneratorRuntime.wrap(function _callee40$(_context40) {
               while (1) {
-                switch (_context38.prev = _context38.next) {
+                switch (_context40.prev = _context40.next) {
                   case 0:
                     this.clientService.loginClient(this.client).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-                      _this93.isLoggingIN = false;
+                      _this101.isLoggingIN = false;
 
                       if (data.status === 'success') {
-                        _this93.router.navigateByUrl(_this93.returnUrl);
+                        _this101.router.navigateByUrl(_this101.returnUrl);
                       }
                     });
 
                   case 1:
                   case "end":
-                    return _context38.stop();
+                    return _context40.stop();
                 }
               }
-            }, _callee38, this);
+            }, _callee40, this);
           }));
         }
       }]);
@@ -8926,25 +9662,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function registerClient() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee39() {
-            var _this94 = this;
+          regeneratorRuntime.mark(function _callee41() {
+            var _this102 = this;
 
-            return regeneratorRuntime.wrap(function _callee39$(_context39) {
+            return regeneratorRuntime.wrap(function _callee41$(_context41) {
               while (1) {
-                switch (_context39.prev = _context39.next) {
+                switch (_context41.prev = _context41.next) {
                   case 0:
                     this.clientService.createClient(this.client).subscribe(function (data) {
                       _app_utils_notification__WEBPACK_IMPORTED_MODULE_3__["Notification"].show(data.message, data.status);
 
-                      _this94.registering = false;
+                      _this102.registering = false;
                     });
 
                   case 1:
                   case "end":
-                    return _context39.stop();
+                    return _context41.stop();
                 }
               }
-            }, _callee39, this);
+            }, _callee41, this);
           }));
         }
       }]);
@@ -9198,6 +9934,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "getAdministrator",
         value: function getAdministrator(id) {
           return this.http.get("/api/administrator/".concat(id));
+        }
+      }, {
+        key: "updateAdminPassword",
+        value: function updateAdminPassword(id, data) {
+          return this.http.put("/api/administrator/change_password/".concat(id), data);
+        }
+      }, {
+        key: "loginAdministrator",
+        value: function loginAdministrator(data) {
+          return this.http.post('/api/administrator/login', data);
+        }
+      }, {
+        key: "updateAdministrator",
+        value: function updateAdministrator(id, data) {
+          return this.http.put("/api/administrator/".concat(id), data);
+        }
+      }, {
+        key: "uploadAvatarAdministrator",
+        value: function uploadAvatarAdministrator(id, data) {
+          return this.http.put("/api/administrator/".concat(id, "/avatar"), data);
         }
       }]);
 
@@ -9658,6 +10414,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass(OrderService, [{
+        key: "getOrders",
+        value: function getOrders() {
+          return this.http.get("/api/order");
+        }
+      }, {
         key: "getOrder",
         value: function getOrder(id) {
           return this.http.get("/api/order/".concat(id));
@@ -10053,6 +10814,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
 
     var UserService =
     /*#__PURE__*/
@@ -10061,9 +10828,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, UserService);
 
         this.http = http;
+        this.current = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](this.start);
+        this.type = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"]('');
       }
 
       _createClass(UserService, [{
+        key: "setUser",
+        value: function setUser() {
+          var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+          var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+
+          if (data === null) {
+            data = JSON.parse(localStorage.getItem('user'));
+            type = localStorage.getItem('type');
+          } else {
+            localStorage.setItem('user', JSON.stringify(data));
+            localStorage.setItem('type', type);
+          }
+
+          this.current.next(data);
+          this.type.next(type);
+        }
+      }, {
         key: "auth",
         value: function auth() {
           return this.http.get('/api/auth');

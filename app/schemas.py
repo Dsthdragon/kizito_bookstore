@@ -117,6 +117,7 @@ class OrderSchema(ma.TableSchema):
     address = fields.Nested('AddressSchema')
     store_address = fields.Nested('StoreAddressSchema')
     cart = fields.Nested('CartSchema')
+    client = fields.Nested('ClientSchema', exclude=['favourites', 'views'])
 
 
 class AddressSchema(ma.TableSchema):
